@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { DM_Sans, Rubik } from 'next/font/google'
 import './globals.css'
+import { dm_sans } from '@/utils/fonts';
 import Navbar from '@/app/navbar';
 import Footer from '@/app/footer';
-import { NextFont } from 'next/dist/compiled/@next/font';
 
-const dm_sans: NextFont = DM_Sans({ subsets: ['latin']});
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,13 +22,19 @@ export default function RootLayout({
 
       {/* MAIN CONTAINER */}
       <div className='flex flex-col h-screen'>
+
+        {/* NAVBAR */}
         <Navbar />
-        <main className='flex-grow bg-sky-950'>
+
+        {/* ROUTER */}
+        <main className='flex-grow bg-sky-950 pl-24 pr-24 pt-16 transition ease-in-out delay-150'>
           { children }
         </main>
-        <Footer />
-      </div>
 
+        {/* FOOTER */}
+        <Footer />
+
+      </div>
       </body>
     </html>
   )
