@@ -1,6 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link';
+import { ReactElement } from 'react';
 
-export default function Home() {
-  return <Link href='/about'>test</Link>
+export default function Home(): ReactElement {
+
+  return <>Home Page</>
 }

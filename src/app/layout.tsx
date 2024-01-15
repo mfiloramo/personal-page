@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Akshar, Alegreya, Inter } from 'next/font/google'
 import './globals.css'
+import Navbar from '@/app/navbar';
+import Footer from '@/app/footer';
+import { NextFont } from 'next/dist/compiled/@next/font';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter: NextFont = Inter({ subsets: ['latin'] })
+const akshar: NextFont = Akshar({ subsets: ['latin']});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={ akshar.className }>
+      <div className='flex flex-col'>
+        <Navbar />
+        <div className='h-80 bg-sky-950'> </div>
+        { children }
+        <Footer />
+      </div>
+      </body>
     </html>
   )
 }
