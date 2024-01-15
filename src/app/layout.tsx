@@ -18,24 +18,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ dm_sans.className }>
+    <body className={ dm_sans.className }>
 
-      {/* MAIN CONTAINER */}
-      <div className='flex flex-col h-screen'>
+    {/* MAIN CONTAINER */ }
+    <div className='flex flex-col h-screen'>
 
-        {/* NAVBAR */}
-        <Navbar />
+      {/* NAVBAR */ }
+      <Navbar />
 
-        {/* ROUTER */}
-        <main className='flex-grow bg-sky-950 pl-24 pr-24 pt-16 transition ease-in-out delay-150'>
-          { children }
-        </main>
+      {/* ROUTER */ }
+      <main className='flex-grow bg-sky-950 pl-24 pr-24 pt-16 transition ease-in-out delay-150'>
+        { children }
+      </main>
 
-        {/* FOOTER */}
-        <Footer />
+      {/* FOOTER */ }
+      <Footer />
 
-      </div>
-      </body>
+    </div>
+    </body>
     </html>
   )
 }

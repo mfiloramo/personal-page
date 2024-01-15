@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { variants } from '@/utils/animations';
 
 interface TextProps {
   children: any,
@@ -8,14 +9,9 @@ interface TextProps {
 }
 
 export const MotionText = ({ children, className, delay }: TextProps) => {
-  const variants = {
-    hidden: { opacity: 0, x: -150 },
-    visible: { opacity: 1, x: 0 }
-  };
-
   return (
     <motion.div
-      initial='hidden'
+      initial='hiddenLeft'
       animate='visible'
       transition={ { ease: 'easeInOut', duration: 0.6 + delay } }
       variants={ variants }
