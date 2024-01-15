@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
 
 export default function Footer(): ReactElement {
-  return <div className='mb-10'>Footer</div>;
+  return <div className='bg-sky-700 shadow-md z-11'>Footer</div>;
 }

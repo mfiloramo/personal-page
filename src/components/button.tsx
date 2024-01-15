@@ -9,7 +9,7 @@ interface ButtonProps {
 export default function Button({ href }: ButtonProps): ReactElement {
   return (
     <Link href={ href }>
-      <button className='h-24 w-28 flex justify-center items-center text-blue-100 hover:animate-pulse ease-in-out shadow hover:shadow-lg text-xl'>
+      <button className='w-28 flex justify-center text-lg text-blue-100 hover:animate-pulse ease-in-out shadow hover:shadow-lg'>
         { href }
       </button>
     </Link>

@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { Akshar, Alegreya, Inter } from 'next/font/google'
+import { DM_Sans, Rubik } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/app/navbar';
 import Footer from '@/app/footer';
 import { NextFont } from 'next/dist/compiled/@next/font';
 
-const inter: NextFont = Inter({ subsets: ['latin'] })
-const akshar: NextFont = Akshar({ subsets: ['latin']});
+const dm_sans: NextFont = DM_Sans({ subsets: ['latin']});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,13 +19,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ akshar.className }>
-      <div className='flex flex-col'>
+      <body className={ dm_sans.className }>
+
+      {/* MAIN CONTAINER */}
+      <div className='flex flex-col h-screen'>
         <Navbar />
-        <div className='h-80 bg-sky-950'> </div>
-        { children }
+        <main className='flex-grow bg-sky-950'>
+          { children }
+        </main>
         <Footer />
       </div>
+
       </body>
     </html>
   )
