@@ -1,8 +1,14 @@
 'use client';
 import { motion } from 'framer-motion';
 import { cabinHeavy, cabinLight } from '@/utils/fonts';
+import { randomScale, randomRotate } from '@/utils/animations';
 import { MotionText } from '@/components/motion-text';
 import Divider from '@/components/divider';
+
+interface AnimationHoverProps {
+  scale: number,
+  rotate: number
+}
 
 export default function About() {
   const companyLogos: any[] = [];
@@ -12,8 +18,15 @@ export default function About() {
     { image: '/company-logos/sinclair-company-logo.png', url: 'https://sbgi.net/' }
   ];
 
+  const generateHoverAnimation: any = (): AnimationHoverProps => {
+    return {
+      scale: randomScale(),
+      rotate: randomRotate(),
+    };
+  };
+
   return (
-    <div className='flex flex-col max-w-screen-lg mx-auto'>
+    <div className='flex flex-col max-w-screen-lg'>
       <div>
         {/* TITLE */ }
         <MotionText className={ `text-sky-100 text-9xl ${ cabinHeavy.className }` } delay={ 0 }>
@@ -36,7 +49,7 @@ export default function About() {
 
           <MotionText className='text-sky-300 text-2xl' delay={ 0.6 }>
             <p className={'break-words'}>
-              As a dedicated full stack engineer with years of web dev experience across various fields, I'm passionate about merging my educational insights with my technical skills, ultimately giving back to the EdTech community.
+              As a dedicated full stack engineer with years of web dev experience across various fields, I'm passionate about merging my educational insights with my technical skills to ultimately give back to the EdTech community.
             </p>
           </MotionText>
         </>
@@ -47,62 +60,51 @@ export default function About() {
           <Divider />
 
         {/* COMPANY LOGOS */}
-          <div className={ 'flex flex-row justify-between' }>
+          <div className={ 'flex flex-col sm:flex-row justify-around justify-items-center ' }>
 
+            {/* LINGOLINK */}
             <motion.a
-              className={ 'mt-4 w-24' }
-              whileHover={ { scale: 1.2, rotate: 8 } }
-              whileTap={ {
-                scale: 0.8,
-                rotate: -8,
-                borderRadius: "100%"
-              } }
+              className={ 'mt-4 w-24 mb-4 sm:mb-0 mx-auto sm:mx-0' }
               href={ 'https://orange-tree-0d3c88e0f.3.azurestaticapps.net/' }
-              target="_blank" rel="noopener noreferrer"
+              whileHover={ generateHoverAnimation }
+              whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
               <img src={ '/company-logos/lingolink-company-logo.png' } alt='lingolink' />
             </motion.a>
 
+            {/* NBPA */}
             <motion.a
+              className={ 'mx-auto sm:mx-0 -mb-4 sm:mb-0' }
               href={ 'https://nbpa.com/' }
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={ { scale: 1.2, rotate: 10 } }
-              whileTap={ {
-                scale: 0.8,
-                rotate: 8,
-                borderRadius: "100%"
-              } }>
+              whileHover={ generateHoverAnimation }
+              whileTap={ { scale: 0.8, rotate: 8, borderRadius: "100%" } }
+            >
               <img className={ 'w-24 h-auto my-4' } src={ '/company-logos/nbpa-company-logo.png' } alt='nbpa' />
             </motion.a>
 
+            {/* SINCLAIR */}
             <motion.a
-              className={ 'w-48 my-11' }
+              className={ 'w-48 my-11 mx-auto sm:mx-0 mb-4 ' }
               href={ 'https://sbgi.net/' }
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={ { scale: 1.2, rotate: -8 } }
-              whileTap={ {
-                scale: 0.8,
-                rotate: 8,
-                borderRadius: "100%"
-              } }>
+              whileHover={ generateHoverAnimation }
+              whileTap={ { scale: 0.8, rotate: 8, borderRadius: "100%" } }
+            >
               <img src={ '/company-logos/sinclair-company-logo.png' } alt='sinclair' />
             </motion.a>
 
+            {/* HIFIBER */}
             <motion.a
+              className={'mx-auto sm:mx-0'}
               href={ 'http://hifibertools.com/' }
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={ { scale: 1.2, rotate: -10 } }
-              whileTap={ {
-                scale: 0.8,
-                rotate: 12,
-                borderRadius: "100%"
-              } }>
+              whileHover={ generateHoverAnimation }
+              whileTap={ { scale: 0.8, rotate: 12, borderRadius: "100%" } }
+            >
               <img className={ 'w-24 h-auto my-4' } src={ '/company-logos/hifiber-company-logo.png' } alt='nbpa' />
             </motion.a>
+
           </div>
+          <Divider />
+
         </MotionText>
       </div>
     </div>

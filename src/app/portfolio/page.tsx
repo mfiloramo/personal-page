@@ -1,9 +1,7 @@
 
 'use client';
 import { ReactElement } from 'react';
-import { motion } from 'framer-motion';
 import { cabinHeavy, cabinLight } from '@/utils/fonts';
-import { variants } from '@/utils/animations';
 import { MotionText } from '@/components/motion-text';
 import FrontButton from '@/components/front-button';
 
@@ -30,17 +28,14 @@ export default function Portfolio(): ReactElement {
       </MotionText>
 
       {/* WORK SHOWCASE */ }
-      <motion.div
+      <MotionText
         className={ `flex flex-col justify-between mt-10 sm:flex-row ${ cabinHeavy.className }` }
-        transition={ { ease: 'easeInOut', duration: 1.4 } }
-        animate={ 'visible' }
-        variants={ variants }
-        initial={ 'hiddenLeft' }
+        delay={ 0.6 }
       >
         <FrontButton text={ 'Sample' } />
         <FrontButton text={ 'Sample' } />
         <FrontButton text={ 'Sample' } />
-      </motion.div>
+      </MotionText>
 
     </>
   )

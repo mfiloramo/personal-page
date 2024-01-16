@@ -9,10 +9,10 @@ export default function Navbar(): any {
   ];
 
   return (
-    <div className='bg-slate-900 min-h-24 z-10 shadow-2xl w-full'>
+    <div className='bg-slate-900 min-h-24 z-10 shadow-2xl w-full pr-20'>
 
       {/* MAIN CONTAINER */ }
-      <div className='flex flex-row justify-between mr-4 mt-9 w-screen'>
+      <div className='flex flex-row justify-between mt-9 w-screen'>
 
         {/* LOGO */ }
         <img className='-mt-4 ml-10 h-14 w-14' src='/app-logo.png' alt='logo' />
