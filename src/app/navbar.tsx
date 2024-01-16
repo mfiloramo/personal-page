@@ -9,7 +9,7 @@ export default function Navbar(): any {
   ];
 
   return (
-    <div className='bg-slate-900 h-24 z-10 shadow-2xl w-full'>
+    <div className='bg-slate-900 min-h-24 z-10 shadow-2xl w-full'>
 
       {/* MAIN CONTAINER */ }
       <div className='flex flex-row justify-between mr-4 mt-9 w-screen'>

@@ -17,26 +17,29 @@ export default function Portfolio(): ReactElement {
 
       {/* SUBTITLE */ }
       <MotionText className={ `text-sky-200 text-3xl pb-12 -mt-2 ${ cabinLight.className }` } delay={ 0.2 }>
-        Check out some of my latest work.
+        <p>
+          Check out some of my latest work.
+        </p>
       </MotionText>
 
       {/* BODY TEXT */ }
       <MotionText className={ `text-sky-300 text-2xl -mt-2 ${ cabinLight.className }` } delay={ 0.4 }>
-        <p>This is where I&apos;ll display some of the projects that I&apos;m currently working on, along with some
-          screenshots.</p>
+        <p>
+          You can display some of your best projects here.
+        </p>
       </MotionText>
 
       {/* WORK SHOWCASE */ }
       <motion.div
-        className={ `flex flex-row justify-between mt-10 ${ cabinHeavy.className }` }
+        className={ `flex flex-col justify-between mt-10 sm:flex-row ${ cabinHeavy.className }` }
         transition={ { ease: 'easeInOut', duration: 1.4 } }
         animate={ 'visible' }
         variants={ variants }
         initial={ 'hiddenLeft' }
       >
-        <FrontButton text={ 'TEST' } />
-        <FrontButton text={ 'TEST' } />
-        <FrontButton text={ 'TEST' } />
+        <FrontButton text={ 'Sample' } />
+        <FrontButton text={ 'Sample' } />
+        <FrontButton text={ 'Sample' } />
       </motion.div>
 
     </>
