@@ -27,7 +27,7 @@ export default function RootLayout({
       <Navbar />
 
       {/* ROUTER */ }
-      <main className='flex-grow pl-24 pr-24 pt-16 transition ease-in-out delay-150 bg-sky-950 overflow-y-scroll'>
+      <main className='flex-grow pt-16 transition ease-in-out delay-150 overflow-y-scroll bg-no-repeat' style={{ backgroundImage: 'url(/backgrounds/blue-background.png)'}}>
         { children }
       </main>
 

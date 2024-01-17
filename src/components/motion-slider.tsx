@@ -8,7 +8,7 @@ interface TextProps {
   delay: number
 }
 
-export const MotionText = ({ children, className, delay }: TextProps) => {
+export const MotionSlider = ({ children, className, delay }: TextProps) => {
   return (
     <motion.div
       initial='hiddenLeft'
