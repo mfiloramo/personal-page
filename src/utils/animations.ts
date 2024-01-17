@@ -1,15 +1,11 @@
+import { AnimationHoverProps } from '@/interfaces/AnimationHoverProps.interface';
+
 // UTILITY VARIABLES
 export const variants = {
   hiddenLeft: { opacity: 0, x: -150 },
   hiddenRight: { opacity: 0, x: 150 },
   visible: { opacity: 1, x: 0 },
 };
-
-// UTILITY INTERFACES
-export interface AnimationHoverProps {
-  scale: number,
-  rotate: number
-}
 
 // UTILITY FUNCTIONS
 export const randomScale: any = (): number => {

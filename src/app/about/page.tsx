@@ -15,49 +15,54 @@ export default function About() {
   ];
 
   return (
-    <div className='flex flex-col max-w-screen-md mx-auto lg:p-0 p-8'>
-      <div>
-        {/* TITLE */ }
+    <div className='flex flex-col lg:p-0'>
+      { /* TOP CONTAINER*/ }
+      <div className={ 'mx-auto max-w-screen-md mb-10' }>
+        { /* TITLE */ }
         <MotionSlider className={ `text-sky-100 text-8xl ${ cabinHeavy.className }` } delay={ 0 }>
           <p>
             about
           </p>
         </MotionSlider>
 
-        {/* SUBTITLE */ }
+        { /* SUBTITLE */ }
         <MotionSlider className={ `text-sky-200 text-3xl pb-12 -mt-2 ${ cabinLight.className }` } delay={ 0.2 }>
           I'm a full stack software engineer based in NYC.
 
-          {/* GENERIC DIVIDER */}
+          {/* PAGE DIVIDER */ }
           <div className="border-t border-gray-400 mt-2 w-full"></div>
-
         </MotionSlider>
 
-        {/* BODY TEXT */ }
+        { /* BODY TEXT */ }
         <>
           <MotionSlider className='text-sky-300 text-2xl' delay={ 0.4 }>
             <p className='break-words'>
-              From the classrooms of NYC to the world of web development, I've spent nearly a decade shaping minds as a public school teacher before transitioning professionally to software development.
+              From the classrooms of NYC to the world of web development, I've spent nearly a decade shaping minds as a
+              public school teacher before transitioning professionally into software development.
             </p>
           </MotionSlider>
-          <br/>
+          <br />
 
           <MotionSlider className='text-sky-300 text-2xl' delay={ 0.6 }>
-            <p className={'break-words'}>
-              As a dedicated full stack engineer with years of web dev experience across various fields, I'm passionate about merging my educational insights with my technical skills to ultimately give back to the EdTech community.
+            <p className={ 'break-words' }>
+              As a dedicated full stack engineer with several years of web dev experience across various fields, I'm
+              passionate about merging my educational insights with my technical skills to ultimately give back to the
+              EdTech community.
             </p>
           </MotionSlider>
         </>
+      </div>
 
-        {/* SUBTITLE */ }
-        <MotionSlider className={ `text-sky-200 text-3xl pb-6 mt-12 ${ cabinLight.className }` } delay={ 0.8 }>
-          <div className={'text-center '}>Professional Experience</div>
+      {/* PROF. EXPERIENCE SECTION */ }
+      <div className={ 'bg-gradient-to-r from-slate-900 to-slate-800' }>
+        <MotionSlider className={ `text-sky-200 text-3xl pb-6 mt-8 mx-auto max-w-screen-md  ${ cabinLight.className }` } delay={ 0.8 }>
+          <div className={ 'text-center ' }>Professional Experience</div>
           <Divider />
 
-        {/* COMPANY LOGOS */}
+          { /* COMPANY LOGOS */ }
           <div className={ 'flex flex-col sm:flex-row justify-around justify-items-center' }>
 
-            {/* LINGOLINK */}
+            {/* LINGOLINK LOGO */ }
             <motion.a
               className={ 'mt-4 w-24 mb-4 sm:mb-0 mx-auto sm:mx-0' }
               href={ 'https://orange-tree-0d3c88e0f.3.azurestaticapps.net/' }
@@ -67,7 +72,7 @@ export default function About() {
               <img src={ '/logos-mono/lingolink-logo-mono.png' } alt='lingolink' />
             </motion.a>
 
-            {/* NBPA */}
+            { /* NBPA LOGO */ }
             <motion.a
               className={ 'mx-auto sm:mx-0 -mb-4 sm:mb-0' }
               href={ 'https://nbpa.com/' }
@@ -77,7 +82,7 @@ export default function About() {
               <img className={ 'w-24 h-auto my-4' } src={ '/logos-mono/nbpa-logo-mono.png' } alt='nbpa' />
             </motion.a>
 
-            {/* SINCLAIR */}
+            { /* SINCLAIR LOGO */ }
             <motion.a
               className={ 'w-48 my-11 mx-auto sm:mx-0 mb-4 ' }
               href={ 'https://sbgi.net/' }
@@ -87,9 +92,9 @@ export default function About() {
               <img src={ '/logos-mono/sinclair-logo-mono.png' } alt='sinclair' />
             </motion.a>
 
-            {/* HIFIBER */}
+            { /* HIFIBER LOGO */ }
             <motion.a
-              className={'mx-auto sm:mx-0'}
+              className={ 'mx-auto sm:mx-0' }
               href={ 'http://hifibertools.com/' }
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: 12, borderRadius: "100%" } }

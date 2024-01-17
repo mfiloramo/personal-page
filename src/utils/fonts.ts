@@ -1,4 +1,4 @@
-import { Cabin, DM_Sans } from 'next/font/google'
+import { Cabin, DM_Sans, Inter_Tight } from 'next/font/google'
 import { NextFont } from 'next/dist/compiled/@next/font';
 
 export const cabinHeavy: NextFont = Cabin({
@@ -16,5 +16,18 @@ export const cabinLight: NextFont = Cabin({
 });
 
 export const dm_sans: NextFont = DM_Sans({
+  style: 'normal',
   subsets: ['latin']
+});
+
+export const inter_tightHeavy: NextFont = Inter_Tight ({
+  style: 'normal',
+  weight: '700',
+  subsets: ['cyrillic']
+});
+
+export const inter_tightLight: NextFont = Inter_Tight ({
+  style: 'normal',
+  weight: '400',
+  subsets: ['cyrillic']
 });
