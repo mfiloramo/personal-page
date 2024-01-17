@@ -17,7 +17,7 @@ export default function About() {
   return (
     <div className='flex flex-col lg:p-0'>
       { /* TOP CONTAINER*/ }
-      <div className={ 'mx-auto max-w-screen-md mb-10' }>
+      <div className={ 'mx-8 md:mx-auto max-w-screen-md mb-10' }>
         { /* TITLE */ }
         <MotionSlider className={ `text-sky-100 text-8xl ${ cabinHeavy.className }` } delay={ 0 }>
           <p>
@@ -54,13 +54,13 @@ export default function About() {
       </div>
 
       {/* PROF. EXPERIENCE SECTION */ }
-      <div className={ 'bg-gradient-to-r from-slate-900 to-slate-800' }>
+      <div className={'bg-gradient-to-r from-slate-900 to-slate-800 shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)]'}>
         <MotionSlider className={ `text-sky-200 text-3xl pb-6 mt-8 mx-auto max-w-screen-md  ${ cabinLight.className }` } delay={ 0.8 }>
-          <div className={ 'text-center ' }>Professional Experience</div>
+          <div className={ 'text-center' }>Professional Experience</div>
           <Divider />
 
           { /* COMPANY LOGOS */ }
-          <div className={ 'flex flex-col sm:flex-row justify-around justify-items-center' }>
+          <div className={ 'flex flex-col sm:flex-row justify-around' }>
 
             {/* LINGOLINK LOGO */ }
             <motion.a

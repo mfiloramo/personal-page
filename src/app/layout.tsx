@@ -4,30 +4,27 @@ import { dm_sans } from '@/utils/fonts';
 import Navbar from '@/app/navbar';
 import Footer from '@/app/footer';
 
-
-
 export const metadata: Metadata = {
   title: 'Personal Page',
   description: 'A personal page containing information about myself, as well as work',
 }
 
-export default function RootLayout({
-  children,
-}: {
+export default function RootLayout({ children }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-    <body className={ dm_sans.className }>
+    <html lang='en'>
+    <body className={ dm_sans.className } style={ { height: '100%' } }>
 
     {/* MAIN CONTAINER */ }
-    <div className='flex flex-col h-screen overflow-x-hidden overflow-y-hidden'>
+    <div className='flex flex-col min-h-screen overflow-x-hidden'>
 
       {/* NAVBAR */ }
       <Navbar />
 
       {/* ROUTER */ }
-      <main className='flex-grow pt-16 transition ease-in-out delay-150 overflow-y-scroll bg-no-repeat' style={{ backgroundImage: 'url(/backgrounds/blue-background.png)'}}>
+      <main className='flex-grow pt-16 transition ease-in-out delay-150 overflow-y-auto bg-no-repeat shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)]'
+            style={ { backgroundImage: 'url(/backgrounds/blue-background.png)' } }>
         { children }
       </main>
 

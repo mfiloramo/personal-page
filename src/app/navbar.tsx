@@ -2,7 +2,7 @@ import Button from '@/components/button';
 import Link from 'next/link';
 
 export default function Navbar(): any {
-  const navLinks: string[] = [ 'about', 'portfolio', 'contact' ];
+  const navLinks: string[] = [ 'about', 'portfolio', 'services', 'contact' ];
   const mediaLinks: any[] = [
     { image: '/media-logos/github-logo.png', url: 'https://github.com/mfiloramo' },
     { image: '/media-logos/linkedin-logo.png', url: 'https://www.linkedin.com/in/michael-filoramo/' },
@@ -10,7 +10,7 @@ export default function Navbar(): any {
   ];
 
   return (
-    <div className='bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 min-h-24 z-10 shadow-2xl w-full pr-20'>
+    <div className='bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 min-h-24 z-10 w-full pr-20'>
 
       {/* MAIN CONTAINER */ }
       <div className='flex flex-row justify-between mt-9 w-lg'>
