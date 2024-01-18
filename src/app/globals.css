@@ -7,3 +7,24 @@ body {
   color: white;
   background: black;
 }
+
+/* SCROLLBAR PRESETS */
+::-webkit-scrollbar-track {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b6b88;
+  border-radius: 10px;
+  border: 3px solid #2a2a2a;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5c7da0;
+}

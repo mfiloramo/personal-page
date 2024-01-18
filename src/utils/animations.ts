@@ -9,11 +9,11 @@ export const variants = {
 
 // UTILITY FUNCTIONS
 export const randomScale: any = (): number => {
-  return Math.random() * (1.2 - 1.05) + 1.05;
+  return Math.random() * (1.08 - 1.04) + 1.02;
 };
 
 export const randomRotate: any = (): number => {
-  return Math.random() * 20 - 10;
+  return Math.random() * 10 - 5;
 };
 
 export const generateHoverAnimation: any = (): AnimationHoverProps => {

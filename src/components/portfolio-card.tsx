@@ -12,10 +12,12 @@ export default function PortfolioCard({ image, title, subtitle }: PortfolioCardP
         {/* CARD IMAGE */}
         <img className={ 'h-28 rounded-t-lg' } src={ image } alt={ 'card-image' } />
 
+        {/* CARD TITLE */}
         <div className={ `leading-tight text-2xl px-2 mt-1 ${ inter_tightHeavy.className }` }>
           { title }
         </div>
 
+        {/* CARD SUBTITLE */}
         <div className={ `leading-tight text-md px-2 ${ inter_tightLight.className }` }>
           { subtitle }
         </div>
