@@ -6,10 +6,10 @@ import { generateHoverAnimation } from '@/utils/animations';
 
 export default function Home(): ReactElement {
   return (
-    <div className={'mx-8 max-w-screen-md'}>
+    <div className={'mx-auto max-w-screen-md'}>
       {/* TECH ICONS */ }
-      <MotionSlider className={ 'relative' } delay={ 0.8 }>
-        <div className={ 'flex flex-row justify-around mx-auto mt-6 mb-12' }>
+      <MotionSlider className={ 'relativeo' } delay={ 0.8 }>
+        <div className={ 'flex flex-row justify-around mt-6 mb-12' }>
           <motion.a
             href={ 'https://angular.dev/' }
             className={ 'p-3' }
@@ -40,7 +40,7 @@ export default function Home(): ReactElement {
             whileHover={ generateHoverAnimation }
             whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
           >
-            <img className={ 'h-auto w-24 p-2' } src={ '/tech-logos/turbopack-logo.png' } alt={ 'img' } />
+            <img className={ 'h-auto w-16 mt-3' } src={ '/tech-logos/turbopack-logo-2.png' } alt={ 'img' } />
           </motion.a>
           <motion.a
             href={ 'https://tailwindcss.com/' }

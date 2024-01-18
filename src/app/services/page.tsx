@@ -37,7 +37,7 @@ export default function Services(): ReactElement {
       </div>
 
       {/* NEW SECTION */}
-      <div className={'w-screen bg-slate-300 h-32 shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)]'}></div>
+      <div className={'w-screen bg-gradient-to-b from-slate-200 to-slate-400 h-32 shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)]'}></div>
 
     </div>
   );
