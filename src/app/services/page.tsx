@@ -16,7 +16,7 @@ export default function Services(): ReactElement {
     {
       imageSrc: 'service-icons/service-backend.png',
       title: 'Backend Development',
-      subtitle: 'Engineering systems focused on efficient data processing, API integration, and dynamic server-side logic.'
+      subtitle: 'Engineering systems focused on efficient data processing, API integration and dynamic server-side logic.'
     },
     {
       imageSrc: 'service-icons/service-database.png',

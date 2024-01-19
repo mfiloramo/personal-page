@@ -17,8 +17,8 @@ export default function Navbar(): JSX.Element {
       <div className='flex-grow flex items-center justify-around mx-auto max-w-screen-md w-full'>
 
         {/* LOGO */}
-        <Link className={'sm:flex cursor-pointer z-20 -mr-12 sm:-mr-6'} href={'/'}>
-          <img className='mt-2 h-14 w-auto' src='/graphics/app-logo-2.png' alt='logo' />
+        <Link className={'sm:flex cursor-pointer z-20 -mr-24 sm:-mr-6 -mt-1'} href={'/'}>
+          <img className='mt-2 h-16 w-auto' src='/logos-color/app-logo-color.png' alt='logo' />
         </Link>
 
         {/* NAV BUTTONS (Desktop) */}
