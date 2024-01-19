@@ -7,12 +7,6 @@ import Divider from '@/components/divider';
 
 
 export default function About() {
-  const companyLogos: any[] = [];
-  const companyLinks: any[] = [
-    { image: '/logos-mono/lingolink-logo-mono.png', url: 'https://orange-tree-0d3c88e0f.3.azurestaticapps.net/' },
-    { image: '/logos-mono/nbpa-logo-mono.png', url: 'https://nbpa.com/' },
-    { image: '/logos-mono/sinclair-logo-mono.png', url: 'https://sbgi.net/' }
-  ];
 
   return (
     <div className='flex flex-col lg:p-0'>

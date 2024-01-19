@@ -11,8 +11,8 @@ interface TextProps {
 export const MotionSlider = ({ children, className, delay }: TextProps) => {
   return (
     <motion.div
-      initial='hiddenLeft'
-      animate='visible'
+      initial={{ x: -130, opacity: 0, filter: 'blur(4px)' }}
+      animate={{ x: 0, opacity: 1, filter: 'blur(0px)' }}
       transition={ { ease: 'easeInOut', duration: 0.6 + delay } }
       variants={ variants }
       className={ className }
