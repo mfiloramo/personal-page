@@ -12,6 +12,8 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'blue-grid-background': "url('/images/backgrounds/bluegrid-background.png')",
+        'lightblue-grid-background': "url('/images/backgrounds/lightbluegrid-background.png')",
       },
       fontFamily : {
         Font: ['Font', 'serif'],

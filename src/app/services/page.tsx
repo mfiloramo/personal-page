@@ -9,27 +9,27 @@ import { ServiceImageProps } from '@/interfaces/ServiceImageProps';
 export default function Services(): ReactElement {
   const services: ServiceImageProps[] = [
     {
-      imageSrc: 'service-icons/service-frontend.png',
+      imageSrc: 'images/service-icons/service-frontend.png',
       title: 'Frontend Development',
       subtitle: 'Architecting responsive designs and interactive features to deliver an optimal user experience.'
     },
     {
-      imageSrc: 'service-icons/service-backend.png',
+      imageSrc: 'images/service-icons/service-backend.png',
       title: 'Backend Development',
       subtitle: 'Engineering systems focused on efficient data processing, API integration and dynamic server-side logic.'
     },
     {
-      imageSrc: 'service-icons/service-database.png',
+      imageSrc: 'images/service-icons/service-database.png',
       title: 'Database Management',
       subtitle: 'Designing databases with integrity, performance and scalability to support application needs.'
     },
     {
-      imageSrc: 'service-icons/service-devops.png',
+      imageSrc: 'images/service-icons/service-devops.png',
       title: 'DevOps Services',
       subtitle: 'Implementing automated CI/CD pipelines for efficient software lifecycle management.'
     },
     {
-      imageSrc: 'service-icons/service-telemetry.png',
+      imageSrc: 'images/service-icons/service-telemetry.png',
       title: 'System Telemetry',
       subtitle: 'Integrating telemetry solutions to track user interactions and system performance over time.'
     },
@@ -58,15 +58,13 @@ export default function Services(): ReactElement {
             className={ `text-xl mb-4 bg-gradient-to-r from-sky-200 to-sky-300 bg-clip-text text-transparent ${ cabinLight.className }` }
             delay={ 0.4 }>
             <p className='break-words gradient-text'>
-              Delivering comprehensive and secure full stack solutions in web development, from sophisticated frontends
-              to robust backends and scalable distributed systems.
+              Delivering comprehensive and secure full stack solutions in web development, from sophisticated frontends to robust backends and scalable distributed systems.
             </p>
           </MotionSlider>
 
           <MotionSlider className={ `text-sky-300 text-xl ${ cabinLight.className }` } delay={ 0.6 }>
             <p className='break-words gradient-text'>
-              Ready to take your web presence to new heights? Send me a message on Upwork — or contact me directly — for
-              a personalized consultation and expert web development services tailored to your vision.
+              Ready to take your web presence to new heights? Contact me for a personalized consultation and expert web development services tailored to your vision.
             </p>
           </MotionSlider>
         </div>

@@ -5,9 +5,9 @@ import NavDropdown from '@/components/nav-dropdown';
 export default function Navbar(): JSX.Element {
   const navLinks: string[] = [ 'about', 'portfolio', 'services', 'contact' ];
   const mediaLinks: any[] = [
-    { image: '/media-logos/github-logo.png', url: 'https://github.com/mfiloramo' },
-    { image: '/media-logos/linkedin-logo.png', url: 'https://www.linkedin.com/in/michael-filoramo/' },
-    { image: '/media-logos/spotify-logo.png', url: 'https://open.spotify.com/user/quathan?si=6d0e06cc0cb04e47' },
+    { image: '/images/media-logos/github-logo.png', url: 'https://github.com/mfiloramo' },
+    { image: '/images/media-logos/linkedin-logo.png', url: 'https://www.linkedin.com/in/michael-filoramo/' },
+    { image: '/images/media-logos/spotify-logo.png', url: 'https://open.spotify.com/user/quathan?si=6d0e06cc0cb04e47' },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function Navbar(): JSX.Element {
 
         {/* LOGO */}
         <Link className={'sm:flex cursor-pointer z-20 -mr-24 sm:-mr-6 -mt-1'} href={'/'}>
-          <img className='mt-2 h-16 w-auto' src='/logos-color/app-logo-color.png' alt='logo' />
+          <img className='mt-2 h-16 w-auto' src='/images/general-logos-color/app-logo-color.png' alt='logo' />
         </Link>
 
         {/* NAV BUTTONS (Desktop) */}

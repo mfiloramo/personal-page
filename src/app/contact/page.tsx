@@ -4,27 +4,28 @@ import { MotionSlider } from '@/components/motion-slider';
 import { cabinHeavy, cabinLight } from '@/utils/fonts';
 import { motion } from 'framer-motion';
 import { StackButtonProps } from '@/interfaces/StackButtonProps';
+import Divider from '@/components/divider';
 
 export default function Contact(): ReactElement {
   const contactItems: any[] = [
     {
-      imageSource: 'contact-icons/linkedin-icon.png',
+      imageSource: 'images/contact-icons/upwork-icon.png',
+      link: 'https://www.upwork.com/freelancers/~01371b6e31042beadc'
+    },
+    {
+      imageSource: 'images/contact-icons/linkedin-icon.png',
       link: 'https://www.linkedin.com/in/michael-filoramo/'
     },
     {
-      imageSource: 'contact-icons/gmail-icon.png',
+      imageSource: 'images/contact-icons/gmail-icon.png',
       link: 'mailto:mlfiloramo@gmail.com'
     },
     {
-      imageSource: 'contact-icons/googlevoice-icon.png',
-      link: 'https://voice.google.com/u/0/'
-    },
-    {
-      imageSource: 'contact-icons/whatsapp-icon.png',
+      imageSource: 'images/contact-icons/whatsapp-icon.png',
       link: 'https://www.whatsapp.com/'
     },
     {
-      imageSource: 'contact-icons/github-icon.png',
+      imageSource: 'images/contact-icons/github-icon.png',
       link: 'https://github.com/mfiloramo'
     }
   ];
@@ -51,32 +52,50 @@ export default function Contact(): ReactElement {
         { /* BODY TEXT */ }
         <MotionSlider className='gradient-text text-xl' delay={ 0.4 }>
           <p className='break-words'>
-            Got a project in mind or considering software solutions? Reach out and let's bring your vision to life. Whether it's a groundbreaking idea or a unique challenge, I'm here to help you navigate and realize your digital aspirations.
+            Got a project in mind or considering software solutions? Reach out and let's bring your vision to life.
+            Whether it's a groundbreaking idea or a unique challenge, I'm here to help you navigate and realize your
+            digital aspirations.
 
           </p>
         </MotionSlider>
       </div>
 
-      {/* CONTACT BUTTON CONTAINER */}
-      <div className={ 'grid grid-cols-3 -mt-3 sm:grid-cols-4 md:grid-cols-5 md:p-0 sm:mx-auto justify-between w-full max-w-screen-md px-4' }>
+      {/* CONTACT BUTTON CONTAINER */ }
+      <div
+        className={ 'grid grid-cols-3 -mt-3 sm:grid-cols-4 md:grid-cols-5 md:p-0 sm:mx-auto justify-between w-full max-w-screen-md px-4 mb-4' }>
         {
           contactItems.map((button: StackButtonProps, index: number) => (
             <MotionSlider className={ 'relative' } delay={ (contactItems.length - index) * 0.2 } key={ index }>
               <motion.div
                 initial={ { x: -100, opacity: 0 } }
-                animate={{ x: 0, opacity: 1, filter: 'blur(0px)' }}
-                transition={{ duration: 0.1 }}
+                animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }
+                transition={ { duration: 0.1 } }
                 className={ 'p-3 z-20' }
                 whileHover={ { scale: 1.2 } }
                 whileTap={ { scale: 1, borderRadius: "100%" } }
               >
                 <a href={ button.link } target="_blank" rel="noopener noreferrer">
-                  <img className={ 'h-auto w-28 p-2 cursor-pointer' } src={ button.imageSource } alt={ 'img' } />
+                  <img className={ 'absolute mx-auto h-auto w-28 p-2 cursor-pointer z-10' } src={ button.imageSource }
+                       alt={ 'img' } />
+                  <div className={ 'm-5 blur-xl rounded-3xl overflow-hidden bg-black opacity-80 w-16 h-16' }>
+                  </div>
                 </a>
               </motion.div>
             </MotionSlider>
           ))
         }
+      </div>
+
+      <div
+        className={ 'mt-7 h-44 w-full bg-lightblue-grid-background shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)] p-4' }>
+        <MotionSlider
+          className={ `text-sky-200 text-3xl pb-6 mt-4 mx-auto max-w-screen-md  ${ cabinLight.className }` }
+          delay={ 0.8 }>
+          <div className={ `text-center  ${ cabinLight.className }` }>Send a Message</div>
+
+        <Divider />
+        </MotionSlider>
+
       </div>
     </div>
   )

@@ -23,8 +23,7 @@ export default function RootLayout({ children }: {
       <Navbar />
 
       {/* ROUTER */ }
-      <main className='flex-grow pt-16 transition ease-in-out delay-150 overflow-y-auto shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)] bg-cover bg-center'
-            style={ { backgroundImage: 'url(/backgrounds/bluegrid-background.png)' } }>
+      <main className='flex-grow pt-16 transition ease-in-out delay-150 overflow-y-auto shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)] bg-blue-grid-background bg-cover bg-center'>
         { children }
       </main>
 

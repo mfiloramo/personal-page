@@ -10,7 +10,7 @@ export default function Portfolio(): ReactElement {
   return (
     <div className='relative flex flex-col sm:mx-auto'>
       {/* TITLE SECTION */}
-      <div className='mx-8 md:mx-auto max-w-screen-md drop-shadow-in-top'>
+      <div className='mx-8 mb-2 md:mx-auto max-w-screen-md drop-shadow-in-top'>
         <MotionSlider className={`text-sky-100 text-8xl pb-5 ${cabinHeavy.className}`} delay={0}>
           <p>portfolio</p>
         </MotionSlider>
@@ -44,7 +44,7 @@ export default function Portfolio(): ReactElement {
               className={ 'p-3' }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
-              <PortfolioCard image={ 'images/profile-card-lingolink.png' } title={ 'LingoLink' } subtitle={ 'Multilingual Messaging Platform' } />
+              <PortfolioCard image={ 'images/profile-cards/profile-card-lingolink.png' } title={ 'LingoLink' } subtitle={ 'Multilingual Messaging Platform' } />
             </motion.a>
 
             {/* TOP100CAMP CARD */ }
@@ -54,7 +54,7 @@ export default function Portfolio(): ReactElement {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
-              <PortfolioCard image={ 'images/profile-card-top100camp.png' } title={ 'Top100Camp' } subtitle={ 'Website Migration & Redesign' } />
+              <PortfolioCard image={ 'images/profile-cards/profile-card-top100camp.png' } title={ 'Top100Camp' } subtitle={ 'Website Migration & Redesign' } />
             </motion.a>
 
             {/* HIFIBER CARD */ }
@@ -64,7 +64,7 @@ export default function Portfolio(): ReactElement {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
-              <PortfolioCard image={ 'images/profile-card-hifiber.png' } title={ 'HiFiber' } subtitle={ 'Web Developer Tool' } />
+              <PortfolioCard image={ 'images/profile-cards/profile-card-hifiber.png' } title={ 'HiFiber' } subtitle={ 'Web Developer Tool' } />
             </motion.a>
 
             {/* WEBSOCKETS CARD */ }
@@ -74,7 +74,7 @@ export default function Portfolio(): ReactElement {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
-              <PortfolioCard image={ 'images/profile-card-websockets.png' } title={ 'WebSockets' } subtitle={ 'Informative Tech Talk' } />
+              <PortfolioCard image={ 'images/profile-cards/profile-card-websockets.png' } title={ 'WebSockets' } subtitle={ 'Informative Tech Talk' } />
             </motion.a>
 
             {/* LOGGING SYSTEM CARD */ }
@@ -84,7 +84,7 @@ export default function Portfolio(): ReactElement {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
-              <PortfolioCard image={ 'images/profile-card-logging.png' } title={ 'Logging System' } subtitle={ 'Building Sinclair\'s Logging Infrastructure' } />
+              <PortfolioCard image={ 'images/profile-cards/profile-card-logging.png' } title={ 'Logging System' } subtitle={ 'Building Sinclair\'s Logging Infrastructure' } />
             </motion.a>
 
             {/* NEW CARD */ }
@@ -94,7 +94,7 @@ export default function Portfolio(): ReactElement {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
-              <PortfolioCard image={ 'images/profile-card-um.png' } title={ 'User Admin' } subtitle={ 'Building Sinclair\'s User Management Platform'  } />
+              <PortfolioCard image={ 'images/profile-cards/profile-card-um.png' } title={ 'User Admin' } subtitle={ 'Building Sinclair\'s User Management Platform'  } />
             </motion.a>
 
           </div>
