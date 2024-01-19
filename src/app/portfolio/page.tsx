@@ -24,7 +24,7 @@ export default function Portfolio(): ReactElement {
         </MotionSlider>
 
         {/* BODY TEXT SECTION */}
-        <MotionSlider className={`text-sky-300 text-xl ${cabinLight.className}`} delay={0.4}>
+        <MotionSlider className={`gradient-text text-xl ${cabinLight.className}`} delay={0.4}>
           <p className='break-words'>
             I've showcased a spectrum of projects, from practical and responsive tools to dynamic websites and applications — and more. Each is uniquely tailored to meet the diverse needs of its users.
           </p>

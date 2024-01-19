@@ -16,6 +16,11 @@ const itemVariants: Variants = {
 export default function NavDropdown(): ReactElement {
   const [ isOpen, setIsOpen ] = useState(false);
 
+  const handleClose = (): void => {
+    setIsOpen(false);
+    return;
+  }
+
   return (
     <motion.nav
       initial={ false }
@@ -61,19 +66,19 @@ export default function NavDropdown(): ReactElement {
           }
         } }
         style={ { pointerEvents: isOpen ? "auto" : "none" } }
-        className='bg-blue-100 flex flex-col mt-6 -ml-14 gap-5 list-none p-3.5 w-[98vw] rounded-bl-xl rounded-br-xl'
+        className='bg-blue-100 flex flex-col mt-6 -ml-14 gap-5 list-none p-3.5 w-[99vw] rounded-bl-xl rounded-br-xl'
       >
-        <motion.li className="block cursor-pointer text-sky-900" variants={ itemVariants }>
-          <Link href={'/about'} onClick={() => setIsOpen(false)}>about</Link>
+        <motion.li className="text-xl block cursor-pointer text-sky-950" variants={ itemVariants }>
+          <Link href={ '/about' } onClick={ handleClose }>about</Link>
         </motion.li>
-        <motion.li className="block cursor-pointer text-sky-900" variants={ itemVariants }>
-          <Link href={'/portfolio'} onClick={() => setIsOpen(false)}>portfolio</Link>
+        <motion.li className="text-xl block cursor-pointer text-sky-950" variants={ itemVariants }>
+          <Link href={ '/portfolio' } onClick={ handleClose }>portfolio</Link>
         </motion.li>
-        <motion.li className="block cursor-pointer text-sky-900" variants={ itemVariants }>
-          <Link href={'/services'} onClick={() => setIsOpen(false)} >services</Link>
+        <motion.li className="text-xl block cursor-pointer text-sky-950" variants={ itemVariants }>
+          <Link href={ '/services' } onClick={ handleClose }>services</Link>
         </motion.li>
-        <motion.li className="block cursor-pointer text-sky-900" variants={ itemVariants }>
-          <Link href={'/contact'} onClick={() => setIsOpen(false)}>contact</Link>
+        <motion.li className="text-xl block cursor-pointer text-sky-950" variants={ itemVariants }>
+          <Link href={ '/contact' } onClick={ handleClose }>contact</Link>
         </motion.li>
       </motion.ul>
 

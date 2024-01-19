@@ -28,3 +28,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #5c7da0;
 }
+
+.gradient-text {
+  background: linear-gradient(to right, #bae6fd 0%, #7dd3fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

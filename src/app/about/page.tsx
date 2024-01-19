@@ -35,18 +35,16 @@ export default function About() {
 
           { /* BODY TEXT */ }
           <>
-            <MotionSlider className='text-sky-300 text-xl' delay={ 0.4 }>
+            <MotionSlider className='gradient-text text-xl' delay={ 0.4 }>
               <p className='break-words'>
-                From the classrooms of NYC to the world of web development, I've spent nearly a decade shaping minds as
-                a public school teacher before transitioning professionally into software development.
+                From the classrooms of NYC to the world of web development, I've spent nearly a decade shaping minds as a public school teacher before transitioning professionally into software development.
               </p>
             </MotionSlider>
             <br />
 
-          <MotionSlider className='text-sky-300 text-xl' delay={ 0.6 }>
+          <MotionSlider className='gradient-text text-xl' delay={ 0.6 }>
             <p className={ 'break-words' }>
-              As a dedicated full stack engineer with several years of web dev experience across various fields, I'm
-              passionate about merging my educational insights with my technical skills to ultimately give back to the
+              As a dedicated full stack engineer with several years of web dev experience across various fields, I'm passionate about merging my educational insights with my technical skills to ultimately give back to the
               EdTech community.
             </p>
           </MotionSlider>

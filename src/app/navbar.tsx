@@ -11,18 +11,18 @@ export default function Navbar(): JSX.Element {
   ];
 
   return (
-    <div className='flex justify-between bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 min-h-24 max-h-24 z-10'>
-
-      {/* LOGO */}
-      <Link className={'cursor-pointer z-20'} href={'/'}>
-        <img className='ml-10 mt-4 sm:hidden' src='/graphics/app-logo-2.png' alt='logo' />
-      </Link>
+    <div className='flex bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 min-h-24 max-h-24 z-10'>
 
       {/* CENTER CONTAINER */}
-      <div className='flex-grow flex items-center justify-end sm:px-40 max-w-screen-md'>
+      <div className='flex-grow flex items-center justify-around mx-auto max-w-screen-md w-full'>
+
+        {/* LOGO */}
+        <Link className={'sm:flex cursor-pointer z-20 -mr-12 sm:-mr-6'} href={'/'}>
+          <img className='mt-2 h-14 w-auto' src='/graphics/app-logo-2.png' alt='logo' />
+        </Link>
 
         {/* NAV BUTTONS (Desktop) */}
-        <div className='hidden sm:flex space-x-4 mr-10'>
+        <div className='hidden sm:flex space-x-4 ml-14'>
           { navLinks.map((link: string) => (
             <Button key={ link } href={ link }>{ link }</Button>
           )) }
