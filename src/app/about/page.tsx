@@ -50,7 +50,7 @@ export default function About() {
         <MotionSlider
           className={ `text-sky-200 text-3xl pb-6 mt-8 mx-auto max-w-screen-md  ${ cabinLight.className }` }
           delay={ 0.8 }>
-          <div className={ 'text-center' }>Professional Experience</div>
+          <div className={ 'text-center' }>Professional</div>
 
           <Divider />
 
