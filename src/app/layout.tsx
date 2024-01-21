@@ -7,8 +7,8 @@ import Footer from '@/app/footer';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Personal Page',
-  description: 'A personal page containing information about myself, as well as work',
+  title: 'Michael Filoramo ‣ Software Engineer',
+  description: 'A personal page containing information about my professional background',
 }
 
 export default function RootLayout({ children }: {

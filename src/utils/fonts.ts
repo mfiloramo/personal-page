@@ -31,3 +31,10 @@ export const inter_tightLight: NextFont = Inter_Tight ({
   weight: '400',
   subsets: ['cyrillic']
 });
+
+export const inter_tightItalicHeavy: NextFont = Inter_Tight({
+  style: 'italic',
+  weight: '500',
+  display: 'swap',
+  subsets: ['latin']
+});
