@@ -39,7 +39,7 @@ export default function Contact(): ReactElement {
 
         { /* SUBTITLE */ }
         <MotionSlider className={ `text-sky-200 text-3xl pb-12 -mt-2 ${ cabinLight.className }` } delay={ 0.2 }>
-          Let's connect and build something awesome.
+          Let&apos;s connect and build something awesome.
 
           {/* PAGE DIVIDER */ }
           <div className="border-t border-gray-400 mt-2 w-full"></div>
@@ -48,8 +48,8 @@ export default function Contact(): ReactElement {
         { /* BODY TEXT */ }
         <MotionSlider className='gradient-text text-xl' delay={ 0.4 }>
           <p className='break-words'>
-            Got a project in mind or considering software solutions? Reach out and let's bring your vision to life.
-            Whether it's a groundbreaking idea or a unique challenge, I'm here to help you navigate and realize your
+            Got a project in mind or considering software solutions? Reach out and let&apos;s bring your vision to life.
+            Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you navigate and realize your
             digital aspirations.
 
           </p>
