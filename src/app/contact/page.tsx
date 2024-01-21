@@ -56,30 +56,32 @@ export default function Contact(): ReactElement {
         </MotionSlider>
       </div>
 
-      {/* CONTACT BUTTON CONTAINER */ }
-      <div className={ 'grid grid-cols-2 gap-8 md:pr-14 sm:pl-0 pl-4 md:px-0 pr-20 sm:mx-auto -mt-3 sm:grid-cols-3 md:grid-cols-4 md:p-0 justify-between w-full max-w-screen-md mb-4' }>
-        {
-          contactItems.map((button: StackButtonProps, index: number): ReactNode => (
-            <MotionSlider className={ '' } delay={ (contactItems.length - index) * 0.2 } key={ index }>
-              <motion.div
-                initial={ { x: -100, opacity: 0 } }
-                animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }
-                transition={ { duration: 0.1 } }
-                className={ 'py-3 w-32 z-20 ml-2 sm:ml-5 sm:mb-2 mb-4' }
-                whileHover={ { scale: 1.2 } }
-                whileTap={ { scale: 1, borderRadius: "100%" } }
-              >
-                <a href={ button.link } target="_blank" rel="noopener noreferrer">
-                  <img className={ 'first:ml-6 absolute mx-auto h-auto w-36 p-2 cursor-pointer z-10' } src={ button.imageSource }
-                       alt={ 'img' } />
-                  <div className={'m-5 blur-xl rounded-3xl overflow-hidden bg-black opacity-80 w-16 h-16' }>
-                  </div>
-                </a>
-              </motion.div>
-            </MotionSlider>
-          ))
-        }
+      {/* CONTACT BUTTON CONTAINER */}
+      <div className={'flex justify-center mx-auto items-center w-full max-w-screen-md mb-4'}>
+        <div className={'grid grid-cols-2 sm:grid-cols-3 sm:gap-y-0 gap-y-2 gap-16 md:grid-cols-4 justify-center'}>
+          {/* CONTACT BUTTONS */}
+          {
+            contactItems.map((button: StackButtonProps, index: number): ReactNode => (
+              <MotionSlider className={''} delay={(contactItems.length - index) * 0.2} key={index}>
+                <motion.div
+                  initial={{ x: -100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1, filter: 'blur(0px)' }}
+                  transition={{ duration: 0.1 }}
+                  className={'py-3 w-32 z-20'}
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 1, borderRadius: "100%" }}
+                >
+                  <a href={button.link} target="_blank" rel="noopener noreferrer">
+                    <img className={'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]'} src={button.imageSource} alt={'img'} />
+                  </a>
+                </motion.div>
+              </MotionSlider>
+            ))
+          }
+
+        </div>
       </div>
+
 
       {/* SEMD MESSAGE SECTION */ }
       <div className={ 'mt-7 h-44 w-full bg-lightblue-grid-background shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)] p-4' }>
