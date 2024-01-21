@@ -55,7 +55,7 @@ export default function Home(): ReactElement {
       {/* HERO BANNER TEXT */ }
       <div className="relative z-20">
         <MotionSlider className={ 'pt-12' } delay={ 0.2 }>
-          <div>Michael Filoramo</div>
+          <div className={'-z-50'} >Michael Filoramo</div>
         </MotionSlider>
 
         <MotionSlider className={ '' } delay={ 0.4 }>
@@ -63,8 +63,8 @@ export default function Home(): ReactElement {
         </MotionSlider>
 
         {/* QUOTES SECTION */ }
-        <MotionSlider className='mt-12' delay={ 0.6 }>
-          <div className='relative flex justify-center items-center h-24'>
+        <MotionSlider className='mt-8' delay={ 0.6 }>
+          <div className='relative flex justify-center items-center h-32'>
             <AnimatePresence>
               <motion.div
                 key={ currentPhrase }
@@ -72,7 +72,7 @@ export default function Home(): ReactElement {
                 animate={ { opacity: 1, filter: 'blur(0px)' } }
                 exit={ { opacity: 0, filter: 'blur(2px)' } }
                 transition={ { duration: 1 } }
-                className='absolute w-full text-center text-2xl px-16 overflow-hidden'
+                className='absolute w-full text-center text-xl px-8 overflow-hidden'
               >
                 <p className={ `${ inter_tightItalicHeavy.className }` }>“{ quotes[currentPhrase].quote }”</p>
                 <p className={ `${ inter_tightLight.className }` }>— { quotes[currentPhrase].author }</p>

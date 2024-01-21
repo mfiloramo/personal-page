@@ -11,7 +11,7 @@ export default function Navbar(): JSX.Element {
   ];
 
   return (
-    <div className='flex bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 min-h-24 max-h-24 z-20'>
+    <div className='flex bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 min-h-24 max-h-24 z-50'>
 
       {/* CENTER CONTAINER */}
       <div className='flex-grow flex items-center justify-around mx-auto max-w-screen-md w-full'>
@@ -38,7 +38,7 @@ export default function Navbar(): JSX.Element {
         </div>
       </div>
 
-      {/* HAMBURGER MENU (Mobile) */}
+      {/* HAMBURGER MENU */}
       <div className='flex sm:hidden mt-4'>
         <NavDropdown />
       </div>
