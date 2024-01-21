@@ -57,7 +57,7 @@ export default function Services(): ReactElement {
           <MotionSlider
             className={ `text-xl mb-4 bg-gradient-to-r from-sky-200 to-sky-300 bg-clip-text text-transparent ${ cabinLight.className }` }
             delay={ 0.4 }>
-            <p className='break-words gradient-text'>
+            <p className='break-words gradient-text-lightblue'>
               Delivering comprehensive and secure full stack solutions in web development, from sophisticated frontends to robust backends and scalable distributed systems.
 
 
@@ -65,7 +65,7 @@ export default function Services(): ReactElement {
           </MotionSlider>
 
           <MotionSlider className={ `text-xl mb-4 bg-gradient-to-r from-sky-200 to-sky-300 bg-clip-text text-transparent ${ cabinLight.className }` } delay={ 0.6 }>
-            <p className='break-words gradient-text'>
+            <p className='break-words gradient-text-lightblue'>
               Ready to take your web presence to new heights? Contact me for a personalized consultation and expert web development services tailored to your vision.
             </p>
           </MotionSlider>
@@ -73,7 +73,7 @@ export default function Services(): ReactElement {
       </div>
 
       {/* SERVICES SECTION */ }
-      <div className={ 'w-full bg-gradient-to-b from-slate-200 to-slate-400 h-fit shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)] pb-8' }>
+      <div className={ 'w-full bg-gradient-to-b from-slate-200 to-slate-400 h-fit section-shadow pb-8' }>
 
         {/* SERVICES CARD CONTAINER */ }
         <div className={ 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center max-w-screen-lg mx-auto mt-7 gap-y-10' }>

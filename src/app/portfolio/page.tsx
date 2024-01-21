@@ -24,7 +24,7 @@ export default function Portfolio(): ReactElement {
         </MotionSlider>
 
         {/* BODY TEXT SECTION */}
-        <MotionSlider className={`gradient-text text-xl ${cabinLight.className}`} delay={0.4}>
+        <MotionSlider className={`gradient-text-lightblue text-xl ${ cabinLight.className }`} delay={0.4}>
           <p className='break-words'>
             I&apos;ve showcased a spectrum of projects, from practical and responsive tools to dynamic websites and applications — and more. Each is uniquely tailored to meet the diverse needs of its users.
           </p>
@@ -32,7 +32,7 @@ export default function Portfolio(): ReactElement {
       </div>
 
       {/* WORK SHOWCASE CONTAINER */}
-      <div className='mt-10 bg-gradient-to-r from-sky-950 via-blue-950 to-indigo-950 shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)]'>
+      <div className='mt-10 bg-gradient-to-r from-sky-950 via-blue-950 to-indigo-950 section-shadow'>
         <MotionSlider delay={1} className=''>
           {/* BUTTON CONTAINER */}
           <div className='flex flex-wrap justify-around md:justify-between w-full h-fit z-20 mt-6 mb-12 mx-auto max-w-screen-md'>

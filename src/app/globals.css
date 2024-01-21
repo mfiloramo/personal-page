@@ -30,11 +30,32 @@ body {
   background-color: #5c7da0;
 }
 
-.gradient-text {
+.gradient-text-lightblue {
   background: linear-gradient(to right, #bae6fd 0%, #7dd3fc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.gradient-text-darkblue {
+  background: linear-gradient(to right, #000000 0%, #0f172a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-glow {
+  background: conic-gradient(at center, #904be5, #6c6cff, #0080ff, #546eff);
+  filter: blur(24px);
+  border-radius: 40%;
+  overflow: hidden;
+}
+
+/* PINK/BLUE GLOW*/
+/*.custom-glow {*/
+/*  background: conic-gradient(at center, #904be5, #6c6cff, purple, #ff92f0);*/
+/*  filter: blur(24px);*/
+/*  border-radius: 40%;*/
+/*  overflow: hidden;*/
+/*}*/
 
 .section-shadow {
   @apply shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)];

@@ -29,14 +29,14 @@ export default function About() {
 
           { /* BODY TEXT */ }
           <>
-            <MotionSlider className='gradient-text text-xl' delay={ 0.4 }>
+            <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.4 }>
               <p className='break-words'>
                 From the classrooms of NYC to the world of web development, I&apos;ve spent nearly a decade shaping minds as a public school teacher before transitioning professionally into software development.
               </p>
             </MotionSlider>
             <br />
 
-          <MotionSlider className='gradient-text text-xl' delay={ 0.6 }>
+          <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.6 }>
             <p className={ 'break-words' }>
               As a dedicated full stack engineer with several years of web dev experience across various fields, I&apos;m passionate about merging my educational insights with my technical skills to ultimately give back to the
               EdTech community.
@@ -46,7 +46,7 @@ export default function About() {
       </div>
 
       {/* PROF. EXPERIENCE SECTION */ }
-      <div className={ 'bg-gradient-to-r from-slate-900 to-slate-800 shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)]' }>
+      <div className={ 'bg-gradient-to-r from-slate-900 to-slate-800 section-shadow' }>
         <MotionSlider
           className={ `text-sky-200 text-3xl pb-6 mt-8 mx-auto max-w-screen-md  ${ cabinLight.className }` }
           delay={ 0.8 }>
