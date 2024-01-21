@@ -17,11 +17,11 @@ export default function Navbar(): JSX.Element {
       <div className='flex-grow flex items-center justify-around mx-auto max-w-screen-md w-full'>
 
         {/* LOGO */}
-        <Link className={'sm:flex cursor-pointer z-20 -mr-24 sm:-mr-6 -mt-1'} href={'/'}>
+        <Link className={'sm:flex cursor-pointer z-20 -mr-16 sm:-mr-6 -mt-1'} href={'/'}>
           <img className='mt-2 h-16 w-auto' src='/images/general-logos-color/app-logo-color.png' alt='logo' />
         </Link>
 
-        {/* NAV BUTTONS (Desktop) */}
+        {/* NAV BUTTONS (DESKTOP) */}
         <div className='hidden sm:flex space-x-4 ml-14'>
           { navLinks.map((link: string) => (
             <Button key={ link } href={ link }>{ link }</Button>

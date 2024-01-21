@@ -41,7 +41,7 @@ export default function Home(): ReactElement {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentPhrase((prevPhrase) => (prevPhrase + 1) % quotes.length);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -72,7 +72,7 @@ export default function Home(): ReactElement {
                 animate={ { opacity: 1, filter: 'blur(0px)' } }
                 exit={ { opacity: 0, filter: 'blur(2px)' } }
                 transition={ { duration: 1 } }
-                className='absolute w-full text-center text-xl px-8 overflow-hidden'
+                className='absolute w-full text-center text-xl px-8 sm:px-32 overflow-hidden'
               >
                 <p className={ `${ inter_tightItalicHeavy.className }` }>“{ quotes[currentPhrase].quote }”</p>
                 <p className={ `${ inter_tightLight.className }` }>— { quotes[currentPhrase].author }</p>
