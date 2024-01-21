@@ -34,3 +34,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.page-container-base {
+  @apply flex flex-col justify-center mx-auto;
+}

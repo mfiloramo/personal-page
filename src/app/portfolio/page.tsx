@@ -26,7 +26,7 @@ export default function Portfolio(): ReactElement {
         {/* BODY TEXT SECTION */}
         <MotionSlider className={`gradient-text text-xl ${cabinLight.className}`} delay={0.4}>
           <p className='break-words'>
-            I've showcased a spectrum of projects, from practical and responsive tools to dynamic websites and applications — and more. Each is uniquely tailored to meet the diverse needs of its users.
+            I&apos;ve showcased a spectrum of projects, from practical and responsive tools to dynamic websites and applications — and more. Each is uniquely tailored to meet the diverse needs of its users.
           </p>
         </MotionSlider>
       </div>

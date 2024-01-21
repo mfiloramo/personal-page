@@ -21,7 +21,7 @@ export default function About() {
 
           { /* SUBTITLE */ }
           <MotionSlider className={ `text-sky-200 text-3xl pb-12 -mt-2 ${ cabinLight.className }` } delay={ 0.2 }>
-            I'm a full stack software engineer based in NYC.
+            I&apos;m a full stack software engineer based in NYC.
 
             {/* PAGE DIVIDER */ }
             <div className="border-t border-gray-400 mt-2 w-full"></div>
@@ -31,14 +31,14 @@ export default function About() {
           <>
             <MotionSlider className='gradient-text text-xl' delay={ 0.4 }>
               <p className='break-words'>
-                From the classrooms of NYC to the world of web development, I've spent nearly a decade shaping minds as a public school teacher before transitioning professionally into software development.
+                From the classrooms of NYC to the world of web development, I&apos;ve spent nearly a decade shaping minds as a public school teacher before transitioning professionally into software development.
               </p>
             </MotionSlider>
             <br />
 
           <MotionSlider className='gradient-text text-xl' delay={ 0.6 }>
             <p className={ 'break-words' }>
-              As a dedicated full stack engineer with several years of web dev experience across various fields, I'm passionate about merging my educational insights with my technical skills to ultimately give back to the
+              As a dedicated full stack engineer with several years of web dev experience across various fields, I&apos;m passionate about merging my educational insights with my technical skills to ultimately give back to the
               EdTech community.
             </p>
           </MotionSlider>

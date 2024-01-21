@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 import { dm_sans } from '@/utils/fonts';
 import Navbar from '@/app/navbar';
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: {
   return (
     <html lang='en'>
     <body className={ dm_sans.className } style={ { height: '100%' } }>
+    <SpeedInsights />
 
     {/* MAIN CONTAINER */ }
     <div className='flex flex-col min-h-screen overflow-x-hidden'>
@@ -23,7 +25,8 @@ export default function RootLayout({ children }: {
       <Navbar />
 
       {/* ROUTER */ }
-      <main className='flex-grow pt-16 transition ease-in-out delay-150 overflow-y-auto shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)] bg-blue-grid-background bg-cover bg-center'>
+      <main
+        className='flex-grow pt-16 transition ease-in-out delay-150 overflow-y-auto shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)] bg-blue-grid-background bg-cover bg-center'>
         { children }
       </main>
 
