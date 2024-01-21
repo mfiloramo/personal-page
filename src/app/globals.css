@@ -35,6 +35,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.page-container-base {
-  @apply flex flex-col justify-center mx-auto;
+.section-shadow {
+  @apply shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)];
 }

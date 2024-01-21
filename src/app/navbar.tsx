@@ -11,7 +11,7 @@ export default function Navbar(): JSX.Element {
   ];
 
   return (
-    <div className='flex bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 min-h-24 max-h-24 z-10'>
+    <div className='flex bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 min-h-24 max-h-24 z-20'>
 
       {/* CENTER CONTAINER */}
       <div className='flex-grow flex items-center justify-around mx-auto max-w-screen-md w-full'>
