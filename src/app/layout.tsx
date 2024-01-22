@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 import { dm_sans } from '@/utils/fonts';

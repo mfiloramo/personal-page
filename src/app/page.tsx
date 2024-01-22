@@ -86,8 +86,8 @@ export default function Home(): ReactElement {
 
           {/* BODY SECTION */ }
           <MotionSlider className={ '' } delay={ 0.8 }>
-            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 mt-28 sm:mt-10' }>Explore My
-              Work
+            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 mt-24 sm:mt-10' }>
+              Explore My Work
             </div>
 
             {/* PAGE DIVIDER */ }
