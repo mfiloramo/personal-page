@@ -31,9 +31,9 @@ export default function Navbar(): JSX.Element {
         {/* MEDIA BUTTONS */}
         <div className='hidden sm:flex flex-shrink-0'>
           { mediaLinks.map(({ image, url }, index) => (
-            <a className={'mr-4'} key={ index } href={ url }>
+            <Link className={'mr-4'} key={ index } href={ url }>
               <img src={ image } alt='media button' height='30px' width='30px' />
-            </a>
+            </Link>
           )) }
         </div>
       </div>

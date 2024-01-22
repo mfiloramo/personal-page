@@ -3,6 +3,7 @@ import { ReactElement, useEffect, useState } from 'react';
 import { MotionSlider } from '@/components/motion-slider';
 import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/utils/fonts';
 import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home(): ReactElement {
   const quotes: any[] = [
@@ -97,7 +98,7 @@ export default function Home(): ReactElement {
           <div
             className={ 'flex flex-col sm:flex-row justify-center sm:justify-between flex-wrap px-4 sm:px-24 mt-8 mb-12 mx-auto max-w-screen-sm pb-8' }>
             <MotionSlider className={ '' } delay={ 1.4 }>
-              <a href={ 'portfolio' }>
+              <Link href={ 'portfolio' }>
                 <motion.div
                   className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 mx-2 ${ inter_tightHeavy.className }` }
                   whileHover={ { scale: 1.05 } }
@@ -106,11 +107,11 @@ export default function Home(): ReactElement {
                 >
                   Portfolio
                 </motion.div>
-              </a>
+              </Link>
             </MotionSlider>
 
             <MotionSlider className={ '' } delay={ 1.2 }>
-              <a href={ 'services' }>
+              <Link href={ 'services' }>
                 <motion.div
                   className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 mx-2 ${ inter_tightHeavy.className }` }
                   whileHover={ { scale: 1.05 } }
@@ -119,7 +120,7 @@ export default function Home(): ReactElement {
                 >
                   Services
                 </motion.div>
-              </a>
+              </Link>
             </MotionSlider>
           </div>
         </div>

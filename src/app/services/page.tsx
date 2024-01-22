@@ -36,7 +36,7 @@ export default function Services(): ReactElement {
   ];
 
   return (
-    <div className='pt-14 mb-12 relative flex flex-col sm:mx-auto overflow-x-hidden'>
+    <div className='pt-10 mb-12 relative flex flex-col sm:mx-auto overflow-x-hidden'>
       <div className={ 'mb-12' }>
 
         {/* TITLE SECTION */ }

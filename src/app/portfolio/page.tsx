@@ -8,7 +8,7 @@ import PortfolioCard from '@/components/portfolio-card';
 
 export default function Portfolio(): ReactElement {
   return (
-    <div className='pt-14 relative flex flex-col sm:mx-auto'>
+    <div className='pt-10 relative flex flex-col sm:mx-auto'>
       {/* TITLE SECTION */}
       <div className='mx-8 mb-2 md:mx-auto max-w-screen-md drop-shadow-in-top'>
         <MotionSlider className={`text-sky-100 text-8xl pb-5 ${cabinHeavy.className}`} delay={0}>

@@ -5,6 +5,7 @@ import { cabinHeavy, cabinLight } from '@/utils/fonts';
 import { motion } from 'framer-motion';
 import { StackButtonProps } from '@/interfaces/StackButtonProps';
 import Divider from '@/components/divider';
+import Link from 'next/link';
 
 export default function Contact(): ReactElement {
   const contactItems: any[] = [
@@ -29,7 +30,7 @@ export default function Contact(): ReactElement {
   return (
     <div className='flex flex-col'>
       { /* TOP CONTAINER */ }
-      <div className={ 'pt-12 mx-8 md:mx-auto max-w-screen-md mb-10' }>
+      <div className={ 'pt-10 mx-8 md:mx-auto max-w-screen-md mb-10' }>
         { /* TITLE */ }
         <MotionSlider className={ `text-sky-100 text-8xl ${ cabinHeavy.className }` } delay={ 0 }>
           <p>
@@ -72,11 +73,11 @@ export default function Contact(): ReactElement {
                   whileHover={ { scale: 1.2 } }
                   whileTap={ { scale: 1, borderRadius: "100%" } }
                 >
-                  <a href={ button.link }>
+                  <Link href={ button.link }>
                     <img
                       className={ 'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]' }
                       src={ button.imageSource } alt={ 'img' } />
-                  </a>
+                  </Link>
                 </motion.div>
               </MotionSlider>
             ))

@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div className='flex flex-col lg:p-0 relative'>
       { /* TOP CONTAINER*/ }
-      <div className={ 'pt-12 mx-8 md:mx-auto max-w-screen-md mb-10' }>
+      <div className={ 'pt-10 mx-8 md:mx-auto max-w-screen-md mb-10' }>
         { /* TITLE */ }
         <MotionSlider className={ `text-sky-100 text-8xl ${ cabinHeavy.className }` } delay={ 0 }>
           <p>
