@@ -16,20 +16,20 @@ export default function RootLayout({ children }: {
 }) {
   return (
     <html lang='en'>
-    <body className={ `h-full ${ dm_sans.className }` }>
+    <body className={ `min-h-screen ${ dm_sans.className }` }>
 
     {/* APPLICATION TELEMETRY */ }
     <SpeedInsights />
 
     {/* MAIN CONTAINER */ }
-    <div className='flex flex-col min-h-screen overflow-x-hidden'>
+    <div className='flex flex-col h-screen overflow-x-hidden'>
 
       {/* NAVBAR */ }
       <Navbar />
 
       {/* ROUTER */ }
       <main
-        className='flex-grow overflow-y-auto shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)] bg-blue-grid-background bg-cover bg-center'>
+        className='flex-grow overflow-y-auto section-shadow bg-blue-grid-background bg-cover bg-center'>
         { children }
       </main>
 

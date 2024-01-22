@@ -49,39 +49,40 @@ export default function Contact(): ReactElement {
         <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.4 }>
           <p className='break-words'>
             Got a project in mind or considering software solutions? Reach out and let&apos;s bring your vision to life.
-            Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you navigate and realize your
+            Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you navigate and
+            realize your
             digital aspirations.
 
           </p>
         </MotionSlider>
       </div>
 
-      {/* CONTACT BUTTON CONTAINER */}
-      <div className={'flex justify-center mx-auto items-center w-full max-w-screen-md mb-4'}>
-        <div className={'grid grid-cols-2 sm:grid-cols-3 sm:gap-y-0 gap-y-2 gap-16 md:grid-cols-4 justify-center'}>
-          {/* CONTACT BUTTONS */}
+      {/* CONTACT BUTTON CONTAINER */ }
+      <div className={ 'flex justify-center mx-auto items-center w-full max-w-screen-md mb-4' }>
+        <div className={ 'grid grid-cols-2 sm:grid-cols-3 sm:gap-y-0 gap-y-2 gap-16 md:grid-cols-4 justify-center' }>
+          {/* CONTACT BUTTONS */ }
           {
             contactItems.map((button: StackButtonProps, index: number): ReactNode => (
-              <MotionSlider className={''} delay={(contactItems.length - index) * 0.2} key={index}>
+              <MotionSlider className={ '' } delay={ (contactItems.length - index) * 0.2 } key={ index }>
                 <motion.div
-                  initial={{ x: -100, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1, filter: 'blur(0px)' }}
-                  transition={{ duration: 0.1 }}
-                  className={'py-3 w-32 z-20'}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 1, borderRadius: "100%" }}
+                  initial={ { x: -100, opacity: 0 } }
+                  animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }
+                  transition={ { duration: 0.1 } }
+                  className={ 'py-3 w-32 z-20' }
+                  whileHover={ { scale: 1.2 } }
+                  whileTap={ { scale: 1, borderRadius: "100%" } }
                 >
-                  <a href={button.link} target="_blank" rel="noopener noreferrer">
-                    <img className={'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]'} src={button.imageSource} alt={'img'} />
+                  <a href={ button.link } target="_blank" rel="noopener noreferrer">
+                    <img
+                      className={ 'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]' }
+                      src={ button.imageSource } alt={ 'img' } />
                   </a>
                 </motion.div>
               </MotionSlider>
             ))
           }
-
         </div>
       </div>
-
 
       {/* SEND MESSAGE SECTION */ }
       <div className={ 'mt-7 h-44 w-full bg-lightblue-grid-background section-shadow p-4' }>
@@ -89,8 +90,7 @@ export default function Contact(): ReactElement {
           className={ `text-sky-200 text-3xl pb-6 mt-4 mx-auto max-w-screen-md  ${ cabinLight.className }` }
           delay={ 0.8 }>
           <div className={ `text-center  ${ cabinLight.className }` }>Send a Message</div>
-
-        <Divider />
+          <Divider />
         </MotionSlider>
 
       </div>

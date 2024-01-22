@@ -23,7 +23,7 @@ export const dm_sans: NextFont = DM_Sans({
 export const inter_tightHeavy: NextFont = Inter_Tight ({
   style: 'normal',
   weight: '700',
-  subsets: ['cyrillic']
+  subsets: ['cyrillic'],
 });
 
 export const inter_tightLight: NextFont = Inter_Tight ({

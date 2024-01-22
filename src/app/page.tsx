@@ -1,9 +1,8 @@
 'use client';
 import { ReactElement, useEffect, useState } from 'react';
-import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/utils/fonts';
-import { AnimatePresence } from 'framer-motion';
-import { motion } from 'framer-motion';
 import { MotionSlider } from '@/components/motion-slider';
+import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/utils/fonts';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Home(): ReactElement {
   const quotes: any[] = [
@@ -39,76 +38,92 @@ export default function Home(): ReactElement {
   const [ currentPhrase, setCurrentPhrase ] = useState(0);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
+    const intervalId = setInterval((): void => {
       setCurrentPhrase((prevPhrase) => (prevPhrase + 1) % quotes.length);
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [ quotes.length ]);
 
   return (
-    <div className={ `relative text-center text-black text-5xl sm:text-7xl ${ inter_tightHeavy.className }` }>
+    // MAIN PAGE CONTAINER
+    <div className={ `flex flex-col relative text-center text-black ${ inter_tightHeavy.className }` }>
+
       {/* HERO BANNER */ }
       <div
-        className={ `bg-hero-banner-main bg-cover bg-no-repeat bg-center section-shadow h-[55vh] absolute top-0 left-0 right-0 z-10` }></div>
+        className={ 'bg-hero-banner-main bg-cover bg-no-repeat bg-center section-shadow sm:h-80 h-[22rem] w-screen absolute ' }>
+        <div className={ '-ml-4 relative mt-8 cursor-default px-8' }>
 
-      {/* HERO BANNER TEXT */ }
-      <div className="relative z-20 cursor-default">
-        <MotionSlider className={ 'pt-12' } delay={ 0.2 }>
-          <div className={ '-z-50' }>Michael Filoramo</div>
-        </MotionSlider>
+          {/* TITLE TEXT */ }
+          <MotionSlider className={ '' } delay={ 0.2 }>
+            <div className={ 'text-[2.5rem] sm:text-6xl' }>Michael Filoramo</div>
+          </MotionSlider>
 
-        <MotionSlider className={ '' } delay={ 0.4 }>
-          <div className={ `text-3xl ${ inter_tightLight.className }` }>Web Developer ‣ Designer ‣ Freelancer</div>
-        </MotionSlider>
+          {/* SUBTITLE TEXT */ }
+          <MotionSlider className={ '' } delay={ 0.4 }>
+            <div className={ `text-2xl ${ inter_tightLight.className }` }>Web Developer ‣ Designer ‣ Freelancer</div>
+          </MotionSlider>
 
-        {/* QUOTES SECTION */ }
-        <MotionSlider className='mt-8' delay={ 0.6 }>
-          <div className='relative flex justify-center items-center h-32'>
-            <AnimatePresence>
-              <motion.div
-                key={ currentPhrase }
-                initial={ { opacity: 0, filter: 'blur(6px)' } }
-                animate={ { opacity: 1, filter: 'blur(0px)' } }
-                exit={ { opacity: 0, filter: 'blur(2px)' } }
-                transition={ { duration: 1 } }
-                className='absolute w-full text-center text-xl px-8 sm:px-32 overflow-hidden'
-              >
-                <p className={ `${ inter_tightItalicHeavy.className }` }>“{ quotes[currentPhrase].quote }”</p>
-                <p className={ `${ inter_tightLight.className }` }>— { quotes[currentPhrase].author }</p>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-
-        </MotionSlider>
-
-        {/* BODY SECTION */ }
-        <MotionSlider className={ 'mt-20 ' } delay={ 0.8 }>
-          <div className={ 'gradient-text-lightblue text-5xl -z-50' }>Explore My Work</div>
-          <div className="border-t border-gray-400 mt-2 w-96 mx-auto"></div>
-        </MotionSlider>
-
-        {/* SITE BUTTONS */}
-        <div className={ 'flex flex-row justify-around -space-x-20 mt-8 mb-12 max-w-screen-md mx-auto' }>
-          <div className={ 'relative group' }>
-            <div className={ 'custom-glow shadow-xl w-36 h-8 mt-2 opacity-70' }></div>
-            <div
-              className={ 'absolute top-0 left-0 w-full h-full flex items-center justify-center z-10 text-4xl gradient-text-darkblue ' }>
-              Portfolio
+          {/* QUOTES SECTION */ }
+          <MotionSlider className='mt-7' delay={ 0.6 }>
+            <div className='relative h-24'>
+              <AnimatePresence>
+                <motion.div
+                  key={ currentPhrase }
+                  initial={ { opacity: 0, filter: 'blur(6px)' } }
+                  animate={ { opacity: 1, filter: 'blur(0px)' } }
+                  exit={ { opacity: 0, filter: 'blur(2px)' } }
+                  transition={ { duration: 1 } }
+                  className='absolute w-full text-center text-lg px-8 sm:px-32 overflow-hidden leading-tight'
+                >
+                  <p className={ ` ${ inter_tightItalicHeavy.className }` }>“{ quotes[currentPhrase].quote }”</p>
+                  <p className={ `${ inter_tightLight.className }` }>— { quotes[currentPhrase].author }</p>
+                </motion.div>
+              </AnimatePresence>
             </div>
-          </div>
+          </MotionSlider>
 
-          <div className={ 'relative group' }>
-            <div className={ 'custom-glow shadow-xl w-36 h-8 mt-2 opacity-70' }></div>
-            <div className={ 'absolute top-0 left-0 w-full h-full flex items-center justify-center z-10 text-4xl gradient-text-darkblue' }>
-              Services
+          {/* BODY SECTION */ }
+          <MotionSlider className={ '' } delay={ 0.8 }>
+            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 shadow-2xl mt-36 sm:mt-28' }>Explore My
+              Work
             </div>
+
+            {/* PAGE DIVIDER */ }
+            <div className="border-t border-gray-400 mt-2 w-96 mx-auto"></div>
+          </MotionSlider>
+
+          {/* BUTTON CONTAINER */ }
+          <div
+            className={ 'flex flex-col sm:flex-row justify-center sm:justify-between flex-wrap px-4 sm:px-24 mt-8 mb-12 mx-auto max-w-screen-sm pb-8' }>
+            <MotionSlider className={ '' } delay={ 1.4 }>
+              <a href={ 'portfolio' } target="_blank" rel="noopener noreferrer">
+                <motion.div
+                  className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 mx-2 ${ inter_tightHeavy.className }` }
+                  whileHover={ { scale: 1.05 } }
+                  whileTap={ { scale: 0.95 } }
+                  transition={ { duration: 0.1 } }
+                >
+                  Portfolio
+                </motion.div>
+              </a>
+            </MotionSlider>
+
+            <MotionSlider className={ '' } delay={ 1.2 }>
+              <a href={ 'services' } target="_blank" rel="noopener noreferrer">
+                <motion.div
+                  className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 mx-2 ${ inter_tightHeavy.className }` }
+                  whileHover={ { scale: 1.05 } }
+                  whileTap={ { scale: 0.95 } }
+                  transition={ { duration: 0.1 } }
+                >
+                  Services
+                </motion.div>
+              </a>
+            </MotionSlider>
           </div>
-
-
+        </div>
       </div>
-
     </div>
-</div>
-);
+  );
 }

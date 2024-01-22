@@ -9,7 +9,7 @@ import Divider from '@/components/divider';
 export default function About() {
 
   return (
-    <div className='flex flex-col lg:p-0'>
+    <div className='flex flex-col lg:p-0 relative'>
       { /* TOP CONTAINER*/ }
       <div className={ 'pt-12 mx-8 md:mx-auto max-w-screen-md mb-10' }>
         { /* TITLE */ }
