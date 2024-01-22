@@ -51,7 +51,7 @@ export default function Home(): ReactElement {
 
       {/* HERO BANNER */ }
       <div
-        className={ 'bg-hero-banner-main bg-cover bg-no-repeat bg-center section-shadow sm:h-80 h-[22rem] w-screen absolute ' }>
+        className={ 'bg-hero-banner-main bg-cover bg-no-repeat bg-center section-shadow sm:h-64 h-80 w-screen absolute ' }>
         <div className={ '-ml-4 relative mt-8 cursor-default px-8' }>
 
           {/* TITLE TEXT */ }
@@ -85,7 +85,7 @@ export default function Home(): ReactElement {
 
           {/* BODY SECTION */ }
           <MotionSlider className={ '' } delay={ 0.8 }>
-            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 shadow-2xl mt-36 sm:mt-28' }>Explore My
+            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 mt-28 sm:mt-10' }>Explore My
               Work
             </div>
 
@@ -97,7 +97,7 @@ export default function Home(): ReactElement {
           <div
             className={ 'flex flex-col sm:flex-row justify-center sm:justify-between flex-wrap px-4 sm:px-24 mt-8 mb-12 mx-auto max-w-screen-sm pb-8' }>
             <MotionSlider className={ '' } delay={ 1.4 }>
-              <a href={ 'portfolio' } target="_blank" rel="noopener noreferrer">
+              <a href={ 'portfolio' }>
                 <motion.div
                   className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 mx-2 ${ inter_tightHeavy.className }` }
                   whileHover={ { scale: 1.05 } }
@@ -110,7 +110,7 @@ export default function Home(): ReactElement {
             </MotionSlider>
 
             <MotionSlider className={ '' } delay={ 1.2 }>
-              <a href={ 'services' } target="_blank" rel="noopener noreferrer">
+              <a href={ 'services' }>
                 <motion.div
                   className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 mx-2 ${ inter_tightHeavy.className }` }
                   whileHover={ { scale: 1.05 } }

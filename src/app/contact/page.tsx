@@ -72,7 +72,7 @@ export default function Contact(): ReactElement {
                   whileHover={ { scale: 1.2 } }
                   whileTap={ { scale: 1, borderRadius: "100%" } }
                 >
-                  <a href={ button.link } target="_blank" rel="noopener noreferrer">
+                  <a href={ button.link }>
                     <img
                       className={ 'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]' }
                       src={ button.imageSource } alt={ 'img' } />
