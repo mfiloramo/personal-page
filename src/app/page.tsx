@@ -36,11 +36,11 @@ export default function Home(): ReactElement {
       author: 'Alan Kay'
     }
   ]
-  const [ currentPhrase, setCurrentPhrase ] = useState(0);
+  const [ currentQuote, setCurrentQuote ] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval((): void => {
-      setCurrentPhrase((prevPhrase) => (prevPhrase + 1) % quotes.length);
+      setCurrentQuote((prevPhrase) => (prevPhrase + 1) % quotes.length);
     }, 5000);
 
     return () => clearInterval(intervalId);
@@ -70,15 +70,15 @@ export default function Home(): ReactElement {
             <div className='relative h-24'>
               <AnimatePresence>
                 <motion.div
-                  key={ currentPhrase }
+                  key={ currentQuote }
                   initial={ { opacity: 0, filter: 'blur(6px)' } }
                   animate={ { opacity: 1, filter: 'blur(0px)' } }
                   exit={ { opacity: 0, filter: 'blur(2px)' } }
                   transition={ { duration: 1 } }
                   className='absolute w-full text-center text-lg px-8 sm:px-32 overflow-hidden leading-tight'
                 >
-                  <p className={ ` ${ inter_tightItalicHeavy.className }` }>“{ quotes[currentPhrase].quote }”</p>
-                  <p className={ `${ inter_tightLight.className }` }>— { quotes[currentPhrase].author }</p>
+                  <p className={ ` ${ inter_tightItalicHeavy.className }` }>“{ quotes[currentQuote].quote }”</p>
+                  <p className={ `${ inter_tightLight.className }` }>— { quotes[currentQuote].author }</p>
                 </motion.div>
               </AnimatePresence>
             </div>

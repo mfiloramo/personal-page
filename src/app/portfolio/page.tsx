@@ -80,16 +80,16 @@ export default function Portfolio(): ReactElement {
             {/* LOGGING SYSTEM CARD */ }
             <motion.a
               className={ 'p-3' }
-              href={ '/portfolio/hifiber' }
+              href={ '/portfolio/sinclair-logging' }
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
               <PortfolioCard image={ 'images/profile-cards/profile-card-logging.png' } title={ 'Logging System' } subtitle={ 'Building Sinclair\'s Logging Infrastructure' } />
             </motion.a>
 
-            {/* NEW CARD */ }
+            {/* USER ADMIN CARD */ }
             <motion.a
-              href={ '/portfolio/hifiber' }
+              href={ '/portfolio/sinclair-ua' }
               className={ 'p-3' }
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
