@@ -20,7 +20,7 @@ const config: Config = {
         Font: [ 'Font', 'serif' ],
       },
       animation: {
-        'fast-pulse': 'pulse 0.5s cubic-bezier(0.3, 0, 0.4, 0.8) infinite',
+        'fast-pulse': 'pulse 0.5s cubic-bezier(0.3, 0, 0.4, 0.5) infinite',
       },
     },
   },

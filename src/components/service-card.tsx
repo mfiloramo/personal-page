@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import { inter_tightHeavy, inter_tightLight } from '@/utilities/fonts';
 import { motion } from 'framer-motion';
 import { ServiceImageProps } from '@/interfaces/ServiceImageProps';
+import Image from 'next/image';
 
 
 
@@ -13,7 +14,7 @@ export default function ServiceCard({ imageSrc, title, subtitle }: ServiceImageP
       whileHover={ { scale: 1.1 } }
     >
       {/* CARD IMAGE */ }
-      <img className={ 'mx-auto h-14' } src={ imageSrc } alt={ 'frontend' } />
+      <Image className={ 'mx-auto h-14' } src={ imageSrc } alt={ 'frontend' } />
 
       {/* CARD TITLE */ }
       <p className={ `mt-2 text-xl mb-1 leading-tight ${ inter_tightHeavy.className }` }>{ title }</p>

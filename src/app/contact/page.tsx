@@ -1,11 +1,12 @@
 'use client';
 import { ReactElement, ReactNode } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import { MotionSlider } from '@/components/motion-slider';
 import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import { motion } from 'framer-motion';
 import { StackButtonProps } from '@/interfaces/StackButtonProps';
 import Divider from '@/components/divider';
-import Link from 'next/link';
 
 export default function Contact(): ReactElement {
   const contactItems: any[] = [
@@ -49,10 +50,7 @@ export default function Contact(): ReactElement {
         { /* BODY TEXT */ }
         <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.4 }>
           <p className='break-words'>
-            Got a project in mind or considering software solutions? Reach out and let&apos;s bring your vision to life.
-            Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you navigate and
-            realize your
-            digital aspirations.
+            Got a project in mind or considering software solutions? Reach out and let&apos;s bring your vision to life. Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you navigate and realize your digital aspirations.
 
           </p>
         </MotionSlider>
@@ -61,6 +59,7 @@ export default function Contact(): ReactElement {
       {/* CONTACT BUTTON CONTAINER */ }
       <div className={ 'flex justify-center mx-auto items-center w-full max-w-screen-md mb-4' }>
         <div className={ 'grid grid-cols-2 sm:grid-cols-3 sm:gap-y-0 gap-y-2 gap-16 md:grid-cols-4 justify-center' }>
+
           {/* CONTACT BUTTONS */ }
           {
             contactItems.map((button: StackButtonProps, index: number): ReactNode => (
@@ -74,9 +73,8 @@ export default function Contact(): ReactElement {
                   whileTap={ { scale: 1, borderRadius: "100%" } }
                 >
                   <Link href={ button.link }>
-                    <img
-                      className={ 'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]' }
-                      src={ button.imageSource } alt={ 'img' } />
+                    <Image className={ 'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]' }
+                      src={ button.imageSource } alt={ 'contact-image' } />
                   </Link>
                 </motion.div>
               </MotionSlider>
@@ -89,7 +87,7 @@ export default function Contact(): ReactElement {
       <div className={ 'mt-7 h-44 w-full bg-lightblue-grid-background section-shadow p-4' }>
         <MotionSlider
           className={ `text-sky-200 text-3xl pb-6 mt-4 mx-auto max-w-screen-md  ${ cabinLight.className }` }
-          delay={ 0.8 }>
+          delay={ 1 }>
           <div className={ `text-center  ${ cabinLight.className }` }>Send a Message</div>
           <Divider />
         </MotionSlider>

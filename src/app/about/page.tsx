@@ -4,6 +4,7 @@ import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import { generateHoverAnimation } from '@/utilities/animations';
 import { MotionSlider } from '@/components/motion-slider';
 import Divider from '@/components/divider';
+import Image from 'next/image';
 
 
 export default function About() {
@@ -64,7 +65,7 @@ export default function About() {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
             >
-              <img src={ '/images/general-logos-mono/lingolink-logo-mono.png' } alt='lingolink' />
+              <Image src={ '/images/general-logos-mono/lingolink-logo-mono.png' } alt='lingolink' />
             </motion.a>
 
             { /* NBPA LOGO */ }
@@ -74,7 +75,7 @@ export default function About() {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: 8, borderRadius: "100%" } }
             >
-              <img className={ 'w-24 h-auto my-4' } src={ '/images/general-logos-mono/nbpa-logo-mono.png' } alt='nbpa' />
+              <Image className={ 'w-24 h-auto my-4' } src={ '/images/general-logos-mono/nbpa-logo-mono.png' } alt='nbpa' />
             </motion.a>
 
             { /* SINCLAIR LOGO */ }
@@ -84,7 +85,7 @@ export default function About() {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: 8, borderRadius: "100%" } }
             >
-              <img src={ '/images/general-logos-mono/sinclair-logo-mono.png' } alt='sinclair' />
+              <Image src={ '/images/general-logos-mono/sinclair-logo-mono.png' } alt='sinclair' />
             </motion.a>
 
             { /* HIFIBER LOGO */ }
@@ -94,7 +95,7 @@ export default function About() {
               whileHover={ generateHoverAnimation }
               whileTap={ { scale: 0.8, rotate: 12, borderRadius: "100%" } }
             >
-              <img className={ 'w-24 h-auto my-4' } src={ '/images/general-logos-mono/hifiber-logo-mono.png' } alt='nbpa' />
+              <Image className={ 'w-24 h-auto my-4' } src={ '/images/general-logos-mono/hifiber-logo-mono.png' } alt='nbpa' />
             </motion.a>
           </div>
           <Divider />

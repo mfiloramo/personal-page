@@ -2,6 +2,7 @@ import NavButton from '@/components/nav-button';
 import Link from 'next/link';
 import NavDropdown from '@/components/nav-dropdown';
 import React, { ReactElement, ReactNode } from 'react';
+import Image from 'next/image';
 
 export default function Navbar(): ReactElement {
   const navLinks: { path: string, label: string }[] = [
@@ -24,7 +25,7 @@ export default function Navbar(): ReactElement {
 
         {/* LOGO */ }
         <Link className={ 'sm:flex cursor-pointer z-20 -mr-16 sm:-mr-6 -mt-1' } href={ '/' }>
-          <img className='mt-2 h-16 w-auto' src='/images/general-logos-color/app-logo-color.png' alt='logo' />
+          <Image className='mt-2 h-16 w-auto' src='/images/general-logos-color/app-logo-color.png' alt='logo' />
         </Link>
 
         {/* NAV BUTTONS (DESKTOP) */}
@@ -41,7 +42,7 @@ export default function Navbar(): ReactElement {
           {
             mediaLinks.map(({ image, url }, index: number): ReactElement => (
               <Link className={ 'mr-4' } key={ index } href={ url }>
-                <img src={ image } alt='media button' height='30px' width='30px' />
+                <Image src={ image } alt='media button' height='30px' width='30px' />
               </Link>
             ))
           }
