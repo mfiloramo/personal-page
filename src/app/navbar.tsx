@@ -9,7 +9,8 @@ export default function Navbar(): ReactElement {
     { path: '/portfolio', label: 'Portfolio' },
     { path: '/services', label: 'Services' },
     { path: '/contact', label: 'Contact' },
-  ];  const mediaLinks: any[] = [
+  ];
+  const mediaLinks: any[] = [
     { image: '/images/media-logos/github-logo.png', url: 'https://github.com/mfiloramo' },
     { image: '/images/media-logos/linkedin-logo.png', url: 'https://www.linkedin.com/in/michael-filoramo/' },
     { image: '/images/media-logos/spotify-logo.png', url: 'https://open.spotify.com/user/quathan?si=6d0e06cc0cb04e47' },
@@ -38,7 +39,7 @@ export default function Navbar(): ReactElement {
         {/* MEDIA BUTTONS */ }
         <div className='hidden sm:flex flex-shrink-0'>
           {
-            mediaLinks.map(({ image, url }, index) => (
+            mediaLinks.map(({ image, url }, index: number): ReactElement => (
               <Link className={ 'mr-4' } key={ index } href={ url }>
                 <img src={ image } alt='media button' height='30px' width='30px' />
               </Link>

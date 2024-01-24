@@ -1,7 +1,7 @@
 'use client';
 import { ReactElement, useEffect, useState } from 'react';
 import { MotionSlider } from '@/components/motion-slider';
-import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/utils/fonts';
+import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/utilities/fonts';
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 

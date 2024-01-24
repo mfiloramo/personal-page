@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { inter_tightHeavy, inter_tightLight } from '@/utils/fonts';
+import { inter_tightHeavy, inter_tightLight } from '@/utilities/fonts';
 import { motion } from 'framer-motion';
 import { ServiceImageProps } from '@/interfaces/ServiceImageProps';
 

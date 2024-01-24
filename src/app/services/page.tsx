@@ -1,6 +1,6 @@
 'use client';
 import { ReactElement, ReactNode } from 'react';
-import { cabinHeavy, cabinLight } from '@/utils/fonts';
+import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import ServiceCard from '@/components/service-card';
 import { MotionSlider } from '@/components/motion-slider';
 import { motion } from 'framer-motion';

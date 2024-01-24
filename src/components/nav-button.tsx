@@ -7,9 +7,9 @@ interface NavButtonProps {
 
 export default function NavButton({ path, label }: NavButtonProps) {
   return (
-    <Link href={ path }>
+    <Link href={path}>
       <button
-        className='w-20 flex justify-center text-lg text-blue-100 hover:ease-in-out shadow hover:shadow-lg'>
+        className='w-20 flex justify-center text-lg text-blue-100 hover:animate-fast-pulse hover:ease-in-out shadow hover:shadow-lg'>
         { label }
       </button>
     </Link>

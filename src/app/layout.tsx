@@ -1,7 +1,7 @@
 import React from 'react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
-import { dm_sans } from '@/utils/fonts';
+import { dm_sans } from '@/utilities/fonts';
 import Navbar from '@/app/navbar';
 import Footer from '@/app/footer';
 import type { Metadata } from 'next'

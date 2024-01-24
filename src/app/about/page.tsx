@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
-import { cabinHeavy, cabinLight } from '@/utils/fonts';
-import { generateHoverAnimation } from '@/utils/animations';
+import { cabinHeavy, cabinLight } from '@/utilities/fonts';
+import { generateHoverAnimation } from '@/utilities/animations';
 import { MotionSlider } from '@/components/motion-slider';
 import Divider from '@/components/divider';
 

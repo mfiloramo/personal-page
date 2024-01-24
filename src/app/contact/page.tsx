@@ -1,7 +1,7 @@
 'use client';
 import { ReactElement, ReactNode } from 'react';
 import { MotionSlider } from '@/components/motion-slider';
-import { cabinHeavy, cabinLight } from '@/utils/fonts';
+import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import { motion } from 'framer-motion';
 import { StackButtonProps } from '@/interfaces/StackButtonProps';
 import Divider from '@/components/divider';

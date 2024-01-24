@@ -1,9 +1,9 @@
 'use client';
 import { ReactElement, ReactNode } from 'react';
-import { cabinHeavy, cabinLight } from '@/utils/fonts';
+import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import { MotionSlider } from '@/components/motion-slider';
 import { motion } from 'framer-motion';
-import { generateHoverAnimation } from '@/utils/animations';
+import { generateHoverAnimation } from '@/utilities/animations';
 import PortfolioCard from '@/components/portfolio-card';
 import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.interface';
 
@@ -67,8 +67,7 @@ export default function Portfolio(): ReactElement {
         {/* BODY TEXT SECTION */ }
         <MotionSlider className={ `gradient-text-lightblue text-xl ${ cabinLight.className }` } delay={ 0.4 }>
           <p className='break-words'>
-            I&apos;ve showcased a spectrum of projects, from practical and responsive tools to dynamic websites and
-            applications — and more. Each is uniquely tailored to meet the diverse needs of its users.
+            I&apos;ve showcased a spectrum of projects, from practical and responsive tools to dynamic websites and applications — and more. Each is uniquely tailored to meet the diverse needs of its users.
           </p>
         </MotionSlider>
       </div>
@@ -84,18 +83,18 @@ export default function Portfolio(): ReactElement {
           {
             portfolioCards.map((card: PortfolioCardPropsInterface, index: number): ReactNode => {
               return (
-                <MotionSlider key={ index } className={ '' } delay={ index * 0.2 }>
-                  <motion.a
-                    key={ index }
-                    href={ card.urlPath }
-                    whileHover={ generateHoverAnimation }
-                    className={ 'p-3' }
-                    whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
-                  >
+                <motion.a
+                  key={ index }
+                  href={ card.urlPath }
+                  whileHover={ generateHoverAnimation }
+                  className={ 'p-3' }
+                  whileTap={ { scale: 0.9, rotate: -8, borderRadius: "100%" } }
+                >
+                  <MotionSlider className={ '' } delay={0.2 * index}>
                     <PortfolioCard image={ card.image } title={ card.title } subtitle={ card.subtitle } />
-                  </motion.a>
-                </MotionSlider>
-              )
+                  </MotionSlider>
+                </motion.a>
+            )
             })
           }
         </div>

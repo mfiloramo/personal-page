@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { variants } from '@/utils/animations';
+import { variants } from '@/utilities/animations';
 
 interface TextProps {
   children: any,
