@@ -16,9 +16,12 @@ const config: Config = {
         'lightblue-grid-background': "url('/images/backgrounds/lightbluegrid-background.png')",
         'hero-banner-main': "url('/images/hero-banners/hero-banner-main.png')",
       },
-      fontFamily : {
-        Font: ['Font', 'serif'],
-      }
+      fontFamily: {
+        Font: [ 'Font', 'serif' ],
+      },
+      animation: {
+        'fast-pulse': 'pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
     },
   },
   plugins: [],

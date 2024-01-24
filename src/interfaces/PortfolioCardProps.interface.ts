@@ -1,5 +1,6 @@
 export interface PortfolioCardPropsInterface {
-  readonly image: any,
+  readonly urlPath?: string,
+  readonly image: string,
   readonly title: string,
   readonly subtitle: string
 }

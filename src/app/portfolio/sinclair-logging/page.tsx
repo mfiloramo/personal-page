@@ -1,5 +1,9 @@
 import { ReactElement } from 'react';
 
 export default function SinclairLogging(): ReactElement {
-  return (<></>);
+  return (
+    <>
+      <img className={ 'shadow-2xl w-full md:w-[40vw] mx-auto' } src='/images/construction.png' alt='Construction Image' />
+    </>
+  );
 }
