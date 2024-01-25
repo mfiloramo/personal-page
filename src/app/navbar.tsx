@@ -1,17 +1,19 @@
-import NavButton from '@/components/nav-button';
+import React, { ReactElement } from 'react';
 import Link from 'next/link';
-import NavDropdown from '@/components/nav-dropdown';
-import React, { ReactElement, ReactNode } from 'react';
 import Image from 'next/image';
+import NavButton from '@/components/nav-button';
+import NavDropdown from '@/components/nav-dropdown';
+import { navLinkInterface } from '@/interfaces/NavLinkInterface';
+import { mediaLinkInterface } from '@/interfaces/MediaLinkInterface';
 
 export default function Navbar(): ReactElement {
-  const navLinks: { path: string, label: string }[] = [
+  const navLinks: navLinkInterface[] = [
     { path: '/about', label: 'About' },
     { path: '/portfolio', label: 'Portfolio' },
     { path: '/services', label: 'Services' },
     { path: '/contact', label: 'Contact' },
   ];
-  const mediaLinks: any[] = [
+  const mediaLinks: mediaLinkInterface[] = [
     { image: '/images/media-logos/github-logo.png', url: 'https://github.com/mfiloramo' },
     { image: '/images/media-logos/linkedin-logo.png', url: 'https://www.linkedin.com/in/michael-filoramo/' },
     { image: '/images/media-logos/spotify-logo.png', url: 'https://open.spotify.com/user/quathan?si=6d0e06cc0cb04e47' },
@@ -25,15 +27,21 @@ export default function Navbar(): ReactElement {
 
         {/* LOGO */ }
         <Link className={ 'sm:flex cursor-pointer z-20 -mr-16 sm:-mr-6 -mt-1' } href={ '/' }>
-          <Image className='mt-2 h-16 w-auto' src='/images/general-logos-color/app-logo-color.png' alt='logo' />
+          <Image
+            className='mt-2'
+            src='/images/general-logos-color/app-logo-color.png'
+            alt='logo'
+            height={ 64 }
+            width={ 64 }
+          />
         </Link>
 
-        {/* NAV BUTTONS (DESKTOP) */}
+        {/* NAV BUTTONS (DESKTOP) */ }
         <div className='hidden sm:flex space-x-4 ml-14'>
           {
             navLinks.map(({ path, label }): ReactElement => (
-            <NavButton key={label} path={path} label={label} />
-          ))
+              <NavButton key={ label } path={ path } label={ label } />
+            ))
           }
         </div>
 
@@ -42,7 +50,7 @@ export default function Navbar(): ReactElement {
           {
             mediaLinks.map(({ image, url }, index: number): ReactElement => (
               <Link className={ 'mr-4' } key={ index } href={ url }>
-                <Image src={ image } alt='media button' height='30px' width='30px' />
+                <Image src={ image } alt='media button' height={ 30 } width={ 30 } />
               </Link>
             ))
           }

@@ -73,8 +73,13 @@ export default function Contact(): ReactElement {
                   whileTap={ { scale: 1, borderRadius: "100%" } }
                 >
                   <Link href={ button.link }>
-                    <Image className={ 'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]' }
-                      src={ button.imageSource } alt={ 'contact-image' } />
+                    <Image
+                      className={ 'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]' }
+                      src={ `/${button.imageSource}` }
+                      alt={ 'contact-image' }
+                      height={ 225 }
+                      width={ 225 }
+                    />
                   </Link>
                 </motion.div>
               </MotionSlider>

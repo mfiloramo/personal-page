@@ -11,7 +11,13 @@ export default function PortfolioCard({ image, title, subtitle }: PortfolioCardP
       <div className={ 'text-black h-52 w-52 bg-gradient-to-b from-slate-100 to-slate-300 border-2 border-black bg-slate-300 flex flex-col rounded-xl hover:outline-dashed hover:outline-black hover:outline-8 transition ease-in-out' }>
 
         {/* CARD IMAGE */ }
-        <Image className={ 'h-28 rounded-t-lg' } src={ image } alt={ 'card-image' } />
+        <img
+          className={ 'h-28 rounded-t-lg' }
+          src={ image }
+          alt={ 'card-image' }
+          height={ 96 }
+          width={ 205 }
+        />
 
         {/* CARD TITLE */ }
         <div className={ `leading-tight text-2xl px-2 mt-1 ${ inter_tightHeavy.className }` }>
