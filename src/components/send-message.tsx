@@ -63,7 +63,7 @@ export default function SendMessage(): ReactElement {
       />
 
       <button
-        className='text-white bg-slate-500 h-9 rounded-xl w-fit mx-auto px-4 hover:bg-slate-400 focus:bg-slate-300 hover:text-white transition duration-300'
+        className='text-slate-100 bg-slate-500 h-9 rounded-xl w-fit mx-auto px-4 hover:bg-slate-400 focus:bg-slate-300 hover:text-slate-700 transition duration-300'
         type='submit'>
         Send Message
       </button>

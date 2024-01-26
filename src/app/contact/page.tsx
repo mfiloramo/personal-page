@@ -101,7 +101,9 @@ export default function Contact(): ReactElement {
         </MotionSlider>
 
         {/* SEND-MESSAGE COMPONENT */}
-        <SendMessage />
+        <MotionSlider className={ '' } delay={ 1.4 }>
+          <SendMessage />
+        </MotionSlider>
       </div>
     </div>
   )
