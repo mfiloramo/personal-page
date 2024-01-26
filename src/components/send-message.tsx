@@ -19,8 +19,9 @@ export default function SendMessage(): ReactElement {
   );
 
   return (
-    <form className={ 'flex flex-col bg-slate-500 bg-opacity-60 text-slate-100 rounded-xl px-3 py-4 max-w-screen-md mx-auto' }>
+    <form className={ 'flex flex-col bg-slate-500 bg-opacity-60 text-slate-100 rounded-xl p-3 max-w-screen-md mx-auto' }>
 
+      {/* NAME SECTION */}
       <input
         className={ 'bg-transparent text-slate-100 placeholder-slate-400 p-1 focus:outline-none' }
         type='text'
@@ -32,6 +33,7 @@ export default function SendMessage(): ReactElement {
 
       <Separator />
 
+      {/* EMAIL SECTION */}
       <input
         className={ 'bg-transparent text-slate-100 placeholder-slate-400 p-1 focus:outline-none' }
         type='email'
@@ -43,6 +45,7 @@ export default function SendMessage(): ReactElement {
 
       <Separator />
 
+      {/* SUBJECT SECTION */}
       <input
         className={ 'bg-transparent text-slate-100 placeholder-slate-400 p-1 focus:outline-none' }
         type='text'
@@ -54,6 +57,7 @@ export default function SendMessage(): ReactElement {
 
       <Separator />
 
+      {/* MESSAGE SECTION */}
       <textarea
         className={ 'bg-transparent text-slate-100 placeholder-slate-400 p-1 focus:outline-none' }
         placeholder='Message'
@@ -62,6 +66,7 @@ export default function SendMessage(): ReactElement {
         required
       />
 
+      {/* SEND MESSAGE BUTTON */}
       <button
         className='text-slate-100 bg-slate-500 h-9 rounded-xl w-fit mx-auto px-4 hover:bg-slate-400 focus:bg-slate-300 hover:text-slate-700 transition duration-300'
         type='submit'>

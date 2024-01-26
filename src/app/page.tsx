@@ -39,7 +39,7 @@ export default function Home(): ReactElement {
   const [ currentQuote, setCurrentQuote ] = useState(0);
 
   useEffect(() => {
-    const intervalId = setInterval((): void => {
+    const intervalId: NodeJS.Timeout = setInterval((): void => {
       setCurrentQuote((prevPhrase) => (prevPhrase + 1) % quotes.length);
     }, 5000);
 
@@ -52,8 +52,8 @@ export default function Home(): ReactElement {
 
       {/* HERO BANNER */ }
       <div
-        className={ 'bg-hero-banner-main bg-cover bg-no-repeat bg-center section-shadow sm:h-64 h-80 w-screen absolute ' }>
-        <div className={ '-ml-4 relative mt-8 cursor-default px-8' }>
+        className={ 'bg-hero-banner-main bg-cover bg-no-repeat bg-center section-shadow sm:h-80 h-80 w-screen absolute shadow-2xl' }>
+        <div className={ '-ml-4 relative mt-10 cursor-default px-8' }>
 
           {/* TITLE TEXT */ }
           <MotionSlider className={ '' } delay={ 0.2 }>
@@ -67,7 +67,7 @@ export default function Home(): ReactElement {
 
           {/* QUOTES SECTION */ }
           <MotionSlider className='mt-7' delay={ 0.6 }>
-            <div className='relative h-24'>
+            <div className='relative h-24 mx-auto max-w-screen-md'>
               <AnimatePresence>
                 <motion.div
                   key={ currentQuote }
@@ -86,7 +86,7 @@ export default function Home(): ReactElement {
 
           {/* BODY SECTION */ }
           <MotionSlider className={ '' } delay={ 0.8 }>
-            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 mt-24 sm:mt-10' }>
+            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 mt-24 ' }>
               Explore My Work
             </div>
 
@@ -97,7 +97,7 @@ export default function Home(): ReactElement {
           {/* BUTTON CONTAINER */ }
           <div
             className={ 'flex flex-col sm:flex-row justify-center sm:justify-between flex-wrap px-4 sm:px-24 mt-8 mb-12 mx-auto max-w-screen-sm pb-8' }>
-            <MotionSlider className={ '' } delay={ 1.4 }>
+            <MotionSlider className={ '' } delay={ 1.2 }>
               <Link href={ 'portfolio' }>
                 <motion.div
                   className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 mx-2 ${ inter_tightHeavy.className }` }
@@ -110,7 +110,7 @@ export default function Home(): ReactElement {
               </Link>
             </MotionSlider>
 
-            <MotionSlider className={ '' } delay={ 1.2 }>
+            <MotionSlider className={ '' } delay={ 1.4 }>
               <Link href={ 'services' }>
                 <motion.div
                   className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 mx-2 ${ inter_tightHeavy.className }` }
