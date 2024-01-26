@@ -62,7 +62,7 @@ export default function Home(): ReactElement {
 
           {/* SUBTITLE TEXT */ }
           <MotionSlider className={ '' } delay={ 0.4 }>
-            <div className={ `text-2xl ${ inter_tightLight.className }` }>Web Developer ‣ Designer ‣ Freelancer</div>
+            <div className={ `text-2xl ${ inter_tightLight.className }` }>Web Developer ‣ Designer ‣ Engineer</div>
           </MotionSlider>
 
           {/* QUOTES SECTION */ }

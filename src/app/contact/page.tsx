@@ -7,6 +7,7 @@ import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import { motion } from 'framer-motion';
 import { StackButtonProps } from '@/interfaces/StackButtonProps';
 import Divider from '@/components/divider';
+import SendMessage from '@/components/send-message';
 
 export default function Contact(): ReactElement {
   const contactItems: any[] = [
@@ -75,7 +76,7 @@ export default function Contact(): ReactElement {
                   <Link href={ button.link }>
                     <Image
                       className={ 'mx-auto h-auto w-36 p-2 cursor-pointer z-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.7)]' }
-                      src={ `/${button.imageSource}` }
+                      src={ `/${ button.imageSource }` }
                       alt={ 'contact-image' }
                       height={ 225 }
                       width={ 225 }
@@ -89,7 +90,9 @@ export default function Contact(): ReactElement {
       </div>
 
       {/* SEND MESSAGE SECTION */ }
-      <div className={ 'mt-7 h-44 w-full bg-lightblue-grid-background section-shadow p-4' }>
+      <div className={ 'mt-7 h-fit w-full bg-lightblue-grid-background section-shadow p-4' }>
+
+        {/* TITLE */}
         <MotionSlider
           className={ `text-sky-200 text-3xl pb-6 mt-4 mx-auto max-w-screen-md  ${ cabinLight.className }` }
           delay={ 1 }>
@@ -97,6 +100,8 @@ export default function Contact(): ReactElement {
           <Divider />
         </MotionSlider>
 
+        {/* SEND-MESSAGE COMPONENT */}
+        <SendMessage />
       </div>
     </div>
   )
