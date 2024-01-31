@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@trycourier/courier": "^6.0.5",
     "@vercel/speed-insights": "^1.0.5",
     "framer-motion": "^10.18.0",
     "hamburger-react": "^2.5.0",

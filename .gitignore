@@ -38,3 +38,6 @@ next-env.d.ts
 # ide configuration
 .idea
 !/src/app/page.tsx
+
+# environment
+.env

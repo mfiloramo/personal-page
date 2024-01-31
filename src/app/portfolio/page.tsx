@@ -25,7 +25,7 @@ export default function Portfolio(): ReactElement {
       urlPath: '/portfolio/hifiber',
       image: 'images/profile-cards/profile-card-hifiber.png',
       title: 'HiFiber',
-      subtitle: 'Web Developer Tool'
+      subtitle: 'Frontend Developer Tool'
     },
     {
       urlPath: '/portfolio/tech-talk',

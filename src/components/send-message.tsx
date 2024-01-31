@@ -1,4 +1,4 @@
-import { ChangeEvent, HTMLInputTypeAttribute, ReactElement, useState } from 'react';
+import { ChangeEvent, ReactElement, useState } from 'react';
 
 export default function SendMessage(): ReactElement {
   const [ name, setName ] = useState('');
@@ -7,21 +7,50 @@ export default function SendMessage(): ReactElement {
   const [ message, setMessage ] = useState('');
   const [ status, setStatus ] = useState('');
 
-  const handleSubmit = async (e: any): Promise<void> => {
-    e.preventDefault();
+  const handleSubmit = async (event: any): Promise<void> => {
+    event.preventDefault();
     setStatus('Sending...');
 
-    // LOGIC TO CALL API ROUTE
-  }
+    const formData = { name, email, subject, message };
+
+    try {
+      const response: Response = await fetch('/api/send-message', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      // RESET FORM FIELDS
+      if (response.ok) {
+        setStatus('Message sent successfully');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      } else {
+        // HANDLE FAILURE RESPONSE
+        setStatus(result.message || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('Failed to send message');
+    }
+  };
+
 
   const Separator = () => (
     <div className="border-t border-slate-500 w-full mx-auto mb-2"></div>
   );
 
   return (
-    <form className={ 'flex flex-col bg-slate-500 bg-opacity-60 text-slate-100 rounded-xl p-3 max-w-screen-md mx-auto' }>
+    <form
+      className={ 'flex flex-col bg-slate-500 bg-opacity-60 text-slate-100 rounded-xl p-3 max-w-screen-md mx-auto' }>
 
-      {/* NAME SECTION */}
+      {/* NAME SECTION */ }
       <input
         className={ 'bg-transparent text-slate-100 placeholder-slate-400 p-1 focus:outline-none' }
         type='text'
@@ -33,7 +62,7 @@ export default function SendMessage(): ReactElement {
 
       <Separator />
 
-      {/* EMAIL SECTION */}
+      {/* EMAIL SECTION */ }
       <input
         className={ 'bg-transparent text-slate-100 placeholder-slate-400 p-1 focus:outline-none' }
         type='email'
@@ -45,7 +74,7 @@ export default function SendMessage(): ReactElement {
 
       <Separator />
 
-      {/* SUBJECT SECTION */}
+      {/* SUBJECT SECTION */ }
       <input
         className={ 'bg-transparent text-slate-100 placeholder-slate-400 p-1 focus:outline-none' }
         type='text'
@@ -57,7 +86,7 @@ export default function SendMessage(): ReactElement {
 
       <Separator />
 
-      {/* MESSAGE SECTION */}
+      {/* MESSAGE SECTION */ }
       <textarea
         className={ 'bg-transparent text-slate-100 placeholder-slate-400 p-1 focus:outline-none' }
         placeholder='Message'
@@ -66,16 +95,16 @@ export default function SendMessage(): ReactElement {
         required
       />
 
-      {/* SEND MESSAGE BUTTON */}
+      {/* SEND MESSAGE BUTTON */ }
       <button
         className='text-slate-100 bg-slate-500 h-9 rounded-xl w-fit mx-auto px-4 hover:bg-slate-400 focus:bg-slate-300 hover:text-slate-700 transition duration-300'
+        onClick={ handleSubmit }
         type='submit'>
         Send Message
       </button>
 
-
       { status && <p>{ status }</p> }
 
     </form>
-  );
+  )
 }
