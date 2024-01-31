@@ -16,6 +16,8 @@ export default async function SendMessage(req: NextApiRequest, res: NextApiRespo
         },
       });
 
+      console.log('Message sent with ID:', requestId);
+
       res.status(200).json({ message: 'Message sent successfully' });
     } catch (error: any) {
       console.error('Error sending message via Courier:', error);
