@@ -8,15 +8,13 @@ export default async function SendMessage(req: NextApiRequest, res: NextApiRespo
     try {
       const { name, email, subject, message } = req.body;
 
-      const { requestId } = await courier.send({
+      await courier.send({
         message: {
           to: { email: process.env.ADMIN_EMAIL },
           template: 'J6ZR4BDFZ24KKDMMDH9Q4E9Z88BN',
           data: { name, email, subject, message }
         },
       });
-
-      console.log('Message sent with ID:', requestId);
 
       res.status(200).json({ message: 'Message sent successfully' });
     } catch (error: any) {

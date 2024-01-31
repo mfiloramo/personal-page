@@ -1,14 +1,28 @@
-import { ChangeEvent, ReactElement, useState } from 'react';
+import { ChangeEvent, ReactElement, useEffect, useState } from 'react';
 
 export default function SendMessage(): ReactElement {
+  // COMPONENT STATE
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
   const [ subject, setSubject ] = useState('');
   const [ message, setMessage ] = useState('');
   const [ status, setStatus ] = useState('');
 
-  const handleSubmit = async (event: any): Promise<void> => {
-    event.preventDefault();
+  // BUILT-IN HOOKS
+  useEffect(() => {
+    let timeoutId: any;
+    if (status) {
+      timeoutId = setTimeout((): void => {
+        setStatus('');
+      }, 15000);
+    }
+    return () => clearTimeout(timeoutId);
+  }, [status]);
+
+
+  // HANDLER FUNCTIONS
+  const handleSubmit = async (e: any): Promise<void> => {
+    e.preventDefault();
     setStatus('Sending...');
 
     const formData = { name, email, subject, message };
@@ -22,7 +36,7 @@ export default function SendMessage(): ReactElement {
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
+      const result: any = await response.json();
 
       // RESET FORM FIELDS
       if (response.ok) {
@@ -41,13 +55,13 @@ export default function SendMessage(): ReactElement {
     }
   };
 
-
   const Separator = () => (
     <div className="border-t border-slate-500 w-full mx-auto mb-2"></div>
   );
 
   return (
     <form
+      onSubmit={ handleSubmit }
       className={ 'flex flex-col bg-slate-500 bg-opacity-60 text-slate-100 rounded-xl p-3 max-w-screen-md mx-auto' }>
 
       {/* NAME SECTION */ }
@@ -98,12 +112,11 @@ export default function SendMessage(): ReactElement {
       {/* SEND MESSAGE BUTTON */ }
       <button
         className='text-slate-100 bg-slate-500 h-9 rounded-xl w-fit mx-auto px-4 hover:bg-slate-400 focus:bg-slate-300 hover:text-slate-700 transition duration-300'
-        onClick={ handleSubmit }
         type='submit'>
         Send Message
       </button>
 
-      { status && <p>{ status }</p> }
+      { status && <p className={ 'mx-auto mt-3' }>{ status }</p> }
 
     </form>
   )
