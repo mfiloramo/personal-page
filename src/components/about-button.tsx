@@ -11,7 +11,7 @@ export default function AboutButton({ imgSrc, urlPath, altText, index }: AboutBu
       className={ 'mt-4 mb-4 sm:mb-0 mx-auto sm:mx-0' }
       href={ urlPath }
       whileHover={ generateHoverAnimation }
-      whileTap={ { scale: 0.8, rotate: -8, borderRadius: "100%" } }
+      whileTap={ { scale: 0.9, rotate: -5, borderRadius: '100%' } }
     >
       <MotionSlider className={ '' } delay={ index! }>
         <Image

@@ -14,7 +14,7 @@ export default function SendMessage(): ReactElement {
     if (status) {
       timeoutId = setTimeout((): void => {
         setStatus('');
-      }, 15000);
+      }, 10000);
     }
     return () => clearTimeout(timeoutId);
   }, [status]);

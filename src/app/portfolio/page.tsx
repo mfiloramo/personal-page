@@ -88,7 +88,7 @@ export default function Portfolio(): ReactElement {
                   href={ card.urlPath }
                   whileHover={ generateHoverAnimation }
                   className={ 'p-3' }
-                  whileTap={ { scale: 0.9, rotate: -8, borderRadius: "100%" } }
+                  whileTap={ { scale: 0.9, rotate: 0, borderRadius: '100%' } }
                 >
                   <MotionSlider className={ '' } delay={0.2 * index}>
                     <PortfolioCard image={ card.image } title={ card.title } subtitle={ card.subtitle } />

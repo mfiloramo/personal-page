@@ -29,7 +29,7 @@ export default function About(): ReactElement {
       imgSrc: '/images/general-logos-mono/hifiber-logo-mono.png',
       altText: 'hifiber'
     }
-  ]
+  ];
 
   return (
     <div className='flex flex-col lg:p-0 relative'>
@@ -61,7 +61,7 @@ export default function About(): ReactElement {
 
           <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.6 }>
             <p className={ 'break-words' }>
-              As a dedicated full stack engineer with several years of web dev experience across various fields, I&apos;m passionate about merging my educational insights with my technical skills to ultimately give back to the EdTech community.
+              As a dedicated full stack engineer with several years of web development experience across various fields, I&apos;m passionate about merging my educational insights with my technical skills to ultimately give back to the EdTech community.
             </p>
           </MotionSlider>
         </>
@@ -77,7 +77,7 @@ export default function About(): ReactElement {
           <Divider />
 
           { /* BUTTON CONTAINER */ }
-          <div className='grid grid-cols-2 sm:grid-cols-4 gap-0 justify-items-center mx-4 ml-12 sm:ml-0 items-center'>
+          <div className='grid grid-cols-2 sm:grid-cols-4 gap-0 justify-items-center mb-0 sm:mb-4 items-center'>
 
             {
               aboutButtons.map((button: any, index: number): ReactElement => {
