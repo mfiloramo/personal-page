@@ -8,7 +8,7 @@ import PortfolioCard from '@/components/portfolio-card';
 import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.interface';
 
 export default function Portfolio(): ReactElement {
-  const portfolioCards: any[] = [
+  const portfolioCards: PortfolioCardPropsInterface[] = [
     {
       urlPath: '/portfolio/lingolink',
       image: 'images/profile-cards/profile-card-lingolink.png',
@@ -16,16 +16,16 @@ export default function Portfolio(): ReactElement {
       subtitle: 'Multilingual Messaging Platform'
     },
     {
-      urlPath: '/portfolio/top100camp',
-      image: 'images/profile-cards/profile-card-top100camp.png',
-      title: 'Top100Camp',
-      subtitle: 'Website Migration & Redesign'
-    },
-    {
       urlPath: '/portfolio/hifiber',
       image: 'images/profile-cards/profile-card-hifiber.png',
       title: 'HiFiber',
       subtitle: 'Frontend Developer Tool'
+    },
+    {
+      urlPath: '/portfolio/top100camp',
+      image: 'images/profile-cards/profile-card-top100camp.png',
+      title: 'Top100Camp',
+      subtitle: 'Website Migration & Redesign'
     },
     {
       urlPath: '/portfolio/tech-talk',
@@ -44,6 +44,12 @@ export default function Portfolio(): ReactElement {
       image: 'images/profile-cards/profile-card-ua.png',
       title: 'User Admin',
       subtitle: 'Building Sinclair\'s User Management Platform'
+    },
+    {
+      urlPath: 'https://medium.com/@adriankarnani/introducing-hifiber-a-visualization-tool-for-the-react-fiber-tree-fb8c80234ee0',
+      image: 'images/profile-cards/profile-card-medium-article.png',
+      title: 'HiFiber',
+      subtitle: 'Published Medium Article Credit: Adrian Karnani'
     }
   ];
 
