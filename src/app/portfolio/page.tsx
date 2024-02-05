@@ -28,10 +28,10 @@ export default function Portfolio(): ReactElement {
       subtitle: 'Website Migration & Redesign'
     },
     {
-      urlPath: '/portfolio/tech-talk',
-      image: 'images/profile-cards/profile-card-websockets.png',
-      title: 'WebSockets',
-      subtitle: 'Informative Tech Talk'
+      urlPath: '/portfolio/sinclair-ua',
+      image: 'images/profile-cards/profile-card-ua.png',
+      title: 'User Admin',
+      subtitle: 'Building Sinclair\'s User Management Platform'
     },
     {
       urlPath: '/portfolio/sinclair-logging',
@@ -40,10 +40,10 @@ export default function Portfolio(): ReactElement {
       subtitle: 'Building Sinclair\'s Logging Infrastructure'
     },
     {
-      urlPath: '/portfolio/sinclair-ua',
-      image: 'images/profile-cards/profile-card-ua.png',
-      title: 'User Admin',
-      subtitle: 'Building Sinclair\'s User Management Platform'
+      urlPath: '/portfolio/tech-talk',
+      image: 'images/profile-cards/profile-card-websockets.png',
+      title: 'WebSockets',
+      subtitle: 'Informative Tech Talk'
     },
     {
       urlPath: 'https://medium.com/@adriankarnani/introducing-hifiber-a-visualization-tool-for-the-react-fiber-tree-fb8c80234ee0',

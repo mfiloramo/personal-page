@@ -16,7 +16,7 @@ export default function HiFiberPage(): ReactElement {
         <p>
           <b><u>Revolutionizing React Debugging with HiFiber</u></b>
           <br />
-          HiFiber is a Chrome devtool tailored for frontend engineers at any stage of their career. It simplifies the debugging of React applications by offering advanced visualization and analysis of the React Fiber tree. This tool is designed to improve codebase understanding and enhance performance optimization by identifying inefficiencies in the rendering process.
+          HiFiber is a Chrome DevTool tailored for frontend engineers at any stage of their career. It simplifies the debugging of React applications by offering advanced visualization and analysis of the React Fiber tree. This tool is designed to improve codebase understanding and enhance performance optimization by identifying inefficiencies in the rendering process.
         </p>
 
         <br/>
@@ -24,7 +24,7 @@ export default function HiFiberPage(): ReactElement {
         <p>
           <b><u>Navigating the Complexity of the React Fiber Tree</u></b>
           <br />
-          Frontend engineers often face challenges in comprehending and debugging the complex structure of React's Fiber tree. Traditional tools fall short in providing clear insights, making it difficult to pinpoint performance bottlenecks and unnecessary re-renders within the application's architecture.
+          Frontend engineers often face challenges in comprehending and debugging the complex structure of React&apos;s Fiber tree. Traditional tools fall short in providing clear insights, making it difficult to pinpoint performance bottlenecks and unnecessary re-renders within the application&apos;s architecture.
           <br /><br />
           <b><u>Streamlined Debugging with Advanced Visualization</u></b><br />
           HiFiber addresses these challenges by integrating a sophisticated visualization engine that maps out the React Fiber tree post-reconciliation. It enables developers to easily identify critical nodes, analyze render times, and understand state changes, thereby streamlining the debugging process and enhancing application performance.

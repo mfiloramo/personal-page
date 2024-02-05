@@ -78,8 +78,8 @@ export default function LingoLinkPage(): ReactElement {
           results, facilitating more effective and inclusive interactions among students of diverse linguistic
           backgrounds.
           <br /><br />
-          While still in its pre-alpha stage and available to a select user base through registration, LingoLink's
-          impact is palpable among its early adopters. This growing community of users exemplifies the app's potential
+          While still in its pre-alpha stage and available to a select user base through registration, LingoLink&apos;s
+          impact is palpable among its early adopters. This growing community of users exemplifies the app&apos;s potential
           to transform communication in educational contexts and beyond.
         </p>
 
@@ -93,7 +93,7 @@ export default function LingoLinkPage(): ReactElement {
           classrooms will continue to enable students from various linguistic backgrounds to engage more fully with
           their peers and curriculum, fostering a more inclusive learning experience.
           <br /><br />
-          Beyond education, LingoLink's utility as a general communication tool promises to bring closer connections in
+          Beyond education, LingoLink&apos;s utility as a general communication tool promises to bring closer connections in
           any multilingual context, from international businesses to global social networks. The future of LingoLink is
           not just as a messaging platform, but as a simple yet powerful tool for breaking down language barriers across
           the globe.

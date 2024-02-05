@@ -31,7 +31,7 @@ export default function SinclairUserAdmin(): ReactElement {
         <p>
           <b style={{ textDecoration: 'underline' }}>A Tailored Approach to Contract and User Management</b>
           <br />
-          To address these challenges, the platform integrates a sophisticated frontend built with Angular, enhanced by Kendo UI's powerful visualization components. It facilitates effortless management of contracts, from detailed displays of contract data to seamless assignment of contract types to employees. Features such as comprehensive filtering, keyword searching, and the ability to export data to Excel and PDF formats, ensure a streamlined workflow tailored to organizational needs.
+          To address these challenges, the platform integrates a sophisticated frontend built with Angular, enhanced by Kendo UI&apos;s powerful visualization components. It facilitates effortless management of contracts, from detailed displays of contract data to seamless assignment of contract types to employees. Features such as comprehensive filtering, keyword searching, and the ability to export data to Excel and PDF formats, ensure a streamlined workflow tailored to organizational needs.
         </p>
 
         <br/>
@@ -47,7 +47,7 @@ export default function SinclairUserAdmin(): ReactElement {
         <p>
           <b style={{ textDecoration: 'underline' }}>Empowering Users with Advanced Contract Management Tools</b>
           <br />
-          Currently, the platform is instrumental in transforming how contracts and user assignments are managed, offering unparalleled efficiency and accuracy. Its adoption has led to significant time savings and reduced errors in managing contracts, with users benefiting from its intuitive design and comprehensive functionalities. The platform's success underscores its role not just as a tool, but as a vital component in optimizing contract management processes.
+          Currently, the platform is instrumental in transforming how contracts and user assignments are managed, offering unparalleled efficiency and accuracy. Its adoption has led to significant time savings and reduced errors in managing contracts, with users benefiting from its intuitive design and comprehensive functionalities. The platform&apos;s success underscores its role not just as a tool, but as a vital component in optimizing contract management processes.
         </p>
       </div>
     </div>
