@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 import { dm_sans } from '@/utilities/fonts';
@@ -17,6 +18,9 @@ export default function RootLayout({ children }: {
   return (
     <html lang='en'>
     <body className={ `min-h-screen ${ dm_sans.className }` }>
+
+    {/* APPLICATION ANALYTICS */}
+    <Analytics />
 
     {/* APPLICATION TELEMETRY */ }
     <SpeedInsights />
