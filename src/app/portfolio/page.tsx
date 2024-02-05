@@ -49,7 +49,7 @@ export default function Portfolio(): ReactElement {
       urlPath: 'https://medium.com/@adriankarnani/introducing-hifiber-a-visualization-tool-for-the-react-fiber-tree-fb8c80234ee0',
       image: 'images/profile-cards/profile-card-medium-article.png',
       title: 'HiFiber',
-      subtitle: 'Published Medium Article Credit: Adrian Karnani'
+      subtitle: 'Published Medium Article By Adrian Karnani'
     }
   ];
 
