@@ -21,7 +21,7 @@ export default function PortfolioCard({ image, title, subtitle }: PortfolioCardP
         </div>
 
         {/* CARD SUBTITLE */}
-        <div className={ `leading-tight text-xl sm:text-md px-2 min-h-16 ${ inter_tightLight.className }` }>
+        <div className={ `leading-snug text-xl sm:text-sm px-2 min-h-16 ${ inter_tightLight.className }` }>
           { subtitle }
         </div>
       </div>
