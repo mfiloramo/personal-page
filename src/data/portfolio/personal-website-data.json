@@ -1,0 +1,32 @@
+{
+  "sections": [
+    {
+      "id": "introduction",
+      "subtitle": "Introduction",
+      "paragraphs": [
+        "I built my personal website using a modern and robust technology stack, creating a dynamic, performant and visually engaging platform to showcase my work and connect with visitors."
+      ]
+    },
+    {
+      "id": "motivation_and_goals",
+      "subtitle": "Motivation and Goals",
+      "paragraphs": [
+        "In my experience as a software engineer, the desire to build a space that truly encapsulates my professional journey, achievements and the spectrum of projects I've passionately worked on led me to design and launch this very site. It was to be a showcase of some of my more recent and favorite work, offering a window for peers, potential collaborators and the curious to explore the work that fuels my joy for this field."
+      ]
+    },
+    {
+      "id": "technology_stack",
+      "subtitle": "Technology Stack",
+      "paragraphs": [
+        "I chose a modern and performant technology stack in my site’s creation, consisting of React, Next.js, Tailwind CSS, Turbopack and Vercel, complemented by Courier for messaging notifications. This stack was carefully chosen for its efficiency, flexibility, and the powerful capabilities it offers, making the development experience as enjoyable as it was productive."
+      ]
+    },
+    {
+      "id": "conclusion",
+      "subtitle": "Conclusion",
+      "paragraphs": [
+        "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world. I’m so grateful that you’ve taken the time to learn more about my site!"
+      ]
+    }
+  ]
+}

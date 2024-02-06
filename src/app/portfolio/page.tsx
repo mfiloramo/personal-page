@@ -50,6 +50,12 @@ export default function Portfolio(): ReactElement {
       image: 'images/profile-cards/profile-card-medium-article.png',
       title: 'HiFiber',
       subtitle: 'Published Medium Article By Adrian Karnani'
+    },
+    {
+      urlPath: '/portfolio/personal-website',
+      image: 'images/profile-cards/profile-card-personal-website.png',
+      title: 'Personal Site',
+      subtitle: 'Web Development Portfolio'
     }
   ];
 
@@ -96,7 +102,7 @@ export default function Portfolio(): ReactElement {
                   className={ 'p-3' }
                   whileTap={ { scale: 0.9, rotate: 0, borderRadius: '100%' } }
                 >
-                  <MotionSlider className={ '' } delay={0.2 * index}>
+                  <MotionSlider className={ '' } delay={ 0.2 * index }>
                     <PortfolioCard image={ card.image } title={ card.title } subtitle={ card.subtitle } />
                   </MotionSlider>
                 </motion.a>

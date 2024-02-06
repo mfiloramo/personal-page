@@ -1,0 +1,39 @@
+{
+  "sections": [
+    {
+      "id": "introduction",
+      "subtitle": "",
+      "paragraphs": [
+        "I migrated and redesigned the NBPA's top100camp.com website from WordPress to Angular/Express, introducing a serverless backend and hosted on Vercel for improved performance and user experience."
+      ]
+    },
+    {
+      "id": "enhancing_digital_footprint",
+      "subtitle": "Enhancing NBPA's Digital Footprint",
+      "paragraphs": [
+        "For the National Basketball Players Association (NBPA), we undertook a significant project to migrate their top100camp.com website from a WordPress foundation to a modern Angular application. This migration, coupled with a serverless backend architecture hosted on Vercel, not only modernized the website but also improved its overall web visibility, animations, transitions, and responsiveness, offering a superior user experience."
+      ]
+    },
+    {
+      "id": "modern_web_standards",
+      "subtitle": "Transitioning to Meet Modern Web Standards",
+      "paragraphs": [
+        "The primary challenge was to transition the NBPA's website to a platform that could meet modern web standards for speed, design, and user engagement without losing the essence of its content and functionality."
+      ]
+    },
+    {
+      "id": "platform_overhaul",
+      "subtitle": "A Comprehensive Platform Overhaul",
+      "paragraphs": [
+        "The solution was a comprehensive overhaul to an Angular- and Express-based platform with a serverless backend on Vercel. This strategic migration enhanced the site’s loading speed, web visibility, and user interface with smoother animations and a more responsive design. The integration of the Instagram API further ensured that the website remained vibrant and engaging, setting a new benchmark for the NBPA’s digital presence."
+      ]
+    },
+    {
+      "id": "technology_stack",
+      "subtitle": "Technology Stack",
+      "paragraphs": [
+        "TypeScript, Angular, Express, Vercel, Instagram API"
+      ]
+    }
+  ]
+}
