@@ -2,7 +2,7 @@
   "sections": [
     {
       "id": "introduction",
-      "subtitle": "Introduction",
+      "subtitle": "",
       "paragraphs": [
         "I built my personal website using a modern and robust technology stack, creating a dynamic, performant and visually engaging platform to showcase my work and connect with visitors."
       ]
@@ -23,7 +23,7 @@
     },
     {
       "id": "conclusion",
-      "subtitle": "Conclusion",
+      "subtitle": "Final Thoughts",
       "paragraphs": [
         "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world. I’m so grateful that you’ve taken the time to learn more about my site!"
       ]
