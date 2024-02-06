@@ -2,32 +2,15 @@
 import { ReactElement, ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { MotionSlider } from '@/components/motion-slider';
 import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import { motion } from 'framer-motion';
-import { StackButtonProps } from '@/interfaces/StackButtonProps';
 import Divider from '@/components/divider';
 import SendMessage from '@/components/send-message';
+import { MotionSlider } from '@/components/motion-slider';
+import { StackButtonProps } from '@/interfaces/StackButtonProps';
+import pageContent from '../../data/contact/contact-data.json';
 
 export default function Contact(): ReactElement {
-  const contactItems: any[] = [
-    {
-      imageSource: 'images/contact-icons/upwork-icon.png',
-      link: 'https://www.upwork.com/freelancers/~01371b6e31042beadc'
-    },
-    {
-      imageSource: 'images/contact-icons/linkedin-icon.png',
-      link: 'https://www.linkedin.com/in/michael-filoramo/'
-    },
-    {
-      imageSource: 'images/contact-icons/gmail-icon.png',
-      link: 'mailto:mlfiloramo@gmail.com'
-    },
-    {
-      imageSource: 'images/contact-icons/github-icon.png',
-      link: 'https://github.com/mfiloramo'
-    }
-  ];
 
   return (
     <div className='flex flex-col'>
@@ -35,9 +18,7 @@ export default function Contact(): ReactElement {
       <div className={ 'pt-10 mx-8 md:mx-auto max-w-screen-md mb-10' }>
         { /* TITLE */ }
         <MotionSlider className={ `text-sky-100 text-8xl ${ cabinHeavy.className }` } delay={ 0 }>
-          <p>
-            contact
-          </p>
+          <p>contact</p>
         </MotionSlider>
 
         { /* SUBTITLE */ }
@@ -63,8 +44,8 @@ export default function Contact(): ReactElement {
 
           {/* CONTACT BUTTONS */ }
           {
-            contactItems.map((button: StackButtonProps, index: number): ReactNode => (
-              <MotionSlider className={ '' } delay={ (contactItems.length - index) * 0.2 } key={ index }>
+            pageContent.map((button: StackButtonProps, index: number): ReactNode => (
+              <MotionSlider className={ '' } delay={ (pageContent.length - index) * 0.2 } key={ index }>
                 <motion.div
                   initial={ { x: -100, opacity: 0 } }
                   animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }

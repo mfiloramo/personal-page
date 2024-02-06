@@ -1,6 +1,6 @@
 'use client'
 import { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/personal-website-data.json';
+import pageContent from '../../../data/portfolio/pages/personal-website-data.json';
 
 
 export default function PersonalWebsite(): ReactElement {

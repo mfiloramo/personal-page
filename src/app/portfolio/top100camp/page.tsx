@@ -1,6 +1,6 @@
 'use client';
 import { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/top100camp-data.json'
+import pageContent from '../../../data/portfolio/pages/top100camp-data.json'
 
 export default function Top100CampPage(): ReactElement {
   return (

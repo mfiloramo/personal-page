@@ -6,58 +6,9 @@ import { motion } from 'framer-motion';
 import { generateHoverAnimation } from '@/utilities/animations';
 import PortfolioCard from '@/components/portfolio-card';
 import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.interface';
+import pageContent from '../../data/portfolio/portfolio-data.json'
 
 export default function Portfolio(): ReactElement {
-  const portfolioCards: PortfolioCardPropsInterface[] = [
-    {
-      urlPath: '/portfolio/lingolink',
-      image: 'images/profile-cards/profile-card-lingolink.png',
-      title: 'LingoLink',
-      subtitle: 'Multilingual Messaging Platform'
-    },
-    {
-      urlPath: '/portfolio/hifiber',
-      image: 'images/profile-cards/profile-card-hifiber.png',
-      title: 'HiFiber',
-      subtitle: 'Frontend Developer Tool'
-    },
-    {
-      urlPath: '/portfolio/top100camp',
-      image: 'images/profile-cards/profile-card-top100camp.png',
-      title: 'Top100Camp',
-      subtitle: 'Website Migration & Redesign'
-    },
-    {
-      urlPath: '/portfolio/sinclair-ua',
-      image: 'images/profile-cards/profile-card-ua.png',
-      title: 'User Admin',
-      subtitle: 'Building Sinclair\'s User Management Platform'
-    },
-    {
-      urlPath: '/portfolio/sinclair-logging',
-      image: 'images/profile-cards/profile-card-logging.png',
-      title: 'Logging System',
-      subtitle: 'Building Sinclair\'s Logging Infrastructure'
-    },
-    {
-      urlPath: '/portfolio/tech-talk',
-      image: 'images/profile-cards/profile-card-websockets.png',
-      title: 'WebSockets',
-      subtitle: 'Informative Tech Talk'
-    },
-    {
-      urlPath: 'https://medium.com/@adriankarnani/introducing-hifiber-a-visualization-tool-for-the-react-fiber-tree-fb8c80234ee0',
-      image: 'images/profile-cards/profile-card-medium-article.png',
-      title: 'HiFiber',
-      subtitle: 'Published Medium Article By Adrian Karnani'
-    },
-    {
-      urlPath: '/portfolio/personal-website',
-      image: 'images/profile-cards/profile-card-personal-website.png',
-      title: 'Personal Site',
-      subtitle: 'Web Development Portfolio'
-    }
-  ];
 
   return (
     <div className='pt-10 relative flex flex-col sm:mx-auto'>
@@ -92,7 +43,7 @@ export default function Portfolio(): ReactElement {
 
           {/* PROJECT CARDS */ }
           {
-            portfolioCards.map((card: PortfolioCardPropsInterface, index: number): ReactNode => {
+            pageContent.map((card: PortfolioCardPropsInterface, index: number): ReactNode => {
               return (
                 <motion.a
                   key={ index }

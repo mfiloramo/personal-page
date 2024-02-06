@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/sinclair-ua-data.json';
+import pageContent from '../../../data/portfolio/pages/sinclair-ua-data.json';
 
 
 export default function SinclairUserAdmin(): ReactElement {

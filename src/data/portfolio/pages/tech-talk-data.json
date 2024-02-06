@@ -2,7 +2,7 @@
   "sections": [
     {
       "id": "introduction",
-      "subtitle": "Introduction to WebSockets",
+      "subtitle": "",
       "paragraphs": [
         "I delivered a comprehensive introductory Tech Talk on WebSockets, detailing their mechanisms and protocols to over 100 software engineering students at a collaborative event with the Codesmith immersive boot camp and SingleSprout, a tech recruitment company."
       ]

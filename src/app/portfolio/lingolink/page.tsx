@@ -1,6 +1,6 @@
 'use client';
 import { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/lingolink-data.json'
+import pageContent from '../../../data/portfolio/pages/lingolink-data.json'
 
 
 export default function LingoLinkPage(): ReactElement {

@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import Image from 'next/image';
 import { inter_tightHeavy, inter_tightLight } from '@/utilities/fonts';
 import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.interface';
 
@@ -9,10 +10,12 @@ export default function PortfolioCard({ image, title, subtitle }: PortfolioCardP
       <div className={ 'text-black bg-gradient-to-b from-slate-100 to-slate-300 border-2 border-black bg-slate-300 flex flex-col rounded-xl hover:outline-dashed hover:outline-black hover:outline-8 transition ease-in-out' }>
 
         {/* CARD IMAGE */}
-        <img
+        <Image
           className={ 'rounded-t-lg w-full' }
-          src={ image }
+          src={ `/${ image }` }
           alt={ 'card-image' }
+          width={ 246 }
+          height={ 132 }
         />
 
         {/* CARD TITLE */}

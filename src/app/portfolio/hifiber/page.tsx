@@ -1,6 +1,6 @@
 'use client';
 import { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/hifiber-data.json';
+import pageContent from '../../../data/portfolio/pages/hifiber-data.json';
 
 
 export default function HiFiberPage(): ReactElement {

@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/sinclair-logging-data.json';
+import pageContent from '../../../data/portfolio/pages/sinclair-logging-data.json';
 
 
 export default function SinclairLogging(): ReactElement {

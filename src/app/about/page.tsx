@@ -1,35 +1,13 @@
 'use client';
-import { cabinHeavy, cabinLight } from '@/utilities/fonts';
-import { MotionSlider } from '@/components/motion-slider';
-import Divider from '@/components/divider';
 import { ReactElement } from 'react';
-import { AboutButtonPropsInterface } from '@/interfaces/AboutButtonProps.interface';
+import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import AboutButton from '@/components/about-button';
+import Divider from '@/components/divider';
+import { MotionSlider } from '@/components/motion-slider';
+import pageContent from '../../data/about/about-data.json';
 
 
 export default function About(): ReactElement {
-  const aboutButtons: AboutButtonPropsInterface[] = [
-    {
-      urlPath: 'https://orange-tree-0d3c88e0f.3.azurestaticapps.net/',
-      imgSrc: '/images/general-logos-mono/lingolink-logo-mono.png',
-      altText: 'LingoLink'
-    },
-    {
-      urlPath: 'https://nbpa.com/',
-      imgSrc: '/images/general-logos-mono/nbpa-logo-mono.png',
-      altText: 'nbpa'
-    },
-    {
-      urlPath: 'https://sbgi.net/',
-      imgSrc: '/images/general-logos-mono/sinclair-logo-mono.png',
-      altText: 'sinclair'
-    },
-    {
-      urlPath: 'http://hifibertools.com/',
-      imgSrc: '/images/general-logos-mono/hifiber-logo-mono.png',
-      altText: 'hifiber'
-    }
-  ];
 
   return (
     <div className='flex flex-col lg:p-0 relative'>
@@ -80,7 +58,7 @@ export default function About(): ReactElement {
           <div className='grid grid-cols-2 sm:grid-cols-4 gap-0 justify-items-center mb-0 sm:mb-4 items-center'>
 
             {
-              aboutButtons.map((button: any, index: number): ReactElement => {
+              pageContent.map((button: any, index: number): ReactElement => {
                 return (
                   <AboutButton
                     key={ index }

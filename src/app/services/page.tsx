@@ -5,35 +5,9 @@ import ServiceCard from '@/components/service-card';
 import { MotionSlider } from '@/components/motion-slider';
 import { motion } from 'framer-motion';
 import { ServiceImageProps } from '@/interfaces/ServiceImageProps';
+import pageContent from '../../data/services/services-data.json'
 
 export default function Services(): ReactElement {
-  const services: ServiceImageProps[] = [
-    {
-      imageSrc: 'images/service-icons/service-frontend.png',
-      title: 'Frontend Development',
-      subtitle: 'Architecting responsive designs and interactive features to deliver an optimal user experience.'
-    },
-    {
-      imageSrc: 'images/service-icons/service-backend.png',
-      title: 'Backend Development',
-      subtitle: 'Engineering systems focused on efficient data processing, API integration and dynamic server-side logic.'
-    },
-    {
-      imageSrc: 'images/service-icons/service-database.png',
-      title: 'Database Management',
-      subtitle: 'Designing databases with integrity, performance and scalability to support application needs.'
-    },
-    {
-      imageSrc: 'images/service-icons/service-devops.png',
-      title: 'DevOps Services',
-      subtitle: 'Implementing automated CI/CD pipelines for efficient software lifecycle management.'
-    },
-    {
-      imageSrc: 'images/service-icons/service-telemetry.png',
-      title: 'System Telemetry',
-      subtitle: 'Integrating telemetry solutions to track user interactions and system performance over time.'
-    },
-  ];
 
   return (
     <div className='pt-10 mb-12 relative flex flex-col sm:mx-auto overflow-x-hidden'>
@@ -42,7 +16,9 @@ export default function Services(): ReactElement {
         {/* TITLE SECTION */ }
         <div className='mx-8 md:mx-auto max-w-screen-md drop-shadow-in-top'>
           <MotionSlider className={ `text-sky-100 text-8xl pb-5 ${ cabinHeavy.className }` } delay={ 0 }>
-            <p>services</p>
+            <p>
+              services
+            </p>
           </MotionSlider>
 
           {/* SUBTITLE SECTION */ }
@@ -80,13 +56,13 @@ export default function Services(): ReactElement {
 
           {/* SERVICE CARDS */ }
           {
-            services.map((service: ServiceImageProps, index: number): ReactNode => (
+            pageContent.map((service: ServiceImageProps, index: number): ReactNode => (
               <motion.div
                 key={ index }
                 className="relative p-3 z-20"
                 initial={ { x: -130, opacity: 0, filter: 'blur(4px)' } }
                 animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }
-                transition={ { duration: 0.5, delay: (services.length - index) * 0.2 } }
+                transition={ { duration: 0.5, delay: (pageContent.length - index) * 0.2 } }
               >
                 <ServiceCard imageSrc={ service.imageSrc } title={ service.title } subtitle={ service.subtitle } />
               </motion.div>
