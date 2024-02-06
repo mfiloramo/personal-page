@@ -8,8 +8,8 @@
       ]
     },
     {
-      "id": "revolutionizing_debugging",
-      "subtitle": "Revolutionizing React Debugging with HiFiber",
+      "id": "visualizing_debugging",
+      "subtitle": "Visualizing React Debugging with HiFiber",
       "paragraphs": [
         "HiFiber is a Chrome DevTool tailored for frontend engineers at any stage of their career. It simplifies the debugging of React applications by offering advanced visualization and analysis of the React Fiber tree. This tool is designed to improve codebase understanding and enhance performance optimization by identifying inefficiencies in the rendering process."
       ]
