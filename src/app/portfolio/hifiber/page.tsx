@@ -57,7 +57,7 @@ export default function HiFiberPage(): ReactElement {
                   initial={ { x: 0, opacity: 0, filter: 'blur(4px)' } }
                   whileHover={ { scale: 1.2 } }
                   animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }
-                  transition={ { duration: 0.2 } }>
+                  transition={ { duration: 0.1 } }>
                   <Image src={ `${ technology.imgSrc }` } alt={ technology.altText } width={ 120 } height={ 120 } />
                 </motion.div>
               )) }

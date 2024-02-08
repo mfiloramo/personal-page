@@ -60,7 +60,7 @@ export default function LingoLinkPage(): ReactElement {
             </p>
 
             {/* TECHNOLOGY STACK ICON CONTAINER */ }
-            <div className={ 'grid grid-cols-5 sm:grid-cols-4 md:grid-cols-3 gap-2 items-center mt-3' }>
+            <div className={ 'grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 items-center mt-3' }>
 
               { /* TECHNOLOGY STACK ICONS */ }
               {
@@ -71,7 +71,7 @@ export default function LingoLinkPage(): ReactElement {
                     initial={ { x: 0, opacity: 0, filter: 'blur(4px)' } }
                     whileHover={ { scale: 1.2 } }
                     animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }
-                    transition={ { duration: 0.2 } }
+                    transition={ { duration: 0.1 } }
                   >
                     <Image
                       src={ `${ technology.imgSrc }` }

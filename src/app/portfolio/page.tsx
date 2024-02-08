@@ -42,8 +42,7 @@ export default function Portfolio(): ReactElement {
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-fit h-fit z-20 mt-6 mb-12 mx-auto px-12 sm:px-0 max-w-screen-md'>
 
           {/* PROJECT CARDS */ }
-          {
-            pageContent.map((card: PortfolioCardPropsInterface, index: number): ReactNode => {
+          { pageContent.map((card: PortfolioCardPropsInterface, index: number): ReactNode => {
               return (
                 <motion.a
                   key={ index }
@@ -56,9 +55,7 @@ export default function Portfolio(): ReactElement {
                     <PortfolioCard image={ card.image } title={ card.title } subtitle={ card.subtitle } />
                   </MotionSlider>
                 </motion.a>
-            )
-            })
-          }
+            )}) }
         </div>
       </div>
     </div>

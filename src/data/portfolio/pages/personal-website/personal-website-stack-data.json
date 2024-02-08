@@ -27,6 +27,11 @@
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
     "imgSrc": "/images/technology-icons/tech-vercel.png",
-    "altText": "Vercey"
+    "altText": "Vercel"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-courier.png",
+    "altText": "Courier"
   }
 ]

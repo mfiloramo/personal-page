@@ -39,14 +39,15 @@ export default function SinclairLogging(): ReactElement {
 
       {/* TECHNOLOGY STACK SECTION */}
       <div className={'bg-darkblue-grid-background section-shadow pt-1'}>
+
         {/* TECHNOLOGY STACK ICON CONTAINER */}
         <MotionSlider
           className={`text-3xl pb-6 mt-8 mx-auto max-w-screen-md ${cabinLight.className}`}
           delay={0.8}>
           <div className={'px-8'}>
             <h2 className={'pb-2'}>Technology Stack</h2>
-            <p className={'text-xl'}
-            >I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management and automated workflows — facilitating quality, scalability and versatility.
+            <p className={'text-xl'}>
+              I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management and automated workflows — facilitating quality, scalability and versatility.
             </p>
 
             {/* TECHNOLOGY STACK ICONS */}
@@ -58,7 +59,7 @@ export default function SinclairLogging(): ReactElement {
                   initial={{x: 0, opacity: 0, filter: 'blur(4px)'}}
                   whileHover={{scale: 1.2}}
                   animate={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-                  transition={{duration: 0.2}}>
+                  transition={{duration: 0.1}}>
                   <Image src={`${technology.imgSrc}`} alt={technology.altText} width={120} height={120} />
                 </motion.div>
               ))}
