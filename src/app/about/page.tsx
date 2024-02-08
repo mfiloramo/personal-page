@@ -2,9 +2,10 @@
 import { ReactElement } from 'react';
 import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import AboutButton from '@/components/about-button';
-import Divider from '@/components/divider';
+import FancyDivider from '@/components/fancy-divider';
 import { MotionSlider } from '@/components/motion-slider';
 import pageContent from '../../data/about/about-data.json';
+import Divider from '@/components/divider';
 
 
 export default function About(): ReactElement {
@@ -25,7 +26,7 @@ export default function About(): ReactElement {
           I&apos;m a full stack software engineer based in NYC.
 
           {/* PAGE DIVIDER */ }
-          <div className="border-t border-gray-400 mt-2 w-full"></div>
+          <Divider />
         </MotionSlider>
 
         { /* BODY TEXT */ }
@@ -52,7 +53,7 @@ export default function About(): ReactElement {
           delay={ 0.8 }>
           <div className={ 'text-center' }>Professional Experience</div>
 
-          <Divider />
+          <FancyDivider />
 
           { /* BUTTON CONTAINER */ }
           <div className='grid grid-cols-2 sm:grid-cols-4 gap-0 justify-items-center mb-0 sm:mb-4 items-center'>
@@ -72,7 +73,7 @@ export default function About(): ReactElement {
             }
 
           </div>
-          <Divider />
+          <FancyDivider />
         </MotionSlider>
       </div>
     </div>

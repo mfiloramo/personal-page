@@ -1,0 +1,27 @@
+[
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-typescript.png",
+    "altText": "TypeScript"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-angular.png",
+    "altText": "Angular"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-express.png",
+    "altText": "Express"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-vercel.png",
+    "altText": "Vercel"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-insta-api.png",
+    "altText": "Instagram API"
+  }
+]

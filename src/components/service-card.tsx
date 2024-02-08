@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ServiceImageProps } from '@/interfaces/ServiceImageProps';
 import Image from 'next/image';
 import { inter_tightHeavy, inter_tightLight } from '@/utilities/fonts';
+import Divider from '@/components/divider';
 
 export default function ServiceCard({ imageSrc, title, subtitle }: ServiceImageProps): ReactElement {
   return (
@@ -26,7 +27,7 @@ export default function ServiceCard({ imageSrc, title, subtitle }: ServiceImageP
       <p className={ `mt-2 text-xl mb-1 leading-tight ${ inter_tightHeavy.className }` }>{ title }</p>
 
       {/* PAGE DIVIDER */ }
-      <div className="mt-1 border-t border-black border-dashed w-full"></div>
+      <Divider />
 
       {/* SUBTITLE */ }
       <p className={ `text-xs ${ inter_tightLight.className }` }>{ subtitle }</p>

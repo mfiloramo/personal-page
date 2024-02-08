@@ -4,11 +4,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import { motion } from 'framer-motion';
-import Divider from '@/components/divider';
+import FancyDivider from '@/components/fancy-divider';
 import SendMessage from '@/components/send-message';
 import { MotionSlider } from '@/components/motion-slider';
 import { StackButtonProps } from '@/interfaces/StackButtonProps';
 import pageContent from '../../data/contact/contact-data.json';
+import Divider from '@/components/divider';
 
 export default function Contact(): ReactElement {
 
@@ -26,7 +27,7 @@ export default function Contact(): ReactElement {
           Let&apos;s connect and build something awesome.
 
           {/* PAGE DIVIDER */ }
-          <div className="border-t border-gray-400 mt-2 w-full"></div>
+          <Divider />
         </MotionSlider>
 
         { /* BODY TEXT */ }
@@ -78,7 +79,7 @@ export default function Contact(): ReactElement {
           className={ `text-sky-200 text-3xl pb-6 mt-4 mx-auto max-w-screen-md  ${ cabinLight.className }` }
           delay={ 1 }>
           <div className={ `text-center  ${ cabinLight.className }` }>Send a Message</div>
-          <Divider />
+          <FancyDivider />
         </MotionSlider>
 
         {/* SEND-MESSAGE COMPONENT */}

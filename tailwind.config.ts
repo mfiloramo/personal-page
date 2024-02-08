@@ -13,8 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'blue-grid-background': "url('/images/backgrounds/bluegrid-background.png')",
-        'lightblue-grid-background': "url('/images/backgrounds/lightbluegrid-background.png')",
-        'hero-banner-main': "url('/images/hero-banners/hero-banner-main.png')",
+        'lightblue-grid-background': 'url(\'/images/backgrounds/lightbluegrid-background.png\')',
+        'darkblue-grid-background': 'url(\'/images/backgrounds/darkbluegrid-background.png\')',
+        'hero-banner-main': 'url(\'/images/hero-banners/hero-banner-main.png\')',
       },
       fontFamily: {
         Font: [ 'Font', 'serif' ],

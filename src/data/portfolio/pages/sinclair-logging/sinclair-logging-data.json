@@ -30,13 +30,6 @@
       ]
     },
     {
-      "id": "technology_stack",
-      "subtitle": "Technology Stack",
-      "paragraphs": [
-        "Node.js, Express, SQL Server, Sequelize, Dynatrace, FluentD, Azure, Azure DevOps"
-      ]
-    },
-    {
       "id": "beyond_logging",
       "subtitle": "Beyond Logging: A Tool for Insight and Debugging",
       "paragraphs": [

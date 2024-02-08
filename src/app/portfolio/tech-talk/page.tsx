@@ -1,6 +1,6 @@
 'use client';
 import { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/pages/tech-talk-data.json';
+import pageContent from '../../../data/portfolio/pages/tech-talk/tech-talk-data.json';
 
 
 export default function TechTalk(): ReactElement {

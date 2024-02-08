@@ -29,13 +29,6 @@
       ]
     },
     {
-      "id": "technology_stack",
-      "subtitle": "Technology Stack",
-      "paragraphs": [
-        "TypeScript, Angular, Kendo UI, Node.js, Express, SQL Server, MongoDB, Azure, Azure DevOps"
-      ]
-    },
-    {
       "id": "empowering_users",
       "subtitle": "Empowering Users with Advanced Contract Management Tools",
       "paragraphs": [
