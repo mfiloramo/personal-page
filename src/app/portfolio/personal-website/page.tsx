@@ -4,6 +4,7 @@ import pageContent from '../../../data/portfolio/pages/personal-website-data.jso
 
 
 export default function PersonalWebsite(): ReactElement {
+
   return (
     <div>
       <img className={ 'shadow-2xl mt-4 max-w-screen-md mx-auto w-80 sm:w-[35vw]' } src='/images/construction.png'
