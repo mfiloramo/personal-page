@@ -4,7 +4,7 @@ import Image from 'next/image';
 import NavButton from '@/components/nav-button';
 import NavDropdown from '@/components/nav-dropdown';
 import { navLinkInterface } from '@/interfaces/NavLink.interface';
-import { mediaLinkInterface } from '@/interfaces/MediaLinkInterface';
+import { mediaLinkInterface } from '@/interfaces/MediaLink.interface';
 
 export default function Navbar(): ReactElement {
   const navLinks: navLinkInterface[] = [

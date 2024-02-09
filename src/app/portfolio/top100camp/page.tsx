@@ -16,6 +16,7 @@ export default function Top100CampPage(): ReactElement {
       <div className={ `mx-auto text-xl` }>
         { pageContent.sections.map((section: any, index: number) => (
           <div key={ index }>
+
             {/* SECTION COMPONENT */ }
             <SectionComponent subtitle={ section.subtitle } paragraphs={ section.paragraphs } />
 
