@@ -21,11 +21,6 @@
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
-    "imgSrc": "/images/technology-icons/tech-mssql.png",
-    "altText": "SQL Server"
-  },
-  {
-    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
     "imgSrc": "/images/technology-icons/tech-sequelize.png",
     "altText": "Sequelize"
   },
@@ -38,6 +33,11 @@
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
     "imgSrc": "/images/technology-icons/tech-fluentd.png",
     "altText": "Fluentd"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-mssql.png",
+    "altText": "SQL Server"
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",

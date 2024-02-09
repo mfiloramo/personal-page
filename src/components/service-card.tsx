@@ -1,11 +1,10 @@
 import { ReactElement } from 'react';
-import { motion } from 'framer-motion';
-import { ServiceImageProps } from '@/interfaces/ServiceImageProps';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { inter_tightHeavy, inter_tightLight } from '@/utilities/fonts';
-import Divider from '@/components/divider';
+import { ServiceImagePropsInterface } from '@/interfaces/ServiceImageProps.interface';
 
-export default function ServiceCard({ imageSrc, title, subtitle }: ServiceImageProps): ReactElement {
+export default function ServiceCard({ imageSrc, title, subtitle }: ServiceImagePropsInterface): ReactElement {
   return (
     // CARD CONTAINER
     <motion.div
@@ -27,10 +26,10 @@ export default function ServiceCard({ imageSrc, title, subtitle }: ServiceImageP
       <p className={ `mt-2 text-xl mb-1 leading-tight ${ inter_tightHeavy.className }` }>{ title }</p>
 
       {/* PAGE DIVIDER */ }
-      <Divider />
+      <div className='border-t border-gray-400 mt-2 w-full mx-auto'></div>
 
       {/* SUBTITLE */ }
-      <p className={ `text-xs ${ inter_tightLight.className }` }>{ subtitle }</p>
+      <p className={ `text-sm ${ inter_tightLight.className}` }>{ subtitle }</p>
     </motion.div>
   )
-}
+};

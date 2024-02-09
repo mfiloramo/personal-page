@@ -31,12 +31,12 @@
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
-    "imgSrc": "/images/technology-icons/tech-mssql.png",
+    "imgSrc": "/images/technology-icons/tech-sequelize.png",
     "altText": "LingoLink"
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
-    "imgSrc": "/images/technology-icons/tech-sequelize.png",
+    "imgSrc": "/images/technology-icons/tech-mssql.png",
     "altText": "LingoLink"
   },
   {

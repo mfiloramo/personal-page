@@ -35,5 +35,8 @@
         "Currently, the platform is instrumental in transforming how contracts and user assignments are managed, offering unparalleled efficiency and accuracy. Its adoption has led to significant time savings and reduced errors in managing contracts, with users benefiting from its intuitive design and comprehensive functionalities. The platform's success underscores its role not just as a tool, but as a vital component in optimizing contract management processes."
       ]
     }
-  ]
+  ],
+  "text": {
+    "technologyStackIntro": "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management, and automated workflows — facilitating quality, scalability and versatility."
+  }
 }

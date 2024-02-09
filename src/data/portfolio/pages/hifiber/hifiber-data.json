@@ -42,5 +42,8 @@
         "Looking forward, HiFiber aims to broaden its impact through containerization for diverse development environments, integrating D3.js for more refined data visualization, and incorporating NoSQL databases for performance metric caching over time. These enhancements promise to make frontend debugging not just simpler, but also a more data-driven and insightful experience."
       ]
     }
-  ]
+  ],
+  "text": {
+    "technologyStackIntro": "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management, and automated workflows — facilitating quality, scalability and versatility."
+  }
 }

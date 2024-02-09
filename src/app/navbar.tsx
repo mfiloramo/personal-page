@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import NavButton from '@/components/nav-button';
 import NavDropdown from '@/components/nav-dropdown';
-import { navLinkInterface } from '@/interfaces/NavLinkInterface';
+import { navLinkInterface } from '@/interfaces/NavLink.interface';
 import { mediaLinkInterface } from '@/interfaces/MediaLinkInterface';
 
 export default function Navbar(): ReactElement {

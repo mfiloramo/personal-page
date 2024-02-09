@@ -4,7 +4,7 @@ import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import ServiceCard from '@/components/service-card';
 import { MotionSlider } from '@/components/motion-slider';
 import { motion } from 'framer-motion';
-import { ServiceImageProps } from '@/interfaces/ServiceImageProps';
+import { ServiceImagePropsInterface } from '@/interfaces/ServiceImageProps.interface';
 import pageContent from '../../data/services/services-data.json'
 
 export default function Services(): ReactElement {
@@ -56,7 +56,7 @@ export default function Services(): ReactElement {
 
           {/* SERVICE CARDS */ }
           {
-            pageContent.map((service: ServiceImageProps, index: number): ReactNode => (
+            pageContent.map((service: ServiceImagePropsInterface, index: number): ReactNode => (
               <motion.div
                 key={ index }
                 className="relative p-3 z-20"

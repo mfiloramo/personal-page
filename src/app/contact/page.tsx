@@ -9,7 +9,7 @@ import SendMessage from '@/components/send-message';
 import { MotionSlider } from '@/components/motion-slider';
 import { StackButtonProps } from '@/interfaces/StackButtonProps';
 import pageContent from '../../data/contact/contact-data.json';
-import Divider from '@/components/divider';
+import SectionDivider from '@/components/section-divider';
 
 export default function Contact(): ReactElement {
 
@@ -27,7 +27,7 @@ export default function Contact(): ReactElement {
           Let&apos;s connect and build something awesome.
 
           {/* PAGE DIVIDER */ }
-          <Divider />
+          <SectionDivider />
         </MotionSlider>
 
         { /* BODY TEXT */ }

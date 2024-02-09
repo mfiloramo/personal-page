@@ -28,5 +28,8 @@
         "The solution was a comprehensive overhaul to an Angular- and Express-based platform with a serverless backend on Vercel. This strategic migration enhanced the site’s loading speed, web visibility, and user interface with smoother animations and a more responsive design. The integration of the Instagram API further ensured that the website remained vibrant and engaging, setting a new benchmark for the NBPA’s digital presence."
       ]
     }
-  ]
+  ],
+  "text": {
+    "technologyStackIntro": "This stack was chosen to combine strong typing, a robust frontend framework, efficient server-side processing, seamless deployment and social media integration for a scalable, maintainable and high-performance application."
+  }
 }

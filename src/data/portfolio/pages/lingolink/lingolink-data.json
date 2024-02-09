@@ -46,5 +46,8 @@
         "Beyond education, LingoLink's utility as a general communication tool promises to bring closer connections in any multilingual context, from international businesses to global social networks. The future of LingoLink is not just as a messaging platform, but as a simple yet powerful tool for breaking down language barriers across the globe."
       ]
     }
-  ]
+  ],
+  "text": {
+    "technologyStackIntro": "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management and automated workflows — facilitating quality, scalability and versatility."
+  }
 }

@@ -21,5 +21,8 @@
         "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world. I’m so grateful that you’ve taken the time to learn more about my site!"
       ]
     }
-  ]
+  ],
+  "text": {
+    "technologyStackIntro": "I chose this stack to leverage a modern, scalable and developer-friendly ecosystem that ensures fast development, easy maintenance and seamless deployment."
+  }
 }

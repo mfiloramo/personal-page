@@ -19,10 +19,10 @@ export default function RootLayout({ children }: {
     <html lang='en'>
     <body className={ `min-h-screen ${ dm_sans.className }` }>
 
-    {/* APPLICATION ANALYTICS */}
+    {/* VERCEL APPLICATION ANALYTICS */}
     <Analytics />
 
-    {/* APPLICATION TELEMETRY */ }
+    {/* VERCEL APPLICATION TELEMETRY */ }
     <SpeedInsights />
 
     {/* TODO: FIX NAV AND FOOTER ANCHORING IN MOBILE LAYOUT */}

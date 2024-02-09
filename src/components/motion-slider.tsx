@@ -1,12 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { variants } from '@/utilities/animations';
-
-interface TextProps {
-  children: any,
-  className: string,
-  delay: number
-}
+import { TextProps } from '@/interfaces/TextProps.interface';
 
 export const MotionSlider = ({ children, className, delay }: TextProps) => {
   return (

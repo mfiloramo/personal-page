@@ -1,16 +1,16 @@
 import { ReactElement } from 'react';
+import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 
-interface SectionComponentProps {
-  subtitle?: string;
-  paragraphs: string[];
-}
 
 export default function SectionComponent({ subtitle, paragraphs }: SectionComponentProps): ReactElement {
   return (
-    <div>
-      { subtitle && <h2 className={ 'text-3xl pt-4 pb-3' }>{ subtitle }</h2> }
+    // SECTION CONTAINER
+    <div className={ 'max-w-screen-md mx-auto px-8 first:pt-3' }>
+      {/* SECTION SUBTITLE */ }
+      { subtitle && <h2 className={ 'text-3xl pb-3' }>{ subtitle }</h2> }
+      {/* SECTION PARAGRAPHS */ }
       { paragraphs.map((paragraph, index) => (
-        <p className={ `${ index > 0 ? 'pt-4' : '' } pb-4` } key={ index }>
+        <p className={ `${ index > 0 ? 'pt-6' : '' } last:pb-12 first:-mb-4 first:pt-8` } key={ index }>
           { paragraph }
         </p>
       )) }

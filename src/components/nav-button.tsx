@@ -1,9 +1,5 @@
 import Link from 'next/link';
-
-interface NavButtonProps {
-  path: string;
-  label: string;
-}
+import { NavButtonProps } from '@/interfaces/NavButton.interface';
 
 export default function NavButton({ path, label }: NavButtonProps) {
   return (

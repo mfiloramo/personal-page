@@ -1,22 +1,25 @@
 'use client';
 import { ReactElement } from 'react';
 import pageContent from '../../../data/portfolio/pages/tech-talk/tech-talk-data.json';
+import ConstructionImage from '@/components/construction';
+import SectionComponent from '@/components/section';
+import SectionDivider from '@/components/section-divider';
 
 
 export default function TechTalk(): ReactElement {
   return (
     <div>
-      <img className={ 'shadow-2xl mt-4 max-w-screen-md mx-auto w-80 sm:w-[35vw]' } src='/images/construction.png' alt='Construction Image' />
+      <ConstructionImage />
 
-      <div className={ `mx-auto max-w-screen-md text-xl p-8` }>
-        { pageContent.sections.map((section) => (
-          <div key={ section.id }>
-            <h2 className={ 'text-3xl pt-4 pb-3' }>{ section.subtitle }</h2>
-            { section.paragraphs.map((paragraph, index) => (
-              <p className={ `${ index > 0 ? 'pt-4' : '' } pb-4` } key={ index }>
-                { paragraph }
-              </p>
-            )) }
+      {/* PAGE SECTIONS */ }
+      <div className={ `mx-auto text-xl` }>
+        { pageContent.sections.map((section: any, index: number) => (
+          <div key={ index }>
+            {/* SECTION COMPONENT */ }
+            <SectionComponent key={ index } subtitle={ section.subtitle } paragraphs={ section.paragraphs } />
+
+            {/* PAGE DIVIDER */ }
+            { (index !== pageContent.sections.length - 1) && <SectionDivider key={ index } /> }
           </div>
         )) }
       </div>

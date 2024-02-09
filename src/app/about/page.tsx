@@ -5,7 +5,7 @@ import AboutButton from '@/components/about-button';
 import FancyDivider from '@/components/fancy-divider';
 import { MotionSlider } from '@/components/motion-slider';
 import pageContent from '../../data/about/about-data.json';
-import Divider from '@/components/divider';
+import SectionDivider from '@/components/section-divider';
 
 
 export default function About(): ReactElement {
@@ -26,11 +26,11 @@ export default function About(): ReactElement {
           I&apos;m a full stack software engineer based in NYC.
 
           {/* PAGE DIVIDER */ }
-          <Divider />
+          <SectionDivider />
         </MotionSlider>
 
         { /* BODY TEXT */ }
-        <>
+        <div>
           <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.4 }>
             <p className={ 'break-words' }>
               From the classrooms of NYC to the world of web development, I&apos;ve spent nearly a decade shaping minds as a public school teacher before transitioning professionally into software development.
@@ -43,7 +43,7 @@ export default function About(): ReactElement {
               As a dedicated full stack engineer with several years of web development experience across various fields, I&apos;m passionate about merging my educational insights with my technical skills to ultimately give back to the EdTech community.
             </p>
           </MotionSlider>
-        </>
+        </div>
       </div>
 
       {/* PROF. EXPERIENCE SECTION */ }

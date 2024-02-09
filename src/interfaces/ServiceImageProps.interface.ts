@@ -1,4 +1,4 @@
-export interface ServiceImageProps {
+export interface ServiceImagePropsInterface {
   readonly imageSrc: string;
   readonly title: string;
   readonly subtitle: string

@@ -5,7 +5,7 @@ import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.int
 
 export default function PortfolioCard({ image, title, subtitle }: PortfolioCardPropsInterface): ReactElement {
   return (
-    <>
+    <div>
       {/* CARD TEXT */}
       <div className={ 'text-black bg-gradient-to-b from-slate-100 to-slate-300 border-2 border-black bg-slate-300 flex flex-col rounded-xl hover:outline-dashed hover:outline-black hover:outline-8 transition ease-in-out' }>
 
@@ -28,6 +28,6 @@ export default function PortfolioCard({ image, title, subtitle }: PortfolioCardP
           { subtitle }
         </div>
       </div>
-    </>
+    </div>
   );
 }
