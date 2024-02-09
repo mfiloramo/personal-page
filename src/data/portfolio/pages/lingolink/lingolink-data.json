@@ -26,8 +26,8 @@
       "id": "how_it_works",
       "subtitle": "How It Works",
       "paragraphs": [
-        "The development of LingoLink was guided by a commitment to efficiency, scalability, and user experience. Utilizing Angular for its robustness and Tailwind for its flexible and cohesive styling capabilities, I crafted a responsive and intuitive interface that caters to users worldwide.",
-        "On the server side, a Node.js environment was chosen for its versatility and performance, handling real-time translations through the Google Translate API and interfacing with a SQL Server database on Azure for robust data management. This backend architecture not only supports full CRUD operations but does so through efficiently designed stored procedures in T-SQL, ensuring fast, secure, and reliable database interactions."
+        "The development of LingoLink was guided by a commitment to efficiency, scalability and user experience. Utilizing Angular for its robustness and Tailwind for its flexible and cohesive styling capabilities, I crafted a responsive and intuitive interface that caters to users worldwide.",
+        "On the server side, a Node.js environment was chosen for its versatility and performance, handling real-time translations through the Google Translate API and interfacing with a SQL Server database on Azure for robust data management. This backend architecture not only supports full CRUD operations but does so through efficiently designed stored procedures in T-SQL, ensuring fast, secure and reliable database interactions."
       ]
     },
     {
