@@ -21,13 +21,18 @@
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
-    "imgSrc": "/images/technology-icons/tech-turbopack.png",
-    "altText": "Turbopack"
+    "imgSrc": "/images/technology-icons/tech-motion.png",
+    "altText": "Framer Motion"
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
     "imgSrc": "/images/technology-icons/tech-vercel.png",
     "altText": "Vercel"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-turbopack.png",
+    "altText": "Turbopack"
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",

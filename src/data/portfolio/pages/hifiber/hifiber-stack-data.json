@@ -11,6 +11,16 @@
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-chrome-devtools.png",
+    "altText": "Chrome DevTools"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-d3.png",
+    "altText": "D3"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
     "imgSrc": "/images/technology-icons/tech-s3.png",
     "altText": "AWS S3"
   }

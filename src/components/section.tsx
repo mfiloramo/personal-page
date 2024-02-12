@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
+import SectionDivider from '@/components/section-divider';
 
 
 export default function SectionComponent({ subtitle, paragraphs }: SectionComponentProps): ReactElement {
