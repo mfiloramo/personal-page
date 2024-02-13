@@ -11,6 +11,11 @@
   },
   {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+    "imgSrc": "/images/technology-icons/tech-telerik.png",
+    "altText": "Telerik DevCraft"
+  },
+  {
+    "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
     "imgSrc": "/images/technology-icons/tech-kendo.png",
     "altText": "Kendo UI"
   },
