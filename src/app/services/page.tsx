@@ -34,7 +34,7 @@ export default function Services(): ReactElement {
             className={ `text-xl mb-4 bg-gradient-to-r from-sky-200 to-sky-300 bg-clip-text text-transparent ${ cabinLight.className }` }
             delay={ 0.4 }>
             <p className='break-words gradient-text-lightblue'>
-              Delivering comprehensive and secure full stack solutions in web development, from sophisticated frontends to robust backends and scalable distributed systems.
+              Delivering comprehensive, performant and secure full stack solutions in web development, from sophisticated frontends to robust backends and scalable distributed systems.
 
 
             </p>
