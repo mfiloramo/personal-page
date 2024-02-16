@@ -41,36 +41,36 @@ export default function LingoLinkPage(): ReactElement {
         )) }
 
         {/* ANIMATED BLOCK CONTAINER */ }
-        {/*<div className="flex justify-center items-center space-x-4">*/}
+        <div className="flex justify-center items-center space-x-4">
 
           {/* ANIMATED BLOCK */ }
-          {/*<motion.div*/}
-          {/*  ref={ ref }*/}
-          {/*  animate={ { x: inView ? '0vw' : '-50vw' } }*/}
-          {/*  initial={ { x: '-100vw' } }*/}
-          {/*  transition={ {*/}
-          {/*    type: 'spring',*/}
-          {/*    stiffness: 260,*/}
-          {/*    damping: 20,*/}
-          {/*  } }*/}
-          {/*>*/}
-          {/*  <img src={'/images/technology-icons/tech-sequelize.png'} alt={'p'} width={'100px'}/>*/}
-          {/*</motion.div>*/}
+          <motion.div
+            ref={ ref }
+            animate={ { x: inView ? '0vw' : '-50vw' } }
+            initial={ { x: '-100vw' } }
+            transition={ {
+              type: 'spring',
+              stiffness: 260,
+              damping: 20,
+            } }
+          >
+            <img src={'/images/technology-icons/tech-sequelize.png'} alt={'p'} width={'100px'} />
+          </motion.div>
 
           {/* ANIMATED BLOCK */ }
-        {/*  <motion.div*/}
-        {/*    ref={ ref }*/}
-        {/*    animate={ { x: inView ? '0vw' : '42vw' } }*/}
-        {/*    initial={ { x: '100vw' } }*/}
-        {/*    transition={ {*/}
-        {/*      type: 'spring',*/}
-        {/*      stiffness: 260,*/}
-        {/*      damping: 20,*/}
-        {/*    } }*/}
-        {/*    className="bg-white p-12 mb-10 w-3"*/}
-        {/*  >*/}
-        {/*  </motion.div>*/}
-        {/*</div>*/}
+          <motion.div
+            ref={ ref }
+            animate={ { x: inView ? '0vw' : '42vw' } }
+            initial={ { x: '100vw' } }
+            transition={ {
+              type: 'spring',
+              stiffness: 260,
+              damping: 20,
+            } }
+            className="bg-white p-12 mb-10 w-3"
+          >
+          </motion.div>
+        </div>
 
       </div>
     </div>
