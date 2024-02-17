@@ -33,7 +33,7 @@ export default function Contact(): ReactElement {
         { /* BODY TEXT */ }
         <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.4 }>
           <p className='break-words'>
-            Got a project in mind or considering software solutions? Reach out and let&apos;s bring your vision to life. Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you navigate and realize your digital aspirations.
+            Got a project in mind or considering software solutions? Reach out and let&apos;s bring your vision to life. Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you bring your digital aspirations to life.
 
           </p>
         </MotionSlider>

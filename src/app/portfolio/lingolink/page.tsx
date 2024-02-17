@@ -19,6 +19,7 @@ export default function LingoLinkPage(): ReactElement {
           alt={ 'LingoLink Banner' }
           layout='fill'
           objectFit='cover'
+          priority
         />
 
         {/* ANIMATED LOGO CONTAINER */ }
