@@ -39,7 +39,7 @@ export default function Portfolio(): ReactElement {
       <div className='mt-10 bg-gradient-to-r from-sky-950 via-blue-950 to-indigo-950 section-shadow'>
 
         {/* BUTTON CONTAINER */ }
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-fit h-fit z-20 mt-6 mb-12 mx-auto px-12 sm:px-0 max-w-screen-md'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-fit h-fit z-20 mt-6 mb-12 mx-auto px-12 sm:px-0 max-w-screen-lg'>
 
           {/* PROJECT CARDS */ }
           { pageContent.map((card: PortfolioCardPropsInterface, index: number): ReactNode => {

@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 export default function LingoLinkPage(): ReactElement {
   return (
-    <div>
+    <>
       <div className='relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden section-shadow'>
 
         {/* HERO BANNER IMAGE */ }
@@ -26,28 +26,30 @@ export default function LingoLinkPage(): ReactElement {
         <div className={ 'absolute mt-[4vh] inset-0 flex justify-center' }>
 
           {/* ANIMATED LOGO GRAPHIC */ }
-          <motion.div
-            className='absolute inset-0 flex justify-center items-start'
-            initial={ { scale: 0 } }
-            animate={ { rotate: 360, scale: 1 } }
-            transition={ {
-              delay: 0.3,
-              type: 'spring',
-              stiffness: 260,
-              damping: 20,
-            } }
-          >
-            <Image
-              className={ 'w-[50vw] max-w-[240px]' }
-              src='/images/lingolink-portfolio-page/lingolink-logo.png'
-              alt='LingoLink Logo'
-              width={ 240 }
-              height={ 240 }
-            />
-          </motion.div>
+          <>
+            <motion.div
+              className='absolute inset-0 flex justify-center items-start'
+              initial={ { scale: 0 } }
+              animate={ { rotate: 360, scale: 1 } }
+              transition={ {
+                delay: 0.3,
+                type: 'spring',
+                stiffness: 260,
+                damping: 20,
+              } }
+            >
+              <Image
+                className={ 'w-[50vw] max-w-[240px]' }
+                src='/images/lingolink-portfolio-page/lingolink-logo.png'
+                alt='LingoLink Logo'
+                width={ 240 }
+                height={ 240 }
+              />
+            </motion.div>
+          </>
 
           {/* ANIMATED LOGO TEXT */ }
-          <div>
+          <>
             <motion.div
               className='mt-64'
               initial={ { scale: 0 } }
@@ -67,7 +69,7 @@ export default function LingoLinkPage(): ReactElement {
                 height={ 375 }
               />
             </motion.div>
-          </div>
+          </>
         </div>
 
         {/* TEXT: MULTILINGUAL MESSAGING */ }
@@ -135,6 +137,7 @@ export default function LingoLinkPage(): ReactElement {
             />
           </motion.div>
         </div>
+
       </div>
 
 
@@ -154,6 +157,6 @@ export default function LingoLinkPage(): ReactElement {
         )) }
       </div>
 
-    </div>
+    </>
   );
 }

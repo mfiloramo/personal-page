@@ -24,7 +24,7 @@ const TechnologyStackComponent: React.FC<TechnologyStackComponentProps> = ({ int
         </div>
 
         {/* ICON CONTAINER */}
-        <div className={ `grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 items-center mt-5 max-w-screen-md mx-auto px-8` }>
+        <div className={ `grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center mt-5 max-w-screen-lg mx-auto px-8` }>
           { stackContent.map((technology: Technology, index: number) => (
             <motion.div key={ index } className="relative p-3 z-20" { ...motionProps }>
               <Image
