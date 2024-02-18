@@ -140,12 +140,16 @@ export default function LingoLinkPage(): ReactElement {
 
       </div>
 
-
       {/* PAGE CONTENT SECTIONS */ }
       <div className='mx-auto text-xl'>
         { pageContent.sections.map((section: any, index: number) => (
           <div key={ index }>
-            <SectionComponent subtitle={ section.subtitle } paragraphs={ section.paragraphs } />
+            <SectionComponent
+              subtitle={ section.subtitle }
+              paragraphs={ section.paragraphs }
+              photo={ section.photo }
+              isEven={ index % 2 === 0 }
+            />
             { index !== pageContent.sections.length - 1 && index !== 3 && <SectionDivider /> }
             { index === 3 && (
               <TechnologyStackComponent
@@ -156,7 +160,6 @@ export default function LingoLinkPage(): ReactElement {
           </div>
         )) }
       </div>
-
     </>
   );
 }

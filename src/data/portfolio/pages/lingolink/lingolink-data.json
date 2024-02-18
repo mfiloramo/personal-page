@@ -12,7 +12,11 @@
       "subtitle": "Diverse Languages, Disconnected Voices",
       "paragraphs": [
         "In my prior role as an educator, I felt privileged to teach students from every corner of the globe—yet was equally challenged by my struggle to effectively communicate with them. Back-and-forth exchanges using Google Translate proved slow and cumbersome, more hindering than helpful. Needing a swift, dependable, and secure tool and finding none that met my needs, I resolved to build it myself."
-      ]
+      ],
+      "photo": {
+        "src": "/images/lingolink-portfolio-page/classroom-raised-hands.jpg",
+        "alt": "classroom-raised-hands"
+      }
     },
     {
       "id": "deleting_barriers",

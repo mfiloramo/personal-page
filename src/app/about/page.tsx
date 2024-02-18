@@ -26,7 +26,7 @@ export default function About(): ReactElement {
           I&apos;m a full stack software engineer based in NYC.
 
           {/* PAGE DIVIDER */ }
-          <SectionDivider />
+          <div className="border-t border-gray-400 mt-2 w-full"></div>
         </MotionSlider>
 
         { /* BODY TEXT */ }

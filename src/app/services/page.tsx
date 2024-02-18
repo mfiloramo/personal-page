@@ -26,6 +26,8 @@ export default function Services(): ReactElement {
             <p className='break-words'>
               I craft exceptional web experiences built for tomorrow.
             </p>
+
+            {/* PAGE DIVIDER */ }
             <div className="border-t border-gray-400 mt-2 w-full"></div>
           </MotionSlider>
 

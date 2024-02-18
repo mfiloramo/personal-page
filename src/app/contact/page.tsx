@@ -27,7 +27,7 @@ export default function Contact(): ReactElement {
           Let&apos;s connect and build something awesome.
 
           {/* PAGE DIVIDER */ }
-          <SectionDivider />
+          <div className="border-t border-gray-400 mt-2 w-full"></div>
         </MotionSlider>
 
         { /* BODY TEXT */ }

@@ -17,7 +17,7 @@ export default function SinclairUserAdmin(): ReactElement {
         { pageContent.sections.map((section: any, index: number) => (
           <div key={ index }>
             {/* SECTION COMPONENT */ }
-            <SectionComponent key={ index } subtitle={ section.subtitle } paragraphs={ section.paragraphs } />
+            <SectionComponent key={ index } subtitle={ section.subtitle } paragraphs={ section.paragraphs } isEven={ index % 2 === 0 } />
 
             {/* PAGE DIVIDER */ }
             { ((index !== pageContent.sections.length - 1) && index !== 3) && <SectionDivider key={ index } /> }

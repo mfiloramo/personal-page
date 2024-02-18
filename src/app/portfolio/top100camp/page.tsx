@@ -18,7 +18,7 @@ export default function Top100CampPage(): ReactElement {
           <div key={ index }>
 
             {/* SECTION COMPONENT */ }
-            <SectionComponent subtitle={ section.subtitle } paragraphs={ section.paragraphs } />
+            <SectionComponent subtitle={ section.subtitle } paragraphs={ section.paragraphs } isEven={ index % 2 === 0 } />
 
             {/* PAGE DIVIDER */ }
             { ((index !== pageContent.sections.length - 1) && index !== 2) && <SectionDivider /> }
