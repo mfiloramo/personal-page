@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion, useAnimation } from 'framer-motion';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 
-export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven }: SectionComponentProps): ReactElement {
+export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst }: SectionComponentProps): ReactElement {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -48,7 +48,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
   };
 
   return (
-    <div ref={ ref } className={ `mx-auto px-8 py-8 my-auto text-${ textColor } section-shadow ${ background ? background : '' }`  }>
+    <div ref={ ref } className={ `p-8 m-auto text-${ textColor } ${ background ? background : '' } ${ isFirst ? '' : 'section-shadow ' }`  }>
 
       {/* ANIMATED SECTION SUBTITLE */ }
       { subtitle && (

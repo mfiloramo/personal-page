@@ -11,16 +11,17 @@ export default function PersonalWebsite(): ReactElement {
   return (
     <div>
       <ConstructionImage />
-
       {/* PAGE SECTIONS */ }
       <div className={ `mx-auto text-xl` }>
         { pageContent.sections.map((section: any, index: number) => (
           <div key={ index }>
-            {/* SECTION COMPONENT */ }
-            <SectionComponent key={ index } subtitle={ section.subtitle } paragraphs={ section.paragraphs } isEven={ index % 2 === 0 } />
 
-            {/* PAGE DIVIDER */ }
-            { ((index !== pageContent.sections.length - 1) && index !== 1) && <SectionDivider key={ index } /> }
+            {/* SECTION COMPONENT */ }
+            <SectionComponent
+              key={ index }
+              subtitle={ section.subtitle }
+              paragraphs={ section.paragraphs }
+            />
 
             {/* TECHNOLOGY STACK SECTION */ }
             { index === 1 && <TechnologyStackComponent introduction={ pageContent.text.technologyStackIntro } stackContent={ stackContent } /> }

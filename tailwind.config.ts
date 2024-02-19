@@ -15,6 +15,7 @@ const config: Config = {
         'blue-grid-background': "url('/images/backgrounds/bluegrid-background.png')",
         'lightblue-grid-background': 'url(\'/images/backgrounds/lightbluegrid-background.png\')',
         'darkblue-grid-background': 'url(\'/images/backgrounds/darkbluegrid-background.png\')',
+        'graph-paper-background': 'url(\'/images/backgrounds/graph-paper-background.png\')',
         'hero-banner-main': 'url(\'/images/hero-banners/hero-banner-main.png\')',
       },
       fontFamily: {
