@@ -4,9 +4,12 @@ import Image from 'next/image';
 import { motion, useAnimation } from 'framer-motion';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 
-export default function SectionComponent({ subtitle, paragraphs, photo }: SectionComponentProps): ReactElement {
+export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven }: SectionComponentProps): ReactElement {
   const controls = useAnimation();
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   useEffect((): void => {
     if (inView) {
@@ -14,44 +17,83 @@ export default function SectionComponent({ subtitle, paragraphs, photo }: Sectio
     }
   }, [ controls, inView ]);
 
+  // MAINTAIN THE DIRECTIONAL VARIANTS FOR PHOTO AND PARAGRAPH ANIMATIONS
   const variants = {
-    visible: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 260, damping: 22 } },
-    hidden: { opacity: 0, x: '-100vw' },
+    visible: (direction: number) => ({
+      opacity: 1,
+      x: 0,
+      filter: 'blur(0px)',
+      transition: { type: 'spring', stiffness: 200, damping: 20, duration: 0.5 },
+    }),
+    hidden: (direction: number) => ({
+      opacity: 0,
+      x: direction * 100,
+      filter: 'blur(10px)',
+    }),
+  };
+
+  // SUBTITLE ANIMATION VARIANTS
+  const subtitleVariants = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      filter: 'blur(0px)',
+      transition: { duration: 0.5, ease: 'easeOut' },
+    },
+    hidden: {
+      opacity: 0,
+      scale: 1.2,
+      filter: 'blur(4px)',
+    },
   };
 
   return (
-    <div ref={ ref } className='max-w-screen-lg mx-auto px-8 first:pt-3'>
-      { subtitle && <h2 className='text-3xl pb-1'>{ subtitle }</h2> }
+    <div ref={ ref } className={ `mx-auto px-8 py-8 my-auto text-${ textColor } section-shadow ${ background ? background : '' }`  }>
 
-      <div className={ `flex flex-wrap ${ photo ? 'justify-center' : 'justify-start' } items-start` }>
+      {/* ANIMATED SECTION SUBTITLE */ }
+      { subtitle && (
+        <motion.h2
+          className={ 'max-w-screen-lg text-3xl pb-1 text-center mx-auto' }
+          variants={ subtitleVariants }
+          initial='hidden'
+          animate={ controls }
+        >
+          { subtitle }
+        </motion.h2>
+      ) }
 
-        {/* RENDER PHOTO */}
+      {/* PHOTO & TEXT CONTAINER */ }
+      <div className={ `flex flex-wrap items-center max-w-screen-lg
+      mx-auto ${ photo ? 'justify-center' : 'justify-start' } ${ isEven ? 'flex-row-reverse' : '' }` }>
+
+        {/* ANIMATED SECTION PHOTO */ }
         { photo && (
           <motion.div
-            className='py-8 w-full md:w-1/2'
+            className='py-6 w-full md:w-1/2 max-w-[375px]'
+            variants={ variants }
+            custom={ isEven ? 1 : -1 }
             initial='hidden'
             animate={ controls }
-            variants={ variants }
           >
             <Image
               src={ photo.src }
               alt={ photo.alt }
-              layout='responsive'
               height={ 1024 }
               width={ 1024 }
             />
           </motion.div>
         ) }
 
-        {/* RENDER PARAGRAPH */}
-        <div className={ `${ photo ? 'w-full md:w-1/2 md:pl-8' : 'w-full' }` }>
+        {/* ANIMATED SECTION PARAGRAPHS */ }
+        <div className={ `${ photo ? 'w-full md:w-1/2 lg:w-[55%] md:px-8' : 'w-full' }  ` }>
           { paragraphs.map((paragraph: string, index: number) => (
             <motion.p
-              className={ `${ index > 0 ? 'pt-6' : '' } last:pb-8 first:-mb-4 first:pt-8` }
-              key={ index }
+              className={ `${ index > 0 ? 'pt-6' : '' } last:pb-8 first:-mb-4 first:pt-6` }
+              variants={ variants }
+              custom={ isEven ? -1 : 1 }
               initial='hidden'
               animate={ controls }
-              variants={ variants }
+              key={ index }
             >
               { paragraph }
             </motion.p>

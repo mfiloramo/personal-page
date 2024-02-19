@@ -32,7 +32,7 @@ export default function LingoLinkPage(): ReactElement {
               initial={ { scale: 0 } }
               animate={ { rotate: 360, scale: 1 } }
               transition={ {
-                delay: 0.3,
+                delay: 0.1,
                 type: 'spring',
                 stiffness: 260,
                 damping: 20,
@@ -55,7 +55,7 @@ export default function LingoLinkPage(): ReactElement {
               initial={ { scale: 0 } }
               animate={ { scale: 1 } }
               transition={ {
-                delay: 0.5,
+                delay: 0.3,
                 type: 'spring',
                 stiffness: 260,
                 damping: 20,
@@ -79,7 +79,7 @@ export default function LingoLinkPage(): ReactElement {
             initial={ { x: '100vw', y: '100vh' } }
             animate={ { x: 150, y: 150 } }
             transition={ {
-              delay: 1.2,
+              delay: 1.0,
               type: 'spring',
               stiffness: 200,
               damping: 23,
@@ -101,7 +101,7 @@ export default function LingoLinkPage(): ReactElement {
             initial={ { x: '100vw', y: '100vh' } }
             animate={ { x: 110, y: 170 } }
             transition={ {
-              delay: 1.6,
+              delay: 1.4,
               type: 'spring',
               stiffness: 200,
               damping: 23,
@@ -123,7 +123,7 @@ export default function LingoLinkPage(): ReactElement {
             initial={ { y: '100vh' } }
             animate={ { y: 60 } }
             transition={ {
-              delay: 2.1,
+              delay: 1.9,
               type: 'spring',
               stiffness: 260,
               damping: 23,
@@ -140,24 +140,53 @@ export default function LingoLinkPage(): ReactElement {
 
       </div>
 
+      {/* INTRODUCTION SECTION */ }
+      <motion.div
+          className={ 'py-4 -pb-8 text-xl text-center mx-auto box max-w-screen-lg' }
+          initial={ { opacity: 0, scale: 0.5 } }
+          animate={ { opacity: 1, scale: 1 } }
+          transition={ {
+            opacity: {
+              delay: 0.5,
+              duration: 0.5,
+              ease: [ 0, 0.71, 0.2, 1.01 ]
+            },
+            scale: {
+              delay: 0.5,
+              type: 'spring',
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001
+            }
+          } }
+        >
+          { pageContent.sections[0].paragraphs[0] }
+      </motion.div>
+
+      {/* SECTION DIVIDER */}
+      {/*<SectionDivider />*/}
+
       {/* PAGE CONTENT SECTIONS */ }
       <div className='mx-auto text-xl'>
         { pageContent.sections.map((section: any, index: number) => (
-          <div key={ index }>
-            <SectionComponent
-              subtitle={ section.subtitle }
-              paragraphs={ section.paragraphs }
-              photo={ section.photo }
-              isEven={ index % 2 === 0 }
-            />
-            { index !== pageContent.sections.length - 1 && index !== 3 && <SectionDivider /> }
-            { index === 3 && (
-              <TechnologyStackComponent
-                introduction={ pageContent.text.technologyStackIntro }
-                stackContent={ stackContent }
+          index > 0 ? <div key={ index }>
+              <SectionComponent
+                subtitle={ section.subtitle }
+                paragraphs={ section.paragraphs }
+                photo={ section.photo }
+                background={ section.background }
+                textColor={ section.textColor }
+                isEven={ index % 2 === 0 }
               />
-            ) }
-          </div>
+              {/*{ index !== pageContent.sections.length - 1 && index !== 3 && <SectionDivider /> }*/}
+              { index === 3 && (
+                <TechnologyStackComponent
+                  introduction={ pageContent.text.technologyStackIntro }
+                  stackContent={ stackContent }
+                />
+              ) }
+            </div>
+            : ''
         )) }
       </div>
     </>

@@ -17,7 +17,7 @@ const TechnologyStackComponent: React.FC<TechnologyStackComponentProps> = ({ int
 
       {/* TEXT CONTAINER */}
         <div className={ 'max-w-screen-lg mx-auto px-8' }>
-          <h2 className={ 'text-3xl pb-4 mt-8' }>Technology Stack</h2>
+          <h2 className={ 'text-3xl text-center pb-4 mt-8' }>Technology Stack</h2>
           <p className={ 'text-xl' }>
             { introduction }
           </p>

@@ -41,6 +41,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient-paper-bg {
+  @apply bg-gradient-to-b from-slate-200 to-slate-400;
+}
+
 .custom-glow {
   background: conic-gradient(at center, #904be5, #6c6cff, #0080ff, #546eff);
   filter: blur(24px);

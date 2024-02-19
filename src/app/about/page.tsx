@@ -5,7 +5,6 @@ import AboutButton from '@/components/about-button';
 import FancyDivider from '@/components/fancy-divider';
 import { MotionSlider } from '@/components/motion-slider';
 import pageContent from '../../data/about/about-data.json';
-import SectionDivider from '@/components/section-divider';
 
 
 export default function About(): ReactElement {
