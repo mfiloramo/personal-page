@@ -5,7 +5,7 @@
       "subtitle": "Diverse Languages, Disconnected Voices",
       "paragraphs": [
         "In my prior role as an educator, I felt privileged to teach students from every corner of the globe—yet was equally challenged by my struggle to effectively communicate with them.",
-        "Back-and-forth exchanges using Google Translate proved slow and cumbersome, more hindering than helpful. Needing a swift, dependable, and secure tool and finding none that met my needs, I resolved to build it myself."
+        "Back-and-forth exchanges using clunky translation software proved slow and cumbersome, more hindering than helpful. Needing a swift, dependable, and secure tool and finding none that met my needs, I resolved to build it myself."
       ],
       "photo": {
         "src": "/images/lingolink-portfolio-page/_classroom-raised-hands.png",
@@ -17,7 +17,8 @@
       "subtitle": "Deleting Language Barriers",
       "paragraphs": [
         "Driven by the need to bridge the communication gap, I developed LingoLink—a solution that eliminates language barriers by leveraging the power of Google Translate, enabling users to effortlessly communicate in their native tongues.",
-        "Unlike the tedious process of manual translation, LingoLink facilitates instant, automatic translation and caching of messages, ensuring conversations flow naturally and efficiently. With LingoLink, the vision is clear: to create a space where language no longer divides us, but unites us, making communication inclusive and accessible to all."
+        "Unlike the tedious process of manual translation, LingoLink facilitates instant, automatic translation and caching of messages, ensuring conversations flow naturally and efficiently.",
+        "With LingoLink, the vision is clear: to create a space where language no longer divides us, but unites us, making communication inclusive and accessible to all."
       ],
       "photo": {
         "src": "/images/lingolink-portfolio-page/classroom-computers.jpg",
@@ -32,7 +33,7 @@
         "The development of LingoLink was guided by a commitment to efficiency, scalability and user experience. Utilizing Angular for its robustness and Tailwind for its flexible and cohesive styling capabilities, I crafted a responsive and intuitive interface that caters to users worldwide.",
         "On the server side, a Node.js environment was chosen for its versatility and performance, handling real-time translations through the Google Translate API and interfacing with a SQL Server database on Azure for robust data management. This backend architecture not only supports full CRUD operations but does so through efficiently designed stored procedures in T-SQL, ensuring fast, secure and reliable database interactions."
       ],
-      "background": "bg-graph-paper-background",
+      "background": "graph-paper-bg",
       "textColor": "black"
     },
     {

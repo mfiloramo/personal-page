@@ -45,6 +45,10 @@ body {
   @apply bg-gradient-to-b from-slate-200 to-slate-400;
 }
 
+.graph-paper-bg {
+  @apply bg-graph-paper-background;
+}
+
 .custom-glow {
   background: conic-gradient(at center, #904be5, #6c6cff, #0080ff, #546eff);
   filter: blur(24px);
