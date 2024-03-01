@@ -77,8 +77,8 @@ export default function Home(): ReactElement {
                   transition={ { duration: 1 } }
                   className='absolute w-full text-center text-lg px-8 sm:px-32 overflow-hidden leading-tight'
                 >
-                  <p className={ ` ${ inter_tightItalicHeavy.className }` }>“{ quotes[currentQuote].quote }”</p>
-                  <p className={ `${ inter_tightLight.className }` }>— { quotes[currentQuote].author }</p>
+                  <div className={ ` ${ inter_tightItalicHeavy.className }` }>“{ quotes[currentQuote].quote }”</div>
+                  <div className={ `${ inter_tightLight.className }` }>— { quotes[currentQuote].author }</div>
                 </motion.div>
               </AnimatePresence>
             </div>

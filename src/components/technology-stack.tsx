@@ -1,43 +1,52 @@
-import { motion } from 'framer-motion';
+import React, { useEffect, FC } from 'react';
 import Image from 'next/image';
-import React, { ReactElement } from 'react';
-import { Technology, TechnologyStackComponentProps } from '@/interfaces/TechnologyProps.interfaces';
+import { motion, useAnimation } from 'framer-motion';
+import { TechStackIconProps } from '@/interfaces/TechnologyProps.interfaces';
+import { useInView } from 'react-intersection-observer';
 
+interface TechnologyStackComponentProps {
+  technologyStack: TechStackIconProps[];
+}
 
-const TechnologyStackComponent: React.FC<TechnologyStackComponentProps> = ({ introduction, stackContent }): ReactElement => {
-  const motionProps: object = {
-    initial: { x: 0, opacity: 0, filter: 'blur(4px)' },
+const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technologyStack }) => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
+  const techStackIconMotionProps = {
+    initial: { opacity: 0, filter: 'blur(4px)' },
+    animate: controls,
     whileHover: { scale: 1.2 },
-    animate: { x: 0, opacity: 1, filter: 'blur(0px)' },
-    transition: { duration: 0.1 },
+    transition: { duration: 0.2 },
   };
 
+  useEffect((): void => {
+    if (inView) {
+      controls.start({ opacity: 1, filter: 'blur(0px)' });
+    }
+  }, [ controls, inView ]);
+
   return (
-    <div className={ 'bg-darkblue-grid-background section-shadow pt-1 pb-7 mb-6 w-full mx-auto' }>
-
-      {/* TEXT CONTAINER */}
-        <div className={ 'max-w-screen-lg mx-auto px-8' }>
-          <h2 className={ 'text-3xl text-center pb-4 mt-8' }>Technology Stack</h2>
-          <p className={ 'text-xl' }>
-            { introduction }
-          </p>
-        </div>
-
-        {/* ICON CONTAINER */}
-        <div className={ `grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center mt-5 max-w-screen-lg mx-auto px-8` }>
-          { stackContent.map((technology: Technology, index: number) => (
-            <motion.div key={ index } className="relative p-3 z-20" { ...motionProps }>
-              <Image
-                src={ technology.imgSrc }
-                alt={ technology.altText }
-                width={ 120 }
-                height={ 120 }
-              />
-            </motion.div>
-          )) }
-        </div>
-
-      </div>
+    <div
+      className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center mt-5 max-w-screen-lg mx-auto px-8 pt-3">
+      { technologyStack.map((technology: TechStackIconProps, index: number) => (
+        <motion.div
+          ref={ ref }
+          key={ index }
+          className={ 'm-2' }
+          { ...techStackIconMotionProps }
+        >
+          <Image
+            src={ technology.imgSrc }
+            alt={ technology.altText }
+            width={ 120 }
+            height={ 120 }
+          />
+        </motion.div>
+      )) }
+    </div>
   );
 };
 

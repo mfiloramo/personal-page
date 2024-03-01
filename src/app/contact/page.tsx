@@ -19,7 +19,7 @@ export default function Contact(): ReactElement {
       <div className={ 'pt-10 mx-8 md:mx-auto max-w-screen-md mb-10' }>
         { /* TITLE */ }
         <MotionSlider className={ `text-sky-100 text-8xl ${ cabinHeavy.className }` } delay={ 0 }>
-          <p>contact</p>
+          <div>contact</div>
         </MotionSlider>
 
         { /* SUBTITLE */ }
@@ -32,10 +32,9 @@ export default function Contact(): ReactElement {
 
         { /* BODY TEXT */ }
         <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.4 }>
-          <p className='break-words'>
+          <div className='break-words'>
             Got a project in mind or considering software solutions? Reach out and let&apos;s bring your vision to life. Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you bring your digital aspirations to life.
-
-          </p>
+          </div>
         </MotionSlider>
       </div>
 

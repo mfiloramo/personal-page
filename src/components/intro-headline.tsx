@@ -26,9 +26,9 @@ export default function IntroHeadline({ text }: IntroHeadlineProps): ReactElemen
         }
       } }
     >
-      <p>
+      <div>
         { text }
-      </p>
+      </div>
     </motion.div>
   )
 }

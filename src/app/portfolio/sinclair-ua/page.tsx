@@ -1,32 +1,29 @@
 'use client';
-import { ReactElement, ReactNode } from 'react';
-import pageContent from '../../../data/portfolio/pages/sinclair-ua/sinclair-ua-data.json';
-import stackContent from '../../../data/portfolio/pages/sinclair-ua/sinclair-ua-stack-data.json';
-import SectionDivider from '@/components/section-divider';
-import ConstructionImage from '@/components/construction';
+import { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
-import TechnologyStackComponent from '@/components/technology-stack';
+import pageContent from '../../../data/portfolio/pages/sinclair-ua/sinclair-ua-data.json';
+import ConstructionImage from '@/components/construction';
 
 export default function SinclairUserAdmin(): ReactElement {
   return (
     <div>
       <ConstructionImage />
-
       {/* PAGE SECTIONS */ }
       <div className={ `mx-auto text-xl` }>
         { pageContent.sections.map((section: any, index: number) => (
           <div key={ index }>
+
             {/* SECTION COMPONENT */ }
-            <SectionComponent key={ index } subtitle={ section.subtitle } paragraphs={ section.paragraphs } isEven={ index % 2 === 0 } />
+            <SectionComponent
+              key={ index }
+              subtitle={ section.subtitle }
+              paragraphs={ section.paragraphs }
+              technologyStack={ section.technologyStack }
+            />
 
-            {/* PAGE DIVIDER */ }
-            { ((index !== pageContent.sections.length - 1) && index !== 3) && <SectionDivider key={ index } /> }
-
-            {/* TECHNOLOGY STACK SECTION */ }
-            { index === 3 && <TechnologyStackComponent introduction={ pageContent.text.technologyStackIntro } stackContent={ stackContent } /> }
           </div>
         )) }
       </div>
     </div>
-  );
+  )
 }

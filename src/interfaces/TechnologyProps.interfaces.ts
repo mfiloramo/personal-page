@@ -1,9 +1,5 @@
-export interface Technology {
-  imgSrc: string;
-  altText: string;
-}
-
-export interface TechnologyStackComponentProps {
-  introduction: string;
-  stackContent: Technology[];
+export interface TechStackIconProps {
+  urlPath: string
+  imgSrc: string
+  altText: string
 }

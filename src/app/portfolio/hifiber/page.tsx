@@ -1,9 +1,7 @@
 'use client';
 import { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
-import TechnologyStackComponent from '@/components/technology-stack';
 import pageContent from '../../../data/portfolio/pages/hifiber/hifiber-data.json';
-import stackContent from '../../../data/portfolio/pages/hifiber/hifiber-stack-data.json';
 import ConstructionImage from '@/components/construction';
 
 export default function HiFiberPage(): ReactElement {
@@ -20,10 +18,9 @@ export default function HiFiberPage(): ReactElement {
               key={ index }
               subtitle={ section.subtitle }
               paragraphs={ section.paragraphs }
+              technologyStack={ section.technologyStack }
             />
 
-            {/* TECHNOLOGY STACK SECTION */ }
-            { index === 4 && <TechnologyStackComponent introduction={ pageContent.text.technologyStackIntro } stackContent={ stackContent } /> }
           </div>
         )) }
       </div>

@@ -116,7 +116,7 @@ export default function SendMessage(): ReactElement {
         Send Message
       </button>
 
-      { status && <p className={ 'mx-auto mt-3' }>{ status }</p> }
+      { status && <div className={ 'mx-auto mt-3' }>{ status }</div> }
 
     </form>
   )

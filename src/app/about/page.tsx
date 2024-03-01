@@ -15,9 +15,9 @@ export default function About(): ReactElement {
       <div className={ 'pt-10 mx-8 md:mx-auto max-w-screen-md mb-10' }>
         { /* TITLE */ }
         <MotionSlider className={ `text-sky-100 text-8xl ${ cabinHeavy.className }` } delay={ 0 }>
-          <p>
+          <div>
             about
-          </p>
+          </div>
         </MotionSlider>
 
         { /* SUBTITLE */ }
@@ -31,16 +31,16 @@ export default function About(): ReactElement {
         { /* BODY TEXT */ }
         <div>
           <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.4 }>
-            <p className={ 'break-words' }>
+            <div className={ 'break-words' }>
               From the classrooms of NYC to the world of web development, I&apos;ve spent nearly a decade shaping minds as a public school teacher before transitioning professionally into software development.
-            </p>
+            </div>
           </MotionSlider>
           <br />
 
           <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.6 }>
-            <p className={ 'break-words' }>
+            <div className={ 'break-words' }>
               As a dedicated full stack engineer with several years of web development experience across various fields, I&apos;m passionate about merging my educational insights with my technical skills to ultimately give back to the EdTech community.
-            </p>
+            </div>
           </MotionSlider>
         </div>
       </div>

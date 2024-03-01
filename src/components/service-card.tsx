@@ -16,20 +16,20 @@ export default function ServiceCard({ imageSrc, title, subtitle }: ServiceImageP
         <Image
           src={ `/${ imageSrc }` }
           alt={ title }
-          layout="fill"
-          objectFit="contain"
-          className="!absolute"
+          layout='fill'
+          objectFit='contain'
+          className='!absolute'
         />
       </div>
 
       {/* CARD TITLE */ }
-      <p className={ `mt-2 text-xl mb-1 leading-tight ${ inter_tightHeavy.className }` }>{ title }</p>
+      <div className={ `mt-2 text-xl mb-1 leading-tight ${ inter_tightHeavy.className }` }>{ title }</div>
 
       {/* PAGE DIVIDER */ }
       <div className='border-t border-gray-500 mt-2 w-full mx-auto'></div>
 
       {/* SUBTITLE */ }
-      <p className={ `text-sm ${ inter_tightLight.className}` }>{ subtitle }</p>
+      <div className={ `text-sm ${ inter_tightLight.className}` }>{ subtitle }</div>
     </motion.div>
   )
 };

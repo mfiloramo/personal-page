@@ -37,12 +37,82 @@
       "textColor": "black"
     },
     {
+      "id": "technology_stack",
+      "subtitle": "Technology Stack",
+      "paragraphs": [
+      "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management and automated workflows — facilitating quality, scalability and versatility."
+        ],
+      "technologyStack":[
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-typescript.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-angular.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-material.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-tailwind.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-node.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-express.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-sequelize.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-mssql.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-azure.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-github-actions.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-google-translate.png",
+          "altText": "LingoLink"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-courier.png",
+          "altText": "LingoLink"
+        }
+      ]
+    },
+    {
       "id": "bridging_classrooms",
       "subtitle": "Bridging Classrooms Today",
       "paragraphs": [
         "LingoLink is currently making strides in local educational settings, where it significantly enhances communication between students and educators. Its deployment in my classroom has already shown promising results, facilitating more effective and inclusive interactions among students of diverse linguistic backgrounds.",
         "While still in its pre-alpha stage and available to a select user base through registration, LingoLink's impact is palpable among its early adopters. This growing community of users exemplifies the app's potential to transform communication in educational contexts and beyond."
-      ]
+      ],
+      "background": "bg-lightblue-grid-background"
     },
     {
       "id": "beyond_classroom",
@@ -50,11 +120,7 @@
       "paragraphs": [
         "Looking ahead, LingoLink is intended to continue simplifying communication in diverse settings, particularly in educational environments where language barriers can hinder learning and interaction. Its application in classrooms will continue to enable students from various linguistic backgrounds to engage more fully with their peers and curriculum, fostering a more inclusive learning experience.",
         "Beyond education, LingoLink's utility as a general communication tool promises to bring closer connections in any multilingual context, from international businesses to global social networks. The future of LingoLink is not just as a messaging platform, but as a simple yet powerful tool for breaking down language barriers across the globe."
-      ],
-      "background": "bg-lightblue-grid-background"
+      ]
     }
-  ],
-  "text": {
-    "technologyStackIntro": "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management and automated workflows — facilitating quality, scalability and versatility."
-  }
+  ]
 }

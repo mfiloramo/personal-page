@@ -1,32 +1,35 @@
 'use client';
 import React, { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
-import stackContent from '../../../data/portfolio/pages/lingolink/lingolink-stack-data.json';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 import SectionDivider from '@/components/section-divider';
 import SectionComponent from '@/components/section';
-import TechnologyStackComponent from '@/components/technology-stack';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
 import IntroHeadline from '@/components/intro-headline';
+import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
+import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 
 export default function LingoLinkPage(): ReactElement {
   return (
     <>
       <div className="relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden"
            style={ { backgroundColor: '#000' } }>
-        {/* Hero Banner Image */ }
+        {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS */}
+        {/* HERO BANNER IMAGE */ }
         <motion.div
           initial={ { opacity: 0 } }
           animate={ { opacity: 1 } }
           transition={ { duration: 0.1 } }
+          className='relative w-full h-full'
         >
-          <Image
-            src={ `/images/hero-banners/hero-banner-lingolink.png` }
-            alt={ 'LingoLink Banner' }
-            layout='fill'
-            objectFit='cover'
-            priority
-          />
+          <div className='absolute inset-0'>
+            <Image
+              src={ `/images/hero-banners/hero-banner-lingolink.png` }
+              alt={ 'LingoLink Banner' }
+              fill
+              priority
+              className='object-cover'
+            />
+          </div>
         </motion.div>
 
 
@@ -149,15 +152,15 @@ export default function LingoLinkPage(): ReactElement {
       </div>
 
       {/* INTRODUCTION SECTION */ }
-      <IntroHeadline text={ 'I architected, developed and launched LingoLink, a dynamic multilingual messaging platform that allows users to communicate with others regardless of the language they speak.' } />
-
+      <IntroHeadline
+        text={ 'I architected, developed and launched LingoLink, a dynamic multilingual messaging platform that allows users to communicate with others regardless of the language they speak.' } />
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
       {/* PAGE CONTENT SECTIONS */ }
       <div className='mx-auto text-xl'>
-        { pageContent.sections.map((section: any, index: number) => (
+        { pageContent.sections.map((section: SectionComponentProps, index: number) => (
           <div className={ `${ index === 0 ? '' : 'section-shadow' }` } key={ index }>
             <SectionComponent
               subtitle={ section.subtitle }
@@ -167,13 +170,8 @@ export default function LingoLinkPage(): ReactElement {
               textColor={ section.textColor }
               isEven={ index % 2 === 0 }
               isFirst={ index === 0 }
+              technologyStack={ section.technologyStack }
             />
-            { index === 2 && (
-              <TechnologyStackComponent
-                introduction={ pageContent.text.technologyStackIntro }
-                stackContent={ stackContent }
-              />
-            ) }
           </div>
         )) }
       </div>

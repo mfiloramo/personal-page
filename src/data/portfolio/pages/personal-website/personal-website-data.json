@@ -15,14 +15,60 @@
       ]
     },
     {
+      "id": "technology_stack",
+      "subtitle": "Technology Stack",
+      "paragraphs": [
+        "I chose this stack to leverage a modern, highly performant and developer-friendly ecosystem that ensures ultra fast development, easy maintenance and seamless deployment."
+      ],
+      "technologyStack": [
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-typescript.png",
+          "altText": "TypeScript"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-react.png",
+          "altText": "React"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-next.png",
+          "altText": "Next"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-tailwind.png",
+          "altText": "Tailwind"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-motion.png",
+          "altText": "Framer Motion"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-vercel.png",
+          "altText": "Vercel"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-turbopack.png",
+          "altText": "Turbopack"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-courier.png",
+          "altText": "Courier"
+        }
+      ]
+    },
+    {
       "id": "conclusion",
       "subtitle": "Final Thoughts",
       "paragraphs": [
         "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world. I’m so grateful that you’ve taken the time to learn more about my site!"
       ]
     }
-  ],
-  "text": {
-    "technologyStackIntro": "I chose this stack to leverage a modern, highly performant and developer-friendly ecosystem that ensures ultra fast development, easy maintenance and seamless deployment."
-  }
+  ]
 }

@@ -1,11 +1,8 @@
 'use client';
-import { ReactElement, ReactNode } from 'react';
-import pageContent from '../../../data/portfolio/pages/personal-website/personal-website-data.json';
-import stackContent from '../../../data/portfolio/pages/personal-website/personal-website-stack-data.json';
-import SectionDivider from '@/components/section-divider';
-import ConstructionImage from '@/components/construction';
+import { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
-import TechnologyStackComponent from '@/components/technology-stack';
+import pageContent from '../../../data/portfolio/pages/personal-website/personal-website-data.json';
+import ConstructionImage from '@/components/construction';
 
 export default function PersonalWebsite(): ReactElement {
   return (
@@ -21,10 +18,9 @@ export default function PersonalWebsite(): ReactElement {
               key={ index }
               subtitle={ section.subtitle }
               paragraphs={ section.paragraphs }
+              technologyStack={ section.technologyStack }
             />
 
-            {/* TECHNOLOGY STACK SECTION */ }
-            { index === 1 && <TechnologyStackComponent introduction={ pageContent.text.technologyStackIntro } stackContent={ stackContent } /> }
           </div>
         )) }
       </div>
