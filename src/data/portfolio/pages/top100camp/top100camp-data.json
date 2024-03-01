@@ -27,9 +27,40 @@
       "paragraphs": [
         "The solution was a comprehensive overhaul to an Angular- and Express-based platform with a serverless backend on Vercel. This strategic migration enhanced the site’s loading speed, web visibility, and user interface with smoother animations and a more responsive design. The integration of the Instagram API further ensured that the website remained vibrant and engaging, setting a new benchmark for the NBPA’s digital presence."
       ]
+    },
+    {
+      "id": "technology_stack",
+      "subtitle": "Technology Stack",
+      "paragraphs": [
+        "This stack was chosen to combine strong typing, a robust frontend framework, efficient server-side processing, seamless deployment and social media integration for a scalable, maintainable and high-performance application."
+      ],
+      "technologyStack": [
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-typescript.png",
+          "altText": "TypeScript"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-angular.png",
+          "altText": "Angular"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-express.png",
+          "altText": "Express"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-vercel.png",
+          "altText": "Vercel"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-insta-api.png",
+          "altText": "Instagram API"
+        }
+      ]
     }
-  ],
-  "text": {
-    "technologyStackIntro": "This stack was chosen to combine strong typing, a robust frontend framework, efficient server-side processing, seamless deployment and social media integration for a scalable, maintainable and high-performance application."
-  }
+  ]
 }

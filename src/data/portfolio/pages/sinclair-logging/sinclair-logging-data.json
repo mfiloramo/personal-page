@@ -11,7 +11,7 @@
       "id": "logging_with_precision",
       "subtitle": "Logging with Precision and Clarity",
       "paragraphs": [
-        "Developed for Sinclair Broadcast Group, I designed and implemented a Logging Service that served as a comprehensive solution designed to meticulously track and log user activity across frontend and backend systems within our User/Contract Management platform. The service offers a holistic view of user sessions, actions, errors, and more, enhancing monitoring and diagnostic capabilities."
+        "Developed for Sinclair Broadcast Group, I designed and implemented a Logging Service that served as a comprehensive solution designed to meticulously track and log user activity across fro   ntend and backend systems within our User/Contract Management platform. The service offers a holistic view of user sessions, actions, errors, and more, enhancing monitoring and diagnostic capabilities."
       ]
     },
     {
@@ -30,14 +30,70 @@
       ]
     },
     {
+      "id": "technology_stack",
+      "subtitle": "Technology Stack",
+      "paragraphs": [
+        "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management and automated workflows — facilitating quality, scalability and versatility."
+      ],
+      "technologyStack": [
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-typescript.png",
+          "altText": "TypeScript"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-javascript.png",
+          "altText": "JavaScript"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-node.png",
+          "altText": "Node.js"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-express.png",
+          "altText": "Express"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-sequelize.png",
+          "altText": "Sequelize"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-dynatrace.png",
+          "altText": "Dynatrace"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-fluentd.png",
+          "altText": "Fluentd"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-mssql.png",
+          "altText": "SQL Server"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-azure.png",
+          "altText": "Azure"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-ado.png",
+          "altText": "Azure DevOps"
+        }
+      ]
+    },
+    {
       "id": "beyond_logging",
       "subtitle": "Beyond Logging: A Tool for Insight and Debugging",
       "paragraphs": [
         "Initially designed to log user activities comprehensively, the Logging Service has evolved into an essential tool for Sinclair Broadcast Group’s internal debugging and monitoring within its User Management platform. Its efficiency and depth of data capture have made it indispensable for analyzing user behavior, optimizing user administration platforms, and enhancing system performance."
       ]
     }
-  ],
-  "text": {
-    "technologyStackIntro": "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management and automated workflows — facilitating quality, scalability and versatility."
-  }
+  ]
 }

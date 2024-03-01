@@ -29,14 +29,71 @@
       ]
     },
     {
+      "id": "technology_stack",
+      "subtitle": "Technology Stack",
+      "paragraphs": [
+        "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management, and automated workflows — facilitating quality, scalability and versatility."
+      ],
+      "technologyStack": [
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-typescript.png",
+          "altText": "TypeScript"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-angular.png",
+          "altText": "Angular"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-telerik.png",
+          "altText": "Telerik DevCraft"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-kendo.png",
+          "altText": "Kendo UI"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-node.png",
+          "altText": "Node.js"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-express.png",
+          "altText": "Express"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-mssql.png",
+          "altText": "SQL Server"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-mongo.png",
+          "altText": "MongoDB"
+        },
+
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-azure.png",
+          "altText": "Azure"
+        },
+        {
+          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
+          "imgSrc": "/images/technology-icons/tech-ado.png",
+          "altText": "Azure DevOps"
+        }
+      ]
+    },
+    {
       "id": "empowering_users",
       "subtitle": "Empowering Users with Advanced Contract Management Tools",
       "paragraphs": [
         "Currently, the platform is instrumental in transforming how contracts and user assignments are managed, offering unparalleled efficiency and accuracy. Its adoption has led to significant time savings and reduced errors in managing contracts, with users benefiting from its intuitive design and comprehensive functionalities. The platform's success underscores its role not just as a tool, but as a vital component in optimizing contract management processes."
       ]
     }
-  ],
-  "text": {
-    "technologyStackIntro": "I chose this stack for its ability to ensure robust development, seamless user experience, efficient backend management, and automated workflows — facilitating quality, scalability and versatility."
-  }
+  ]
 }
