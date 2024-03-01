@@ -15,28 +15,42 @@ const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technolog
     threshold: 0.3,
   });
 
-  const techStackIconMotionProps = {
-    initial: { opacity: 0, filter: 'blur(4px)' },
-    animate: controls,
-    whileHover: { scale: 1.2 },
-    transition: { duration: 0.2 },
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.2,
+      },
+    },
   };
 
-  useEffect((): void => {
+  const item = {
+    hidden: { opacity: 0, filter: 'blur(4px)' },
+    visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
+  };
+
+  useEffect(() => {
     if (inView) {
-      controls.start({ opacity: 1, filter: 'blur(0px)' });
+      controls.start('visible');
     }
   }, [ controls, inView ]);
 
   return (
-    <div
-      className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center mt-5 max-w-screen-lg mx-auto px-8 pt-3">
+    <motion.div
+      ref={ ref }
+      variants={ container }
+      initial="hidden"
+      animate={ controls }
+      className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center mt-5 max-w-screen-lg mx-auto px-8 pt-3"
+    >
       { technologyStack.map((technology: TechStackIconProps, index: number) => (
         <motion.div
-          ref={ ref }
           key={ index }
           className={ 'm-2' }
-          { ...techStackIconMotionProps }
+          variants={ item }
+          whileHover={ { scale: 1.2 } }
         >
           <Image
             src={ technology.imgSrc }
@@ -46,7 +60,7 @@ const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technolog
           />
         </motion.div>
       )) }
-    </div>
+    </motion.div>
   );
 };
 

@@ -19,13 +19,13 @@ export default function RootLayout({ children }: {
     <html lang='en'>
     <body className={ `min-h-screen ${ dm_sans.className }` }>
 
-    {/* VERCEL APPLICATION ANALYTICS */}
+    {/* VERCEL APPLICATION ANALYTICS */ }
     <Analytics />
 
     {/* VERCEL APPLICATION TELEMETRY */ }
     <SpeedInsights />
 
-    {/* TODO: FIX NAV AND FOOTER ANCHORING IN MOBILE LAYOUT */}
+    {/* TODO: FIX NAV AND FOOTER ANCHORING IN MOBILE LAYOUT */ }
     {/* MAIN CONTAINER */ }
     <div className='flex flex-col h-screen overflow-x-hidden'>
 
