@@ -34,7 +34,7 @@ export default function RootLayout({ children }: {
 
       {/* ROUTER */ }
       <main
-        className='flex-grow overflow-y-auto section-shadow bg-blue-grid-background bg-cover bg-center'>
+        className='flex-grow overflow-y-auto overflow-x-hidden section-shadow bg-blue-grid-background bg-cover bg-center'>
         { children }
       </main>
 
