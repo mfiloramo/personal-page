@@ -5,7 +5,7 @@ import { generateHoverAnimation } from '@/utilities/animations';
 import { AboutButtonPropsInterface } from '@/interfaces/AboutButtonProps.interface';
 import { MotionSlider } from '@/components/motion-slider';
 
-export default function AboutButton({ imgSrc, urlPath, altText, index }: AboutButtonPropsInterface): ReactElement {
+export default function AboutPageButton({ imgSrc, urlPath, altText, index }: AboutButtonPropsInterface): ReactElement {
   return (
     <motion.a
       className={ 'mt-4 mb-4 sm:mb-0 mx-auto sm:mx-0' }

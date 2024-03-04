@@ -1,7 +1,7 @@
 'use client';
 import { ReactElement } from 'react';
 import { cabinHeavy, cabinLight } from '@/utilities/fonts';
-import AboutButton from '@/components/about-button';
+import AboutPageButton from '@/components/about-page-button';
 import FancyDivider from '@/components/fancy-divider';
 import { MotionSlider } from '@/components/motion-slider';
 import pageContent from '../../data/about/about-data.json';
@@ -60,7 +60,7 @@ export default function About(): ReactElement {
             {
               pageContent.map((button: any, index: number): ReactElement => {
                 return (
-                  <AboutButton
+                  <AboutPageButton
                     key={ index }
                     urlPath={ button.urlPath }
                     imgSrc={ button.imgSrc }
