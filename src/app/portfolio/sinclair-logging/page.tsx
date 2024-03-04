@@ -3,14 +3,24 @@ import { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '../../../data/portfolio/pages/sinclair-logging/sinclair-logging-data.json';
 import ConstructionImage from '@/components/construction';
+import IntroHeadline from '@/components/intro-headline';
+import SectionDivider from '@/components/section-divider';
+import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 
 export default function SinclairLogging(): ReactElement {
   return (
-    <div>
+    <>
       <ConstructionImage />
-      {/* PAGE SECTIONS */ }
+
+      {/* INTRODUCTION HEADLINE */}
+      <IntroHeadline text={'I spearheaded the development of an advanced logging system for Sinclair Broadcast Group, enhancing user activity tracking and system diagnostics across both frontend and backend environments.'} />
+
+      {/* SECTION DIVIDER */ }
+      <SectionDivider />
+
+      {/* PAGE CONTENT SECTIONS */ }
       <div className={ `mx-auto text-xl` }>
-        { pageContent.sections.map((section: any, index: number) => (
+        { pageContent.sections.map((section: SectionComponentProps, index: number) => (
           <div key={ index }>
 
             {/* SECTION COMPONENT */ }
@@ -24,6 +34,6 @@ export default function SinclairLogging(): ReactElement {
           </div>
         )) }
       </div>
-    </div>
-  )
+    </>
+  );
 }

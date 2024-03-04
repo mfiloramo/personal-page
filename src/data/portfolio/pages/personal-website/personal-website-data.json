@@ -1,13 +1,6 @@
 {
   "sections": [
     {
-      "id": "introduction",
-      "subtitle": "",
-      "paragraphs": [
-        "I built my personal website using a modern and robust technology stack, creating a dynamic, performant and visually engaging platform to showcase my work and connect with visitors."
-      ]
-    },
-    {
       "id": "motivation_and_goals",
       "subtitle": "Motivation and Goals",
       "paragraphs": [

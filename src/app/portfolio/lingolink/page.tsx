@@ -11,9 +11,11 @@ import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interf
 export default function LingoLinkPage(): ReactElement {
   return (
     <>
+      {/* HERO BANNER CONTAINER */}
       <div className="relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden"
            style={ { backgroundColor: '#000' } }>
         {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS */}
+
         {/* HERO BANNER IMAGE */ }
         <motion.div
           initial={ { opacity: 0 } }

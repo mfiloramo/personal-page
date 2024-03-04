@@ -1,13 +1,6 @@
 {
   "sections": [
     {
-      "id": "introduction",
-      "subtitle": "",
-      "paragraphs": [
-        "I contributed to creating HiFiber, a React DevTool designed for visualizing the React Fiber tree, facilitating easier debugging and performance optimization for frontend developers."
-      ]
-    },
-    {
       "id": "visualizing_debugging",
       "subtitle": "Visualizing React Debugging with HiFiber",
       "paragraphs": [

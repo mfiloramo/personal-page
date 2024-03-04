@@ -1,13 +1,6 @@
 {
   "sections": [
     {
-      "id": "introduction",
-      "subtitle": "",
-      "paragraphs": [
-        "I spearheaded the development of an advanced logging system for Sinclair Broadcast Group, enhancing user activity tracking and system diagnostics across both frontend and backend environments."
-      ]
-    },
-    {
       "id": "logging_with_precision",
       "subtitle": "Logging with Precision and Clarity",
       "paragraphs": [

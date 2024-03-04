@@ -1,13 +1,6 @@
 {
   "sections": [
     {
-      "id": "introduction",
-      "subtitle": "",
-      "paragraphs": [
-        "I migrated and redesigned the NBPA's top100camp.com website from WordPress to Angular/Express, introducing a serverless backend and hosted on Vercel for improved performance and user experience."
-      ]
-    },
-    {
       "id": "enhancing_digital_footprint",
       "subtitle": "Enhancing NBPA's Digital Footprint",
       "paragraphs": [

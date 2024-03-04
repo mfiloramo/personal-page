@@ -3,14 +3,26 @@ import { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '../../../data/portfolio/pages/sinclair-ua/sinclair-ua-data.json';
 import ConstructionImage from '@/components/construction';
+import IntroHeadline from '@/components/intro-headline';
+import SectionDivider from '@/components/section-divider';
+import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 
 export default function SinclairUserAdmin(): ReactElement {
   return (
-    <div>
+    <>
       <ConstructionImage />
-      {/* PAGE SECTIONS */ }
+
+      {/* INTRODUCTION HEADLINE */ }
+      <IntroHeadline
+        text={ 'I played a key role in developing a User/Contract Management Platform, utilizing powerful frontend/backend tools to streamline contract and employee assignment processes.' }
+      />
+
+      {/* SECTION DIVIDER */ }
+      <SectionDivider />
+
+      {/* PAGE CONTENT SECTIONS */ }
       <div className={ `mx-auto text-xl` }>
-        { pageContent.sections.map((section: any, index: number) => (
+        { pageContent.sections.map((section: SectionComponentProps, index: number) => (
           <div key={ index }>
 
             {/* SECTION COMPONENT */ }
@@ -24,6 +36,6 @@ export default function SinclairUserAdmin(): ReactElement {
           </div>
         )) }
       </div>
-    </div>
-  )
+    </>
+  );
 }
