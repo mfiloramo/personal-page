@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 import SectionDivider from '@/components/section-divider';
 import SectionComponent from '@/components/section';
 import IntroHeadline from '@/components/intro-headline';
-import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
+import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
 
 export default function LingoLinkPage(): ReactElement {
   return (
@@ -14,7 +14,7 @@ export default function LingoLinkPage(): ReactElement {
       {/* HERO BANNER CONTAINER */}
       <div className="relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden"
            style={ { backgroundColor: '#000' } }>
-        {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS */}
+        {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS) */}
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
