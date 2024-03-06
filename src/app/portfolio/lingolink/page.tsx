@@ -11,10 +11,10 @@ import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.
 export default function LingoLinkPage(): ReactElement {
   return (
     <>
-      {/* HERO BANNER CONTAINER */}
+      {/* HERO BANNER CONTAINER */ }
       <div className="relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden"
            style={ { backgroundColor: '#000' } }>
-        {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS) */}
+        {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS) */ }
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
@@ -29,11 +29,10 @@ export default function LingoLinkPage(): ReactElement {
               alt={ 'LingoLink Banner' }
               fill
               priority
-              className='object-cover'
+              className={ 'object-cover' }
             />
           </div>
         </motion.div>
-
 
         {/* ANIMATED LOGO CONTAINER */ }
         <div className={ 'absolute mt-[4vh] inset-0 flex justify-center' }>
@@ -163,18 +162,26 @@ export default function LingoLinkPage(): ReactElement {
       {/* PAGE CONTENT SECTIONS */ }
       <div className='mx-auto text-xl'>
         { pageContent.sections.map((section: SectionComponentProps, index: number) => (
-          <div className={ `${ index === 0 ? '' : 'section-shadow' }` } key={ index }>
-            <SectionComponent
-              subtitle={ section.subtitle }
-              paragraphs={ section.paragraphs }
-              photo={ section.photo }
-              background={ section.background }
-              textColor={ section.textColor }
-              isEven={ index % 2 === 0 }
-              isFirst={ index === 0 }
-              technologyStack={ section.technologyStack }
-            />
-          </div>
+          <>
+            <div className={ `${ index === 0 ? '' : 'section-shadow' }` } key={ index }>
+              <SectionComponent
+                subtitle={ section.subtitle }
+                paragraphs={ section.paragraphs }
+                photo={ section.photo }
+                background={ section.background }
+                textColor={ section.textColor }
+                isEven={ index % 2 === 0 }
+                isFirst={ index === 0 }
+                technologyStack={ section.technologyStack }
+              />
+            </div>
+
+            { index === 4 && (
+              <div className={ 'section-shadow text-center py-4' }>
+                Test section placeholder
+              </div>
+            ) }
+          </>
         )) }
       </div>
     </>
