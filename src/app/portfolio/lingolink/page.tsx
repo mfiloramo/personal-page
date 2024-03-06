@@ -10,7 +10,7 @@ import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.
 
 export default function LingoLinkPage(): ReactElement {
   return (
-    <>
+    <div>
       {/* HERO BANNER CONTAINER */ }
       <div className="relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden"
            style={ { backgroundColor: '#000' } }>
@@ -162,7 +162,7 @@ export default function LingoLinkPage(): ReactElement {
       {/* PAGE CONTENT SECTIONS */ }
       <div className='mx-auto text-xl'>
         { pageContent.sections.map((section: SectionComponentProps, index: number) => (
-          <>
+          <div key={ index }>
             <div className={ `${ index === 0 ? '' : 'section-shadow' }` } key={ index }>
               <SectionComponent
                 subtitle={ section.subtitle }
@@ -176,14 +176,14 @@ export default function LingoLinkPage(): ReactElement {
               />
             </div>
 
-            { index === 4 && (
-              <div className={ 'section-shadow text-center py-4' }>
-                Test section placeholder
-              </div>
-            ) }
-          </>
+            {/*{ index === 4 && (*/}
+            {/*  <div className={ 'section-shadow text-center py-4' } key={ index }>*/}
+            {/*    Test section placeholder*/}
+            {/*  </div>*/}
+            {/*) }*/}
+          </div>
         )) }
       </div>
-    </>
+    </div>
   );
 }
