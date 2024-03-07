@@ -9,7 +9,9 @@ interface TechnologyStackComponentProps {
 }
 
 const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technologyStack }) => {
+  // TODO: SWITCH TO FRAMER'S NATIVE whileInView API
   const controls = useAnimation();
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
@@ -31,7 +33,7 @@ const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technolog
     visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
   };
 
-  useEffect(() => {
+  useEffect((): void => {
     if (inView) {
       controls.start('visible');
     }
