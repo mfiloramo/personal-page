@@ -175,54 +175,6 @@ export default function LingoLinkPage(): ReactElement {
                 technologyStack={ section.technologyStack }
               />
             </div>
-
-            {/*{ index === 4 && (*/}
-            {/*  <div className={ 'section-shadow py-4' } key={ index }>*/}
-            {/*    <div className={ 'flex flex-row justify-around' }>*/}
-            {/*      <motion.div*/}
-            {/*        className={ 'bg-black p-4 mr-2 cursor-default' }*/}
-            {/*        initial={ { scale: 0 } }*/}
-            {/*        animate={ { rotate: 180, scale: 1 } }*/}
-            {/*        whileHover={ { scale: 1.3 } }*/}
-            {/*      >X*/}
-            {/*      </motion.div>*/}
-            {/*      <motion.div*/}
-            {/*        className={ 'bg-black p-4 mr-2 cursor-default' }*/}
-            {/*        initial={ { scale: 0 } }*/}
-            {/*        animate={ { rotate: 180, scale: 1 } }*/}
-            {/*        whileHover={ { scale: 1.3 } }*/}
-            {/*      >X*/}
-            {/*      </motion.div>*/}
-            {/*      <motion.div*/}
-            {/*        className={ 'bg-black p-4 mr-2 cursor-default' }*/}
-            {/*        initial={ { scale: 0 } }*/}
-            {/*        animate={ { rotate: 180, scale: 1 } }*/}
-            {/*        whileHover={ { scale: 1.3 } }*/}
-            {/*      >X*/}
-            {/*      </motion.div>*/}
-            {/*      <motion.div*/}
-            {/*        className={ 'bg-black p-4 mr-2 cursor-default' }*/}
-            {/*        initial={ { scale: 0 } }*/}
-            {/*        animate={ { rotate: 180, scale: 1 } }*/}
-            {/*        whileHover={ { scale: 1.3 } }*/}
-            {/*      >X*/}
-            {/*      </motion.div>*/}
-            {/*      <motion.div*/}
-            {/*        className={ 'bg-black p-4 mr-2 cursor-default' }*/}
-            {/*        initial={ { scale: 0 } }*/}
-            {/*        animate={ { rotate: 180, scale: 1 } }*/}
-            {/*        whileHover={ { scale: 1.3 } }*/}
-            {/*      >X*/}
-            {/*      </motion.div>*/}
-            {/*      <motion.div*/}
-            {/*        className={ 'bg-black p-4 mr-2 cursor-default' }*/}
-            {/*        initial={ { scale: 0 } }*/}
-            {/*        animate={ { rotate: 180, scale: 1 } }*/}
-            {/*        whileHover={ { scale: 1.3 } }*/}
-            {/*      >X*/}
-            {/*      </motion.div>*/}
-            {/*  </div>*/}
-            {/*) }*/}
           </div>
         )) }
       </div>
