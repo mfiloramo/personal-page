@@ -19,12 +19,7 @@
         "Driven by the need to bridge the communication gap, I developed LingoLink—a solution that eliminates language barriers by leveraging the power of Google Translate, enabling users to effortlessly communicate in their native tongues.",
         "Unlike the tedious process of manual translation, LingoLink facilitates instant, automatic translation and caching of messages, ensuring conversations flow naturally and efficiently.",
         "With LingoLink, the vision is clear: to create a space where language no longer divides us, but unites us, making communication inclusive and accessible to all."
-      ],
-      "photo": {
-        "src": "/images/lingolink-portfolio-page/classroom-computers.jpg",
-        "alt": "classroom-raised-hands"
-      },
-      "background": "bg-lightblue-grid-background"
+      ]
     },
     {
       "id": "how_it_works",
@@ -112,7 +107,11 @@
         "LingoLink is currently making strides in local educational settings, where it significantly enhances communication between students and educators. Its deployment in my classroom has already shown promising results, facilitating more effective and inclusive interactions among students of diverse linguistic backgrounds.",
         "While still in its pre-alpha stage and available to a select user base through registration, LingoLink's impact is palpable among its early adopters. This growing community of users exemplifies the app's potential to transform communication in educational contexts and beyond."
       ],
-      "background": "bg-lightblue-grid-background"
+      "background": "bg-lightblue-grid-background",
+      "photo": {
+        "src": "/images/lingolink-portfolio-page/classroom-computers.jpg",
+        "alt": "classroom-computers"
+      }
     },
     {
       "id": "beyond_classroom",
