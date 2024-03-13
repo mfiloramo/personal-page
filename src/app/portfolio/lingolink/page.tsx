@@ -7,8 +7,25 @@ import SectionComponent from '@/components/section';
 import IntroHeadline from '@/components/intro-headline';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
+import screenshots from '../../../data/portfolio/pages/lingolink/lingolink-screenshots.json'
 
 export default function LingoLinkPage(): ReactElement {
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, filter: 'blur(4px)' },
+    visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
+  };
+
   return (
     <div>
       {/* HERO BANNER CONTAINER */ }
@@ -16,7 +33,7 @@ export default function LingoLinkPage(): ReactElement {
            style={ { backgroundColor: '#000' } }>
         {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS) */ }
 
-        {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */}
+        {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */ }
         {/* HERO BANNER IMAGE */ }
         <motion.div
           initial={ { opacity: 0 } }
@@ -160,8 +177,33 @@ export default function LingoLinkPage(): ReactElement {
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
+      {/* APP SCREENSHOTS SECTION */ }
+      <motion.div className={ 'grid grid-cols-3 justify-items-center mx-64 mb-6 cursor-default' } variants={ container }>
+        {
+          screenshots['intro-screenshots'].map((screenshot: string, index: number): any => {
+            return (
+              <motion.div
+                key={ index }
+                variants={ item }
+                whileHover={ { scale: 1.05 } }
+              >
+                <Image
+                  key={ index }
+                  src={ screenshot }
+                  alt={ screenshot }
+                  width={ 265 }
+                  height={ 516 }
+                />
+            </motion.div>
+            ) })
+        }
+      </motion.div>
+
+      {/* SECTION DIVIDER */ }
+      <SectionDivider />
+
       {/* PAGE CONTENT SECTIONS */ }
-      <div className='mx-auto text-xl'>
+      <div className={ 'mx-auto text-xl' }>
         { pageContent.sections.map((section: SectionComponentProps, index: number) => (
           <div key={ index }>
             <div className={ `${ index === 0 ? '' : 'section-shadow' }` } key={ index }>

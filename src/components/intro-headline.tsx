@@ -8,7 +8,7 @@ interface IntroHeadlineProps {
 export default function IntroHeadline({ text }: IntroHeadlineProps): ReactElement {
   return (
     <motion.div
-      className={ 'p-4 -pb-8 text-xl text-center mx-auto box max-w-screen-lg' }
+      className={ 'p-4 -pb-8 text-xl text-center mx-auto mb-3 box max-w-screen-lg' }
       initial={ { opacity: 0, scale: 0.5 } }
       animate={ { opacity: 1, scale: 1 } }
       transition={ {
