@@ -108,7 +108,7 @@ export default function LingoLinkPage(): ReactElement {
         </div>
 
         {/* TEXT: MADE SIMPLE */ }
-        <div className={ 'hidden  xl:flex' }>
+        <div className={ 'hidden xl:flex' }>
           <motion.div
             className='absolute bottom-0 right-0 justify-end items-end '
             initial={ { x: '100vw', y: '100vh' } }
