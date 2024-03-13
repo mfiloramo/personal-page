@@ -58,7 +58,7 @@ export default function LingoLinkPage(): ReactElement {
           {/* ANIMATED LOGO GRAPHIC */ }
           <>
             <motion.div
-              className='absolute inset-0 flex justify-center items-start'
+              className='absolute inset-0 flex justify-center items-start object-fit'
               initial={ { scale: 0 } }
               animate={ { rotate: 360, scale: 1 } }
               transition={ {
@@ -178,7 +178,7 @@ export default function LingoLinkPage(): ReactElement {
       <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */ }
-      <motion.div className={ 'grid grid-cols-3 justify-items-center mx-64 mb-6 cursor-default' } variants={ container }>
+      <motion.div className={ 'flex gap-3 justify-around max-w-[968px] mx-auto px-5 mb-6 cursor-default' } variants={ container }>
         {
           screenshots['intro-screenshots'].map((screenshot: string, index: number): any => {
             return (
