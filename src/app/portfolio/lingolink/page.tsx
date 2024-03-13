@@ -178,7 +178,7 @@ export default function LingoLinkPage(): ReactElement {
       <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */ }
-      <motion.div className={ 'flex gap-3 justify-around max-w-[968px] mx-auto px-5 mb-6 cursor-default' } variants={ container }>
+      <motion.div className={ 'grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-3 max-w-[968px] mx-auto px-5 mb-6 cursor-default' } variants={ container }>
         {
           screenshots['intro-screenshots'].map((screenshot: string, index: number): any => {
             return (
@@ -191,8 +191,8 @@ export default function LingoLinkPage(): ReactElement {
                   key={ index }
                   src={ screenshot }
                   alt={ screenshot }
-                  width={ 265 }
-                  height={ 516 }
+                  width={ 238 }
+                  height={ 464 }
                 />
             </motion.div>
             ) })
