@@ -1,9 +1,9 @@
 {
   "intro-screenshots": [
-    "/images/screenshots/lingolink/mobileHomeScreen.png",
-    "/images/screenshots/lingolink/mobileRegScreen.png",
-    "/images/screenshots/lingolink/mobileConvosScreen.png",
-    "/images/screenshots/lingolink/mobileExampleConvo.png"
+    "/images/screenshots/lingolink/mobile-home-screen.png",
+    "/images/screenshots/lingolink/mobile-reg-screen.png",
+    "/images/screenshots/lingolink/mobile-convos-screen.png",
+    "/images/screenshots/lingolink/mobile-example-convo.png"
   ],
   "in-app-screenshots": [
     ""

@@ -10,7 +10,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.3,
   });
 
   useEffect((): void => {
@@ -28,7 +28,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         <motion.h2
           className={ 'max-w-screen-lg text-3xl pb-1 text-center mx-auto' }
           variants={ subtitleAnimationVariants }
-          initial='hidden'
+          initial={ 'hidden' }
           animate={ controls }
         >
           { subtitle }
@@ -45,7 +45,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
             className='py-6 w-full md:w-1/2 max-w-[375px]'
             variants={ paragraphAnimationVariants }
             custom={ isEven ? 1 : -1 }
-            initial='hidden'
+            initial={ 'hidden' }
             animate={ controls }
           >
             <Image

@@ -15,7 +15,7 @@ export default function LingoLinkPage(): ReactElement {
     visible: {
       opacity: 1,
       transition: {
-        delayChildren: 0.2,
+        delayChildren: 1.3,
         staggerChildren: 0.1,
       },
     },
@@ -29,8 +29,7 @@ export default function LingoLinkPage(): ReactElement {
   return (
     <div>
       {/* HERO BANNER CONTAINER */ }
-      <div className="relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden"
-           style={ { backgroundColor: '#000' } }>
+      <div className='relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden' style={ { backgroundColor: '#000' } }>
         {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS) */ }
 
         {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */ }
@@ -178,7 +177,12 @@ export default function LingoLinkPage(): ReactElement {
       <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */ }
-      <motion.div className={ 'grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-3 max-w-[968px] mx-auto px-5 mb-6 cursor-default' } variants={ container }>
+      <motion.div
+        className={ 'grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-3 max-w-[968px] mx-auto px-5 mb-6 cursor-default' }
+        variants={ container }
+        initial={ 'hidden' }
+        animate={ 'visible' }
+      >
         {
           screenshots['intro-screenshots'].map((screenshot: string, index: number): any => {
             return (
@@ -188,16 +192,26 @@ export default function LingoLinkPage(): ReactElement {
                 whileHover={ { scale: 1.05 } }
               >
                 <Image
-                  key={ index }
                   src={ screenshot }
-                  alt={ screenshot }
+                  alt={ `Screenshot ${ index }` }
                   width={ 238 }
                   height={ 464 }
                 />
-            </motion.div>
-            ) })
+              </motion.div>
+            )
+          })
         }
       </motion.div>
+
+      {/* ANIMATED USAGE SECTION CONTAINER */}
+      <div className={ 'grid grid-cols-5 gap-3 m-5' }>
+        {/*  PERSON IMAGE */}
+        <motion.div
+
+        >
+        </motion.div>
+
+      </div>
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />
