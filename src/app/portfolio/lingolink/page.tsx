@@ -30,7 +30,6 @@ export default function LingoLinkPage(): ReactElement {
     <div>
       {/* HERO BANNER CONTAINER */ }
       <div className='relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden' style={ { backgroundColor: '#000' } }>
-        {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS) */ }
 
         {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */ }
         {/* HERO BANNER IMAGE */ }
@@ -54,6 +53,7 @@ export default function LingoLinkPage(): ReactElement {
         {/* ANIMATED LOGO CONTAINER */ }
         <div className={ 'absolute mt-[4vh] inset-0 flex justify-center' }>
 
+          {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS) */ }
           {/* ANIMATED LOGO GRAPHIC */ }
           <>
             <motion.div
@@ -204,12 +204,79 @@ export default function LingoLinkPage(): ReactElement {
       </motion.div>
 
       {/* ANIMATED USAGE SECTION CONTAINER */}
-      <div className={ 'grid grid-cols-5 gap-3 m-5' }>
-        {/*  PERSON IMAGE */}
-        <motion.div
+      <div
+        className={ 'grid grid-cols-5 gap-3 my-5 mx-auto object-center px-8 max-w-[1500px] items-center justify-items-center' }>
 
-        >
-        </motion.div>
+        {/*  LEFT PERSON IMAGE */ }
+        {/*<motion.div*/}
+        {/*  initial={ { x: '-30vw' } }*/}
+        {/*  animate={ { x: '5vw' } }*/}
+        {/*  transition={ {*/}
+        {/*    delay: 0.9,*/}
+        {/*    type: 'spring',*/}
+        {/*    stiffness: 250,*/}
+        {/*    damping: 10,*/}
+        {/*  } }*/}
+        {/*>*/}
+        {/*  <Image*/}
+        {/*    src={ '/images/screenshots/lingolink/test-left.png' }*/}
+        {/*    alt={ 'person-left' }*/}
+        {/*    width={ 659 }*/}
+        {/*    height={ 845 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
+
+        {/* LEFT CONVERSATION IMAGE */}
+        {/*<motion.div>*/}
+        {/*  <Image*/}
+        {/*    className={ 'ml-32 '}*/}
+        {/*    src={ '/images/screenshots/lingolink/convo-en.png' }*/}
+        {/*    alt={ 'google-translate-logo' }*/}
+        {/*    height={ 344 }*/}
+        {/*    width={ 171 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
+
+        {/* TODO: SWITCH LOGO TO ONLY GT ICON WITHOUT TEXT */}
+        {/* GOOGLE TRANSLATE API LOGO */}
+        {/*<motion.div>*/}
+        {/*  <Image*/}
+        {/*    src={ '/images/technology-icons/tech-google-translate-bare.png' }*/}
+        {/*    alt={ 'google-translate-logo' }*/}
+        {/*    height={ 100 }*/}
+        {/*    width={ 100 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
+
+        {/* RIGHT CONVERSATION IMAGE */}
+        {/*<motion.div>*/}
+        {/*  <Image*/}
+        {/*    className={ 'mr-32 '}*/}
+        {/*    src={ '/images/screenshots/lingolink/convo-ar.png' }*/}
+        {/*    alt={ 'google-translate-logo' }*/}
+        {/*    height={ 344 }*/}
+        {/*    width={ 171 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
+
+
+        {/*  RIGHT PERSON IMAGE */ }
+        {/*<motion.div*/}
+        {/*//   initial={ { x: '30vw' } }*/}
+        {/*//   animate={ { x: '-5vw' } }*/}
+        {/*//   transition={ {*/}
+        {/*//     delay: 0.9,*/}
+        {/*//     type: 'spring',*/}
+        {/*//     stiffness: 250,*/}
+        {/*//     damping: 10,*/}
+        {/*//   } }>*/}
+        {/*//   <Image*/}
+        {/*//     src={ '/images/screenshots/lingolink/test-right.png' }*/}
+        {/*//     alt={ 'person-left' }*/}
+        {/*//     width={ 659 }*/}
+        {/*//     height={ 845 }*/}
+        {/*//   />*/}
+        {/*// </motion.div>*/}
 
       </div>
 
