@@ -205,79 +205,79 @@ export default function LingoLinkPage(): ReactElement {
       </motion.div>
 
       {/* ANIMATED USAGE SECTION CONTAINER */ }
-      {/*<div*/}
-      {/*  className={ 'grid grid-cols-5 gap-3 my-5 mx-auto object-center px-8 max-w-[1500px] items-center justify-items-center' }>*/}
+      <div
+        className={ 'grid grid-cols-5 gap-3 my-5 mx-auto object-center px-8 max-w-[1500px] items-center justify-items-center' }>
 
-      {/*  /!*  LEFT PERSON IMAGE */ }*/}
-      {/*  <motion.div*/}
-      {/*    initial={ { x: '-30vw' } }*/}
-      {/*    animate={ { x: '5vw' } }*/}
-      {/*    transition={ {*/}
-      {/*      delay: 0.9,*/}
-      {/*      type: 'spring',*/}
-      {/*      stiffness: 250,*/}
-      {/*      damping: 10,*/}
-      {/*    } }*/}
-      {/*  >*/}
-      {/*    <Image*/}
-      {/*      src={ '/images/screenshots/lingolink/test-left.png' }*/}
-      {/*      alt={ 'person-left' }*/}
-      {/*      width={ 230 }*/}
-      {/*      height={ 370 }*/}
-      {/*    />*/}
-      {/*  </motion.div>*/}
+        {/*  LEFT PERSON IMAGE */ }
+        {/*<motion.div*/}
+        {/*  initial={ { x: '-30vw' } }*/}
+        {/*  animate={ { x: '5vw' } }*/}
+        {/*  transition={ {*/}
+        {/*    delay: 0.9,*/}
+        {/*    type: 'spring',*/}
+        {/*    stiffness: 250,*/}
+        {/*    damping: 10,*/}
+        {/*  } }*/}
+        {/*>*/}
+        {/*  <Image*/}
+        {/*    src={ '/images/screenshots/lingolink/test-left.png' }*/}
+        {/*    alt={ 'person-left' }*/}
+        {/*    width={ 230 }*/}
+        {/*    height={ 370 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
 
-      {/*  /!* LEFT CONVERSATION IMAGE */ }*/}
-      {/*  <motion.div>*/}
-      {/*    <Image*/}
-      {/*      className={ 'ml-32 ' }*/}
-      {/*      src={ '/images/screenshots/lingolink/convo-en.png' }*/}
-      {/*      alt={ 'google-translate-logo' }*/}
-      {/*      height={ 417 }*/}
-      {/*      width={ 206 }*/}
-      {/*    />*/}
-      {/*  </motion.div>*/}
+        {/* LEFT CONVERSATION IMAGE */ }
+        {/*<motion.div>*/}
+        {/*  <Image*/}
+        {/*    className={ 'ml-32 ' }*/}
+        {/*    src={ '/images/screenshots/lingolink/convo-en.png' }*/}
+        {/*    alt={ 'google-translate-logo' }*/}
+        {/*    height={ 417 }*/}
+        {/*    width={ 206 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
 
-      {/*  /!* GOOGLE TRANSLATE API LOGO */ }*/}
-      {/*  <motion.div>*/}
-      {/*    <Image*/}
-      {/*      src={ '/images/technology-icons/tech-google-translate-bare.png' }*/}
-      {/*      alt={ 'google-translate-logo' }*/}
-      {/*      height={ 100 }*/}
-      {/*      width={ 100 }*/}
-      {/*    />*/}
-      {/*  </motion.div>*/}
+        {/* GOOGLE TRANSLATE API LOGO */ }
+        {/*<motion.div>*/}
+        {/*  <Image*/}
+        {/*    src={ '/images/technology-icons/tech-google-translate-bare.png' }*/}
+        {/*    alt={ 'google-translate-logo' }*/}
+        {/*    height={ 100 }*/}
+        {/*    width={ 100 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
 
-      {/*  /!* RIGHT CONVERSATION IMAGE */ }*/}
-      {/*  <motion.div>*/}
-      {/*    <Image*/}
-      {/*      className={ 'mr-32 ' }*/}
-      {/*      src={ '/images/screenshots/lingolink/convo-ar.png' }*/}
-      {/*      alt={ 'google-translate-logo' }*/}
-      {/*      height={ 417 }*/}
-      {/*      width={ 206 }*/}
-      {/*    />*/}
-      {/*  </motion.div>*/}
+        {/* RIGHT CONVERSATION IMAGE */ }
+        {/*<motion.div>*/}
+        {/*  <Image*/}
+        {/*    className={ 'mr-32 ' }*/}
+        {/*    src={ '/images/screenshots/lingolink/convo-ar.png' }*/}
+        {/*    alt={ 'google-translate-logo' }*/}
+        {/*    height={ 417 }*/}
+        {/*    width={ 206 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
 
-      {/*  /!*  RIGHT PERSON IMAGE */ }*/}
-      {/*  <motion.div*/}
-      {/*    initial={ { x: '30vw' } }*/}
-      {/*    animate={ { x: '-5vw' } }*/}
-      {/*    transition={ {*/}
-      {/*      delay: 0.9,*/}
-      {/*      type: 'spring',*/}
-      {/*      stiffness: 250,*/}
-      {/*      damping: 10,*/}
-      {/*    } }>*/}
-      {/*    <Image*/}
-      {/*      src={ '/images/screenshots/lingolink/test-right.png' }*/}
-      {/*      alt={ 'person-left' }*/}
-      {/*      width={ 659 }*/}
-      {/*      height={ 845 }*/}
-      {/*    />*/}
-      {/*  </motion.div>*/}
+        {/*  RIGHT PERSON IMAGE */ }
+        {/*<motion.div*/}
+        {/*  initial={ { x: '30vw' } }*/}
+        {/*  animate={ { x: '-5vw' } }*/}
+        {/*  transition={ {*/}
+        {/*    delay: 0.9,*/}
+        {/*    type: 'spring',*/}
+        {/*    stiffness: 250,*/}
+        {/*    damping: 10,*/}
+        {/*  } }>*/}
+        {/*  <Image*/}
+        {/*    src={ '/images/screenshots/lingolink/test-right.png' }*/}
+        {/*    alt={ 'person-left' }*/}
+        {/*    width={ 659 }*/}
+        {/*    height={ 845 }*/}
+        {/*  />*/}
+        {/*</motion.div>*/}
 
-      {/*</div>*/}
+      </div>
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />
