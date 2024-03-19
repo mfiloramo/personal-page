@@ -5,8 +5,9 @@ import { motion, useAnimation } from 'framer-motion';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import { paragraphAnimationVariants, subtitleAnimationVariants } from '@/utilities/animations';
 import TechnologyStackComponent from '@/components/technology-stack';
+import AnimatedUsageSection from '@/components/animated-usage-section';
 
-export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack }: SectionComponentProps): ReactElement {
+export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, graphic }: SectionComponentProps): ReactElement {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -76,6 +77,18 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
           { technologyStack && technologyStack.length > 0 && (
             <TechnologyStackComponent technologyStack={ technologyStack } />
           )}
+
+          {/* FLOWCHART DIAGRAM */}
+          { graphic && (
+            <Image
+              className={ 'my-8' }
+              src={ graphic }
+              alt={ 'lingolink-flowchart'}
+              height={ 468 }
+              width={ 1000 }
+            />
+          )}
+
         </div>
       </div>
     </div>

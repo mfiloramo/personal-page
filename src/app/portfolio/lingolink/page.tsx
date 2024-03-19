@@ -237,6 +237,7 @@ export default function LingoLinkPage(): ReactElement {
                 isEven={ index % 2 === 0 }
                 isFirst={ index === 0 }
                 technologyStack={ section.technologyStack }
+                graphic={ section.graphic }
               />
             </div>
           </div>
