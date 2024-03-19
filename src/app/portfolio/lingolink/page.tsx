@@ -1,12 +1,10 @@
 'use client';
 import React, { ReactElement, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 import SectionDivider from '@/components/section-divider';
 import SectionComponent from '@/components/section';
 import IntroHeadline from '@/components/intro-headline';
-import AnimatedUsageSection from '@/components/animated-usage-section';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
 import screenshots from '../../../data/portfolio/pages/lingolink/lingolink-screenshots.json';
@@ -211,8 +209,8 @@ export default function LingoLinkPage(): ReactElement {
                 <Image
                   src={ screenshot }
                   alt={ `Screenshot ${ index }` }
-                  width={ 238 }
-                  height={ 464 }
+                  width={ 381 }
+                  height={ 766 }
                 />
               </motion.div>
             )
@@ -238,6 +236,10 @@ export default function LingoLinkPage(): ReactElement {
                 isFirst={ index === 0 }
                 technologyStack={ section.technologyStack }
                 graphic={ section.graphic }
+                convoImageIndex={ convoImageIndex }
+                leftConvoImages={ leftConvoImages }
+                rightConvoImages={ rightConvoImages }
+                flagImages={ flagImages }
               />
             </div>
           </div>

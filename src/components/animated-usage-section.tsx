@@ -4,6 +4,7 @@ import { motion, AnimatePresence, AnimationControls } from 'framer-motion';
 import { useAnimation } from 'framer-motion';
 import { AnimatedUsageSectionProps } from '@/interfaces/AnimatedUsageSectionProps';
 import { useInView } from 'react-intersection-observer';
+import { paragraphAnimationVariants } from '@/utilities/animations';
 
 const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: AnimatedUsageSectionProps) => {
   const [ ref, inView ] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -18,12 +19,13 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
   return (
     <div
       ref={ ref }
-      className='grid grid-cols-5 gap-3 py-24 mx-16 object-center px-8 max-w-[1500px] items-center justify-items-center'>
+      className='grid grid-cols-5 gap-3 pt-16 pb-12 object-center items-center justify-items-center'>
+
       {/* LEFT PERSON IMAGE */ }
       <motion.div
-        initial={ { x: '0vw', opacity: 0 } }
+        initial={ { opacity: 0 } }
         animate={ controls }
-        transition={ { delay: 0.7, type: 'spring', stiffness: 250, damping: 10 } }
+        transition={ { delay: 0.7 } }
       >
         <Image
           src='/images/screenshots/lingolink/person-left.png'
@@ -55,7 +57,7 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
       </div>
 
       {/* GOOGLE TRANSLATE DIAGRAM */ }
-      <div className="relative flex justify-center items-center w-full">
+      <div className='relative flex justify-center items-center w-full'>
         <AnimatePresence>
           <motion.div
             key={ convoImageIndex }
@@ -99,7 +101,7 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
 
       {/* RIGHT PERSON IMAGE */ }
       <motion.div
-        initial={ { x: '0vw', opacity: 0 } }
+        initial={ { opacity: 0 } }
         animate={ controls }
         transition={ { delay: 0.7, type: 'spring', stiffness: 250, damping: 10 } }
       >

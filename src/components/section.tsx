@@ -7,7 +7,7 @@ import { paragraphAnimationVariants, subtitleAnimationVariants } from '@/utiliti
 import TechnologyStackComponent from '@/components/technology-stack';
 import AnimatedUsageSection from '@/components/animated-usage-section';
 
-export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, graphic }: SectionComponentProps): ReactElement {
+export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, graphic, convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: SectionComponentProps): ReactElement {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -58,38 +58,58 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
           </motion.div>
         ) }
 
+        {/* FLOWCHART DIAGRAM */ }
+        { graphic && (
+          <motion.div
+            className={ 'mx-auto my-6' }
+            variants={ paragraphAnimationVariants }
+            initial={ 'hidden' }
+            animate={ controls }
+          >
+            <Image
+              src={ graphic }
+              alt={ 'lingolink-flowchart' }
+              height={ 468 }
+              width={ 800 }
+            />
+          </motion.div>
+        ) }
+
         {/* ANIMATED SECTION PARAGRAPHS */ }
         <div className={ `${ photo ? 'w-full md:w-1/2 lg:w-[55%] md:px-8' : 'w-full' }` }>
-          { paragraphs.map((paragraph: string, index: number) => (
-            <motion.p
-              className={ `${ index > 0 ? 'pt-6' : '' } last:pb-8 first:-mb-4 first:pt-6` }
-              variants={ paragraphAnimationVariants }
-              custom={ isEven ? -1 : 1 }
-              initial={ 'hidden' }
-              animate={ controls }
-              key={ index }
-            >
-              { paragraph }
-            </motion.p>
-          )) }
-
-          {/* TECHNOLOGY STACK ICONS */ }
-          { technologyStack && technologyStack.length > 0 && (
-            <TechnologyStackComponent technologyStack={ technologyStack } />
-          )}
-
-          {/* FLOWCHART DIAGRAM */}
-          { graphic && (
-            <Image
-              className={ 'my-8' }
-              src={ graphic }
-              alt={ 'lingolink-flowchart'}
-              height={ 468 }
-              width={ 1000 }
-            />
-          )}
-
+          { paragraphs.map((paragraph: string, index: number) => {
+            if (paragraph === 'usage-chart') {
+              return (
+                <AnimatedUsageSection
+                  key={ index }
+                  convoImageIndex={ convoImageIndex! }
+                  leftConvoImages={ leftConvoImages! }
+                  rightConvoImages={ rightConvoImages! }
+                  flagImages={ flagImages! }
+                />
+              );
+            } else {
+              return (
+                <motion.p
+                  className={ `${ index > 0 ? 'pt-6' : '' } last:pb-8 first:-mb-4 first:pt-6` }
+                  variants={ paragraphAnimationVariants }
+                  custom={ isEven ? -1 : 1 }
+                  initial={ 'hidden' }
+                  animate={ controls }
+                  key={ index }
+                >
+                  { paragraph }
+                </motion.p>
+              );
+            }
+          }) }
         </div>
+
+        {/* TECHNOLOGY STACK ICONS */ }
+        { technologyStack && technologyStack.length > 0 && (
+          <TechnologyStackComponent technologyStack={ technologyStack } />
+        ) }
+
       </div>
     </div>
   );
