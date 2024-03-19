@@ -5,7 +5,17 @@
     "/images/screenshots/lingolink/mobile-convos-screen.png",
     "/images/screenshots/lingolink/mobile-example-convo.png"
   ],
-  "in-app-screenshots": [
-    ""
+  "in-app-screenshots-left": [
+    "/images/screenshots/lingolink/convo-en.png",
+    "/images/screenshots/lingolink/convo-zh.png", "/images/screenshots/lingolink/convo-pt.png"
+  ],
+  "in-app-screenshots-right": [
+    "/images/screenshots/lingolink/convo-es.png",
+    "/images/screenshots/lingolink/convo-ar.png", "/images/screenshots/lingolink/convo-it.png"
+  ],
+  "google-translate-diagrams": [
+    "/images/diagrams/en-es-diagram.svg",
+    "/images/diagrams/zh-ar-diagram.svg",
+    "/images/diagrams/pt-it-diagram.svg"
   ]
 }

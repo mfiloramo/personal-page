@@ -1,6 +1,7 @@
 import { TechStackIconProps } from '@/interfaces/TechnologyProps.interfaces';
 
 export interface SectionComponentProps {
+  readonly id?: string;
   readonly subtitle?: string;
   readonly paragraphs: string[];
   readonly photo?: { src: string; alt: string };

@@ -1,15 +1,22 @@
 'use client';
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import SectionDivider from '@/components/section-divider';
 import SectionComponent from '@/components/section';
 import IntroHeadline from '@/components/intro-headline';
+import AnimatedUsageSection from '@/components/animated-usage-section';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
-import screenshots from '../../../data/portfolio/pages/lingolink/lingolink-screenshots.json'
+import screenshots from '../../../data/portfolio/pages/lingolink/lingolink-screenshots.json';
 
 export default function LingoLinkPage(): ReactElement {
+  const [ convoImageIndex, setConvoImageIndex ] = useState(0);
+  const leftConvoImages: string[] = screenshots['in-app-screenshots-left'];
+  const rightConvoImages: string[] = screenshots['in-app-screenshots-right'];
+  const flagImages: string[] = screenshots['google-translate-diagrams'];
+
   const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -26,6 +33,14 @@ export default function LingoLinkPage(): ReactElement {
     visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
   };
 
+  // CONVERSATION IMAGE CYCLING
+  useEffect(() => {
+    const interval = setInterval((): void => {
+      setConvoImageIndex((currentIndex: number) => (currentIndex + 1) % rightConvoImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [ rightConvoImages.length ]);
+
   return (
     <div>
       {/* HERO BANNER CONTAINER */ }
@@ -33,6 +48,7 @@ export default function LingoLinkPage(): ReactElement {
            style={ { backgroundColor: '#000' } }>
 
         {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */ }
+        {/* TODO: ADD 'VIEW SOURCE' AND 'TRY IT LIVE' EXT. LINK BUTTONS */ }
         {/* HERO BANNER IMAGE */ }
         <motion.div
           initial={ { opacity: 0 } }
@@ -204,88 +220,13 @@ export default function LingoLinkPage(): ReactElement {
         }
       </motion.div>
 
-      {/* ANIMATED USAGE SECTION CONTAINER */ }
-      <div
-        className={ 'grid grid-cols-5 gap-3 my-5 mx-auto object-center px-8 max-w-[1500px] items-center justify-items-center' }>
-
-        {/*  LEFT PERSON IMAGE */ }
-        {/*<motion.div*/}
-        {/*  initial={ { x: '-30vw' } }*/}
-        {/*  animate={ { x: '5vw' } }*/}
-        {/*  transition={ {*/}
-        {/*    delay: 0.9,*/}
-        {/*    type: 'spring',*/}
-        {/*    stiffness: 250,*/}
-        {/*    damping: 10,*/}
-        {/*  } }*/}
-        {/*>*/}
-        {/*  <Image*/}
-        {/*    src={ '/images/screenshots/lingolink/test-left.png' }*/}
-        {/*    alt={ 'person-left' }*/}
-        {/*    width={ 230 }*/}
-        {/*    height={ 370 }*/}
-        {/*  />*/}
-        {/*</motion.div>*/}
-
-        {/* LEFT CONVERSATION IMAGE */ }
-        {/*<motion.div>*/}
-        {/*  <Image*/}
-        {/*    className={ 'ml-32 ' }*/}
-        {/*    src={ '/images/screenshots/lingolink/convo-en.png' }*/}
-        {/*    alt={ 'google-translate-logo' }*/}
-        {/*    height={ 417 }*/}
-        {/*    width={ 206 }*/}
-        {/*  />*/}
-        {/*</motion.div>*/}
-
-        {/* GOOGLE TRANSLATE API LOGO */ }
-        {/*<motion.div>*/}
-        {/*  <Image*/}
-        {/*    src={ '/images/technology-icons/tech-google-translate-bare.png' }*/}
-        {/*    alt={ 'google-translate-logo' }*/}
-        {/*    height={ 100 }*/}
-        {/*    width={ 100 }*/}
-        {/*  />*/}
-        {/*</motion.div>*/}
-
-        {/* RIGHT CONVERSATION IMAGE */ }
-        {/*<motion.div>*/}
-        {/*  <Image*/}
-        {/*    className={ 'mr-32 ' }*/}
-        {/*    src={ '/images/screenshots/lingolink/convo-ar.png' }*/}
-        {/*    alt={ 'google-translate-logo' }*/}
-        {/*    height={ 417 }*/}
-        {/*    width={ 206 }*/}
-        {/*  />*/}
-        {/*</motion.div>*/}
-
-        {/*  RIGHT PERSON IMAGE */ }
-        {/*<motion.div*/}
-        {/*  initial={ { x: '30vw' } }*/}
-        {/*  animate={ { x: '-5vw' } }*/}
-        {/*  transition={ {*/}
-        {/*    delay: 0.9,*/}
-        {/*    type: 'spring',*/}
-        {/*    stiffness: 250,*/}
-        {/*    damping: 10,*/}
-        {/*  } }>*/}
-        {/*  <Image*/}
-        {/*    src={ '/images/screenshots/lingolink/test-right.png' }*/}
-        {/*    alt={ 'person-left' }*/}
-        {/*    width={ 659 }*/}
-        {/*    height={ 845 }*/}
-        {/*  />*/}
-        {/*</motion.div>*/}
-
-      </div>
-
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
       {/* PAGE CONTENT SECTIONS */ }
       <div className={ 'mx-auto text-xl' }>
         { pageContent.sections.map((section: SectionComponentProps, index: number) => (
-          <div key={ index }>
+          <div key={ section.id }>
             <div className={ `${ index === 0 ? '' : 'section-shadow' }` } key={ index }>
               <SectionComponent
                 subtitle={ section.subtitle }
