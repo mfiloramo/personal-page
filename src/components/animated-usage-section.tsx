@@ -19,7 +19,7 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
   return (
     <div
       ref={ ref }
-      className='grid grid-cols-5 gap-3 pt-16 pb-12 object-center items-center justify-items-center'>
+      className='flex gap-4 py-6 sm:py-20 md:py-28 object-center items-center justify-items-center'>
 
       {/* LEFT PERSON IMAGE */ }
       <motion.div
@@ -30,8 +30,8 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
         <Image
           src='/images/screenshots/lingolink/person-left.png'
           alt='person-left'
-          width={ 230 }
-          height={ 370 }
+          width={ 766 }
+          height={ 1232 }
         />
       </motion.div>
 
@@ -56,7 +56,8 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
         </AnimatePresence>
       </div>
 
-      {/* GOOGLE TRANSLATE DIAGRAM */ }
+      {/* TODO: FIX MOBILE RENDERING COLOR BUG */}
+      {/* LINGOLINK GOOGLE TRANSLATE DIAGRAM */ }
       <div className='relative flex justify-center items-center w-full'>
         <AnimatePresence>
           <motion.div
@@ -108,8 +109,8 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
         <Image
           src='/images/screenshots/lingolink/person-right.png'
           alt='person-right'
-          width={ 659 }
-          height={ 845 }
+          width={ 921 }
+          height={ 1190 }
         />
       </motion.div>
     </div>

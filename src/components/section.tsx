@@ -6,6 +6,7 @@ import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interf
 import { paragraphAnimationVariants, subtitleAnimationVariants } from '@/utilities/animations';
 import TechnologyStackComponent from '@/components/technology-stack';
 import AnimatedUsageSection from '@/components/animated-usage-section';
+import { inter_tightItalicHeavy } from '@/utilities/fonts';
 
 export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, graphic, convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: SectionComponentProps): ReactElement {
   const controls = useAnimation();
@@ -68,10 +69,13 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
           >
             <Image
               src={ graphic }
-              alt={ 'lingolink-flowchart' }
+              alt={ 'application-flowchart' }
               height={ 468 }
               width={ 800 }
             />
+            <div className={ `${ inter_tightItalicHeavy.className } text-center text-md font-bold mt-5` }>
+              Application Architecture
+            </div>
           </motion.div>
         ) }
 
