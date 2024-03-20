@@ -45,7 +45,7 @@ const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technolog
       variants={ container }
       initial={ 'hidden' }
       animate={ controls }
-      className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center mt-5 max-w-screen-lg mx-auto px-8 pt-3"
+      className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center mt-5 max-w-screen-lg mx-auto pt-3"
     >
       { technologyStack.map((technology: TechStackIconProps, index: number) => (
         <motion.div

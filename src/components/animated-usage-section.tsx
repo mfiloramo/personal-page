@@ -4,7 +4,6 @@ import { motion, AnimatePresence, AnimationControls } from 'framer-motion';
 import { useAnimation } from 'framer-motion';
 import { AnimatedUsageSectionProps } from '@/interfaces/AnimatedUsageSectionProps';
 import { useInView } from 'react-intersection-observer';
-import { paragraphAnimationVariants } from '@/utilities/animations';
 
 const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: AnimatedUsageSectionProps) => {
   const [ ref, inView ] = useInView({ triggerOnce: true, threshold: 0.1 });

@@ -62,12 +62,13 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         {/* FLOWCHART DIAGRAM */ }
         { graphic && (
           <motion.div
-            className={ 'mx-auto my-6' }
+            className={ 'mx-auto' }
             variants={ paragraphAnimationVariants }
             initial={ 'hidden' }
             animate={ controls }
           >
             <Image
+              className={ 'my-4' }
               src={ graphic }
               alt={ 'application-flowchart' }
               height={ 468 }
