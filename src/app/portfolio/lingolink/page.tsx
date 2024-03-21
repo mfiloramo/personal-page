@@ -8,6 +8,7 @@ import IntroHeadline from '@/components/intro-headline';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
 import screenshots from '../../../data/portfolio/pages/lingolink/lingolink-screenshots.json';
+import TwoButtonContainer from '@/components/two-button-container';
 
 export default function LingoLinkPage(): ReactElement {
   const [ convoImageIndex, setConvoImageIndex ] = useState(0);
@@ -56,11 +57,11 @@ export default function LingoLinkPage(): ReactElement {
         >
           <div className='absolute inset-0'>
             <Image
+              className={ 'object-cover' }
               src={ `/images/hero-banners/hero-banner-lingolink.png` }
               alt={ 'LingoLink Banner' }
               fill
               priority
-              className={ 'object-cover' }
             />
           </div>
         </motion.div>
@@ -72,42 +73,42 @@ export default function LingoLinkPage(): ReactElement {
           <div className='flex flex-col items-center'>
             <motion.div
               className='flex justify-center items-start'
-              initial={{ scale: 0 }}
-              animate={{ rotate: 360, scale: 1 }}
-              transition={{
+              initial={ { scale: 0 } }
+              animate={ { rotate: 360, scale: 1 } }
+              transition={ {
                 delay: 0.1,
                 type: 'spring',
                 stiffness: 260,
                 damping: 20,
-              }}
+              } }
             >
               <Image
                 className='w-[35vw] max-w-[250px] min-w-[180px]'
                 src='/images/lingolink-portfolio-page/lingolink-logo.png'
                 alt='LingoLink Logo'
-                width={833}
-                height={829}
+                width={ 833 }
+                height={ 829 }
               />
             </motion.div>
 
-            {/* ANIMATED LOGO TEXT */}
+            {/* ANIMATED LOGO TEXT */ }
             <motion.div
               className='flex w-full -mt-3 justify-center'
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{
+              initial={ { scale: 0 } }
+              animate={ { scale: 1 } }
+              transition={ {
                 delay: 0.3,
                 type: 'spring',
                 stiffness: 260,
                 damping: 20,
-              }}
+              } }
             >
               <Image
                 className='w-[60vw] min-w-[300px] max-w-[400px]'
                 src='/images/lingolink-portfolio-page/lingolink-text.png'
                 alt='LingoLink Logo Text'
-                width={1138}
-                height={299}
+                width={ 1138 }
+                height={ 299 }
               />
             </motion.div>
           </div>
@@ -185,10 +186,16 @@ export default function LingoLinkPage(): ReactElement {
       <IntroHeadline
         text={ 'I architected, developed and launched LingoLink, a dynamic multilingual messaging platform that allows users to communicate with others regardless of the language they speak.' } />
 
+      {/* BUTTON CONTAINER */ }
+      {/*<div className={ '-mt-4 -mb-14' }>*/}
+      {/*  <TwoButtonContainer buttonOne={ 'Portfolio' } buttonTwo={ 'Services' } />*/}
+      {/*</div>*/}
+
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */ }
+      <div className={ 'text-xl text-center mb-3' }>In-App Screenshots</div>
       <motion.div
         className={ 'grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-3 max-w-[968px] mx-auto px-5 mb-6 cursor-default' }
         variants={ container }
