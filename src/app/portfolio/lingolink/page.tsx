@@ -42,11 +42,11 @@ export default function LingoLinkPage(): ReactElement {
   return (
     <div>
       {/* HERO BANNER CONTAINER */ }
-      <div className='relative h-[42vh] sm:h-[52vh] flex justify-center items-center overflow-hidden'
+      <div className='relative h-[45vh] sm:h-[52vh] flex justify-center items-center overflow-hidden'
            style={ { backgroundColor: '#000' } }>
 
         {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */ }
-        {/* TODO: ADD 'VIEW SOURCE' AND 'TRY IT LIVE' EXT. LINK BUTTONS */ }
+        {/* TODO: ADD 'VIEW SOURCE' AND 'REGISTER NOW' EXT. LINK BUTTONS */ }
         {/* HERO BANNER IMAGE */ }
         <motion.div
           initial={ { opacity: 0 } }
@@ -66,54 +66,51 @@ export default function LingoLinkPage(): ReactElement {
         </motion.div>
 
         {/* ANIMATED LOGO CONTAINER */ }
-        <div className={ 'absolute mt-[4vh] inset-0 flex justify-center' }>
+        <div className='absolute mt-[4vh] inset-0 flex justify-center items-start'>
 
-          {/* TODO: FIX LINGOLINK LOGO SIZING (CLIPS ON SMALLER-Y VIEWPORTS) */ }
-          {/* ANIMATED LOGO GRAPHIC */ }
-          <>
+          {/* ANIMATED LOGO GRAPHIC AND TEXT CONTAINER */ }
+          <div className='flex flex-col items-center'>
             <motion.div
-              className='absolute inset-0 flex justify-center items-start object-fit'
-              initial={ { scale: 0 } }
-              animate={ { rotate: 360, scale: 1 } }
-              transition={ {
+              className='flex justify-center items-start'
+              initial={{ scale: 0 }}
+              animate={{ rotate: 360, scale: 1 }}
+              transition={{
                 delay: 0.1,
                 type: 'spring',
                 stiffness: 260,
                 damping: 20,
-              } }
+              }}
             >
               <Image
-                className={ 'w-[50vw] max-w-[240px]' }
+                className='w-[35vw] max-w-[250px] min-w-[180px]'
                 src='/images/lingolink-portfolio-page/lingolink-logo.png'
                 alt='LingoLink Logo'
-                width={ 240 }
-                height={ 240 }
+                width={833}
+                height={829}
               />
             </motion.div>
-          </>
 
-          {/* ANIMATED LOGO TEXT */ }
-          <>
+            {/* ANIMATED LOGO TEXT */}
             <motion.div
-              className='mt-64'
-              initial={ { scale: 0 } }
-              animate={ { scale: 1 } }
-              transition={ {
+              className='flex w-full -mt-3 justify-center'
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{
                 delay: 0.3,
                 type: 'spring',
                 stiffness: 260,
                 damping: 20,
-              } }
+              }}
             >
               <Image
-                className={ 'max-w-[375px] -mt-5 w-[70vw]' }
+                className='w-[60vw] min-w-[300px] max-w-[400px]'
                 src='/images/lingolink-portfolio-page/lingolink-text.png'
                 alt='LingoLink Logo Text'
-                width={ 375 }
-                height={ 375 }
+                width={1138}
+                height={299}
               />
             </motion.div>
-          </>
+          </div>
         </div>
 
         {/* TEXT: MULTILINGUAL MESSAGING */ }
