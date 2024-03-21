@@ -23,7 +23,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
 
   return (
     <div ref={ ref }
-         className={ `p-8 m-auto text-${ textColor } ${ background ? background : '' } ${ isFirst ? '' : 'section-shadow ' }` }>
+         className={ `p-8 m-auto w-full text-${ textColor } ${ background ? background : '' } ${ isFirst ? '' : 'section-shadow ' }` }>
 
       {/* ANIMATED SECTION SUBTITLE */ }
       { subtitle && (

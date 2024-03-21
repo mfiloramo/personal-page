@@ -1,0 +1,30 @@
+[
+  {
+    "quote": "Good programmers use their brains, but good guidelines save us having to think out every case.",
+    "author": "Francis Glassborow"
+  },
+  {
+    "quote": "Good programmers know what to write. Great ones know what to rewrite and reuse.",
+    "author": "Eric S. Raymond"
+  },
+  {
+    "quote": "I’m not a great programmer; I’m just a good programmer with great habits.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.",
+    "author": "Eric S. Raymond"
+  },
+  {
+    "quote": "Software and cathedrals are much the same; first we build them, then we pray.",
+    "author": "Anonymous"
+  },
+  {
+    "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "The most disastrous thing that you can ever learn is your first programming language",
+    "author": "Alan Kay"
+  }
+]

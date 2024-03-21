@@ -3,50 +3,23 @@ import { ReactElement, useEffect, useState } from 'react';
 import { MotionSlider } from '@/components/motion-slider';
 import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/utilities/fonts';
 import { AnimatePresence, motion } from 'framer-motion';
-import Link from 'next/link';
+import pageContent from '../data/app.json';
 import TwoButtonContainer from '@/components/two-button-container';
 
 export default function Home(): ReactElement {
-  const quotes: any[] = [
-    {
-      quote: 'Good programmers use their brains, but good guidelines save us having to think out every case.',
-      author: 'Francis Glassborow'
-    },
-    {
-      quote: 'Good programmers know what to write. Great ones know what to rewrite and reuse.',
-      author: 'Eric S. Raymond'
-    },
-    {
-      quote: 'I’m not a great programmer; I’m just a good programmer with great habits.',
-      author: 'Kent Beck'
-    },
-    {
-      quote: 'Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.',
-      author: 'Eric S. Raymond'
-    },
-    {
-      quote: 'Software and cathedrals are much the same; first we build them, then we pray.',
-      author: 'Anonymous'
-    },
-    {
-      quote: 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
-      author: 'Martin Fowler'
-    },
-    {
-      quote: 'The most disastrous thing that you can ever learn is your first programming language',
-      author: 'Alan Kay'
-    }
-  ]
+  // STATE HOOKS
   const [ currentQuote, setCurrentQuote ] = useState(0);
 
+  // EFFECT HOOKS
   useEffect(() => {
     const intervalId: NodeJS.Timeout = setInterval((): void => {
-      setCurrentQuote((prevPhrase) => (prevPhrase + 1) % quotes.length);
+      setCurrentQuote((prevPhrase) => (prevPhrase + 1) % pageContent.length);
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, [ quotes.length ]);
+  }, [ pageContent.length ]);
 
+  // RENDER COMPONENT
   return (
     // MAIN PAGE CONTAINER
     <div className={ `flex flex-col relative text-center text-black ${ inter_tightHeavy.className }` }>
@@ -78,8 +51,9 @@ export default function Home(): ReactElement {
                   transition={ { duration: 1 } }
                   className='absolute w-full text-center text-lg px-8 sm:px-32 overflow-hidden leading-tight'
                 >
-                  <div className={ ` ${ inter_tightItalicHeavy.className }` }>“{ quotes[currentQuote].quote }”</div>
-                  <div className={ `${ inter_tightLight.className }` }>— { quotes[currentQuote].author }</div>
+                  <div className={ ` ${ inter_tightItalicHeavy.className }` }>“{ pageContent[currentQuote].quote }”
+                  </div>
+                  <div className={ `${ inter_tightLight.className }` }>— { pageContent[currentQuote].author }</div>
                 </motion.div>
               </AnimatePresence>
             </div>

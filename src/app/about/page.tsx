@@ -5,6 +5,7 @@ import AboutPageButton from '@/components/about-page-button';
 import FancyDivider from '@/components/fancy-divider';
 import { MotionSlider } from '@/components/motion-slider';
 import pageContent from '../../data/about/about-data.json';
+import SectionComponent from '@/components/section';
 
 
 export default function About(): ReactElement {
@@ -56,7 +57,6 @@ export default function About(): ReactElement {
 
           { /* BUTTON CONTAINER */ }
           <div className='grid grid-cols-2 sm:grid-cols-4 gap-0 justify-items-center mb-0 sm:mb-4 items-center'>
-
             {
               pageContent.map((button: any, index: number): ReactElement => {
                 return (
@@ -70,11 +70,14 @@ export default function About(): ReactElement {
                 )
               })
             }
-
           </div>
           <FancyDivider />
         </MotionSlider>
       </div>
+
+      {/* WHAT I DO TODAY SECTION */}
+      {/*<SectionComponent paragraphs={['d']} />*/}
+
     </div>
   );
 }

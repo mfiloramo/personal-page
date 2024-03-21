@@ -1,8 +1,18 @@
 [
   {
+    "urlPath": "https://www.upwork.com/",
+    "imgSrc": "/images/general-logos-mono/upwork-logo-mono.png",
+    "altText": "upwork"
+  },
+  {
+    "urlPath": "https://www.edx.org/boot-camps/coding/columbia-engineering-coding-boot-camp",
+    "imgSrc": "/images/general-logos-mono/columbia-edx-logo-mono.png",
+    "altText": "columbia-engineering-edx"
+  },
+  {
     "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
     "imgSrc": "/images/general-logos-mono/lingolink-logo-mono.png",
-    "altText": "LingoLink"
+    "altText": "lingolink"
   },
   {
     "urlPath": "https://nbpa.com/",
