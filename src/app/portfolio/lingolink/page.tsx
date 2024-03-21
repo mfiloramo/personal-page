@@ -194,8 +194,16 @@ export default function LingoLinkPage(): ReactElement {
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
-      {/* APP SCREENSHOTS SECTION */ }
-      <div className={ 'text-xl text-center mb-3' }>In-App Screenshots</div>
+      {/* APP SCREENSHOTS SECTION */}
+      <motion.div
+        className={'text-xl text-center mb-3'}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.5 }}
+      >
+        In-App Screenshots
+      </motion.div>
+
       <motion.div
         className={ 'grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-3 max-w-[968px] mx-auto px-5 mb-6 cursor-default' }
         variants={ container }
