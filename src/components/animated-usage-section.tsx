@@ -71,7 +71,7 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
             <Image
               src={ flagImages[convoImageIndex] }
               alt={ `Flag image ${ convoImageIndex }` }
-              className="object-cover w-full h-full"
+              className='object-cover w-full h-full'
               width={ 330 }
               height={ 550 }
             />
@@ -93,8 +93,9 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
             <Image
               src={ rightConvoImages[convoImageIndex] }
               alt={ `Conversation image ${ convoImageIndex }` }
-              height={ 766 }
+              className='object-cover w-full h-full'
               width={ 381 }
+              height={ 766 }
             />
           </motion.div>
         </AnimatePresence>
