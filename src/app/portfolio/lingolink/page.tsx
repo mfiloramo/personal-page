@@ -47,7 +47,6 @@ export default function LingoLinkPage(): ReactElement {
            style={ { backgroundColor: '#000' } }>
 
         {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */ }
-        {/* TODO: ADD 'VIEW SOURCE' AND 'REGISTER NOW' EXT. LINK BUTTONS */ }
         {/* HERO BANNER IMAGE */ }
         <motion.div
           initial={ { opacity: 0 } }
@@ -187,9 +186,14 @@ export default function LingoLinkPage(): ReactElement {
         text={ 'I architected, developed and launched LingoLink, a dynamic multilingual messaging platform that allows users to communicate with others regardless of the language they speak.' } />
 
       {/* BUTTON CONTAINER */ }
-      {/*<div className={ '-mt-4 -mb-14' }>*/}
-      {/*  <TwoButtonContainer buttonOne={ 'Portfolio' } buttonTwo={ 'Services' } />*/}
-      {/*</div>*/}
+      <div className={ '-mt-4 -mb-14' }>
+        <TwoButtonContainer
+          buttonOneText={ 'Source Code' }
+          buttonOneLink={ 'https://github.com/mfiloramo/worldChatApp' }
+          buttonTwoText={ 'Register Now' }
+          buttonTwoLink={ 'https://orange-tree-0d3c88e0f.3.azurestaticapps.net/' }
+        />
+      </div>
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />

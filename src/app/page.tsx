@@ -71,7 +71,9 @@ export default function Home(): ReactElement {
           </MotionSlider>
 
           {/* BUTTON CONTAINER */ }
-          <TwoButtonContainer buttonOne={ 'Portfolio' } buttonTwo={ 'Services' } />
+          <div className={ 'mx-auto max-w-lg' }>
+            <TwoButtonContainer buttonOneText={ 'Portfolio' } buttonTwoText={ 'Services' } />
+          </div>
         </div>
       </div>
     </div>
