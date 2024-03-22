@@ -43,7 +43,7 @@ export default function LingoLinkPage(): ReactElement {
   return (
     <div>
       {/* HERO BANNER CONTAINER */ }
-      <div className='relative h-[45vh] sm:h-[52vh] flex justify-center items-center overflow-hidden'
+      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'
            style={ { backgroundColor: '#000' } }>
 
         {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */ }
@@ -65,11 +65,11 @@ export default function LingoLinkPage(): ReactElement {
           </div>
         </motion.div>
 
-        {/* ANIMATED LOGO CONTAINER */ }
+        {/* ANIMATED LOGO/TEXT CONTAINER */ }
         <div className='absolute mt-[4vh] inset-0 flex justify-center items-start'>
 
-          {/* ANIMATED LOGO GRAPHIC AND TEXT CONTAINER */ }
           <div className='flex flex-col items-center'>
+            {/* ANIMATED LOGO GRAPHIC */}
             <motion.div
               className='flex justify-center items-start'
               initial={ { scale: 0 } }
