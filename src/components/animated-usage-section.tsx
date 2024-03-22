@@ -18,10 +18,11 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
   return (
     <div
       ref={ ref }
-      className='flex gap-4 py-6 sm:py-20 md:py-28 object-center items-center justify-items-center'>
+      className='flex gap-4 py-44 sm:py-6 sm:py-20 md:py-28 object-center items-center justify-items-center'>
 
       {/* LEFT PERSON IMAGE */ }
       <motion.div
+        className={ 'hidden sm:block' }
         initial={ { opacity: 0 } }
         animate={ controls }
         transition={ { delay: 0.7 } }
@@ -101,6 +102,7 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
 
       {/* RIGHT PERSON IMAGE */ }
       <motion.div
+        className={ 'hidden sm:block' }
         initial={ { opacity: 0 } }
         animate={ controls }
         transition={ { delay: 0.7, type: 'spring', stiffness: 250, damping: 10 } }

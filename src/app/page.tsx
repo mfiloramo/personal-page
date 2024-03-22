@@ -31,12 +31,16 @@ export default function Home(): ReactElement {
 
           {/* TITLE TEXT */ }
           <MotionSlider className={ '' } delay={ 0.2 }>
-            <div className={ 'text-[2.5rem] sm:text-6xl' }>Michael Filoramo</div>
+            <div className={ 'text-[2.5rem] sm:text-6xl' }>
+              Michael Filoramo
+            </div>
           </MotionSlider>
 
           {/* SUBTITLE TEXT */ }
           <MotionSlider className={ '' } delay={ 0.4 }>
-            <div className={ `text-2xl ${ inter_tightLight.className }` }>Web Developer ‣ Designer ‣ Engineer</div>
+            <div className={ `text-2xl ${ inter_tightLight.className }` }>
+              Web Developer ‣ Designer ‣ Engineer
+            </div>
           </MotionSlider>
 
           {/* QUOTES SECTION */ }
