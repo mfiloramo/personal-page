@@ -9,13 +9,25 @@ interface TechnologyStackComponentProps {
 }
 
 const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technologyStack }) => {
-  // TODO: SWITCH TO FRAMER'S NATIVE whileInView API
   const controls = useAnimation();
-
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
+  const getGridColsClass = (length: number): string => {
+    const baseClass = "grid grid-cols-3 sm:grid-cols-4 md:grid-cols-";
+    const colsForLg = length > 5 ? 6 : 5;
+    return `${baseClass}${colsForLg}`;
+  };
+
+  const gridColsClass = getGridColsClass(technologyStack.length);
 
   const container = {
     hidden: { opacity: 0 },
@@ -33,35 +45,29 @@ const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technolog
     visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
   };
 
-  useEffect((): void => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [ controls, inView ]);
-
   return (
     <motion.div
-      ref={ ref }
-      variants={ container }
-      initial={ 'hidden' }
-      animate={ controls }
-      className={ `grid grid-cols-3 sm:grid-cols-4 md:grid-cols-${ technologyStack.length > 5 ? 6 : 5 } gap-3 items-center mt-5 mx-auto pt-3` }
+      ref={ref}
+      variants={container}
+      initial='hidden'
+      animate={controls}
+      className={`${gridColsClass} gap-3 items-center mt-5 max-w-screen-lg mx-auto pt-3`}
     >
-      { technologyStack.map((technology: TechStackIconProps, index: number) => (
+      {technologyStack.map((technology: TechStackIconProps, index: number) => (
         <motion.div
-          key={ index }
-          className={ 'm-2' }
-          variants={ item }
-          whileHover={ { scale: 1.2 } }
+          key={index}
+          className='m-2'
+          variants={item}
+          whileHover={{ scale: 1.2 }}
         >
           <Image
-            src={ technology.imgSrc }
-            alt={ technology.altText }
-            width={ 120 }
-            height={ 120 }
+            src={technology.imgSrc}
+            alt={technology.altText}
+            width={120}
+            height={120}
           />
         </motion.div>
-      )) }
+      ))}
     </motion.div>
   );
 };
