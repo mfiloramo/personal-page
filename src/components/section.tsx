@@ -76,7 +76,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
               width={ 800 }
             />
             <div className={ `${ inter_tightItalicHeavy.className } text-center text-md font-bold mt-5` }>
-              App Architecture
+              Application Architecture
             </div>
           </motion.div>
         ) }

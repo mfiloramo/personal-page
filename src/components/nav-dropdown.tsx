@@ -24,8 +24,8 @@ export default function NavDropdown(): ReactElement {
   return (
     <motion.nav
       initial={ false }
-      animate={ isOpen ? "open" : "closed" }
-      className="relative h-48 w-full"
+      animate={ isOpen ? 'open' : 'closed' }
+      className='relative h-48 w-full'
     >
       <motion.button
         whileTap={ { scale: 0.97 } }
