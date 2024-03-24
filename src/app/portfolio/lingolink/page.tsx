@@ -46,7 +46,6 @@ export default function LingoLinkPage(): ReactElement {
       <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'
            style={ { backgroundColor: '#000' } }>
 
-        {/* TODO: MODULARIZE HERO BANNER TO COMPONENT */ }
         {/* HERO BANNER IMAGE */ }
         <motion.div
           initial={ { opacity: 0 } }
@@ -83,7 +82,7 @@ export default function LingoLinkPage(): ReactElement {
             >
               <Image
                 className='w-[35vw] max-w-[250px] min-w-[180px]'
-                src='/images/lingolink-portfolio-page/lingolink-logo.png'
+                src='/images/portfolio-pages/lingolink/lingolink-logo.png'
                 alt='LingoLink Logo'
                 width={ 833 }
                 height={ 829 }
@@ -104,7 +103,7 @@ export default function LingoLinkPage(): ReactElement {
             >
               <Image
                 className='w-[60vw] min-w-[300px] max-w-[400px]'
-                src='/images/lingolink-portfolio-page/lingolink-text.png'
+                src='/images/portfolio-pages/lingolink/lingolink-text.png'
                 alt='LingoLink Logo Text'
                 width={ 1138 }
                 height={ 299 }
@@ -127,7 +126,7 @@ export default function LingoLinkPage(): ReactElement {
             } }
           >
             <Image
-              src='/images/lingolink-portfolio-page/text-multilingual-messaging.png'
+              src='/images/portfolio-pages/lingolink/text-multilingual-messaging.png'
               alt='Description'
               width={ 650 }
               height={ 650 }
@@ -149,7 +148,7 @@ export default function LingoLinkPage(): ReactElement {
             } }
           >
             <Image
-              src='/images/lingolink-portfolio-page/text-made-simple.png'
+              src='/images/portfolio-pages/lingolink/text-made-simple.png'
               alt='Description'
               width={ 600 }
               height={ 600 }
@@ -171,7 +170,7 @@ export default function LingoLinkPage(): ReactElement {
             } }
           >
             <Image
-              src='/images/lingolink-portfolio-page/text-status-sign.png'
+              src='/images/portfolio-pages/lingolink/text-status-sign.png'
               alt='Description'
               width={ 200 }
               height={ 200 }
@@ -243,6 +242,7 @@ export default function LingoLinkPage(): ReactElement {
           <div key={ section.id }>
             <div className={ `${ index === 0 ? '' : 'section-shadow' }` } key={ index }>
               <SectionComponent
+                key={ index }
                 subtitle={ section.subtitle }
                 paragraphs={ section.paragraphs }
                 photo={ section.photo }

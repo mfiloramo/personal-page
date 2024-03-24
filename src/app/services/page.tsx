@@ -42,7 +42,7 @@ export default function Services(): ReactElement {
 
           <MotionSlider className={ `text-xl mb-4 bg-gradient-to-r from-sky-200 to-sky-300 bg-clip-text text-transparent ${ cabinLight.className }` } delay={ 0.6 }>
             <div className='break-words gradient-text-lightblue'>
-              Ready to take your web presence to new heights? Contact me for a personalized consultation and expert web development services tailored to your vision.
+              Ready to take your web presence to the next level? Contact me for a personalized consultation and expert web development services tailored to your vision.
             </div>
           </MotionSlider>
         </div>

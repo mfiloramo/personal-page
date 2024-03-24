@@ -6,12 +6,6 @@
     "subtitle": "Multilingual Messaging Platform"
   },
   {
-    "urlPath": "/portfolio/hifiber",
-    "image": "images/profile-cards/profile-card-hifiber.png",
-    "title": "HiFiber",
-    "subtitle": "Frontend Developer Tool"
-  },
-  {
     "urlPath": "/portfolio/sinclair-ua",
     "image": "images/profile-cards/profile-card-ua.png",
     "title": "User Admin",
@@ -22,6 +16,12 @@
     "image": "images/profile-cards/profile-card-logging.png",
     "title": "Logging System",
     "subtitle": "Building Sinclair's Logging Infrastructure"
+  },
+  {
+    "urlPath": "/portfolio/hifiber",
+    "image": "images/profile-cards/profile-card-hifiber.png",
+    "title": "HiFiber",
+    "subtitle": "Frontend Developer Tool"
   },
   {
     "urlPath": "/portfolio/personal-website",
