@@ -4,7 +4,7 @@ import { MotionSlider } from '@/components/motion-slider';
 import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/utilities/fonts';
 import { AnimatePresence, motion } from 'framer-motion';
 import pageContent from '../data/app.json';
-import TwoButtonContainer from '@/components/two-button-container';
+import ButtonContainer from '@/components/button-container';
 
 export default function Home(): ReactElement {
   // STATE HOOKS
@@ -76,7 +76,7 @@ export default function Home(): ReactElement {
 
           {/* BUTTON CONTAINER */ }
           <div className={ 'mx-auto max-w-lg' }>
-            <TwoButtonContainer buttonOneText={ 'Portfolio' } buttonTwoText={ 'Services' } />
+            <ButtonContainer buttonOneText={ 'Portfolio' } buttonTwoText={ 'Services' } />
           </div>
         </div>
       </div>

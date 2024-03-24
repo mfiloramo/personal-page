@@ -1,4 +1,4 @@
-export interface TwoButtonContainerProps {
+export interface ButtonContainerProps {
   readonly buttonOneText: string;
   readonly buttonOneLink?: string;
   readonly buttonTwoText: string;

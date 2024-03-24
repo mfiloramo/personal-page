@@ -8,7 +8,7 @@ import IntroHeadline from '@/components/intro-headline';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
 import screenshots from '../../../data/portfolio/pages/lingolink/lingolink-screenshots.json';
-import TwoButtonContainer from '@/components/two-button-container';
+import ButtonContainer from '@/components/button-container';
 
 export default function LingoLinkPage(): ReactElement {
   const [ convoImageIndex, setConvoImageIndex ] = useState(0);
@@ -187,7 +187,7 @@ export default function LingoLinkPage(): ReactElement {
 
       {/* BUTTON CONTAINER */ }
       <div className={ '-mt-4 -mb-14' }>
-        <TwoButtonContainer
+        <ButtonContainer
           buttonOneText={ 'Source Code' }
           buttonOneLink={ 'https://github.com/mfiloramo/worldChatApp' }
           buttonTwoText={ 'Register Now' }
