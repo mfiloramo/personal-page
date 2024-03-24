@@ -12,12 +12,6 @@
     "subtitle": "Frontend Developer Tool"
   },
   {
-    "urlPath": "/portfolio/top100camp",
-    "image": "images/profile-cards/profile-card-top100camp.png",
-    "title": "Top100Camp",
-    "subtitle": "Website Migration & Redesign"
-  },
-  {
     "urlPath": "/portfolio/sinclair-ua",
     "image": "images/profile-cards/profile-card-ua.png",
     "title": "User Admin",
