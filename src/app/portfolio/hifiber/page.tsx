@@ -1,7 +1,8 @@
 'use client';
 import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
-import pageContent from '../../../data/portfolio/pages/hifiber/hifiber-data.json';
+import pageContent from '@/data/portfolio/pages/hifiber/hifiber-data.json';
+import screenshots from '@/data/portfolio/pages/hifiber/hifiber-screenshots.json';
 import IntroHeadline from '@/components/intro-headline';
 import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
@@ -10,6 +11,22 @@ import Image from 'next/image';
 import ButtonContainer from '@/components/button-container';
 
 export default function HiFiberPage(): ReactElement {
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 1.3,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, filter: 'blur(4px)' },
+    visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
+  };
+
   return (
     <>
       <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'
@@ -34,11 +51,12 @@ export default function HiFiberPage(): ReactElement {
         </motion.div>
 
         {/* ANIMATED LOGO/TEXT CONTAINER */ }
-        <div className='absolute mt-[4vh] inset-0 flex justify-center items-start'>
+        <div className='absolute mt-[2vh] inset-0 flex justify-center items-start'>
           <div className='flex flex-col items-center'>
+
             {/* ANIMATED LOGO GRAPHIC */ }
             <motion.div
-              className='flex justify-center items-start'
+              className='flex pb-6 justify-center items-start'
               initial={ { scale: 0 } }
               animate={ { rotate: 0, scale: 1 } }
               transition={ {
@@ -49,7 +67,7 @@ export default function HiFiberPage(): ReactElement {
               } }
             >
               <Image
-                className='w-[41vw] min-w-[180px]'
+                className='w-[40vw] max-w-[750px] min-w-[350px] sm:min-w-[550px] md:min-w-[650px]'
                 src='/images/portfolio-pages/hifiber/hifiber-logo-full.png'
                 alt='LingoLink Logo'
                 width={ 1677 }
@@ -58,25 +76,25 @@ export default function HiFiberPage(): ReactElement {
             </motion.div>
 
             {/* ANIMATED LOGO TEXT */ }
-            {/*<motion.div*/}
-            {/*  className='flex w-full -mt-3 justify-center'*/}
-            {/*  initial={ { scale: 0 } }*/}
-            {/*  animate={ { scale: 1 } }*/}
-            {/*  transition={ {*/}
-            {/*    delay: 0.3,*/}
-            {/*    type: 'spring',*/}
-            {/*    stiffness: 280,*/}
-            {/*    damping: 20,*/}
-            {/*  } }*/}
-            {/*>*/}
-            {/*  <Image*/}
-            {/*    className='w-[60vw] min-w-[300px] max-w-[400px]'*/}
-            {/*    src='/images/portfolio-pages/lingolink/lingolink-text.png'*/}
-            {/*    alt='LingoLink Logo Text'*/}
-            {/*    width={ 1138 }*/}
-            {/*    height={ 299 }*/}
-            {/*  />*/}
-            {/*</motion.div>*/}
+            <motion.div
+              className='flex w-full -mt-3 justify-center'
+              initial={ { scale: 0 } }
+              animate={ { scale: 1 } }
+              transition={ {
+                delay: 0.3,
+                type: 'spring',
+                stiffness: 280,
+                damping: 20,
+              } }
+            >
+              <Image
+                className='min-w-[1000px] w-screen'
+                src='/images/portfolio-pages/hifiber/hifiber-sub-logo-strgr-desktop.png'
+                alt='LingoLink Logo Text'
+                width={ 1920 }
+                height={ 1080 }
+              />
+            </motion.div>
 
           </div>
         </div>
@@ -100,6 +118,48 @@ export default function HiFiberPage(): ReactElement {
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
+      {/* APP SCREENSHOTS SECTION */}
+      <>
+        <motion.div
+          className={'text-xl text-center mb-3'}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 0.5 }}
+        >
+          In-App Screenshots
+        </motion.div>
+
+        <motion.div
+          className={ 'grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-3 max-w-[968px] mx-auto px-5 mb-6 cursor-default' }
+          variants={ container }
+          initial={ 'hidden' }
+          animate={ 'visible' }
+        >
+
+          {
+            screenshots['in-app-screenshots'].map((screenshot: string, index: number): any => {
+              return (
+                <motion.div
+                  key={ index }
+                  variants={ item }
+                  whileHover={ { scale: 1.05 } }
+                >
+                  <Image
+                    src={ screenshot }
+                    alt={ `Screenshot ${ index }` }
+                    width={ 921 }
+                    height={ 591 }
+                  />
+                </motion.div>
+              )
+            })
+          }
+        </motion.div>
+      </>
+
+      {/* SECTION DIVIDER */ }
+      <SectionDivider />
+
       {/* PAGE CONTENT SECTIONS */ }
       <div className={ `mx-auto text-xl` }>
         { pageContent.sections.map((section: SectionComponentProps, index: number) => (
@@ -116,6 +176,7 @@ export default function HiFiberPage(): ReactElement {
               isEven={ index % 2 === 0 }
               isFirst={ index === 0 }
               technologyStack={ section.technologyStack }
+              flowchart={ section.flowchart }
             />
 
           </div>

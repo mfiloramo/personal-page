@@ -10,7 +10,7 @@ export interface SectionComponentProps {
   readonly isEven?: boolean;
   readonly isFirst?: boolean;
   readonly technologyStack?: TechStackIconProps[];
-  readonly graphic?: string;
+  readonly flowchart?: string;
   readonly convoImageIndex?: number;
   readonly leftConvoImages?: string[];
   readonly rightConvoImages?: string[];

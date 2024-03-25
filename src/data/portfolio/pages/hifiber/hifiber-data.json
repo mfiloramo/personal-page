@@ -14,17 +14,22 @@
         "Frontend engineers struggle to understand and debug the intricate React Fiber tree, as conventional tools lack clarity in identifying performance issues and redundant re-renders.",
         "HiFiber offers a solution with its advanced visualization engine, simplifying the mapping of the React Fiber tree after reconciliation. This aids developers in pinpointing critical nodes, examining render times and tracking state changes, thus improving the debugging process and application performance."
       ],
-      "background": "bg-lightblue-grid-background"
+      "background": "bg-lightblue-grid-background",
+      "photo": {
+        "src": "/images/portfolio-pages/hifiber/demo-loop-monitor.gif",
+        "alt": "demo-loop-monitor"
+      }
     },
     {
       "id": "how_it_works",
       "subtitle": "How It Works",
       "paragraphs": [
-        ""
+        "HiFiber is built on a simple but robust tech stack that includes JavaScript for its versatility, React for dynamic user interfaces and AWS S3 for scalable storage solutions. This combination ensures a seamless integration with Chrome DevTools, offering an optimized experience for visualizing React's Fiber Tree.",
+        "Leveraging D3.js for data visualization, our tool provides detailed insights into performance metrics and component structures, making it an invaluable resource for developers looking to optimize React applications efficiently."
       ],
       "background": "graph-paper-bg",
       "textColor": "black",
-      "graphic": "/images/diagrams/flowchart-lingolink.svg"
+      "flowchart": "/images/diagrams/flowchart-hifiber.svg"
     },
     {
       "id": "technology_stack",
@@ -64,9 +69,14 @@
       "id": "expanding_horizons",
       "subtitle": "Expanding Horizons: From Visualization to Optimization",
       "paragraphs": [
-        "Looking forward, HiFiber aims to broaden its impact through containerization for diverse development environments, integrating D3.js for more refined data visualization, and incorporating NoSQL databases for performance metric caching over time. These enhancements promise to make frontend debugging not just simpler, but also a more data-driven and insightful experience."
+        "Looking forward, HiFiber aims to broaden its impact through containerization for diverse development environments, integrating D3.js for more refined data visualization, and incorporating NoSQL databases for performance metric caching over time.",
+        "These enhancements promise to make frontend debugging not just simpler, but also a more data-driven and insightful experience."
       ],
-      "background": "bg-lightblue-grid-background"
+      "background": "bg-lightblue-grid-background",
+      "photo": {
+        "src": "/images/portfolio-pages/hifiber/engineer-at-computer.png",
+        "alt": "classroom-raised-hands"
+      }
     }
   ]
 }

@@ -31,7 +31,7 @@
       ],
       "background": "graph-paper-bg",
       "textColor": "black",
-      "graphic": "/images/diagrams/flowchart-lingolink.svg"
+      "flowchart": "/images/diagrams/flowchart-lingolink.svg"
     },
     {
       "id": "technology_stack",

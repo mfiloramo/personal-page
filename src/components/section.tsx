@@ -8,7 +8,7 @@ import TechnologyStackComponent from '@/components/technology-stack';
 import AnimatedUsageSection from '@/components/animated-usage-section';
 import { inter_tightItalicHeavy } from '@/utilities/fonts';
 
-export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, graphic, convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: SectionComponentProps): ReactElement {
+export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, flowchart, convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: SectionComponentProps): ReactElement {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -44,7 +44,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         {/* ANIMATED SECTION PHOTO */ }
         { photo && (
           <motion.div
-            className='py-6 w-full md:w-1/2 max-w-[375px]'
+            className='py-6 w-full md:w-1/2 max-w-[400px]'
             variants={ paragraphAnimationVariants }
             custom={ isEven ? 1 : -1 }
             initial={ 'hidden' }
@@ -61,7 +61,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         ) }
 
         {/* FLOWCHART DIAGRAM */ }
-        { graphic && (
+        { flowchart && (
           <motion.div
             className={ 'mx-auto' }
             variants={ paragraphAnimationVariants }
@@ -70,7 +70,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
           >
             <Image
               className={ 'my-4' }
-              src={ graphic }
+              src={ flowchart }
               alt={ 'application-flowchart' }
               height={ 468 }
               width={ 800 }
