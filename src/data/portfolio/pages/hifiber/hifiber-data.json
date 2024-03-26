@@ -11,7 +11,7 @@
       "id": "navigating_complexity",
       "subtitle": "Navigating the Complexity of the React Fiber Tree",
       "paragraphs": [
-        "Frontend engineers struggle to understand and debug the intricate React Fiber tree, as conventional tools lack clarity in identifying performance issues and redundant re-renders.",
+        "Frontend engineers are often challenged with debugging the intricate React Fiber tree, as conventional tools lack clarity in identifying performance issues and redundant re-renders.",
         "HiFiber offers a solution with its advanced visualization engine, simplifying the mapping of the React Fiber tree after reconciliation. This aids developers in pinpointing critical nodes, examining render times and tracking state changes, thus improving the debugging process and application performance."
       ],
       "background": "bg-lightblue-grid-background",

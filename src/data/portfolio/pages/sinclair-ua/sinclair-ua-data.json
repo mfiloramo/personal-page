@@ -12,7 +12,8 @@
       "subtitle": "Navigating Contract Complexity and User Assignment Challenges",
       "paragraphs": [
         "Managing contracts and assigning them to the right employees can be a daunting task due to the vast amount of data and the need for precise filtering and sorting. Traditional methods often lead to inefficiencies, with significant time spent on manual processes and a higher risk of errors, impacting organizational productivity and compliance."
-      ]
+      ],
+      "background": "bg-lightblue-grid-background"
     },
     {
       "id": "tailored_management_approach",
@@ -29,7 +30,7 @@
       ],
       "background": "graph-paper-bg",
       "textColor": "black",
-      "flowchart": "/images/diagrams/flowchart-personal-website.svg"
+      "flowchart": "/images/diagrams/flowchart-sinclair-ua.svg"
     },
     {
       "id": "technology_stack",
@@ -96,7 +97,8 @@
       "subtitle": "Empowering Users with Advanced Contract Management Tools",
       "paragraphs": [
         "Currently, the platform is instrumental in transforming how contracts and user assignments are managed, offering unparalleled efficiency and accuracy. Its adoption has led to significant time savings and reduced errors in managing contracts, with users benefiting from its intuitive design and comprehensive functionalities. The platform's success underscores its role not just as a tool, but as a vital component in optimizing contract management processes."
-      ]
+      ],
+      "background": "bg-lightblue-grid-background"
     }
   ]
 }

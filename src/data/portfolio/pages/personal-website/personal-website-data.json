@@ -71,7 +71,8 @@
       "subtitle": "Final Thoughts",
       "paragraphs": [
         "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world. I’m so grateful that you’ve taken the time to learn more about my site!"
-      ]
+      ],
+      "background": "bg-lightblue-grid-background"
     }
   ]
 }

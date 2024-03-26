@@ -1,7 +1,6 @@
 'use client';
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import pageContent from '../../../data/portfolio/pages/tech-talk/tech-talk-data.json';
-import ConstructionImage from '@/components/construction';
 import SectionComponent from '@/components/section';
 import SectionDivider from '@/components/section-divider';
 import IntroHeadline from '@/components/intro-headline';
@@ -11,8 +10,6 @@ import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interf
 export default function TechTalk(): ReactElement {
   return (
     <>
-      <ConstructionImage />
-
       {/* INTRODUCTION HEADLINE */ }
       <IntroHeadline
         text={ 'I delivered a comprehensive introductory Tech Talk on WebSockets, detailing their mechanisms and protocols to over 100 software engineering students at a collaborative event with the Codesmith immersive boot camp and SingleSprout, a tech recruitment company.' } />
@@ -30,7 +27,13 @@ export default function TechTalk(): ReactElement {
               key={ index }
               subtitle={ section.subtitle }
               paragraphs={ section.paragraphs }
+              photo={ section.photo }
+              background={ section.background }
+              textColor={ section.textColor }
               isEven={ index % 2 === 0 }
+              isFirst={ index === 0 }
+              technologyStack={ section.technologyStack }
+              // flowchart={ section.flowchart }
             />
 
           </div>

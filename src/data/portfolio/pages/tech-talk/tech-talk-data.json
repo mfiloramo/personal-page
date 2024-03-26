@@ -12,19 +12,14 @@
       "subtitle": "Understanding WebSockets Mechanisms",
       "paragraphs": [
         "Through a detailed exploration, we delved into the core protocols that govern WebSockets, offering a deep dive into how they facilitate a persistent connection for seamless data exchange—crucial for applications requiring live updates without the need for constant polling."
-      ]
-    },
-    {
-      "id": "websockets_vs_http",
-      "subtitle": "WebSockets vs. Traditional HTTP",
-      "paragraphs": [
-        "The talk covered a broad spectrum of topics, starting with the basic concepts of WebSockets, followed by the technicalities of WebSocket protocols, and how they differ from traditional HTTP communications."
-      ]
+      ],
+      "background": "bg-lightblue-grid-background"
     },
     {
       "id": "practical_demonstrations",
       "subtitle": "Practical Demonstrations and Applications",
       "paragraphs": [
+        "The talk covered a broad spectrum of topics, starting with the basic concepts of WebSockets, followed by the technicalities of WebSocket protocols, and how they differ from traditional HTTP communications.",
         "Emphasizing practical application, the session included live demonstrations of WebSocket communication in action, showcasing how to implement real-time chat applications, live feeds, and interactive gaming experiences."
       ]
     },
@@ -33,7 +28,8 @@
       "subtitle": "Inspiring Future Innovations",
       "paragraphs": [
         "By breaking down complex technical content into digestible, engaging discussions, the workshop aimed not only to educate but also to inspire the next generation of software engineers to innovate and explore the possibilities of real-time web technologies in their future projects."
-      ]
+      ],
+      "background": "bg-lightblue-grid-background"
     }
   ]
 }

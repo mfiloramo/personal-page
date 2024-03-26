@@ -2,7 +2,6 @@
 import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '../../../data/portfolio/pages/sinclair-ua/sinclair-ua-data.json';
-import ConstructionImage from '@/components/construction';
 import IntroHeadline from '@/components/intro-headline';
 import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
@@ -10,8 +9,6 @@ import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interf
 export default function SinclairUserAdmin(): ReactElement {
   return (
     <>
-      <ConstructionImage />
-
       {/* INTRODUCTION HEADLINE */ }
       <IntroHeadline
         text={ 'I played a key role in developing a User/Contract Management Platform, utilizing powerful frontend/backend tools to streamline contract and employee assignment processes.' }
@@ -36,7 +33,7 @@ export default function SinclairUserAdmin(): ReactElement {
               isEven={ index % 2 === 0 }
               isFirst={ index === 0 }
               technologyStack={ section.technologyStack }
-              // flowchart={ section.flowchart }
+              flowchart={ section.flowchart }
             />
 
           </div>

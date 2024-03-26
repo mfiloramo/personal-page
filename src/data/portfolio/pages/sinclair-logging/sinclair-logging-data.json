@@ -12,7 +12,8 @@
       "subtitle": "The Challenge of Incomplete Visibility",
       "paragraphs": [
         "Prior to its implementation, capturing a holistic view of user interactions and system errors across both the frontend and backend of our User Management platform was a significant challenge. This lack of comprehensive logging detail hindered effective monitoring, making it difficult to diagnose issues promptly and accurately, ultimately impacting user experience and system reliability."
-      ]
+      ],
+      "background": "bg-lightblue-grid-background"
     },
     {
       "id": "comprehensive_logging_framework",
@@ -26,11 +27,12 @@
       "id": "how_it_works",
       "subtitle": "How It Works",
       "paragraphs": [
-        ""
+        "This Logging Service integrates seamlessly within an Angular/Node/Express ecosystem, leveraging TypeScript for robust, type-safe code development. On the frontend, Angular captures user activities and errors, while the backend, built with Node.js and Express, processes and logs these events efficiently.",
+        "Utilizing Microsoft SQL Server for data persistence ensures reliable storage and retrieval of logs, with the flexibility to handle complex queries. This stack offers a comprehensive solution for monitoring, diagnostics and analytics, supporting extensive customization to meet system-wide logging requirements."
       ],
       "background": "graph-paper-bg",
       "textColor": "black",
-      "flowchart": "/images/diagrams/flowchart-personal-website.svg"
+      "flowchart": "/images/diagrams/flowchart-sinclair-logging.svg"
     },
     {
       "id": "technology_stack",
@@ -96,7 +98,8 @@
       "subtitle": "Beyond Logging: A Tool for Insight and Debugging",
       "paragraphs": [
         "Initially designed to log user activities comprehensively, the Logging Service has evolved into an essential tool for Sinclair Broadcast Group’s internal debugging and monitoring within its User Management platform. Its efficiency and depth of data capture have made it indispensable for analyzing user behavior, optimizing user administration platforms, and enhancing system performance."
-      ]
+      ],
+      "background": "bg-lightblue-grid-background"
     }
   ]
 }

@@ -2,7 +2,6 @@
 import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '../../../data/portfolio/pages/personal-website/personal-website-data.json';
-import ConstructionImage from '@/components/construction';
 import IntroHeadline from '@/components/intro-headline';
 import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
@@ -10,8 +9,6 @@ import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interf
 export default function PersonalWebsite(): ReactElement {
   return (
     <>
-      <ConstructionImage />
-
       {/* INTRODUCTION HEADLINE */}
       <IntroHeadline text={'I built my personal website using a modern and robust technology stack, creating a dynamic, performant and visually engaging platform to showcase my work and connect with visitors.'} />
 
