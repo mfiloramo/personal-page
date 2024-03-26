@@ -11,7 +11,8 @@
       "id": "how_it_works",
       "subtitle": "How It Works",
       "paragraphs": [
-        ""
+        "My personal site is built on React and Next.js, with Tailwind CSS for styling and Framer Motion for fluid animations. Leveraging Vercel's experimental Turbopack for rapid development and optimal build times, the site also integrates Courier for efficient message notification services.",
+        "Hosting on Vercel provides my site with optimal loading times, automatic scaling and out-of-the-box continuous deployment, ensuring performance and reliability."
       ],
       "background": "graph-paper-bg",
       "textColor": "black",
@@ -70,7 +71,7 @@
       "id": "conclusion",
       "subtitle": "Final Thoughts",
       "paragraphs": [
-        "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world. I’m so grateful that you’ve taken the time to learn more about my site!"
+        "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world. I’m so grateful that you’ve taken the time to learn more about me!"
       ],
       "background": "bg-lightblue-grid-background"
     }
