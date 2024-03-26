@@ -8,6 +8,16 @@
       ]
     },
     {
+      "id": "how_it_works",
+      "subtitle": "How It Works",
+      "paragraphs": [
+        ""
+      ],
+      "background": "graph-paper-bg",
+      "textColor": "black",
+      "flowchart": "/images/diagrams/flowchart-personal-website.svg"
+    },
+    {
       "id": "technology_stack",
       "subtitle": "Technology Stack",
       "paragraphs": [

@@ -45,12 +45,12 @@ const TechnologyStackComponent: FC<TechnologyStackComponentProps> = ({ technolog
       variants={ container }
       initial={ 'hidden' }
       animate={ controls }
-      className={ `flex flex-wrap justify-center mx-auto px-1 gap-3 items-center mt-5 pt-3` }
+      className={ `flex flex-wrap justify-center mx-auto sm:px-2 gap-3 items-center mt-5 pt-3` }
     >
       { technologyStack.map((technology: TechStackIconProps, index: number) => (
         <motion.div
           key={ index }
-          className={ 'm-2' }
+          className={ 'm-2 sm:w-[120px] w-[95px]' }
           variants={ item }
           whileHover={ { scale: 1.2 } }
         >

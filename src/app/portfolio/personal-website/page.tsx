@@ -1,5 +1,5 @@
 'use client';
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '../../../data/portfolio/pages/personal-website/personal-website-data.json';
 import ConstructionImage from '@/components/construction';
@@ -28,7 +28,13 @@ export default function PersonalWebsite(): ReactElement {
               key={ index }
               subtitle={ section.subtitle }
               paragraphs={ section.paragraphs }
+              photo={ section.photo }
+              background={ section.background }
+              textColor={ section.textColor }
+              isEven={ index % 2 === 0 }
+              isFirst={ index === 0 }
               technologyStack={ section.technologyStack }
+              // flowchart={ section.flowchart }
             />
 
           </div>
