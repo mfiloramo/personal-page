@@ -32,8 +32,6 @@ export default function TechTalk(): ReactElement {
               textColor={ section.textColor }
               isEven={ index % 2 === 0 }
               isFirst={ index === 0 }
-              technologyStack={ section.technologyStack }
-              // flowchart={ section.flowchart }
             />
 
           </div>
