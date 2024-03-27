@@ -4,24 +4,34 @@
       "id": "logging_with_precision",
       "subtitle": "Logging with Precision and Clarity",
       "paragraphs": [
-        "Developed for Sinclair Broadcast Group, I designed and implemented a Logging Service that served as a comprehensive solution designed to meticulously track and log user activity across fro   ntend and backend systems within our User/Contract Management platform. The service offers a holistic view of user sessions, actions, errors, and more, enhancing monitoring and diagnostic capabilities."
+        "Developed for Sinclair Broadcast Group, I designed and implemented a Logging Service that served as a comprehensive solution designed to meticulously track and log user activity across frontend and backend systems within our User/Contract Management platform. The service offers a holistic view of user sessions, actions, errors and more, enhancing monitoring and diagnostic capabilities."
       ]
     },
     {
       "id": "challenge_of_visibility",
       "subtitle": "The Challenge of Incomplete Visibility",
       "paragraphs": [
-        "Prior to its implementation, capturing a holistic view of user interactions and system errors across both the frontend and backend of our User Management platform was a significant challenge. This lack of comprehensive logging detail hindered effective monitoring, making it difficult to diagnose issues promptly and accurately, ultimately impacting user experience and system reliability."
+        "Prior to the Logging Service's implementation, gaining a full perspective on user activities and errors across the User Management platform was difficult. This gap hindered our monitoring efforts, complicating the diagnosis of issues, which in turn affected user experience and system reliability.",
+        "The lack of detailed logging made it challenging to pinpoint performance bottlenecks or problematic user interactions swiftly. Consequently, this delay in issue resolution could compromise the overall quality of service, impacting both efficiency and user satisfaction."
       ],
-      "background": "bg-lightblue-grid-background"
+      "background": "bg-lightblue-grid-background",
+      "photo": {
+        "src": "/images/portfolio-pages/sinclair-logging/incomplete-visibility.png",
+        "alt": "incomplete-visibility"
+      }
     },
+
     {
       "id": "comprehensive_logging_framework",
       "subtitle": "A Comprehensive Logging Framework",
       "paragraphs": [
         "To address these challenges, I developed the Logging Service as a multi-layered system integrating both frontend and backend environments. It includes an Angular frontend service, a Node.js/Express backend, and SQL Server for data management, complemented by advanced performance monitoring and logging tools like Dynatrace and FluentD.",
         "This setup ensured detailed tracking of user actions, error logging with severity levels, and session management, all while maintaining high configurability and extensibility for specific logging needs."
-      ]
+      ],
+      "photo": {
+        "src": "/images/diagrams/flowchart-sinclair-logging-dbschema.svg",
+        "alt": "classroom-raised-hands"
+      }
     },
     {
       "id": "how_it_works",
@@ -97,9 +107,14 @@
       "id": "beyond_logging",
       "subtitle": "Beyond Logging: A Tool for Insight and Debugging",
       "paragraphs": [
-        "Initially designed to log user activities comprehensively, the Logging Service has evolved into an essential tool for Sinclair Broadcast Group’s internal debugging and monitoring within its User Management platform. Its efficiency and depth of data capture have made it indispensable for analyzing user behavior, optimizing user administration platforms, and enhancing system performance."
+        "Initially designed to log user activities comprehensively, the Logging Service has evolved into an essential tool for Sinclair Broadcast Group’s internal debugging and monitoring within its User Management platform. It's used for debugging user bugs, as well as a development tool among the platform's engineers.",
+        "Overall, its efficiency and depth of data capture have made it indispensable for analyzing user behavior, optimizing user administration platforms, and enhancing system performance."
       ],
-      "background": "bg-lightblue-grid-background"
+      "background": "bg-lightblue-grid-background",
+      "photo": {
+        "src": "/images/portfolio-pages/sinclair-logging/beyond-logging.png",
+        "alt": "beyond-logging"
+      }
     }
   ]
 }
