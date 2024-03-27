@@ -42,7 +42,7 @@ export default function SinclairLogging(): ReactElement {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.5 }}
         >
-          { screenshots['in-app-screenshots'].length > 1 ? 'In-App Screenshots' : 'In-App Demonstration' }
+          { screenshots['demo-screenshots'].length > 1 ? 'In-App Screenshots' : 'In-App Demonstration' }
         </motion.div>
 
         <motion.div
@@ -53,7 +53,7 @@ export default function SinclairLogging(): ReactElement {
         >
 
           {
-            screenshots['in-app-screenshots'].map((screenshot: string, index: number): any => {
+            screenshots['demo-screenshots'].map((screenshot: string, index: number): any => {
               return (
                 <motion.div
                   key={ index }
