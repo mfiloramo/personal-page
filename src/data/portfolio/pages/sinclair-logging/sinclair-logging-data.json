@@ -107,8 +107,8 @@
       "id": "beyond_logging",
       "subtitle": "Beyond Logging: A Tool for Insight and Debugging",
       "paragraphs": [
-        "Initially designed to log user activities comprehensively, the Logging Service has evolved into an essential tool for Sinclair Broadcast Group’s internal debugging and monitoring within its User Management platform. It's used for debugging user bugs, as well as a development tool among the platform's engineers.",
-        "Overall, its efficiency and depth of data capture have made it indispensable for analyzing user behavior, optimizing user administration platforms, and enhancing system performance."
+        "Initially designed to log user activities comprehensively, the Logging Service has evolved into a essential instrument for internal debugging and monitoring within Sinclair Broadcast Group's User Management platform, serving both as a critical resource for diagnosing user-related issues and as a developmental aid for the platform's engineers.",
+        "Overall, its efficiency and depth of data capture have made it indispensable for analyzing user behavior, optimizing user administration platforms and enhancing system performance."
       ],
       "background": "bg-lightblue-grid-background",
       "photo": {
