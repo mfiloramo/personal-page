@@ -2,11 +2,11 @@
 import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '@/data/portfolio/pages/sinclair-ua/sinclair-ua-data.json';
+import screenshots from '@/data/portfolio/pages/sinclair-ua/sinclair-ua-data-screenshots.json';
 import IntroHeadline from '@/components/intro-headline';
 import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import { motion } from 'framer-motion';
-import screenshots from '@/data/portfolio/pages/sinclair-ua/sinclair-ua-data-screenshots.json';
 import Image from 'next/image';
 
 export default function SinclairUserAdmin(): ReactElement {

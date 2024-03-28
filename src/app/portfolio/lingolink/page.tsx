@@ -43,8 +43,7 @@ export default function LingoLinkPage(): ReactElement {
   return (
     <div>
       {/* HERO BANNER CONTAINER */ }
-      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'
-           style={ { backgroundColor: '#000' } }>
+      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div

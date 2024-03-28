@@ -55,20 +55,6 @@ const ImageCarousel: React.FC<CarouselProps> = ({ images }): ReactElement => {
     },
   };
 
-  const handleNext = (): void => {
-    setDirection('right');
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
-    );
-  };
-
-  const handlePrevious = (): void => {
-    setDirection('left');
-    setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
   const handleDotClick = (index: number): void => {
     setDirection(index > currentIndex ? 'right' : 'left');
     setCurrentIndex(index);
