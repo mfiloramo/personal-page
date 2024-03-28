@@ -1,47 +1,124 @@
-import { ReactElement, useState } from 'react';
+import { Key, ReactElement, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useSwipeable } from 'react-swipeable';
 
-export default function ImageCarousel({ images }: { images: string[] }): ReactElement {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const handlers = useSwipeable({
-    onSwipedLeft: () => setCurrentIndex((currentIndex + 1) % images.length),
-    onSwipedRight: () => setCurrentIndex((currentIndex - 1 + images.length) % images.length),
-  });
+type CarouselProps = {
+  images: string[];
+};
 
-  const swipeToIndex = (index: number): void => {
+const ImageCarousel: React.FC<CarouselProps> = ({ images }): ReactElement => {
+  const [ currentIndex, setCurrentIndex ] = useState(0);
+  const [ direction, setDirection ] = useState<string | null>(null);
+
+  const slideVariants = {
+    hiddenRight: {
+      x: '100%',
+      opacity: 0,
+    },
+    hiddenLeft: {
+      x: '-100%',
+      opacity: 0,
+    },
+    visible: {
+      x: '0',
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+    exit: {
+      opacity: 0,
+      scale: 0.8,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
+
+  const slidersVariants = {
+    hover: {
+      scale: 1.2
+    },
+  };
+
+  const dotsVariants = {
+    initial: {
+      y: 0,
+    },
+    animate: {
+      y: -5,
+      scale: 1.2,
+      transition: { type: 'spring', stiffness: 1000, damping: '10' },
+    },
+    hover: {
+      scale: 1.1,
+      transition: { duration: 0.2 },
+    },
+  };
+
+  const handleNext = (): void => {
+    setDirection('right');
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 1 === images.length ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrevious = (): void => {
+    setDirection('left');
+    setCurrentIndex((prevIndex) =>
+      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleDotClick = (index: number): void => {
+    setDirection(index > currentIndex ? 'right' : 'left');
     setCurrentIndex(index);
   };
 
+  useEffect(() => {
+    const timer = setInterval((): void => {
+      setDirection('right');
+      setCurrentIndex(prevIndex =>
+        prevIndex + 1 === images.length ? 0 : prevIndex + 1
+      );
+    }, 7000);
+
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+
   return (
-    <div {...handlers} className="relative overflow-hidden w-[30vw] select-none">
-      <AnimatePresence>
-        <motion.img
-          key={currentIndex}
-          src={images[currentIndex]}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full object-cover"
-        />
-      </AnimatePresence>
-      <div className="absolute inset-0 flex justify-between items-center px-4">
-        <motion.button
-          whileTap={{ scale: 0.9 }}
-          className="bg-white/70 backdrop-blur-md rounded-full p-2 text-black"
-          onClick={() => swipeToIndex((currentIndex - 1 + images.length) % images.length)}
-        >
-          &#8592;
-        </motion.button>
-        <motion.button
-          whileTap={{ scale: 0.9 }}
-          className="bg-white/70 backdrop-blur-md rounded-full p-2 text-black"
-          onClick={() => swipeToIndex((currentIndex + 1) % images.length)}
-        >
-          &#8594;
-        </motion.button>
+    <div className='relative pt-8 pb-4'>
+      <div className='relative rounded-md max-w-screen-lg h-96 mx-auto overflow-hidden'>
+
+        {/* IMAGE DISPLAY SLIDER */ }
+        <AnimatePresence>
+          <motion.img
+            key={ currentIndex }
+            src={ images[currentIndex] }
+            initial={ direction === 'right' ? 'hiddenRight' : 'hiddenLeft' }
+            animate='visible'
+            exit='exit'
+            variants={ slideVariants }
+            className='w-full h-full rounded-md object-contain'
+          />
+        </AnimatePresence>
+      </div>
+
+      {/* RENDERED IMAGES */}
+      <div className='mt-5 flex justify-center gap-4'>
+        { images.map((_, index: number) => (
+          <motion.div
+            key={ index }
+            className={ `cursor-pointer rounded-full w-4 h-4 ${ currentIndex === index ? 'bg-sky-300' : 'bg-sky-800' }` }
+            onClick={ () => handleDotClick(index) }
+            initial='initial'
+            animate={ currentIndex === index ? 'animate' : '' }
+            whileHover='hover'
+            variants={ dotsVariants }
+          ></motion.div>
+        )) }
       </div>
     </div>
   );
-}
+};
+export default ImageCarousel;

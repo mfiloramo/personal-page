@@ -8,7 +8,6 @@ import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interf
 import { motion } from 'framer-motion';
 import screenshots from '@/data/portfolio/pages/sinclair-ua/sinclair-ua-data-screenshots.json';
 import Image from 'next/image';
-import ImageCarousel from '@/components/image-carousel';
 
 export default function SinclairUserAdmin(): ReactElement {
   const container = {
@@ -37,11 +36,6 @@ export default function SinclairUserAdmin(): ReactElement {
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
-      {/* IMAGE CAROUSEL */}
-      {/*<div className="max-w-3xl mx-auto">*/}
-      {/*  <ImageCarousel images={screenshots['in-app-screenshots']} />*/}
-      {/*</div>*/}
-
       {/* APP SCREENSHOTS SECTION */ }
       <>
         <motion.div
@@ -50,7 +44,7 @@ export default function SinclairUserAdmin(): ReactElement {
           animate={ { opacity: 1 } }
           transition={ { delay: 1.5, duration: 0.5 } }
         >
-          In-App Screenshot
+          User Interface
         </motion.div>
 
         <motion.div

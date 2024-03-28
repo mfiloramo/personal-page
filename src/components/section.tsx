@@ -6,7 +6,10 @@ import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interf
 import { paragraphAnimationVariants, subtitleAnimationVariants } from '@/utilities/animations';
 import TechnologyStackComponent from '@/components/technology-stack';
 import AnimatedUsageSection from '@/components/animated-usage-section';
+import ImageCarousel from '@/components/image-carousel';
 import { inter_tightItalicHeavy } from '@/utilities/fonts';
+import screenshots from '@/data/portfolio/pages/sinclair-ua/sinclair-ua-data-screenshots.json';
+
 
 export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, flowchart, convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: SectionComponentProps): ReactElement {
   const controls = useAnimation();
@@ -94,6 +97,10 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
                   flagImages={ flagImages! }
                 />
               );
+            }
+
+            if (paragraph === 'image-carousel') {
+              return <ImageCarousel key={ index } images={ screenshots['in-app-screenshots']} />
             } else {
               return (
                 <motion.p
