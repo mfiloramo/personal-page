@@ -108,7 +108,7 @@ export default function SinclairLogging(): ReactElement {
 
       {/* INTRODUCTION HEADLINE */ }
       <IntroHeadline
-        text={ 'I spearheaded the development of an comprehensive logging system for Sinclair Broadcast Group, enhancing user activity tracking and system diagnostics across both frontend and backend environments.' } />
+        text={ 'I spearheaded the development of a comprehensive logging system for Sinclair Broadcast Group, enhancing user activity tracking and system diagnostics across both frontend and backend environments.' } />
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />

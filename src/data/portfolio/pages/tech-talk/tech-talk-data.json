@@ -22,14 +22,6 @@
         "The talk covered a broad spectrum of topics, starting with the basic concepts of WebSockets, followed by the technicalities of WebSocket protocols, and how they differ from traditional HTTP communications.",
         "Emphasizing practical application, the session included live demonstrations of WebSocket communication in action, showcasing how to implement real-time chat applications, live feeds, and interactive gaming experiences."
       ]
-    },
-    {
-      "id": "inspiring_innovations",
-      "subtitle": "Inspiring Future Innovations",
-      "paragraphs": [
-        "By breaking down complex technical content into digestible, engaging discussions, the workshop aimed not only to educate but also to inspire the next generation of software engineers to innovate and explore the possibilities of real-time web technologies in their future projects."
-      ],
-      "background": "bg-lightblue-grid-background"
     }
   ]
 }
