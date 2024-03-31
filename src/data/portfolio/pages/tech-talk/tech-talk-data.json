@@ -4,8 +4,13 @@
       "id": "collaborative_effort",
       "subtitle": "Collaborative Educational Effort",
       "paragraphs": [
-        "In a collaborative effort with Codesmith and SingleSprout, I had the privilege of leading an insightful Tech Talk on the intricacies of WebSockets to an audience of 100+ software engineering students. This session was designed to comprehensively overview the underlying mechanisms of WebSockets—a technology that enables real-time, bi-directional communication between web clients and servers."
-      ]
+        "In a collaborative effort with Codesmith and SingleSprout, I had the privilege of leading an insightful Tech Talk on the intricacies of WebSockets to an audience of 100+ software engineering students.",
+        "This session was designed to comprehensively overview the underlying mechanisms of WebSockets—a technology that enables real-time, bi-directional communication between web clients and servers."
+      ],
+      "photo": {
+      "src": "/images/portfolio-pages/tech-talk/lecture-hall.png",
+      "alt": "classroom-raised-hands"
+    }
     },
     {
       "id": "understanding_mechanisms",
