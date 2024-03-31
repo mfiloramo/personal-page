@@ -68,7 +68,7 @@ export default function SinclairLogging(): ReactElement {
               <Image
                 className='w-[80vw] max-w-[800px]'
                 src='/images/portfolio-pages/sinclair-logging/sinclair-logging-logo-main.png'
-                alt='sinclair-logo-hero-banner'
+                alt='sinclair-logging-logo-hero-banner'
                 width={ 1677 }
                 height={ 656 }
               />

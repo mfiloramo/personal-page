@@ -29,6 +29,78 @@ export default function SinclairUserAdmin(): ReactElement {
 
   return (
     <>
+      {/* HERO BANNER */}
+      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'>
+
+        {/* HERO BANNER IMAGE */ }
+        <motion.div
+          initial={ { opacity: 0 } }
+          animate={ { opacity: 1 } }
+          transition={ { duration: 0.1 } }
+          className='relative w-full h-full'
+        >
+          <div className='absolute inset-0'>
+            <Image
+              className={ 'object-cover' }
+              src={ '/images/hero-banners/hero-banner-sinclair-ua.png' }
+              alt={ 'sinclair-ua-banner' }
+              fill
+              priority
+            />
+          </div>
+        </motion.div>
+
+        {/* ANIMATED LOGO/TEXT CONTAINER */ }
+        <div className='absolute mt-[2vh] inset-0 flex justify-center items-start'>
+          <div className='flex flex-col items-center'>
+
+            {/* ANIMATED LOGO GRAPHIC */ }
+            <motion.div
+              className='flex pb-6 justify-center items-start mt-8'
+              initial={ { scale: 0 } }
+              animate={ { rotate: 0, scale: 1 } }
+              transition={ {
+                delay: 0.1,
+                type: 'spring',
+                stiffness: 260,
+                damping: 20,
+              } }
+            >
+              <Image
+                className='w-[80vw] max-w-[800px]'
+                src='/images/portfolio-pages/sinclair-ua/hero-banner-title.png'
+                alt='sinclair-ua-logo-hero-banner'
+                width={ 1105 }
+                height={ 206 }
+              />
+            </motion.div>
+
+            {/* ANIMATED LOGO TEXT */ }
+            <motion.div
+              className='flex w-full -mt-3 justify-center'
+              initial={ { scale: 0 } }
+              animate={ { scale: 1 } }
+              transition={ {
+                delay: 0.3,
+                type: 'spring',
+                stiffness: 280,
+                damping: 20,
+              } }
+            >
+              <Image
+                className='mt-8 w-[85vw] max-w-[800px]'
+                src='/images/portfolio-pages/sinclair-ua/hero-banner-subtitle.png'
+                alt='sinclair-logging-logo-subtitle'
+                width={ 959 }
+                height={ 56 }
+              />
+            </motion.div>
+
+          </div>
+        </div>
+
+      </div>
+
       {/* INTRODUCTION HEADLINE */ }
         <IntroHeadline
           text={ 'I played a key role in developing a User/Contract Management Platform, utilizing powerful frontend/backend tools to streamline contract and employee assignment processes.' }
