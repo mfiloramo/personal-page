@@ -4,8 +4,7 @@ import { cabinHeavy, cabinLight } from '@/utilities/fonts';
 import AboutPageButton from '@/components/about-page-button';
 import FancyDivider from '@/components/fancy-divider';
 import { MotionSlider } from '@/components/motion-slider';
-import pageContent from '../../data/about/about-data.json';
-import SectionComponent from '@/components/section';
+import pageContent from '@/data/about/about-data.json';
 
 
 export default function About(): ReactElement {

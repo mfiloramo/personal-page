@@ -1,6 +1,6 @@
 'use client';
 import React, { ReactElement } from 'react';
-import pageContent from '../../../data/portfolio/pages/tech-talk/tech-talk-data.json';
+import pageContent from '@/data/portfolio/pages/tech-talk/tech-talk-data.json';
 import SectionComponent from '@/components/section';
 import SectionDivider from '@/components/section-divider';
 import IntroHeadline from '@/components/intro-headline';

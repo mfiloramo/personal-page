@@ -1,7 +1,7 @@
 'use client';
 import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
-import pageContent from '../../../data/portfolio/pages/sinclair-logging/sinclair-logging-data.json';
+import pageContent from '@/data/portfolio/pages/sinclair-logging/sinclair-logging-data.json';
 import screenshots from '@/data/portfolio/pages/sinclair-logging/sinclair-logging-screenshots.json';
 import IntroHeadline from '@/components/intro-headline';
 import SectionDivider from '@/components/section-divider';

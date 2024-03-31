@@ -5,7 +5,7 @@ import ServiceCard from '@/components/service-card';
 import { MotionSlider } from '@/components/motion-slider';
 import { motion } from 'framer-motion';
 import { ServiceImagePropsInterface } from '@/interfaces/ServiceImageProps.interface';
-import pageContent from '../../data/services/services-data.json'
+import pageContent from '@/data/services/services-data.json'
 
 export default function Services(): ReactElement {
 

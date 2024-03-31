@@ -8,7 +8,7 @@ import FancyDivider from '@/components/fancy-divider';
 import SendMessage from '@/components/send-message';
 import { MotionSlider } from '@/components/motion-slider';
 import { StackButtonProps } from '@/interfaces/StackButtonProps.interface';
-import pageContent from '../../data/contact/contact-data.json';
+import pageContent from '@/data/contact/contact-data.json';
 import SectionDivider from '@/components/section-divider';
 
 export default function Contact(): ReactElement {

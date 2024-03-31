@@ -4,8 +4,13 @@
       "id": "motivation_and_goals",
       "subtitle": "Motivation and Goals",
       "paragraphs": [
-        "In my experience as a software engineer, the desire to build a space that truly encapsulates my professional journey, achievements and the spectrum of projects I've passionately worked on led me to design and launch this very site. It was to be a showcase of some of my more recent and favorite work, offering a window for peers, potential collaborators and the curious to explore the work that fuels my joy for this field."
-      ]
+        "In my experience as a software engineer, the desire to build a space that truly encapsulates my professional journey, achievements and the spectrum of projects I've passionately worked on led me to design and launch this very site.",
+        "It was to be a showcase of some of my more recent and favorite work, offering a window for peers, potential collaborators and the curious to explore the work that fuels my joy for this field."
+      ],
+      "photo": {
+        "src": "/images/portfolio-pages/personal-website/personal-website-screenshot.png",
+        "alt": "personal-website-screenshot"
+      }
     },
     {
       "id": "how_it_works",
@@ -71,8 +76,13 @@
       "id": "conclusion",
       "subtitle": "Final Thoughts",
       "paragraphs": [
-        "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world. I’m so grateful that you’ve taken the time to learn more about me!"
+        "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world.",
+        "I’m so grateful that you’ve taken the time to learn more about me and my work. I welcome you to reach out if you're interested in discussing a web development project/service I can offer. Thanks for stopping by!"
       ],
+      "photo": {
+        "src": "/images/portfolio-pages/personal-website/self-pic.jpg",
+        "alt": "self-pic"
+      },
       "background": "bg-lightblue-grid-background"
     }
   ]

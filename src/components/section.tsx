@@ -53,7 +53,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
             animate={ controls }
           >
             <Image
-              className={ 'rounded-xl' }
+              className={ 'rounded-xl shadow-2xl' }
               src={ photo.src }
               alt={ photo.alt }
               height={ 1024 }

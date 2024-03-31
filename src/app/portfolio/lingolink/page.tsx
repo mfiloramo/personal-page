@@ -6,8 +6,8 @@ import SectionDivider from '@/components/section-divider';
 import SectionComponent from '@/components/section';
 import IntroHeadline from '@/components/intro-headline';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
-import pageContent from '../../../data/portfolio/pages/lingolink/lingolink-data.json';
-import screenshots from '../../../data/portfolio/pages/lingolink/lingolink-screenshots.json';
+import pageContent from '@/data/portfolio/pages/lingolink/lingolink-data.json';
+import screenshots from '@/data/portfolio/pages/lingolink/lingolink-screenshots.json';
 import ButtonContainer from '@/components/button-container';
 
 export default function LingoLinkPage(): ReactElement {

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { generateHoverAnimation } from '@/utilities/animations';
 import PortfolioCard from '@/components/portfolio-card';
 import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.interface';
-import pageContent from '../../data/portfolio/portfolio-data.json'
+import pageContent from '@/data/portfolio/portfolio-data.json'
 
 export default function Portfolio(): ReactElement {
 
