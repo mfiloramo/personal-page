@@ -2,7 +2,6 @@
 import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '@/data/portfolio/pages/personal-website/personal-website-data.json';
-import screenshots from '@/data/portfolio/pages/personal-website/personal-website-screenshots.json'
 import IntroHeadline from '@/components/intro-headline';
 import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
