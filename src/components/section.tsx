@@ -84,13 +84,16 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         ) }
 
         {/* VIDEO LINK */ }
-        { videoLink && (
-          <div className={ 'mx-auto' }>
-            <iframe width="616" height="347" src={ videoLink }
-                    title="YouTube video player" frameBorder="0"
+        {videoLink && (
+          <div className="mx-auto h-96 max-w-[680px] w-[80vw]">
+            <iframe className="w-full h-full"
+                    src={ videoLink }
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+            </iframe>
           </div>
+
         ) }
 
         {/* ANIMATED SECTION PARAGRAPHS */ }
