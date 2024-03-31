@@ -29,7 +29,7 @@ export default function SinclairLogging(): ReactElement {
   return (
     <>
       {/* HERO BANNER */}
-      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'>
+      <div className='relative h-[30vh] min-h-[315px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div

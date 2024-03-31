@@ -30,7 +30,7 @@ export default function SinclairUserAdmin(): ReactElement {
   return (
     <>
       {/* HERO BANNER */}
-      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'>
+      <div className='relative h-[18vh] min-h-[230px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
@@ -77,7 +77,7 @@ export default function SinclairUserAdmin(): ReactElement {
 
             {/* ANIMATED LOGO TEXT */ }
             <motion.div
-              className='flex w-full -mt-3 justify-center'
+              className='flex w-full -mt-8 justify-center'
               initial={ { scale: 0 } }
               animate={ { scale: 1 } }
               transition={ {

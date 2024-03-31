@@ -29,7 +29,7 @@ export default function HiFiberPage(): ReactElement {
 
   return (
     <>
-      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'>
+      <div className='relative h-[25vh] min-h-[230px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div

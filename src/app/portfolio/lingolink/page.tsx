@@ -43,7 +43,7 @@ export default function LingoLinkPage(): ReactElement {
   return (
     <div>
       {/* HERO BANNER CONTAINER */ }
-      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'>
+      <div className='relative h-[30vh] min-h-[325px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
@@ -101,7 +101,7 @@ export default function LingoLinkPage(): ReactElement {
               } }
             >
               <Image
-                className='w-[60vw] min-w-[300px] max-w-[400px]'
+                className='w-[57vw] min-w-[280px] max-w-[350px]'
                 src='/images/portfolio-pages/lingolink/lingolink-text.png'
                 alt='LingoLink Logo Text'
                 width={ 1138 }

@@ -12,7 +12,7 @@ export default function PersonalWebsite(): ReactElement {
   return (
     <>
       {/* HERO BANNER */}
-      <div className='relative h-[45vh] min-h-[370px] sm:h-[52vh] flex justify-center items-center overflow-hidden'>
+      <div className='relative h-[25vh] min-h-[200px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
