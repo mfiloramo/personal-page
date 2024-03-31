@@ -29,7 +29,7 @@ export default function HiFiberPage(): ReactElement {
 
   return (
     <>
-      <div className='relative h-[25vh] min-h-[230px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
+      <div className='relative h-[25vh] min-h-[265px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
@@ -55,7 +55,7 @@ export default function HiFiberPage(): ReactElement {
 
             {/* ANIMATED LOGO GRAPHIC */ }
             <motion.div
-              className='flex pb-6 justify-center items-start'
+              className=' flex pb-6 justify-center items-start'
               initial={ { scale: 0 } }
               animate={ { rotate: 0, scale: 1 } }
               transition={ {
@@ -66,7 +66,7 @@ export default function HiFiberPage(): ReactElement {
               } }
             >
               <Image
-                className='w-[40vw] max-w-[750px] min-w-[350px] sm:min-w-[550px] md:min-w-[650px]'
+                className='w-[80vw] max-w-[600px]'
                 src='/images/portfolio-pages/hifiber/hifiber-logo-full.png'
                 alt='LingoLink Logo'
                 width={ 1677 }
@@ -76,7 +76,7 @@ export default function HiFiberPage(): ReactElement {
 
             {/* ANIMATED LOGO TEXT */ }
             <motion.div
-              className='flex w-full -mt-3 justify-center'
+              className='flex  -mt-3 justify-center'
               initial={ { scale: 0 } }
               animate={ { scale: 1 } }
               transition={ {
@@ -87,7 +87,7 @@ export default function HiFiberPage(): ReactElement {
               } }
             >
               <Image
-                className='min-w-[1000px] w-screen'
+                className='min-w-[600px] sm:min-w-[800px] w-screen'
                 src='/images/portfolio-pages/hifiber/hifiber-sub-logo-strgr-desktop.png'
                 alt='LingoLink Logo Text'
                 width={ 1920 }

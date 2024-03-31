@@ -35,7 +35,7 @@ export default function PersonalWebsite(): ReactElement {
         {/* ANIMATED LOGO/TEXT CONTAINER */ }
         <div className='absolute mt-14 inset-0 flex justify-center items-start'>
           <motion.div
-            className='flex flex-col items-center bg-white bg-opacity-30 w-screen p-2'
+            className='flex flex-col items-center bg-white bg-opacity-50 w-screen p-2'
             initial={ { scale: 0 } }
             animate={ { rotate: 0, scale: 1 } }
             transition={ {
