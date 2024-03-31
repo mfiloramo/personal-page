@@ -9,9 +9,27 @@
     },
     {
       "id": "understanding_mechanisms",
-      "subtitle": "Understanding WebSockets Mechanisms",
+      "subtitle": "Understanding WebSocket Mechanisms",
       "paragraphs": [
+        "image-carousel",
         "Through a detailed exploration, we delved into the core protocols that govern WebSockets, offering a deep dive into how they facilitate a persistent connection for seamless data exchange—crucial for applications requiring live updates without the need for constant polling."
+      ],
+      "carouselSlides": [
+        "/images/tech-talk-slides/slideshow-1.png",
+        "/images/tech-talk-slides/slideshow-2.png",
+        "/images/tech-talk-slides/slideshow-3.png",
+        "/images/tech-talk-slides/slideshow-4.png",
+        "/images/tech-talk-slides/slideshow-5.png",
+        "/images/tech-talk-slides/slideshow-6.png",
+        "/images/tech-talk-slides/slideshow-8.png",
+        "/images/tech-talk-slides/slideshow-9.png",
+        "/images/tech-talk-slides/slideshow-10.png",
+        "/images/tech-talk-slides/slideshow-11.png",
+        "/images/tech-talk-slides/slideshow-12.png",
+        "/images/tech-talk-slides/slideshow-13.png",
+        "/images/tech-talk-slides/slideshow-14.png",
+        "/images/tech-talk-slides/slideshow-15.png",
+        "/images/tech-talk-slides/slideshow-16.png"
       ],
       "background": "bg-lightblue-grid-background"
     },
@@ -20,8 +38,9 @@
       "subtitle": "Practical Demonstrations and Applications",
       "paragraphs": [
         "The talk covered a broad spectrum of topics, starting with the basic concepts of WebSockets, followed by the technicalities of WebSocket protocols, and how they differ from traditional HTTP communications.",
-        "Emphasizing practical application, the session included live demonstrations of WebSocket communication in action, showcasing how to implement real-time chat applications, live feeds, and interactive gaming experiences."
-      ]
+        "Emphasizing practical application, the session included live demonstrations of WebSocket communication in action, showcasing how to implement real-time chat applications, live feeds and interactive gaming experiences."
+      ],
+      "videoLink": "https://www.youtube.com/embed/BJmu_kAn6EI?si=Czima2guEmD5A6mM"
     }
   ]
 }

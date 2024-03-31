@@ -32,6 +32,8 @@ export default function TechTalk(): ReactElement {
               textColor={ section.textColor }
               isEven={ index % 2 === 0 }
               isFirst={ index === 0 }
+              carouselSlides={ section.carouselSlides }
+              videoLink={ section.videoLink }
             />
 
           </div>

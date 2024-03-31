@@ -8,10 +8,9 @@ import TechnologyStackComponent from '@/components/technology-stack';
 import AnimatedUsageSection from '@/components/animated-usage-section';
 import ImageCarousel from '@/components/image-carousel';
 import { inter_tightItalicHeavy } from '@/utilities/fonts';
-import screenshots from '@/data/portfolio/pages/sinclair-ua/sinclair-ua-data-screenshots.json';
 
 
-export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, flowchart, convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: SectionComponentProps): ReactElement {
+export default function SectionComponent({ subtitle, paragraphs, photo, background, textColor, isEven, isFirst, technologyStack, flowchart, convoImageIndex, leftConvoImages, rightConvoImages, flagImages, carouselSlides, videoLink }: SectionComponentProps): ReactElement {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -84,6 +83,16 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
           </motion.div>
         ) }
 
+        {/* VIDEO LINK */ }
+        { videoLink && (
+          <div className={ 'mx-auto' }>
+            <iframe width="616" height="347" src={ videoLink }
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          </div>
+        ) }
+
         {/* ANIMATED SECTION PARAGRAPHS */ }
         <div className={ `${ photo ? 'w-full md:w-1/2 lg:w-[55%] md:px-8' : 'w-full' }` }>
           { paragraphs.map((paragraph: string, index: number) => {
@@ -99,8 +108,10 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
               );
             }
 
+            // RENDER IMAGE CAROUSEL
             if (paragraph === 'image-carousel') {
-              return <ImageCarousel key={ index } images={ screenshots['in-app-screenshots']} />
+              return <ImageCarousel key={ index } images={ carouselSlides! } />
+
             } else {
               return (
                 <motion.p

@@ -15,4 +15,6 @@ export interface SectionComponentProps {
   readonly leftConvoImages?: string[];
   readonly rightConvoImages?: string[];
   readonly flagImages?: string[];
+  readonly carouselSlides?: string[];
+  readonly videoLink?: string;
 }

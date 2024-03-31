@@ -1,11 +1,11 @@
 import { Key, ReactElement, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-type CarouselProps = {
+interface CarouselProps {
   images: string[];
-};
+}
 
-const ImageCarousel: React.FC<CarouselProps> = ({ images }): ReactElement => {
+export default function ImageCarousel({ images }: CarouselProps): ReactElement {
   const [ currentIndex, setCurrentIndex ] = useState(0);
   const [ direction, setDirection ] = useState<string | null>(null);
 
@@ -31,12 +31,6 @@ const ImageCarousel: React.FC<CarouselProps> = ({ images }): ReactElement => {
       transition: {
         duration: 0.3,
       },
-    },
-  };
-
-  const slidersVariants = {
-    hover: {
-      scale: 1.2
     },
   };
 
@@ -70,7 +64,6 @@ const ImageCarousel: React.FC<CarouselProps> = ({ images }): ReactElement => {
 
     return () => clearInterval(timer);
   }, [images.length]);
-
 
   return (
     <div className='relative pt-8 pb-4'>
@@ -107,4 +100,3 @@ const ImageCarousel: React.FC<CarouselProps> = ({ images }): ReactElement => {
     </div>
   );
 };
-export default ImageCarousel;

@@ -27,6 +27,12 @@
         "image-carousel",
         "To address these challenges, the platform integrates a sophisticated frontend built with Angular, enhanced by Kendo UI's powerful visualization components. It facilitates effortless management of contracts, from detailed displays of contract data to seamless assignment of contract types to employees.",
         "Features such as comprehensive filtering, keyword searching and the ability to export data to Excel and PDF formats, ensure a streamlined workflow tailored to organizational needs."
+      ],
+      "carouselSlides": [
+        "/images/screenshots/sinclair-ua/screenshot-ua-main.png",
+        "/images/screenshots/sinclair-ua/screenshot-ua-modal.png",
+        "/images/screenshots/sinclair-ua/screenshot-ua-modal-only.png",
+        "/images/screenshots/sinclair-ua/screenshot-ua-search.png"
       ]
     },
     {
