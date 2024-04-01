@@ -2,7 +2,6 @@
 import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '@/data/portfolio/pages/hifiber/hifiber-data.json';
-import screenshots from '@/data/portfolio/pages/hifiber/hifiber-screenshots.json';
 import IntroHeadline from '@/components/intro-headline';
 import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
@@ -136,7 +135,7 @@ export default function HiFiberPage(): ReactElement {
         >
 
           {
-            screenshots['in-app-screenshots'].map((screenshot: string, index: number): any => {
+            pageContent['in-app-screenshots'].map((screenshot: string, index: number): any => {
               return (
                 <motion.div
                   key={ index }

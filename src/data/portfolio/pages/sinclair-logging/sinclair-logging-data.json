@@ -52,54 +52,44 @@
       ],
       "technologyStack": [
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-typescript.png",
           "altText": "TypeScript"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-javascript.png",
           "altText": "JavaScript"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-node.png",
-          "altText": "Node.js"
+          "altText": "node-js-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-express.png",
-          "altText": "Express"
+          "altText": "express-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-sequelize.png",
-          "altText": "Sequelize"
+          "altText": "sequelize-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-mssql.png",
-          "altText": "SQL Server"
+          "altText": "mssql-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-dynatrace.png",
-          "altText": "Dynatrace"
+          "altText": "dynatrace-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-fluentd.png",
-          "altText": "Fluentd"
+          "altText": "fluentd-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-azure.png",
-          "altText": "Azure"
+          "altText": "azure-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-ado.png",
-          "altText": "Azure DevOps"
+          "altText": "azure-devops-logo"
         }
       ]
     },
@@ -116,5 +106,8 @@
         "alt": "beyond-logging"
       }
     }
+  ],
+  "demo-screenshots": [
+    "/images/portfolio-pages/sinclair-logging/demo-loop-logging.gif"
   ]
 }

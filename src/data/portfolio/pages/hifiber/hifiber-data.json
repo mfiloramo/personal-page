@@ -39,29 +39,24 @@
       ],
       "technologyStack": [
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-javascript.png",
-          "altText": "JavaScript"
+          "altText": "javascript-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-react.png",
-          "altText": "React"
+          "altText": "react-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-chrome-devtools.png",
-          "altText": "Chrome DevTools"
+          "altText": "chrome-devtools-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-d3.png",
-          "altText": "D3"
+          "altText": "d3-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-s3.png",
-          "altText": "AWS S3"
+          "altText": "aws-s3-logo"
         }
       ]
     },
@@ -78,5 +73,9 @@
         "alt": "classroom-raised-hands"
       }
     }
+  ],
+  "in-app-screenshots": [
+    "/images/screenshots/hifiber/hifiber-screenshot-b.png",
+    "/images/screenshots/hifiber/hifiber-screenshot-aa.png"
   ]
 }

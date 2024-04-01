@@ -7,6 +7,7 @@ import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import ButtonContainer from '@/components/button-container';
 
 export default function PersonalWebsite(): ReactElement {
   return (
@@ -94,6 +95,16 @@ export default function PersonalWebsite(): ReactElement {
 
       {/* INTRODUCTION HEADLINE */}
       <IntroHeadline text={'I built my personal website using a modern and robust technology stack, creating a dynamic, performant and visually engaging platform to showcase my work and connect with visitors.'} />
+
+      {/* BUTTON CONTAINER */ }
+      <div className={ '-mt-4 -mb-14' }>
+        <ButtonContainer
+          buttonOneText={ 'Source Code' }
+          buttonOneLink={ 'https://github.com/mfiloramo/personal-page' }
+          buttonTwoText={ 'My GitHub' }
+          buttonTwoLink={ 'https://github.com/mfiloramo' }
+        />
+      </div>
 
       {/* SECTION DIVIDER */ }
       <SectionDivider/>

@@ -119,5 +119,14 @@
         "alt": "empowering-users"
       }
     }
+  ],
+  "demo-screenshots": [
+    "/images/screenshots/sinclair-ua/screenshot-ua-demo-pic.png"
+  ],
+  "in-app-screenshots": [
+    "/images/screenshots/sinclair-ua/screenshot-ua-main.png",
+    "/images/screenshots/sinclair-ua/screenshot-ua-modal.png",
+    "/images/screenshots/sinclair-ua/screenshot-ua-modal-only.png",
+    "/images/screenshots/sinclair-ua/screenshot-ua-search.png"
   ]
 }

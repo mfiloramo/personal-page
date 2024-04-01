@@ -7,14 +7,13 @@ import SectionComponent from '@/components/section';
 import IntroHeadline from '@/components/intro-headline';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import pageContent from '@/data/portfolio/pages/lingolink/lingolink-data.json';
-import screenshots from '@/data/portfolio/pages/lingolink/lingolink-screenshots.json';
 import ButtonContainer from '@/components/button-container';
 
 export default function LingoLinkPage(): ReactElement {
   const [ convoImageIndex, setConvoImageIndex ] = useState(0);
-  const leftConvoImages: string[] = screenshots['in-app-screenshots-left'];
-  const rightConvoImages: string[] = screenshots['in-app-screenshots-right'];
-  const flagImages: string[] = screenshots['google-translate-diagrams'];
+  const leftConvoImages: string[] = pageContent['in-app-screenshots-left'];
+  const rightConvoImages: string[] = pageContent['in-app-screenshots-right'];
+  const flagImages: string[] = pageContent['google-translate-diagrams'];
 
   const container = {
     hidden: { opacity: 0 },
@@ -216,7 +215,7 @@ export default function LingoLinkPage(): ReactElement {
         >
 
           {
-            screenshots['intro-screenshots'].map((screenshot: string, index: number): any => {
+            pageContent['intro-screenshots'].map((screenshot: string, index: number): any => {
               return (
                 <motion.div
                   key={ index }

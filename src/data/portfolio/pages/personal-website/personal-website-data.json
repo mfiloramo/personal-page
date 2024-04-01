@@ -1,8 +1,8 @@
 {
   "sections": [
     {
-      "id": "motivation_and_goals",
-      "subtitle": "Motivation and Goals",
+      "id": "building_showcase",
+      "subtitle": "Building A Vibrant, Digital Showcase",
       "paragraphs": [
         "In my experience as a software engineer, the desire to build a space that truly encapsulates my professional journey, achievements and the spectrum of projects I've passionately worked on led me to design and launch this very site.",
         "It was to be a showcase of some of my more recent and favorite work, offering a window for peers, potential collaborators and the curious to explore the work that fuels my joy for this field."
@@ -31,44 +31,36 @@
       ],
       "technologyStack": [
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-typescript.png",
-          "altText": "TypeScript"
+          "altText": "typescript-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-react.png",
-          "altText": "React"
+          "altText": "react-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-next.png",
-          "altText": "Next"
+          "altText": "next-js-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-tailwind.png",
-          "altText": "Tailwind"
+          "altText": "tailwind-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-motion.png",
-          "altText": "Framer Motion"
+          "altText": "framer-motion-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-vercel.png",
-          "altText": "Vercel"
+          "altText": "vercel-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-turbopack.png",
-          "altText": "Turbopack"
+          "altText": "turbopack-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-courier.png",
-          "altText": "Courier"
+          "altText": "courier-logo"
         }
       ]
     },

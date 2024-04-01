@@ -41,64 +41,48 @@
         ],
       "technologyStack":[
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-typescript.png",
-          "altText": "LingoLink"
+          "altText": "typescript-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-angular.png",
-          "altText": "LingoLink"
+          "altText": "angular-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
-          "imgSrc": "/images/technology-icons/tech-material.png",
-          "altText": "LingoLink"
-        },
-        {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-tailwind.png",
-          "altText": "LingoLink"
+          "altText": "tailwind-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-node.png",
-          "altText": "LingoLink"
+          "altText": "node-js-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-express.png",
-          "altText": "LingoLink"
+          "altText": "express-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-sequelize.png",
-          "altText": "LingoLink"
+          "altText": "sequelize-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-mssql.png",
-          "altText": "LingoLink"
+          "altText": "mssql-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-azure.png",
-          "altText": "LingoLink"
+          "altText": "azure-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-github-actions.png",
-          "altText": "LingoLink"
+          "altText": "github-actions-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-google-translate.png",
-          "altText": "LingoLink"
+          "altText": "google-translate-logo"
         },
         {
-          "urlPath": "https://orange-tree-0d3c88e0f.3.azurestaticapps.net/",
           "imgSrc": "/images/technology-icons/tech-courier.png",
-          "altText": "LingoLink"
+          "altText": "courier-logo"
         }
       ]
     },
@@ -115,5 +99,24 @@
         "alt": "classroom-computers"
       }
     }
+  ],
+  "intro-screenshots": [
+    "/images/screenshots/lingolink/mobile-home-screen.png",
+    "/images/screenshots/lingolink/mobile-reg-screen.png",
+    "/images/screenshots/lingolink/mobile-convos-screen.png",
+    "/images/screenshots/lingolink/mobile-example-convo.png"
+  ],
+  "in-app-screenshots-left": [
+    "/images/screenshots/lingolink/convo-en.png",
+    "/images/screenshots/lingolink/convo-zh.png", "/images/screenshots/lingolink/convo-pt.png"
+  ],
+  "in-app-screenshots-right": [
+    "/images/screenshots/lingolink/convo-es.png",
+    "/images/screenshots/lingolink/convo-ar.png", "/images/screenshots/lingolink/convo-it.png"
+  ],
+  "google-translate-diagrams": [
+    "/images/diagrams/en-es-diagram.svg",
+    "/images/diagrams/zh-ar-diagram.svg",
+    "/images/diagrams/pt-it-diagram.svg"
   ]
 }

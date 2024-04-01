@@ -2,7 +2,6 @@
 import React, { ReactElement } from 'react';
 import SectionComponent from '@/components/section';
 import pageContent from '@/data/portfolio/pages/sinclair-logging/sinclair-logging-data.json';
-import screenshots from '@/data/portfolio/pages/sinclair-logging/sinclair-logging-screenshots.json';
 import IntroHeadline from '@/components/intro-headline';
 import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
@@ -122,7 +121,7 @@ export default function SinclairLogging(): ReactElement {
           animate={ { opacity: 1 } }
           transition={ { delay: 1.5, duration: 0.5 } }
         >
-          { screenshots['demo-screenshots'].length > 1 ? 'In-App Screenshots' : 'In-App Demonstration' }
+          { pageContent['demo-screenshots'].length > 1 ? 'In-App Screenshots' : 'In-App Demonstration' }
         </motion.div>
 
         <motion.div
@@ -133,7 +132,7 @@ export default function SinclairLogging(): ReactElement {
         >
 
           {
-            screenshots['demo-screenshots'].map((screenshot: string, index: number): any => {
+            pageContent['demo-screenshots'].map((screenshot: string, index: number): any => {
               return (
                 <motion.div
                   key={ index }
