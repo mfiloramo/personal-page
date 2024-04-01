@@ -17,7 +17,7 @@ export default function Home(): ReactElement {
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, [ pageContent.length ]);
+  });
 
   // RENDER COMPONENT
   return (
