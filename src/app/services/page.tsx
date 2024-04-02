@@ -2,16 +2,14 @@
 import { ReactElement, ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import ServiceCard from '@/components/service-card';
-import { MotionSlider } from '@/components/motion-slider';
 import { ServiceImagePropsInterface } from '@/interfaces/ServiceImageProps.interface';
-import pageContent from '@/data/services/services-data.json'
-import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
 import BasePageText from '@/components/base-page-text';
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
+import pageContent from '@/data/services/services-data.json'
 
 export default function Services(): ReactElement {
   const baseText: BasePageTextProps = pageContent.basePageText
   const services: ServiceImagePropsInterface[] = pageContent.services;
-
 
   return (
     <div className='relative flex flex-col sm:mx-auto'>
