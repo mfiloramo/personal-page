@@ -1,52 +1,28 @@
 'use client';
 import { ReactElement, ReactNode } from 'react';
-import { cabinHeavy, cabinLight } from '@/utilities/fonts';
+import { motion } from 'framer-motion';
 import ServiceCard from '@/components/service-card';
 import { MotionSlider } from '@/components/motion-slider';
-import { motion } from 'framer-motion';
 import { ServiceImagePropsInterface } from '@/interfaces/ServiceImageProps.interface';
 import pageContent from '@/data/services/services-data.json'
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
+import BasePageText from '@/components/base-page-text';
 
 export default function Services(): ReactElement {
+  const baseText: BasePageTextProps = pageContent.basePageText
+  const services: ServiceImagePropsInterface[] = pageContent.services;
+
 
   return (
-    <div className='pt-10 mb-12 relative flex flex-col sm:mx-auto overflow-x-hidden'>
-      <div className={ 'mb-12' }>
+    <div className='relative flex flex-col sm:mx-auto'>
 
-        {/* TITLE SECTION */ }
-        <div className='mx-8 md:mx-auto max-w-screen-md drop-shadow-in-top'>
-          <MotionSlider className={ `text-sky-100 text-7xl sm:text-8xl pb-5 ${ cabinHeavy.className }` } delay={ 0 }>
-            <div>
-              services
-            </div>
-          </MotionSlider>
+      {/* BASE PAGE TEXT */}
+      <BasePageText
+        title={ baseText.title }
+        subtitle={ baseText.subtitle }
+        bodyText={ baseText.bodyText }
+      />
 
-          {/* SUBTITLE SECTION */ }
-          <MotionSlider className={ `text-sky-200 text-3xl pb-12 -mt-7 ${ cabinLight.className }` } delay={ 0.2 }>
-            <div className='break-words'>
-              I craft exceptional web experiences built for tomorrow.
-            </div>
-
-            {/* PAGE DIVIDER */ }
-            <div className="border-t border-gray-400 mt-2 w-full"></div>
-          </MotionSlider>
-
-          {/* BODY TEXT SECTION */ }
-          <MotionSlider
-            className={ `text-xl mb-4 bg-gradient-to-r from-sky-200 to-sky-300 bg-clip-text text-transparent ${ cabinLight.className }` }
-            delay={ 0.4 }>
-            <div className='break-words gradient-text-lightblue'>
-              Delivering comprehensive, performant and secure full stack solutions in web development, from sophisticated frontends to robust backends and scalable distributed systems.
-            </div>
-          </MotionSlider>
-
-          <MotionSlider className={ `text-xl mb-4 bg-gradient-to-r from-sky-200 to-sky-300 bg-clip-text text-transparent ${ cabinLight.className }` } delay={ 0.6 }>
-            <div className='break-words gradient-text-lightblue'>
-              Ready to take your web presence to the next level? Contact me for a personalized consultation and expert web development services tailored to your vision.
-            </div>
-          </MotionSlider>
-        </div>
-      </div>
 
       {/* SERVICES SECTION */ }
       <div className={ 'w-full bg-gradient-to-b from-slate-200 to-slate-400 h-fit section-shadow pb-8' }>
@@ -55,13 +31,13 @@ export default function Services(): ReactElement {
         <div className={ 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center max-w-screen-lg mx-auto mt-7 gap-y-1' }>
 
           {/* SERVICE CARDS */ }
-          { pageContent.map((service: ServiceImagePropsInterface, index: number): ReactNode => (
+          { services.map((service: ServiceImagePropsInterface, index: number): ReactNode => (
               <motion.div
                 key={ index }
                 className='relative p-3 z-20'
                 initial={ { x: -130, opacity: 0, filter: 'blur(4px)' } }
                 animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }
-                transition={ { duration: 0.5, delay: (pageContent.length - index) * 0.2 } }
+                transition={ { duration: 0.5, delay: (services.length - index) * 0.2 } }
               >
                 <ServiceCard
                   imageSrc={ service.imageSrc }

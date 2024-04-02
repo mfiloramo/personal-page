@@ -1,13 +1,14 @@
 'use client';
 import { ReactElement, ReactNode } from 'react';
 import PortfolioCard from '@/components/portfolio-card';
-import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.interface';
 import BasePageText from '@/components/base-page-text';
+import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.interface';
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
 import pageContent from '@/data/portfolio/portfolio-data.json'
 
 export default function Portfolio(): ReactElement {
+  const baseText: BasePageTextProps = pageContent.basePageText
   const portfolioCards: PortfolioCardPropsInterface[] = pageContent.portfolioCards;
-  const baseText: any = pageContent.basePageText
 
   return (
     <div className='relative flex flex-col sm:mx-auto'>

@@ -7,36 +7,24 @@ import { motion } from 'framer-motion';
 import FancyDivider from '@/components/fancy-divider';
 import SendMessage from '@/components/send-message';
 import { MotionSlider } from '@/components/motion-slider';
+import BasePageText from '@/components/base-page-text';
 import { StackButtonProps } from '@/interfaces/StackButtonProps.interface';
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
 import pageContent from '@/data/contact/contact-data.json';
-import SectionDivider from '@/components/section-divider';
 
 export default function Contact(): ReactElement {
+  const baseText: BasePageTextProps = pageContent.basePageText
+  const contactLinks: any = pageContent.contactLinks;
 
   return (
-    <div className='flex flex-col'>
-      { /* TOP CONTAINER */ }
-      <div className={ 'pt-10 mx-8 md:mx-auto max-w-screen-md mb-10' }>
-        { /* TITLE */ }
-        <MotionSlider className={ `text-sky-100 text-7xl sm:text-8xl pb-5 ${ cabinHeavy.className }` } delay={ 0 }>
-          <div>contact</div>
-        </MotionSlider>
+    <div className='relative flex flex-col sm:mx-auto'>
 
-        { /* SUBTITLE */ }
-        <MotionSlider className={ `text-sky-200 text-3xl pb-12 -mt-2 ${ cabinLight.className }` } delay={ 0.2 }>
-          Let&apos;s connect and build something awesome.
-
-          {/* PAGE DIVIDER */ }
-          <div className="border-t border-gray-400 mt-2 w-full"></div>
-        </MotionSlider>
-
-        { /* BODY TEXT */ }
-        <MotionSlider className='gradient-text-lightblue text-xl' delay={ 0.4 }>
-          <div className='break-words'>
-            Got a project in mind or considering software solutions? Reach out and let&apos;s bring your vision to life. Whether it&apos;s a groundbreaking idea or a unique challenge, I&apos;m here to help you bring your digital aspirations to life.
-          </div>
-        </MotionSlider>
-      </div>
+      {/* BASE PAGE TEXT */}
+      <BasePageText
+        title={ baseText.title }
+        subtitle={ baseText.subtitle }
+        bodyText={ baseText.bodyText }
+      />
 
       {/* CONTACT BUTTON CONTAINER */ }
       <div className={ 'flex justify-center mx-auto items-center w-full max-w-screen-md mb-4' }>
@@ -44,8 +32,8 @@ export default function Contact(): ReactElement {
 
           {/* CONTACT BUTTONS */ }
           {
-            pageContent.map((button: StackButtonProps, index: number): ReactNode => (
-              <MotionSlider className={ '' } delay={ (pageContent.length - index) * 0.2 } key={ index }>
+            contactLinks.map((button: StackButtonProps, index: number): ReactNode => (
+              <MotionSlider className={ '' } delay={ (contactLinks.length - index) * 0.2 } key={ index }>
                 <motion.div
                   initial={ { x: -100, opacity: 0 } }
                   animate={ { x: 0, opacity: 1, filter: 'blur(0px)' } }
