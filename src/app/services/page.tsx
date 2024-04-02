@@ -15,7 +15,7 @@ export default function Services(): ReactElement {
 
         {/* TITLE SECTION */ }
         <div className='mx-8 md:mx-auto max-w-screen-md drop-shadow-in-top'>
-          <MotionSlider className={ `text-sky-100 text-8xl pb-5 ${ cabinHeavy.className }` } delay={ 0 }>
+          <MotionSlider className={ `text-sky-100 text-7xl sm:text-8xl pb-5 ${ cabinHeavy.className }` } delay={ 0 }>
             <div>
               services
             </div>

@@ -18,7 +18,7 @@ export default function Contact(): ReactElement {
       { /* TOP CONTAINER */ }
       <div className={ 'pt-10 mx-8 md:mx-auto max-w-screen-md mb-10' }>
         { /* TITLE */ }
-        <MotionSlider className={ `text-sky-100 text-8xl ${ cabinHeavy.className }` } delay={ 0 }>
+        <MotionSlider className={ `text-sky-100 text-7xl sm:text-8xl pb-5 ${ cabinHeavy.className }` } delay={ 0 }>
           <div>contact</div>
         </MotionSlider>
 
