@@ -1,5 +1,5 @@
 export interface TextProps {
   children: any,
-  readonly className: string,
+  readonly className?: string,
   delay: number
 }
