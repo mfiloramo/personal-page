@@ -86,7 +86,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         {/* VIDEO LINK */ }
         {videoLink && (
           <div className="mx-auto h-96 max-w-[680px] w-[80vw]">
-            <iframe className="w-full h-full"
+            <iframe className="w-full h-full rounded-xl"
                     src={ videoLink }
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
