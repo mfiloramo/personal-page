@@ -10,7 +10,7 @@ import { ButtonContainerProps } from '@/interfaces/ButtonContainerProps';
 export default function ButtonContainer({ buttonOneText, buttonOneLink, buttonTwoText, buttonTwoLink }: ButtonContainerProps): ReactElement {
   return (
     <div
-      className={ 'flex flex-col sm:flex-row justify-center sm:justify-between flex-wrap px-4 sm:px-12 mt-8 mb-12 mx-auto max-w-[650px] pb-8' }>
+      className={ 'flex flex-col sm:flex-row justify-center sm:justify-between flex-wrap px-4 sm:max-w-[650px] max-w-[87vw] sm:px-12 mt-8 mb-12 mx-auto pb-8' }>
       <MotionSlider className={ '' } delay={ 1.2 }>
         <Link href={ buttonOneLink ? buttonOneLink.toLowerCase() : buttonOneText.toLowerCase() }>
           <motion.div
