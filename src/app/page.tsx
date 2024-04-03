@@ -66,18 +66,14 @@ export default function Home(): ReactElement {
 
           {/* BODY SECTION */ }
           <MotionSlider className={ '' } delay={ 0.8 }>
-            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 mt-24 ' }>
-              Explore My Work
-            </div>
+            <div className={ 'gradient-text-lightblue text-5xl relative -z-50 mt-24 ' }>Explore My Work</div>
 
             {/* PAGE DIVIDER */ }
             <div className="border-t border-gray-400 mt-2 w-96 mx-auto"></div>
           </MotionSlider>
 
           {/* BUTTON CONTAINER */ }
-          <div className={ 'mx-auto max-w-lg' }>
-            <ButtonContainer buttonOneText={ 'Portfolio' } buttonTwoText={ 'Services' } />
-          </div>
+          <ButtonContainer buttonOneText={ 'Portfolio' } buttonTwoText={ 'Services' } />
         </div>
       </div>
     </div>
