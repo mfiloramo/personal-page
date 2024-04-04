@@ -51,12 +51,12 @@
           "altText": "framer-motion-logo"
         },
         {
-          "imgSrc": "/images/technology-icons/tech-vercel.png",
-          "altText": "vercel-logo"
-        },
-        {
           "imgSrc": "/images/technology-icons/tech-turbopack.png",
           "altText": "turbopack-logo"
+        },
+        {
+          "imgSrc": "/images/technology-icons/tech-vercel.png",
+          "altText": "vercel-logo"
         },
         {
           "imgSrc": "/images/technology-icons/tech-courier.png",
