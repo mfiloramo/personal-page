@@ -1,4 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Web Development Portfolio</h1>
+<h2 align="center">Design by Michael Filoramo</h2>
+
+<hr/>
+
+<h4 align="center">This is a portfolio highlighting my favorite work in web development, as well as information about who I am and the services I offer. Feel free to peruse through the source code!</h4><br/>
+
+<div align="center">
+  <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/mfiloramo/worldChatApp/.github%2Fworkflows%2Fmain_lingolink.yml">
+  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/w/mfiloramo/personal-page/main">
+  <img alt="GitHub package.json version (branch)" src="https://img.shields.io/github/package-json/v/mfiloramo/personal-page/main">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/mfiloramo/personal-page">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/mfiloramo/personal-page">
+</div>
+
+
 
 ## Getting Started
 
