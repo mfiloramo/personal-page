@@ -7,7 +7,7 @@ import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
 export default function BasePageText({ title, subtitle, bodyText }: BasePageTextProps): ReactElement {
   return (
   // TEXT CONTAINER
-  <div className='py-12 mx-8 mb-2 md:mx-auto max-w-screen-md drop-shadow-in-top'>
+  <div className='px-0 sm:px-8 py-12 mx-8 mb-2 md:mx-auto max-w-screen-md drop-shadow-in-top'>
 
     {/* TITLE SECTION */}
     <MotionSlider className={ `text-sky-100 text-7xl sm:text-8xl pb-5 ${ cabinHeavy.className }` } delay={ 0 }>
