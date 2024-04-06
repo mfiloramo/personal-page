@@ -8,28 +8,13 @@ import IntroHeadline from '@/components/intro-headline';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import pageContent from '@/data/portfolio/pages/lingolink/lingolink-data.json';
 import ButtonContainer from '@/components/button-container';
+import AppScreenshotsSection from '@/components/app-screenshots-section';
 
 export default function LingoLinkPage(): ReactElement {
   const [ convoImageIndex, setConvoImageIndex ] = useState(0);
   const leftConvoImages: string[] = pageContent['in-app-screenshots-left'];
   const rightConvoImages: string[] = pageContent['in-app-screenshots-right'];
   const flagImages: string[] = pageContent['google-translate-diagrams'];
-
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 1.3,
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, filter: 'blur(4px)' },
-    visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
-  };
 
   // CONVERSATION IMAGE CYCLING
   useEffect(() => {
@@ -41,15 +26,17 @@ export default function LingoLinkPage(): ReactElement {
 
   return (
     <div>
+
+      {/* TODO: MODULARIZE HERO BANNER */}
       {/* HERO BANNER CONTAINER */ }
       <div className='relative h-[30vh] sm:min-h-[380px] min-h-[325px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
+          className='relative w-full h-full'
           initial={ { opacity: 0 } }
           animate={ { opacity: 1 } }
           transition={ { duration: 0.1 } }
-          className='relative w-full h-full'
         >
           <div className='absolute inset-0'>
             <Image
@@ -195,45 +182,13 @@ export default function LingoLinkPage(): ReactElement {
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
-      {/* TODO: MODULARIZE APP SCREENSHOTS SECTION TO COMPONENT */}
       {/* APP SCREENSHOTS SECTION */}
-      <>
-        <motion.div
-          className={'text-xl text-center mb-3'}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.5 }}
-        >
-          In-App Screenshots
-        </motion.div>
-
-        <motion.div
-          className={ 'grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-3 max-w-[968px] mx-auto px-5 mb-6 cursor-default' }
-          variants={ container }
-          initial={ 'hidden' }
-          animate={ 'visible' }
-        >
-
-          {
-            pageContent['intro-screenshots'].map((screenshot: string, index: number): any => {
-              return (
-                <motion.div
-                  key={ index }
-                  variants={ item }
-                  whileHover={ { scale: 1.05 } }
-                >
-                  <Image
-                    src={ screenshot }
-                    alt={ `Screenshot ${ index }` }
-                    width={ 381 }
-                    height={ 766 }
-                  />
-                </motion.div>
-              )
-            })
-          }
-        </motion.div>
-      </>
+      <AppScreenshotsSection
+        titleText={ 'In-App Screenshots '}
+        screenshots={ pageContent['intro-screenshots']}
+        screenshotWidth={ 381 }
+        screenshotHeight={ 766 }
+      />
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />

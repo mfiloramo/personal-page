@@ -7,23 +7,9 @@ import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import AppScreenshotsSection from '@/components/app-screenshots-section';
 
 export default function SinclairLogging(): ReactElement {
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 1.3,
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, filter: 'blur(4px)' },
-    visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
-  };
 
   return (
     <>
@@ -114,43 +100,12 @@ export default function SinclairLogging(): ReactElement {
       <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */ }
-      <>
-        <motion.div
-          className={ 'text-xl text-center mb-3' }
-          initial={ { opacity: 0 } }
-          animate={ { opacity: 1 } }
-          transition={ { delay: 1.5, duration: 0.5 } }
-        >
-          { pageContent['demo-screenshots'].length > 1 ? 'In-App Screenshots' : 'In-App Demonstration' }
-        </motion.div>
-
-        <motion.div
-          className={ 'grid grid-cols-1 justify-items-center w-[85vw] sm:w-[75vw] md:w-[65vw] lg:w-[40vw] mx-auto mb-6 cursor-default' }
-          variants={ container }
-          initial={ 'hidden' }
-          animate={ 'visible' }
-        >
-
-          {
-            pageContent['demo-screenshots'].map((screenshot: string, index: number): any => {
-              return (
-                <motion.div
-                  key={ index }
-                  variants={ item }
-                  whileHover={ { scale: 1.05 } }
-                >
-                  <Image
-                    src={ screenshot }
-                    alt={ `Screenshot ${ index }` }
-                    width={ 921 }
-                    height={ 591 }
-                  />
-                </motion.div>
-              )
-            })
-          }
-        </motion.div>
-      </>
+      <AppScreenshotsSection
+        titleText={ 'In-App Demonstration' }
+        screenshots={ pageContent['demo-screenshots'] }
+        screenshotWidth={ 921 }
+        screenshotHeight={ 591 }
+      />
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />

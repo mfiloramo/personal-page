@@ -25,6 +25,23 @@ export const generateHoverAnimation: any = (): AnimationHoverProps => {
   };
 };
 
+export const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 1.3,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+export const item = {
+  hidden: { opacity: 0, filter: 'blur(4px)' },
+  visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
+};
+
+
 export const paragraphAnimationVariants = {
   visible: (direction: number) => ({
     opacity: 1,
