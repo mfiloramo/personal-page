@@ -3,11 +3,11 @@ import { ReactElement, ReactNode } from 'react';
 import PortfolioCard from '@/components/portfolio-card';
 import BasePageText from '@/components/base-page-text';
 import { PortfolioCardPropsInterface } from '@/interfaces/PortfolioCardProps.interface';
-import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps.interface';
 import pageContent from '@/data/portfolio/portfolio-data.json'
 
 export default function Portfolio(): ReactElement {
-  const baseText: BasePageTextProps = pageContent.basePageText
+  const { title, subtitle, bodyText }: BasePageTextProps = pageContent.basePageText
   const portfolioCards: PortfolioCardPropsInterface[] = pageContent.portfolioCards;
 
   return (
@@ -15,9 +15,9 @@ export default function Portfolio(): ReactElement {
 
       {/* BASE PAGE TEXT */}
       <BasePageText
-        title={ baseText.title }
-        subtitle={ baseText.subtitle }
-        bodyText={ baseText.bodyText }
+        title={ title }
+        subtitle={ subtitle }
+        bodyText={ bodyText }
       />
 
       {/* WORK SHOWCASE CONTAINER */ }

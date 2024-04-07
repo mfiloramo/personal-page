@@ -9,11 +9,11 @@ import SendMessage from '@/components/send-message';
 import { MotionSlider } from '@/components/motion-slider';
 import BasePageText from '@/components/base-page-text';
 import { StackButtonProps } from '@/interfaces/StackButtonProps.interface';
-import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps.interface';
 import pageContent from '@/data/contact/contact-data.json';
 
 export default function Contact(): ReactElement {
-  const baseText: BasePageTextProps = pageContent.basePageText
+  const { title, subtitle, bodyText }: BasePageTextProps = pageContent.basePageText
   const contactLinks: any = pageContent.contactLinks;
 
   return (
@@ -21,9 +21,9 @@ export default function Contact(): ReactElement {
 
       {/* BASE PAGE TEXT */}
       <BasePageText
-        title={ baseText.title }
-        subtitle={ baseText.subtitle }
-        bodyText={ baseText.bodyText }
+        title={ title }
+        subtitle={ subtitle }
+        bodyText={ bodyText }
       />
 
       {/* CONTACT BUTTON CONTAINER */ }

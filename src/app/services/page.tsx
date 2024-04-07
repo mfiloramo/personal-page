@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 import ServiceCard from '@/components/service-card';
 import { ServiceImagePropsInterface } from '@/interfaces/ServiceImageProps.interface';
 import BasePageText from '@/components/base-page-text';
-import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps.interface';
 import pageContent from '@/data/services/services-data.json'
 
 export default function Services(): ReactElement {
-  const baseText: BasePageTextProps = pageContent.basePageText
+  const { title, subtitle, bodyText }: BasePageTextProps = pageContent.basePageText
   const services: ServiceImagePropsInterface[] = pageContent.services;
 
   return (
@@ -16,9 +16,9 @@ export default function Services(): ReactElement {
 
       {/* BASE PAGE TEXT */}
       <BasePageText
-        title={ baseText.title }
-        subtitle={ baseText.subtitle }
-        bodyText={ baseText.bodyText }
+        title={ title }
+        subtitle={ subtitle }
+        bodyText={ bodyText }
       />
 
 

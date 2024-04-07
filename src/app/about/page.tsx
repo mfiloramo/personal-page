@@ -5,21 +5,21 @@ import AboutPageButton from '@/components/about-page-button';
 import FancyDivider from '@/components/fancy-divider';
 import BasePageText from '@/components/base-page-text';
 import { MotionSlider } from '@/components/motion-slider';
-import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps.interface';
 import pageContent from '@/data/about/about-data.json';
 
 
 export default function About(): ReactElement {
-  const baseText: BasePageTextProps = pageContent.basePageText
+  const { title, subtitle, bodyText }: BasePageTextProps = pageContent.basePageText
   const workExperienceCards: any = pageContent.workExperienceCards
 
   return (
     <div className='relative flex flex-col sm:mx-auto'>
       {/* BASE PAGE TEXT */ }
       <BasePageText
-        title={ baseText.title }
-        subtitle={ baseText.subtitle }
-        bodyText={ baseText.bodyText }
+        title={ title }
+        subtitle={ subtitle }
+        bodyText={ bodyText }
       />
 
       {/* PROF. EXPERIENCE SECTION */ }

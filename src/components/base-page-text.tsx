@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import { MotionSlider } from '@/components/motion-slider';
 import { cabinHeavy, cabinLight } from '@/utilities/fonts';
-import { BasePageTextProps } from '@/interfaces/BasePageTextProps';
+import { BasePageTextProps } from '@/interfaces/BasePageTextProps.interface';
 
 
 export default function BasePageText({ title, subtitle, bodyText }: BasePageTextProps): ReactElement {

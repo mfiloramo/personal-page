@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence, AnimationControls } from 'framer-motion';
 import { useAnimation } from 'framer-motion';
-import { AnimatedUsageSectionProps } from '@/interfaces/AnimatedUsageSectionProps';
+import { AnimatedUsageSectionProps } from '@/interfaces/AnimatedUsageSectionProps.interface';
 import { useInView } from 'react-intersection-observer';
 
 const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImages, flagImages }: AnimatedUsageSectionProps) => {
@@ -18,7 +18,7 @@ const AnimatedUsageSection = ({ convoImageIndex, leftConvoImages, rightConvoImag
   return (
     <div
       ref={ ref }
-      className='flex gap-4 py-44 sm:py-6 sm:py-20 md:py-28 object-center items-center justify-items-center'>
+      className='flex gap-4 py-44 sm:py-6 md:py-28 object-center items-center justify-items-center'>
 
       {/* LEFT PERSON IMAGE */ }
       <motion.div

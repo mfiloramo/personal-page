@@ -3,7 +3,7 @@ import { MotionSlider } from '@/components/motion-slider';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { inter_tightHeavy } from '@/utilities/fonts';
-import { ButtonContainerProps } from '@/interfaces/ButtonContainerProps';
+import { ButtonContainerProps } from '@/interfaces/ButtonContainerProps.interface';
 
 
 

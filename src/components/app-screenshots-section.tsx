@@ -2,13 +2,13 @@ import React, { ReactElement } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { container, item } from '@/utilities/animations';
-import { AppScreenShotsSectionProps } from '@/interfaces/AppScreenshotsSectionProps';
+import { AppScreenShotsSectionProps } from '@/interfaces/AppScreenshotsSectionProps.interface';
 
 
 export default function AppScreenshotsSection({ titleText, screenshots, screenshotWidth, screenshotHeight }: AppScreenShotsSectionProps): ReactElement {
   let imageStyle = 'w-auto max-h-[450px]';
   if (screenshots.length === 2) {
-    imageStyle = 'w-auto max-h-[300px] px-4 py-2';
+    imageStyle = 'w-auto max-h-[300px] px-3 py-2';
   } else if (screenshots.length === 4) {
     imageStyle = 'h-auto max-w-[180px] sm:max-w-[230px]'
   }
