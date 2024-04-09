@@ -22,14 +22,15 @@ export default function LingoLinkPage(): ReactElement {
       setConvoImageIndex((currentIndex: number) => (currentIndex + 1) % rightConvoImages.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, [ rightConvoImages.length ]);
+  }, [ leftConvoImages.length, rightConvoImages.length ]);
 
   return (
     <div>
-
-      {/* TODO: MODULARIZE HERO BANNER */}
+      {/* TODO: MODULARIZE HERO BANNER */ }
+      {/* TODO: INCREASE HERO BANNER MIN-H (SMALLER DESKTOP VIEWPORTS) */ }
       {/* HERO BANNER CONTAINER */ }
-      <div className='relative h-[30vh] sm:min-h-[380px] min-h-[325px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
+      <div
+        className='relative h-[30vh] sm:min-h-[380px] min-h-[325px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
@@ -53,7 +54,7 @@ export default function LingoLinkPage(): ReactElement {
         <div className='absolute mt-[4vh] inset-0 flex justify-center items-start'>
 
           <div className='flex flex-col items-center'>
-            {/* ANIMATED LOGO GRAPHIC */}
+            {/* ANIMATED LOGO GRAPHIC */ }
             <motion.div
               className='flex justify-center items-start'
               initial={ { scale: 0 } }
@@ -167,7 +168,7 @@ export default function LingoLinkPage(): ReactElement {
 
       {/* INTRODUCTION SECTION */ }
       <IntroHeadline
-        text={ 'I architected, developed and launched LingoLink, a dynamic multilingual messaging platform that allows users to communicate with others regardless of the language they speak.' } />
+        text={ 'I architected, developed and launched LingoLink, a dynamic multilingual messaging platform that allows users to communicate with others regardless of the language they speak.' }/>
 
       {/* BUTTON CONTAINER */ }
       <div className={ '-mt-4 -mb-14' }>
@@ -180,18 +181,18 @@ export default function LingoLinkPage(): ReactElement {
       </div>
 
       {/* SECTION DIVIDER */ }
-      <SectionDivider />
+      <SectionDivider/>
 
-      {/* APP SCREENSHOTS SECTION */}
+      {/* APP SCREENSHOTS SECTION */ }
       <AppScreenshotsSection
-        titleText={ 'In-App Screenshots '}
-        screenshots={ pageContent['intro-screenshots']}
+        titleText={ 'In-App Screenshots ' }
+        screenshots={ pageContent['intro-screenshots'] }
         screenshotWidth={ 381 }
         screenshotHeight={ 766 }
       />
 
       {/* SECTION DIVIDER */ }
-      <SectionDivider />
+      <SectionDivider/>
 
       {/* PAGE CONTENT SECTIONS */ }
       <div className={ 'mx-auto text-xl' }>

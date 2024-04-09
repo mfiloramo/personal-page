@@ -13,7 +13,7 @@ export default function Portfolio(): ReactElement {
   return (
     <div className='relative flex flex-col sm:mx-auto'>
 
-      {/* BASE PAGE TEXT */}
+      {/* BASE PAGE TEXT */ }
       <BasePageText
         title={ title }
         subtitle={ subtitle }
