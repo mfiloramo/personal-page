@@ -21,7 +21,7 @@ export default function Portfolio(): ReactElement {
       />
 
       {/* WORK SHOWCASE CONTAINER */ }
-      <div className='mt-10 bg-gradient-to-r from-sky-950 via-blue-950 to-indigo-950 section-shadow'>
+      <div className='mt-5 bg-gradient-to-r from-sky-950 via-blue-950 to-indigo-950 section-shadow'>
 
         {/* BUTTON CONTAINER */ }
         <div

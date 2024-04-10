@@ -27,7 +27,7 @@ export default function Contact(): ReactElement {
       />
 
       {/* CONTACT BUTTON CONTAINER */ }
-      <div className={ 'flex justify-center mx-auto items-center w-full max-w-screen-md mb-4' }>
+      <div className={ 'flex justify-center mx-auto items-center w-full max-w-screen-md' }>
         <div className={ 'grid grid-cols-2 sm:grid-cols-3 sm:gap-y-0 gap-y-2 gap-16 md:grid-cols-4 justify-center' }>
 
           {/* CONTACT BUTTONS */ }

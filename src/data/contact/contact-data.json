@@ -2,7 +2,9 @@
   "basePageText": {
     "title": "contact",
     "subtitle": "Let's connect and build something awesome.",
-    "bodyText": "Got a project in mind or considering software solutions? Reach out and let's bring your vision to life. Whether it's a groundbreaking idea or a unique challenge, I'm here to help you bring your digital aspirations to life."
+    "bodyText": [
+      "Got a project in mind or considering software solutions? Reach out and let's bring your vision to life. Whether it's a groundbreaking idea or a unique challenge, I'm here to help you bring your digital aspirations to life."
+    ]
   },
   "contactLinks": [
     {

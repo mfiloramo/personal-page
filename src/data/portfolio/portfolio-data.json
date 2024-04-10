@@ -2,7 +2,10 @@
   "basePageText": {
     "title": "portfolio",
     "subtitle": "Check out my latest work in full stack web development.",
-    "bodyText": "I've showcased a spectrum of projects, from practical and responsive tools to dynamic websites and applications — and more. Each is uniquely tailored to meet the diverse needs of its users."
+    "bodyText": [
+      "I've showcased a spectrum of projects, from practical and responsive tools to dynamic websites and applications — and more. Each is uniquely tailored to meet the diverse needs of its users.",
+      "Feel free to explore my work. Feedback and inquiries about any of my projects are always welcome. For those interested in diving deeper, the source code for public projects is readily accessible."
+    ]
   },
   "portfolioCards": [
     {

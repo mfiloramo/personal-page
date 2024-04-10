@@ -23,7 +23,7 @@ export default function About(): ReactElement {
       />
 
       {/* PROF. EXPERIENCE SECTION */ }
-      <div className={ 'bg-gradient-to-r from-slate-900 to-slate-800 section-shadow' }>
+      <div className={ 'bg-gradient-to-r from-slate-900 to-slate-800 section-shadow mt-3' }>
         <MotionSlider
           className={ `text-sky-200 text-3xl pb-6 mt-8 mx-auto max-w-screen-md  ${ cabinLight.className }` }
           delay={ 0.8 }>

@@ -2,7 +2,10 @@
   "basePageText": {
     "title": "services",
     "subtitle": "I craft exceptional web experiences built for tomorrow.",
-    "bodyText": "Delivering comprehensive, performant and secure full stack solutions in web development, from sophisticated frontends to robust backends and scalable distributed systems.\nReady to take your web presence to the next level? Contact me for a personalized consultation and expert web development services tailored to your vision."
+    "bodyText": [
+      "Delivering comprehensive, performant and secure full stack solutions in web development, from sophisticated frontends to robust backends and scalable distributed systems.",
+      "Ready to take your web presence to the next level? Contact me for a personalized consultation and expert web development services tailored to your vision."
+    ]
   },
   "services": [
     {

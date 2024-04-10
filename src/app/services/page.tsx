@@ -21,9 +21,8 @@ export default function Services(): ReactElement {
         bodyText={ bodyText }
       />
 
-
       {/* SERVICES SECTION */ }
-      <div className={ 'w-full bg-gradient-to-b from-slate-200 to-slate-400 h-fit section-shadow pb-8' }>
+      <div className={ 'mt-4 w-full bg-gradient-to-b from-slate-200 to-slate-400 h-fit section-shadow pb-8' }>
 
         {/* SERVICES CARD CONTAINER */ }
         <div className={ 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center max-w-screen-lg mx-auto mt-7 gap-y-1' }>
