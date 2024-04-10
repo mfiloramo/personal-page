@@ -1,53 +1,12 @@
-import { Key, ReactElement, useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { slideVariants, dotsVariants } from "@/utilities/animations";
+import { ImageCarouselProps } from "@/interfaces/ImageCarouselProps";
 
-interface CarouselProps {
-  images: string[];
-}
-
-export default function ImageCarousel({ images }: CarouselProps): ReactElement {
+// TODO: FIX Y-PADDING ON MOBILE VIEWPORTS
+export default function ImageCarousel({ images }: ImageCarouselProps): ReactElement {
   const [ currentIndex, setCurrentIndex ] = useState(0);
   const [ direction, setDirection ] = useState<string | null>(null);
-
-  const slideVariants = {
-    hiddenRight: {
-      x: '100%',
-      opacity: 0,
-    },
-    hiddenLeft: {
-      x: '-100%',
-      opacity: 0,
-    },
-    visible: {
-      x: '0',
-      opacity: 1,
-      transition: {
-        duration: 1,
-      },
-    },
-    exit: {
-      opacity: 0,
-      scale: 0.8,
-      transition: {
-        duration: 0.3,
-      },
-    },
-  };
-
-  const dotsVariants = {
-    initial: {
-      y: 0,
-    },
-    animate: {
-      y: -5,
-      scale: 1.2,
-      transition: { type: 'spring', stiffness: 1000, damping: '10' },
-    },
-    hover: {
-      scale: 1.1,
-      transition: { duration: 0.2 },
-    },
-  };
 
   const handleDotClick = (index: number): void => {
     setDirection(index > currentIndex ? 'right' : 'left');

@@ -25,6 +25,7 @@ export const generateHoverAnimation: any = (): AnimationHoverProps => {
   };
 };
 
+// IMAGE CONTAINER ANIMATIONS
 export const container = {
   hidden: { opacity: 0 },
   visible: {
@@ -41,7 +42,48 @@ export const item = {
   visible: { opacity: 1, filter: 'blur(0px)', transition: { duration: 0.2 } }
 };
 
+// IMAGE CAROUSEL ANIMATIONS
+export const slideVariants = {
+  hiddenRight: {
+    x: '100%',
+    opacity: 0,
+  },
+  hiddenLeft: {
+    x: '-100%',
+    opacity: 0,
+  },
+  visible: {
+    x: '0',
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.8,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
 
+export const dotsVariants = {
+  initial: {
+    y: 0,
+  },
+  animate: {
+    y: -5,
+    scale: 1.2,
+    transition: { type: 'spring', stiffness: 1000, damping: '10' },
+  },
+  hover: {
+    scale: 1.1,
+    transition: { duration: 0.2 },
+  },
+};
+
+// BASE TEXT ANIMATIONS
 export const paragraphAnimationVariants = {
   visible: (direction: number) => ({
     opacity: 1,
