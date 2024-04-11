@@ -38,5 +38,19 @@
       "imgSrc": "/images/general-logos-mono/upwork-logo-mono.png",
       "altText": "upwork"
     }
+  ],
+  "sections": [
+    {
+      "id": "what_i_do_today",
+      "subtitle": "What I Do Today",
+      "paragraphs": [
+        "This section will be about me.",
+        "Yes, this section will actually be about me."
+      ],
+      "photo": {
+        "src": "/images/portfolio-pages/sinclair-logging/beyond-logging.png",
+        "alt": "classroom-raised-hands"
+      }
+    }
   ]
 }

@@ -86,11 +86,12 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         {/* VIDEO LINK */ }
         {videoLink && (
           <div className="mx-auto h-96 max-w-[680px] w-[80vw]">
-            <iframe className="w-full h-full rounded-xl"
-                    src={ videoLink }
-                    title="YouTube Video Player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+            <iframe
+              className="w-full h-full rounded-xl"
+              src={ videoLink }
+              title="YouTube Video Player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
             </iframe>
           </div>
 
@@ -113,7 +114,9 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
 
             // RENDER IMAGE CAROUSEL
             if (paragraph === 'image-carousel') {
-              return <ImageCarousel key={ index } images={ carouselSlides! } />
+              return (
+                <ImageCarousel key={ index } images={ carouselSlides! } />
+              )
 
             } else {
               return (
