@@ -27,7 +27,7 @@ export default function Portfolio(): ReactElement {
         <div
           className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-fit h-fit z-20 mt-6 mb-12 mx-auto px-6 sm:px-0 max-w-screen-lg'>
 
-          {/* PROJECT CARDS */ }
+          {/* PORTFOLIO CARDS */ }
           { portfolioCards.map((card: PortfolioCardPropsInterface, index: number): ReactNode => {
             return (
               <PortfolioCard
