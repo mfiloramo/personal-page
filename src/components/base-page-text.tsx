@@ -15,7 +15,7 @@ export default function BasePageText({ title, subtitle, bodyText }: BasePageText
     </MotionSlider>
 
     {/* SUBTITLE SECTION */ }
-    <MotionSlider className={ `text-sky-200 text-3xl pb-12 -mt-2 ${ cabinLight.className }` } delay={ 0.2 }>
+    <MotionSlider className={ `text-sky-200 text-3xl pb-10 -mt-2 ${ cabinLight.className }` } delay={ 0.2 }>
       <div className='break-words'>{ subtitle }</div>
       <div className="border-t border-gray-400 mt-2 w-full"></div>
     </MotionSlider>
