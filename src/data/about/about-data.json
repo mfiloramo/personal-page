@@ -45,11 +45,11 @@
       "subtitle": "What I Do Today",
       "paragraphs": [
         "This section will be about me.",
-        "Yes, this section will actually be about me."
+        "Yes, this section will literally be about me."
       ],
       "photo": {
         "src": "/images/portfolio-pages/sinclair-logging/beyond-logging.png",
-        "alt": "classroom-raised-hands"
+        "alt": "what-i-do"
       }
     }
   ]

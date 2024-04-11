@@ -98,7 +98,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         ) }
 
         {/* ANIMATED SECTION PARAGRAPHS */ }
-        <div className={ `${ photo ? 'w-full md:w-1/2 lg:w-[55%] md:px-8' : 'w-full' }` }>
+        <div className={ `${ photo ? 'text-xl w-full md:w-1/2 lg:w-[55%] md:px-8' : 'w-full' }` }>
           { paragraphs.map((paragraph: string, index: number) => {
             if (paragraph === 'usage-chart') {
               return (
