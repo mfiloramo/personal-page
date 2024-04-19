@@ -14,7 +14,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps): ReactElem
   };
 
   useEffect(() => {
-    const timer = setInterval((): void => {
+    const timer: NodeJS.Timeout = setInterval((): void => {
       setDirection('right');
       setCurrentIndex(prevIndex =>
         prevIndex + 1 === images.length ? 0 : prevIndex + 1
@@ -44,7 +44,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps): ReactElem
 
       {/* RENDERED IMAGES */}
       <div className='mt-5 flex justify-center gap-4'>
-        { images.map((_, index: number) => (
+        { images.map((image, index: number) => (
           <motion.div
             key={ index }
             className={ `cursor-pointer rounded-full w-4 h-4 ${ currentIndex === index ? 'bg-sky-300' : 'bg-sky-800' }` }

@@ -85,7 +85,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
 
         {/* VIDEO LINK */ }
         {videoLink && (
-          <div className="mx-auto h-96 max-w-[680px] w-[80vw]">
+          <div className="mx-auto mt-4 h-96 max-w-[680px] w-[80vw]">
             <iframe
               className="w-full h-full rounded-xl"
               src={ videoLink }
@@ -94,7 +94,6 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
               referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
             </iframe>
           </div>
-
         ) }
 
         {/* ANIMATED SECTION PARAGRAPHS */ }

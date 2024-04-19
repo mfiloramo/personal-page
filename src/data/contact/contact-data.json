@@ -8,12 +8,12 @@
   },
   "contactLinks": [
     {
-      "imageSource": "images/contact-icons/upwork-icon.png",
-      "link": "https://www.upwork.com/freelancers/~01371b6e31042beadc"
-    },
-    {
       "imageSource": "images/contact-icons/linkedin-icon.png",
       "link": "https://www.linkedin.com/in/michael-filoramo/"
+    },
+    {
+      "imageSource": "images/contact-icons/upwork-icon.png",
+      "link": "https://www.upwork.com/freelancers/~01371b6e31042beadc"
     },
     {
       "imageSource": "images/contact-icons/gmail-icon.png",
