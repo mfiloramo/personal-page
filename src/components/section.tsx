@@ -1,12 +1,17 @@
+// CORE MODULE IMPORTS
 import React, { ReactElement, useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
-import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
-import { paragraphAnimationVariants, subtitleAnimationVariants } from '@/utilities/animations';
+
+// COMPONENT IMPORTS
 import TechnologyStackComponent from '@/components/technology-stack';
 import AnimatedUsageSection from '@/components/animated-usage-section';
 import ImageCarousel from '@/components/image-carousel';
+import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
+
+// UTILITY IMPORTS
+import { paragraphAnimationVariants, subtitleAnimationVariants } from '@/utilities/animations';
 import { inter_tightItalicHeavy } from '@/utilities/fonts';
 
 
@@ -24,8 +29,11 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
   }, [ controls, inView ]);
 
   return (
-    <div ref={ ref }
-         className={ `p-8 m-auto w-full text-${ textColor } ${ background ? background : '' } ${ isFirst ? '' : 'section-shadow ' }` }>
+    // TODO: REMOVE DYNAMIC STYLING IN TAILWIND UTILITY CLASSES
+    <div
+      ref={ ref }
+      className={ `p-8 m-auto w-full text-${ textColor } ${ background ? background : '' } ${ isFirst ? '' : 'section-shadow ' }` }
+    >
 
       {/* ANIMATED SECTION SUBTITLE */ }
       { subtitle && (
@@ -84,7 +92,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
         ) }
 
         {/* VIDEO LINK */ }
-        {videoLink && (
+        { videoLink && (
           <div className="mx-auto mt-4 h-96 max-w-[680px] w-[80vw]">
             <iframe
               className="w-full h-full rounded-xl"
@@ -114,7 +122,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
             // RENDER IMAGE CAROUSEL
             if (paragraph === 'image-carousel') {
               return (
-                <ImageCarousel key={ index } images={ carouselSlides! } />
+                <ImageCarousel key={ index } images={ carouselSlides! }/>
               )
 
             } else {
@@ -136,7 +144,7 @@ export default function SectionComponent({ subtitle, paragraphs, photo, backgrou
 
         {/* TECHNOLOGY STACK ICONS */ }
         { technologyStack && technologyStack.length > 0 && (
-          <TechnologyStackComponent technologyStack={ technologyStack } />
+          <TechnologyStackComponent technologyStack={ technologyStack }/>
         ) }
 
       </div>

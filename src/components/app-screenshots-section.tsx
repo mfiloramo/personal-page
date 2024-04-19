@@ -6,7 +6,7 @@ import { AppScreenShotsSectionProps } from '@/interfaces/AppScreenshotsSectionPr
 
 
 export default function AppScreenshotsSection({ titleText, screenshots, screenshotWidth, screenshotHeight }: AppScreenShotsSectionProps): ReactElement {
-  let imageStyle = 'w-auto max-h-[450px]';
+  let imageStyle: string = 'w-auto max-h-[450px]';
   if (screenshots.length === 2) {
     imageStyle = 'w-auto max-h-[300px] px-3 py-2';
   } else if (screenshots.length === 4) {
@@ -30,22 +30,26 @@ export default function AppScreenshotsSection({ titleText, screenshots, screensh
         initial="hidden"
         animate="visible"
       >
-        { screenshots.map((screenshot, index) => (
-          <motion.div
-            key={ index }
-            variants={ item }
-            whileHover={ { scale: 1.05 } }
-          >
-            <Image
-              className={ imageStyle }
-              src={ screenshot }
-              alt={ `Screenshot ${ index }` }
-              width={ screenshotWidth }
-              height={ screenshotHeight }
-            />
-          </motion.div>
-        )) }
+        { screenshots.map((screenshot: string, index: number) => {
+          return index <= 3 && (
+            <motion.div
+              key={ index }
+              variants={ item }
+              whileHover={ { scale: 1.05 } }
+            >
+              <Image
+                className={ imageStyle }
+                src={ screenshot }
+                alt={ `Screenshot ${ index }` }
+                width={ screenshotWidth }
+                height={ screenshotHeight }
+              />
+            </motion.div>
+          )
+        }) }
       </motion.div>
     </>
   );
 }
+
+//

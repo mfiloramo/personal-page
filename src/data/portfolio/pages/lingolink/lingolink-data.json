@@ -104,7 +104,11 @@
     "/images/screenshots/lingolink/mobile-home-screen.png",
     "/images/screenshots/lingolink/mobile-reg-screen.png",
     "/images/screenshots/lingolink/mobile-convos-screen.png",
-    "/images/screenshots/lingolink/mobile-example-convo.png"
+    "/images/screenshots/lingolink/mobile-example-convo.png",
+    "/images/screenshots/lingolink/mobile-settings-main.png",
+    "/images/screenshots/lingolink/mobile-settings-display.png",
+    "/images/screenshots/lingolink/mobile-settings-account.png",
+    "/images/screenshots/lingolink/mobile-settings-account-info.png"
   ],
   "in-app-screenshots-left": [
     "/images/screenshots/lingolink/convo-en.png",

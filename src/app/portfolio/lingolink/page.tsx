@@ -9,6 +9,7 @@ import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interf
 import pageContent from '@/data/portfolio/pages/lingolink/lingolink-data.json';
 import ButtonContainer from '@/components/button-container';
 import AppScreenshotsSection from '@/components/app-screenshots-section';
+import ScrollingCarousel from "@/components/scrolling-carousel";
 
 export default function LingoLinkPage(): ReactElement {
   const [ convoImageIndex, setConvoImageIndex ] = useState(0);
@@ -190,6 +191,8 @@ export default function LingoLinkPage(): ReactElement {
         screenshotWidth={ 381 }
         screenshotHeight={ 766 }
       />
+
+      {/*<ScrollingCarousel />*/}
 
       {/* SECTION DIVIDER */ }
       <SectionDivider/>
