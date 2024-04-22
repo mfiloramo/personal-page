@@ -1,11 +1,7 @@
 import { ReactElement, useEffect, useState } from 'react';
 import { motion, useAnimation, AnimatePresence, AnimationControls } from 'framer-motion';
 import ThemeToggle from "@/components/theme-toggle";
-
-interface ScrollingCarouselProps {
-  readonly lightImages: string[];
-  readonly darkImages: string[];
-}
+import { ScrollingCarouselProps } from "@/interfaces/ScrollingCarouselProps.interface";
 
 function useWindowSize() {
   const [windowSize, setWindowSize] = useState({

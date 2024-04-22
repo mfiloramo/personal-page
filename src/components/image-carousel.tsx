@@ -1,10 +1,10 @@
 import { ReactElement, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { slideVariants, dotsVariants } from "@/utilities/animations";
-import { ImageCarouselProps } from "@/interfaces/ImageCarouselProps";
+import { ImageCarouselPropsInterface } from "@/interfaces/ImageCarouselProps.interface";
 
 // TODO: FIX Y-PADDING ON MOBILE VIEWPORTS
-export default function ImageCarousel({ images }: ImageCarouselProps): ReactElement {
+export default function ImageCarousel({ images }: ImageCarouselPropsInterface): ReactElement {
   const [ currentIndex, setCurrentIndex ] = useState(0);
   const [ direction, setDirection ] = useState<string | null>(null);
 
