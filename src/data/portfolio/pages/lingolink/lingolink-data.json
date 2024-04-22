@@ -100,15 +100,25 @@
       }
     }
   ],
-  "intro-screenshots": [
-    "/images/screenshots/lingolink/mobile-home-screen.png",
-    "/images/screenshots/lingolink/mobile-reg-screen.png",
-    "/images/screenshots/lingolink/mobile-convos-screen.png",
-    "/images/screenshots/lingolink/mobile-example-convo.png",
-    "/images/screenshots/lingolink/mobile-settings-main.png",
-    "/images/screenshots/lingolink/mobile-settings-display.png",
-    "/images/screenshots/lingolink/mobile-settings-account.png",
-    "/images/screenshots/lingolink/mobile-settings-account-info.png"
+  "screenshots-light-mode": [
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-home-screen-light.png",
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-reg-screen-light.png",
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-conversations-light.png",
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-conversations-light.png",
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-main-light.png",
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-display-light.png",
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-account-light.png",
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-account-info-light.png"
+  ],
+  "screenshots-dark-mode": [
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-home-screen-dark.png",
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-reg-screen-dark.png",
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-conversations-dark.png",
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-messages-dark.png",
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-main-dark.png",
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-display-dark.png",
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-account-dark.png",
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-account-info-dark.png"
   ],
   "in-app-screenshots-left": [
     "/images/screenshots/lingolink/convo-en.png",

@@ -8,7 +8,6 @@ import IntroHeadline from '@/components/intro-headline';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import pageContent from '@/data/portfolio/pages/lingolink/lingolink-data.json';
 import ButtonContainer from '@/components/button-container';
-import AppScreenshotsSection from '@/components/app-screenshots-section';
 import ScrollingCarousel from "@/components/scrolling-carousel";
 
 export default function LingoLinkPage(): ReactElement {
@@ -184,18 +183,8 @@ export default function LingoLinkPage(): ReactElement {
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
-      {/* APP SCREENSHOTS SECTION */ }
-      {/*<AppScreenshotsSection*/}
-      {/*  titleText={ 'In-App Screenshots ' }*/}
-      {/*  screenshots={ pageContent['intro-screenshots'] }*/}
-      {/*  screenshotWidth={ 381 }*/}
-      {/*  screenshotHeight={ 766 }*/}
-      {/*/>*/}
-
       {/* APP SCREENSHOTS CAROUSEL */ }
-      <ScrollingCarousel
-        images={ pageContent['intro-screenshots'] }
-      />
+      <ScrollingCarousel lightImages={ pageContent['screenshots-light-mode'] } darkImages={ pageContent['screenshots-dark-mode']} />
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />
