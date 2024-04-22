@@ -182,20 +182,23 @@ export default function LingoLinkPage(): ReactElement {
       </div>
 
       {/* SECTION DIVIDER */ }
-      <SectionDivider/>
+      <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */ }
-      <AppScreenshotsSection
-        titleText={ 'In-App Screenshots ' }
-        screenshots={ pageContent['intro-screenshots'] }
-        screenshotWidth={ 381 }
-        screenshotHeight={ 766 }
+      {/*<AppScreenshotsSection*/}
+      {/*  titleText={ 'In-App Screenshots ' }*/}
+      {/*  screenshots={ pageContent['intro-screenshots'] }*/}
+      {/*  screenshotWidth={ 381 }*/}
+      {/*  screenshotHeight={ 766 }*/}
+      {/*/>*/}
+
+      {/* APP SCREENSHOTS CAROUSEL */ }
+      <ScrollingCarousel
+        images={ pageContent['intro-screenshots'] }
       />
 
-      {/*<ScrollingCarousel />*/}
-
       {/* SECTION DIVIDER */ }
-      <SectionDivider/>
+      <SectionDivider />
 
       {/* PAGE CONTENT SECTIONS */ }
       <div className={ 'mx-auto text-xl' }>
