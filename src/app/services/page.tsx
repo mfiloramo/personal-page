@@ -25,7 +25,7 @@ export default function Services(): ReactElement {
       <div className={ 'mt-4 w-full bg-gradient-to-b from-slate-200 to-slate-400 h-fit section-shadow pb-8' }>
 
         {/* SERVICES CARD CONTAINER */ }
-        <div className={ 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center max-w-screen-lg mx-auto mt-7 gap-y-1' }>
+        <div className={ 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-items-center max-w-screen-lg mx-auto mt-7 gap-y-1' }>
 
           {/* SERVICE CARDS */ }
           { services.map((service: ServiceImagePropsInterface, index: number): ReactNode => (

@@ -8,7 +8,7 @@ export default function ServiceCard({ imageSrc, title, subtitle }: ServiceImageP
   return (
     // CARD CONTAINER
     <motion.div
-      className='px-6 flex flex-col justify-start text-black text-wrap text-center leading-tight min-w-36 cursor-default'
+      className='px-1 flex flex-col justify-start text-black text-wrap text-center leading-tight max-w-[155px] cursor-default'
       whileHover={ { scale: 1.1 } }
     >
       {/* CARD IMAGE CONTAINER */ }

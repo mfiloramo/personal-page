@@ -29,6 +29,11 @@
       "subtitle": "Implementing automated CI/CD pipelines for efficient software lifecycle management."
     },
     {
+      "imageSrc": "images/service-icons/service-seo.png",
+      "title": "Search Engine Optimization",
+      "subtitle": "Enhancing digital footprints with strategic SEO practices to boost visibility and drive organic traffic."
+    },
+    {
       "imageSrc": "images/service-icons/service-telemetry.png",
       "title": "System Telemetry",
       "subtitle": "Integrating telemetry solutions to track user interactions and system performance over time."
