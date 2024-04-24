@@ -11,32 +11,32 @@
     {
       "imageSrc": "images/service-icons/service-frontend.png",
       "title": "Frontend Development",
-      "subtitle": "Architecting responsive UI designs and interactive features to deliver an optimal user experience."
+      "subtitle": "Architecting responsive UI designs and interactive features to deliver an optimal user experience"
     },
     {
       "imageSrc": "images/service-icons/service-backend.png",
       "title": "Backend Development",
-      "subtitle": "Engineering systems focused on efficient data processing, API integration and dynamic server-side logic."
+      "subtitle": "Engineering systems focused on efficient data processing, API integration and dynamic server-side logic"
     },
     {
       "imageSrc": "images/service-icons/service-database.png",
       "title": "Database Management",
-      "subtitle": "Designing databases with integrity, performance and scalability to support application needs."
+      "subtitle": "Designing databases with integrity, performance and scalability to support application needs"
     },
     {
       "imageSrc": "images/service-icons/service-devops.png",
       "title": "DevOps Services",
-      "subtitle": "Implementing automated CI/CD pipelines for efficient software lifecycle management."
+      "subtitle": "Implementing automated CI/CD pipelines for efficient software lifecycle management"
     },
     {
       "imageSrc": "images/service-icons/service-seo.png",
       "title": "Search Engine Optimization",
-      "subtitle": "Enhancing digital footprints with strategic SEO practices to boost visibility and drive organic traffic."
+      "subtitle": "Enhancing digital footprints with strategic SEO practices to boost visibility and drive organic traffic"
     },
     {
       "imageSrc": "images/service-icons/service-telemetry.png",
       "title": "System Telemetry",
-      "subtitle": "Integrating telemetry solutions to track user interactions and system performance over time."
+      "subtitle": "Integrating telemetry solutions to track user interactions and system performance over time"
     }
   ]
 }
