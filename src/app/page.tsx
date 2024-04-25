@@ -5,6 +5,7 @@ import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/ut
 import { AnimatePresence, motion } from 'framer-motion';
 import pageContent from '../data/app.json';
 import ButtonContainer from '@/components/button-container';
+import Image from "next/image";
 
 export default function Home(): ReactElement {
   // STATE HOOKS
@@ -63,7 +64,6 @@ export default function Home(): ReactElement {
             </div>
           </MotionSlider>
 
-
           {/* BODY SECTION */ }
           <MotionSlider className={ '' } delay={ 0.8 }>
             <div className={ 'gradient-text-lightblue text-5xl relative -z-50 mt-24 ' }>Explore My Work</div>
@@ -73,9 +73,42 @@ export default function Home(): ReactElement {
           </MotionSlider>
 
           {/* BUTTON CONTAINER */ }
-          <ButtonContainer buttonOneText={ 'Portfolio' } buttonTwoText={ 'Services' } />
+          <ButtonContainer buttonOneText={ 'Portfolio' } buttonTwoText={ 'Services' }/>
         </div>
       </div>
     </div>
   );
 }
+
+// {/* GEAR ANIMATIONS (LEFT) */ }
+// <>
+//   <motion.div
+//     className={ 'absolute -mt-5' }
+//     initial={ { x: -300, opacity: 0, filter: 'blur(6px)' } }
+//     animate={ { x: 40, opacity: 1, filter: 'blur(0px)' } }
+//     transition={ { duration: 2 } }
+//   >
+//     <Image src={ '/animations/gear-gifs/gear-1.gif' } alt={ 'gear-1' } width={ 200 } height={ 200 }/>
+//   </motion.div>
+//
+//   <motion.div
+//     className={ 'absolute -mt-36' }
+//     initial={ { x: -300, opacity: 0, filter: 'blur(6px)' } }
+//     animate={ { x: 145, opacity: 1, filter: 'blur(0px)' } }
+//     transition={ { duration: 2 } }
+//   >
+//     <Image className={ 'shadow-3xl' } src={ '/animations/gear-gifs/gear-3.gif' } alt={ 'gear-1' } width={ 200 } height={ 200 }/>
+//   </motion.div>
+// </>
+//
+// {/* GEAR ANIMATIONS (RIGHT) */ }
+// <>
+//   <motion.div
+//     className={ 'absolute mr-0 -mt-5' }
+//     initial={ { x: 1600, opacity: 0, filter: 'blur(6px)' } }
+//     animate={ { x: 1300, opacity: 1, filter: 'blur(0px)' } }
+//     transition={ { duration: 2 } }
+//   >
+//     <Image src={ '/animations/gear-gifs/gear-2.gif' } alt={ 'gear-2' } width={ 200 } height={ 200 }/>
+//   </motion.div>
+// </>
