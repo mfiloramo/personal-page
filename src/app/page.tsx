@@ -79,36 +79,3 @@ export default function Home(): ReactElement {
     </div>
   );
 }
-
-// {/* GEAR ANIMATIONS (LEFT) */ }
-// <>
-//   <motion.div
-//     className={ 'absolute -mt-5' }
-//     initial={ { x: -300, opacity: 0, filter: 'blur(6px)' } }
-//     animate={ { x: 40, opacity: 1, filter: 'blur(0px)' } }
-//     transition={ { duration: 2 } }
-//   >
-//     <Image src={ '/animations/gear-gifs/gear-1.gif' } alt={ 'gear-1' } width={ 200 } height={ 200 }/>
-//   </motion.div>
-//
-//   <motion.div
-//     className={ 'absolute -mt-36' }
-//     initial={ { x: -300, opacity: 0, filter: 'blur(6px)' } }
-//     animate={ { x: 145, opacity: 1, filter: 'blur(0px)' } }
-//     transition={ { duration: 2 } }
-//   >
-//     <Image className={ 'shadow-3xl' } src={ '/animations/gear-gifs/gear-3.gif' } alt={ 'gear-1' } width={ 200 } height={ 200 }/>
-//   </motion.div>
-// </>
-//
-// {/* GEAR ANIMATIONS (RIGHT) */ }
-// <>
-//   <motion.div
-//     className={ 'absolute mr-0 -mt-5' }
-//     initial={ { x: 1600, opacity: 0, filter: 'blur(6px)' } }
-//     animate={ { x: 1300, opacity: 1, filter: 'blur(0px)' } }
-//     transition={ { duration: 2 } }
-//   >
-//     <Image src={ '/animations/gear-gifs/gear-2.gif' } alt={ 'gear-2' } width={ 200 } height={ 200 }/>
-//   </motion.div>
-// </>
