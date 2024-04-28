@@ -34,6 +34,11 @@
       "subtitle": "Enhancing digital footprints with strategic SEO practices to boost visibility and drive organic traffic"
     },
     {
+      "imageSrc": "images/service-icons/service-system-design.png",
+      "title": "System Design Solutions",
+      "subtitle": "Crafting robust architectures and scalable distributed systems to optimize performance and support growth"
+    },
+    {
       "imageSrc": "images/service-icons/service-telemetry.png",
       "title": "System Telemetry",
       "subtitle": "Integrating telemetry solutions to track user interactions and system performance over time"
