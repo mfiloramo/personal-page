@@ -4,7 +4,7 @@
 
 <hr style="margin-top: 5px; margin-bottom: 20px;">
 
-<h3 align="center" style="margin-top: 0;">This is a portfolio highlighting my favorite work in web development, as well as information about who I am and the services I offer. Feel free to peruse through the source code!</h4>
+<h3 align="center" style="margin-top: 0;">This is a portfolio highlighting my favorite work in web development, as well as information about who I am and the services I offer. You can visit the site <a href="https://michael-filoramo.com">here</a>. Feel free to peruse through the source code!</h4>
 
 <div align="center">
   <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/mfiloramo/worldChatApp/.github%2Fworkflows%2Fmain_lingolink.yml">
