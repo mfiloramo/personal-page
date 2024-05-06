@@ -4,13 +4,13 @@ import ThemeToggle from "@/components/theme-toggle";
 import { ScrollingCarouselProps } from "@/interfaces/ScrollingCarouselProps.interface";
 
 function useWindowSize() {
-  const [windowSize, setWindowSize] = useState({
+  const [ windowSize, setWindowSize ] = useState({
     width: 0,
     height: 0,
   });
 
   useEffect(() => {
-    function handleResize() {
+    function handleResize(): void {
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
@@ -18,7 +18,7 @@ function useWindowSize() {
     }
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Call at mount to set initial size
+    handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -32,7 +32,7 @@ export default function ScrollingCarousel({ lightImages, darkImages
   const controls: AnimationControls = useAnimation();
   const [ currentStartIndex, setCurrentStartIndex ] = useState(0);
   const [ isScrollingBackward, setIsScrollingBackward ] = useState(false);
-  const [ darkMode, setDarkMode ] = useState(false);
+  const [ darkMode, setDarkMode ] = useState(true);
 
   const images: string[] = darkMode ? darkImages : lightImages;
 
