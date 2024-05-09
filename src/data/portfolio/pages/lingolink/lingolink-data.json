@@ -112,6 +112,7 @@
     "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-change-username-light.png",
     "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-change-name-light.png",
     "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-change-email-light.png",
+    "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-change-password-light.png",
     "/images/screenshots/lingolink/light-mode-screenshots/mobile-settings-delete-account-light.png"
   ],
   "screenshots-dark-mode": [
@@ -126,6 +127,7 @@
     "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-change-username-dark.png",
     "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-change-name-dark.png",
     "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-change-email-dark.png",
+    "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-change-password-dark.png",
     "/images/screenshots/lingolink/dark-mode-screenshots/mobile-settings-delete-account-dark.png"
   ],
   "in-app-screenshots-left": [
