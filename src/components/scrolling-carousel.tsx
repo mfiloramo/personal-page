@@ -113,7 +113,7 @@ export default function ScrollingCarousel({ lightImages, darkImages
         {/* SCROLL BACKWARD BUTTON */}
         <motion.button
           onClick={handleScrollBackward}
-          className="px-5 bg-sky-200 p-1 border-black border-2 z-20 bg-gradient-to-b dark:from-slate-100 dark:to-slate-500 dark:bg-amber-500 shadow-xl rounded-xl text-black"
+          className="px-5 bg-sky-200 p-1 border-black border-2 z-20 bg-gradient-to-b dark:from-slate-100 dark:to-slate-500 shadow-xl rounded-xl text-black"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.1 }}
@@ -129,7 +129,7 @@ export default function ScrollingCarousel({ lightImages, darkImages
         {/* SCROLL FORWARD BUTTON */}
         <motion.button
           onClick={handleScrollForward}
-          className="px-5 bg-sky-200 p-1 border-black border-2 bg-gradient-to-b from-slate-100 to-slate-500 hover:bg-slate-700 shadow-xl rounded-xl text-black"
+          className="px-5 bg-sky-200 p-1 border-black border-2 z-20 bg-gradient-to-b dark:from-slate-100 dark:to-slate-500 shadow-xl rounded-xl text-black"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.1 }}
