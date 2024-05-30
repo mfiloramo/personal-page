@@ -8,8 +8,8 @@ import SectionDivider from '@/components/section-divider';
 import { SectionComponentProps } from '@/interfaces/SectionComponentProps.interface';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Adamina } from 'next/dist/compiled/@next/font/dist/google';
 import AppScreenshotsSection from '@/components/app-screenshots-section';
+
 
 export default function SinclairUserAdmin(): ReactElement {
 

@@ -34,7 +34,7 @@ export default function ScrollingCarousel({ lightImages, darkImages
   const [ isScrollingBackward, setIsScrollingBackward ] = useState(false);
   const [ darkMode, setDarkMode ] = useState(true);
 
-  const images: string[] = darkMode ? darkImages : lightImages;
+  const images: string[] = darkMode && darkImages ? darkImages : lightImages;
 
   const visibleCount: 2 | 4 = width <= 550 ? 2 : 4;
   const imageWidth = width <= 550 ? 'w-[50%] min-w-[50%]' : 'w-[25%] min-w-[25%]';

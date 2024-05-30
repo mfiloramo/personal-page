@@ -184,7 +184,10 @@ export default function LingoLinkPage(): ReactElement {
       <SectionDivider />
 
       {/* APP SCREENSHOTS CAROUSEL */ }
-      <ScrollingCarousel lightImages={ pageContent['screenshots-light-mode'] } darkImages={ pageContent['screenshots-dark-mode']} />
+      <ScrollingCarousel
+        lightImages={ pageContent['screenshots-light-mode'] }
+        darkImages={ pageContent['screenshots-dark-mode']}
+      />
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />

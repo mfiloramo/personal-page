@@ -5,7 +5,6 @@ import { inter_tightHeavy, inter_tightItalicHeavy, inter_tightLight } from '@/ut
 import { AnimatePresence, motion } from 'framer-motion';
 import pageContent from '../data/app.json';
 import ButtonContainer from '@/components/button-container';
-import Image from "next/image";
 
 export default function Home(): ReactElement {
   // STATE HOOKS
