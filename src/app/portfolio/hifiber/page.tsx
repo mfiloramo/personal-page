@@ -40,7 +40,7 @@ export default function HiFiberPage(): ReactElement {
 
             {/* ANIMATED LOGO GRAPHIC */ }
             <motion.div
-              className=' flex pb-6 justify-center items-start'
+              className='flex pb-6 justify-center items-start'
               initial={ { scale: 0 } }
               animate={ { rotate: 0, scale: 1 } }
               transition={ {
@@ -61,7 +61,7 @@ export default function HiFiberPage(): ReactElement {
 
             {/* ANIMATED LOGO TEXT */ }
             <motion.div
-              className='flex  -mt-3 justify-center'
+              className='flex -mt-3 justify-center'
               initial={ { scale: 0 } }
               animate={ { scale: 1 } }
               transition={ {
