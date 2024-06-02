@@ -10,9 +10,13 @@ import { ButtonContainerProps } from '@/interfaces/ButtonContainerProps.interfac
 export default function ButtonContainer({ buttonOneText, buttonTwoText, buttonOneLink, buttonTwoLink, buttonThreeText, buttonThreeLink }: ButtonContainerProps): ReactElement {
   return (
     <div
-      className={ 'flex flex-col sm:flex-row justify-center sm:justify-between flex-wrap px-4 min-w-[240px] sm:max-w-[950px] max-w-[87vw] sm:px-12 mt-8 mb-12 mx-auto pb-8' }>
+      className={ 'flex flex-col sm:flex-row justify-center sm:justify-between flex-wrap px-4 min-w-[240px] sm:max-w-[650px] max-w-[87vw] sm:px-12 mt-8 mb-12 mx-auto pb-8' }>
       <MotionSlider className={ '' } delay={ 1.2 }>
-        <Link href={ buttonOneLink ? buttonOneLink.toLowerCase() : buttonOneText.toLowerCase() } rel={ buttonOneText === 'Portfolio' ? '' : 'noopener noreferrer' } target={ buttonOneText === 'Portfolio' ? '' : '_blank' }>
+        <Link
+          href={ buttonOneLink ? buttonOneLink.toLowerCase() : buttonOneText.toLowerCase() }
+          rel={ buttonOneText === 'Portfolio' ? '' : 'noopener noreferrer' }
+          target={ buttonOneText === 'Portfolio' ? '' : '_blank' }
+        >
           <motion.div
             className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 min-w-[230px] text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 text-center ${ inter_tightHeavy.className }` }
             whileHover={ { scale: 1.05 } }
@@ -39,7 +43,7 @@ export default function ButtonContainer({ buttonOneText, buttonTwoText, buttonOn
 
       { buttonThreeText && buttonThreeLink && (
         <MotionSlider className={ '' } delay={ 1.4 }>
-          <Link href={ buttonThreeLink ? buttonThreeLink.toLowerCase() : buttonThreeText?.toLowerCase() } rel={ buttonThreeText === 'Services' ? '' : 'noopener noreferrer' } target={ buttonThreeText === 'Services' ? '' : '_blank' }>
+          <Link href={ buttonThreeLink ? buttonThreeLink.toLowerCase() : buttonThreeText.toLowerCase() } rel={ buttonThreeText === 'Services' ? '' : 'noopener noreferrer' } target={ buttonThreeText === 'Services' ? '' : '_blank' }>
             <motion.div
               className={ `bg-gradient-to-b from-slate-100 to-slate-400 rounded-xl text-slate-950 py-3 px-7 min-w-[230px] text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 text-center ${ inter_tightHeavy.className }` }
               whileHover={ { scale: 1.05 } }

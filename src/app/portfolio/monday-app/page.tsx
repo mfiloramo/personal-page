@@ -21,7 +21,7 @@ export default function MondayApp(): ReactElement {
           initial={ { opacity: 0 } }
           animate={ { opacity: 1 } }
           transition={ { duration: 0.1 } }
-          className='relative w-full h-full'
+          className='relative w-full h-full px-4'
         >
           <div className='absolute inset-0'>
             <Image
@@ -35,7 +35,7 @@ export default function MondayApp(): ReactElement {
         </motion.div>
 
         {/* ANIMATED LOGO/TEXT CONTAINER */ }
-        <div className='absolute mt-[3vh] inset-0 flex justify-center items-start'>
+        <div className='absolute mt-[6vh] inset-0 flex justify-center items-start'>
           <div className='flex flex-col items-center'>
 
             {/* ANIMATED LOGO GRAPHIC */ }
@@ -51,9 +51,9 @@ export default function MondayApp(): ReactElement {
               } }
             >
               <Image
-                className='w-[80vw] max-w-[600px]'
+                className='sm:w-[35vw] min-w-[500px]'
                 src='/images/portfolio-pages/monday-app/monday-banner-logo.png'
-                alt='LingoLink Logo'
+                alt='Monday.com Logo'
                 width={ 1677 }
                 height={ 656 }
               />
@@ -72,7 +72,7 @@ export default function MondayApp(): ReactElement {
               } }
             >
               <Image
-                className=''
+                className='w-[75%]'
                 src='/images/portfolio-pages/monday-app/monday-banner-text.png'
                 alt='LingoLink Logo Text'
                 width={ 891 }
