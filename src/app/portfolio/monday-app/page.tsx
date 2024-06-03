@@ -6,7 +6,7 @@ import IntroHeadline from "@/components/intro-headline";
 import ButtonContainer from "@/components/button-container";
 import SectionDivider from "@/components/section-divider";
 import AppScreenshotsSection from "@/components/app-screenshots-section";
-import pageContent from "@/data/portfolio/pages/hifiber/hifiber-data.json";
+import pageContent from "@/data/portfolio/pages/monday-app/monday-app.json";
 import { SectionComponentProps } from "@/interfaces/SectionComponentProps.interface";
 import SectionComponent from "@/components/section";
 
@@ -40,7 +40,7 @@ export default function MondayApp(): ReactElement {
 
             {/* ANIMATED LOGO GRAPHIC */ }
             <motion.div
-              className='flex pb-6 justify-center items-start'
+              className='flex pb-6 px-12 justify-center items-start'
               initial={ { scale: 0 } }
               animate={ { rotate: 0, scale: 1 } }
               transition={ {
@@ -51,7 +51,7 @@ export default function MondayApp(): ReactElement {
               } }
             >
               <Image
-                className='sm:w-[35vw] min-w-[500px]'
+                className='sm:w-[30vw] min-w-[500px]'
                 src='/images/portfolio-pages/monday-app/monday-banner-logo.png'
                 alt='Monday.com Logo'
                 width={ 1677 }
@@ -72,9 +72,9 @@ export default function MondayApp(): ReactElement {
               } }
             >
               <Image
-                className='w-[75%]'
+                className='w-[83%]'
                 src='/images/portfolio-pages/monday-app/monday-banner-text.png'
-                alt='LingoLink Logo Text'
+                alt='Monday.com Logo Text'
                 width={ 891 }
                 height={ 193 }
               />
@@ -108,8 +108,8 @@ export default function MondayApp(): ReactElement {
       <AppScreenshotsSection
         titleText={ 'In-App Screenshots' }
         screenshots={ pageContent['in-app-screenshots'] }
-        screenshotWidth={ 921 }
-        screenshotHeight={ 521 }
+        screenshotWidth={ 450 }
+        screenshotHeight={ 260 }
       />
 
       {/* SECTION DIVIDER */ }
