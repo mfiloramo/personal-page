@@ -26,8 +26,7 @@ function useWindowSize() {
   return windowSize;
 }
 
-export default function ScrollingCarousel({ lightImages, darkImages
-}: ScrollingCarouselProps): ReactElement {
+export default function ScrollingCarousel({ lightImages, darkImages }: ScrollingCarouselProps): ReactElement {
   const { width } = useWindowSize();
   const controls: AnimationControls = useAnimation();
   const [ currentStartIndex, setCurrentStartIndex ] = useState(0);
@@ -36,7 +35,7 @@ export default function ScrollingCarousel({ lightImages, darkImages
 
   const images: string[] = darkMode && darkImages ? darkImages : lightImages;
 
-  const visibleCount: 2 | 4 = width <= 550 ? 2 : 4;
+  const visibleCount: number = width <= 550 ? 2 : 4;
   const imageWidth = width <= 550 ? 'w-[50%] min-w-[50%]' : 'w-[25%] min-w-[25%]';
   let imageStyle = 'w-auto max-h-[450px]';
   if (images.length === 2) {
@@ -124,7 +123,7 @@ export default function ScrollingCarousel({ lightImages, darkImages
         </motion.button>
 
         {/* SCREENSHOT THEME TOGGLE SWITCH */ }
-        <ThemeToggle toggleTheme={ toggleTheme } darkMode={ darkMode } />
+        { darkImages && <ThemeToggle toggleTheme={ toggleTheme } darkMode={ darkMode } /> }
 
         {/* SCROLL FORWARD BUTTON */}
         <motion.button

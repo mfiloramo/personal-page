@@ -9,6 +9,7 @@ import AppScreenshotsSection from "@/components/app-screenshots-section";
 import pageContent from "@/data/portfolio/pages/monday-app/monday-app.json";
 import { SectionComponentProps } from "@/interfaces/SectionComponentProps.interface";
 import SectionComponent from "@/components/section";
+import ScrollingCarousel from "@/components/scrolling-carousel";
 
 export default function MondayApp(): ReactElement {
 
@@ -105,12 +106,15 @@ export default function MondayApp(): ReactElement {
       <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */}
-      <AppScreenshotsSection
-        titleText={ 'In-App Screenshots' }
-        screenshots={ pageContent['in-app-screenshots'] }
-        screenshotWidth={ 450 }
-        screenshotHeight={ 260 }
-      />
+      <ScrollingCarousel lightImages={ pageContent['in-app-screenshots'] } />
+
+
+      {/*<AppScreenshotsSection*/}
+      {/*  titleText={ 'In-App Screenshots' }*/}
+      {/*  screenshots={ pageContent['in-app-screenshots'] }*/}
+      {/*  screenshotWidth={ 225 }*/}
+      {/*  screenshotHeight={ 320 }*/}
+      {/*/>*/}
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />
