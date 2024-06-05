@@ -91,22 +91,22 @@ export default function MondayApp(): ReactElement {
         text={ 'This will be your headline text.' } />
 
       {/* BUTTON CONTAINER */ }
-      <div className={ '-mt-4 -mb-14' }>
-        <ButtonContainer
-          buttonOneText={ 'Client Code' }
-          buttonOneLink={ 'https://github.com/mfiloramo/mondayProject' }
-          buttonTwoText={ 'Server Code' }
-          buttonTwoLink={ 'https://github.com/mfiloramo/mondayProjectAPI' }
-          buttonThreeText={ 'Database Code'}
-          buttonThreeLink={ 'https://github.com/mfiloramo/mondayProjectSQL' }
-        />
-      </div>
+      {/*<div className={ '-mt-4 -mb-14' }>*/}
+      {/*  <ButtonContainer*/}
+      {/*    buttonOneText={ 'Client Code' }*/}
+      {/*    buttonOneLink={ 'https://github.com/mfiloramo/mondayProject' }*/}
+      {/*    buttonTwoText={ 'Server Code' }*/}
+      {/*    buttonTwoLink={ 'https://github.com/mfiloramo/mondayProjectAPI' }*/}
+      {/*    buttonThreeText={ 'Database Code'}*/}
+      {/*    buttonThreeLink={ 'https://github.com/mfiloramo/mondayProjectSQL' }*/}
+      {/*  />*/}
+      {/*</div>*/}
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */}
-      <ScrollingCarousel lightImages={ pageContent['in-app-screenshots'] } />
+      {/*<ScrollingCarousel lightImages={ pageContent['in-app-screenshots'] } />*/}
 
 
       {/*<AppScreenshotsSection*/}
