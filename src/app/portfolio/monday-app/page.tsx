@@ -88,19 +88,19 @@ export default function MondayApp(): ReactElement {
 
       {/* INTRODUCTION HEADLINE */ }
       <IntroHeadline
-        text={ 'This will be your headline text.' } />
+        text={ 'I designed and implemented a custom sales solution specifically integrated with the Monday.com platform. It allows users to dynamically initiate orders, manage their statuses, and fully manage item offerings -- all from within the Monday platform.' } />
 
       {/* BUTTON CONTAINER */ }
-      {/*<div className={ '-mt-4 -mb-14' }>*/}
-      {/*  <ButtonContainer*/}
-      {/*    buttonOneText={ 'Client Code' }*/}
-      {/*    buttonOneLink={ 'https://github.com/mfiloramo/mondayProject' }*/}
-      {/*    buttonTwoText={ 'Server Code' }*/}
-      {/*    buttonTwoLink={ 'https://github.com/mfiloramo/mondayProjectAPI' }*/}
-      {/*    buttonThreeText={ 'Database Code'}*/}
-      {/*    buttonThreeLink={ 'https://github.com/mfiloramo/mondayProjectSQL' }*/}
-      {/*  />*/}
-      {/*</div>*/}
+      <div className={ '-mt-4 -mb-14' }>
+        <ButtonContainer
+          buttonOneText={ 'Client Code' }
+          buttonOneLink={ 'https://github.com/mfiloramo/mondayProject' }
+          buttonTwoText={ 'Server Code' }
+          buttonTwoLink={ 'https://github.com/mfiloramo/mondayProjectAPI' }
+          buttonThreeText={ 'Database Code'}
+          buttonThreeLink={ 'https://github.com/mfiloramo/mondayProjectSQL' }
+        />
+      </div>
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />
