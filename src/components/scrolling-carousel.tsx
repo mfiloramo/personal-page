@@ -111,7 +111,7 @@ export default function ScrollingCarousel({ lightImages, darkImages }: Scrolling
       {/* END IMAGE CONTAINER */ }
 
       {/* SCROLL BUTTONS CONTAINER */ }
-      <div className="flex my-4 justify-arund items-center mx-auto max-w-[95vw] px-3 sm:px-12">
+      <div className="flex my-4 justify-arund items-center mx-auto max-w-[95vw] px-3 gap-4 sm:px-12">
 
         {/* SCROLL BACKWARD BUTTON */ }
         <motion.button

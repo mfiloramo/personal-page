@@ -8,7 +8,7 @@ interface ThemeToggleProps {
 
 export default function ThemeToggle({ darkMode, toggleTheme }: ThemeToggleProps) {
   return (
-    <div className="flex items-center justify-center p-4">
+    <div className="flex items-center justify-center">
       <button
         onClick={toggleTheme}
         className={`relative w-14 h-8 ${
