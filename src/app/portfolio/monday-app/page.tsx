@@ -36,12 +36,12 @@ export default function MondayApp(): ReactElement {
         </motion.div>
 
         {/* ANIMATED LOGO/TEXT CONTAINER */ }
-        <div className='absolute mt-[6vh] inset-0 flex justify-center items-start'>
+        <div className='absolute mt-[6vh] sm:mt-[7vh] inset-0 flex justify-center items-start'>
           <div className='flex flex-col items-center'>
 
             {/* ANIMATED LOGO GRAPHIC */ }
             <motion.div
-              className='flex pb-6 px-12 justify-center items-start'
+              className='flex pb-6 justify-center items-start'
               initial={ { scale: 0 } }
               animate={ { rotate: 0, scale: 1 } }
               transition={ {
@@ -52,7 +52,7 @@ export default function MondayApp(): ReactElement {
               } }
             >
               <Image
-                className='sm:w-[30vw] min-w-[500px]'
+                className='max-w-[525px] sm:w-[50vw] sm:min-w-[700px] sm:max-w-[700px] px-24'
                 src='/images/portfolio-pages/monday-app/monday-banner-logo.png'
                 alt='Monday.com Logo'
                 width={ 1677 }
@@ -73,7 +73,7 @@ export default function MondayApp(): ReactElement {
               } }
             >
               <Image
-                className='w-[83%]'
+                className='w-[75vw] min-w-[400px] sm:w-[55vw] sm:min-w-[600px] max-w-[700px] px-4'
                 src='/images/portfolio-pages/monday-app/monday-banner-text.png'
                 alt='Monday.com Logo Text'
                 width={ 891 }
@@ -88,7 +88,7 @@ export default function MondayApp(): ReactElement {
 
       {/* INTRODUCTION HEADLINE */ }
       <IntroHeadline
-        text={ 'I designed and implemented a custom sales solution specifically integrated with the Monday.com platform. It allows users to dynamically initiate orders, manage their statuses, and fully manage item offerings -- all from within the Monday platform.' } />
+        text={ 'I designed and implemented a custom sales solution specifically integrated with the Monday.com platform. It allows users to dynamically initiate orders, manage their statuses, and fully manage product offerings -- all from within the Monday.com platform.' } />
 
       {/* BUTTON CONTAINER */ }
       <div className={ '-mt-4 -mb-14' }>
@@ -106,15 +106,7 @@ export default function MondayApp(): ReactElement {
       <SectionDivider />
 
       {/* APP SCREENSHOTS SECTION */}
-      {/*<ScrollingCarousel lightImages={ pageContent['in-app-screenshots'] } />*/}
-
-
-      {/*<AppScreenshotsSection*/}
-      {/*  titleText={ 'In-App Screenshots' }*/}
-      {/*  screenshots={ pageContent['in-app-screenshots'] }*/}
-      {/*  screenshotWidth={ 225 }*/}
-      {/*  screenshotHeight={ 320 }*/}
-      {/*/>*/}
+      <ScrollingCarousel lightImages={ pageContent['in-app-screenshots'] } />
 
       {/* SECTION DIVIDER */ }
       <SectionDivider />

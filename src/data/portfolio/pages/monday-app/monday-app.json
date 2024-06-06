@@ -16,8 +16,8 @@
       "id": "how_it_works",
       "subtitle": "How It Works",
       "paragraphs": [
-        "My personal site is built on React and Next.js, with Tailwind CSS for styling and Framer Motion for fluid animations. Leveraging Vercel's experimental Turbopack for rapid development and optimal build times, the site also integrates Courier for efficient message notification services.",
-        "Hosting on Vercel provides my site with optimal loading times, automatic scaling and out-of-the-box continuous deployment, ensuring performance and reliability."
+        "The Client Application is a React/Next.js app hosted on Vercel. The deployment is embedded within the Monday platform, along with interactive boards that display the order/product information dynamically populated by the API.",
+        "When the user initiates an order using the Client; changes the status of an order; or adds/edits/deletes a product offering, webhooks within Monday are triggered, sending the data to the API (hosted on Heroku). The API then leverages the ORM to perform CRUD via T-SQL Stored Procedures executed within the SQL Server database. The data displayed on the Monday boards is also mutated, ensuring consistency."
       ],
       "background": "graph-paper-bg",
       "textColor": "black",
@@ -27,7 +27,8 @@
       "id": "technology_stack",
       "subtitle": "Technology Stack",
       "paragraphs": [
-        "I chose this stack to leverage a modern, highly performant and developer-friendly ecosystem that ensures ultra fast development, easy maintenance and seamless deployment."
+        "The client app is built on React and Next.js, with Monday's Vibe Design library for custom components and Tailwind CSS for layout. The server is built using Node/Express, and leverages various tools to perform robust database CRUD while ensuring efficiency and security.",
+        "The Client Application is hosted on Vercel, the API on Heroku and  SQL Server database on Microsoft Azure. This deployment stack was chosen for its speed, security, reliability and ease of use."
       ],
       "technologyStack": [
         {
@@ -55,10 +56,6 @@
           "altText": "next-js-logo"
         },
         {
-          "imgSrc": "/images/technology-icons/tech-turbopack.png",
-          "altText": "turbopack-logo"
-        },
-        {
           "imgSrc": "/images/technology-icons/tech-node.png",
           "altText": "node-js-logo"
         },
@@ -79,6 +76,10 @@
           "altText": "mssql-logo"
         },
         {
+          "imgSrc": "/images/technology-icons/tech-turbopack.png",
+          "altText": "turbopack-logo"
+        },
+        {
           "imgSrc": "/images/technology-icons/tech-vercel.png",
           "altText": "vercel-logo"
         },
@@ -90,25 +91,11 @@
           "imgSrc": "/images/technology-icons/tech-azure.png",
           "altText": "azure-logo"
         },
-
         {
           "imgSrc": "/images/technology-icons/tech-axios.png",
           "altText": "axios-logo"
         }
       ]
-    },
-    {
-      "id": "conclusion",
-      "subtitle": "Final Thoughts",
-      "paragraphs": [
-        "Each tool played a pivotal role in bringing my vision to life, enabling me to design a responsive site that stands as a dynamic portfolio of my work and a bridge to connect with visitors from around the world.",
-        "I’m so grateful that you’ve taken the time to learn more about me and my work. I welcome you to reach out if you're interested in discussing a web development project/service I can offer. Thanks for stopping by!"
-      ],
-      "photo": {
-        "src": "/images/portfolio-pages/personal-website/self-pic.png",
-        "alt": "self-pic"
-      },
-      "background": "bg-lightblue-grid-background"
     }
   ],
   "in-app-screenshots": [

@@ -27,23 +27,31 @@ function useWindowSize() {
 }
 
 export default function ScrollingCarousel({ lightImages, darkImages }: ScrollingCarouselProps): ReactElement {
+  // STATE HOOKS
   const { width } = useWindowSize();
   const controls: AnimationControls = useAnimation();
   const [ currentStartIndex, setCurrentStartIndex ] = useState(0);
   const [ isScrollingBackward, setIsScrollingBackward ] = useState(false);
   const [ darkMode, setDarkMode ] = useState(true);
 
+  // COMPONENT CONSTANTS
   const images: string[] = darkMode && darkImages ? darkImages : lightImages;
-
   const visibleCount: number = width <= 550 ? 2 : 4;
-  const imageWidth = width <= 550 ? 'w-[50%] min-w-[50%]' : 'w-[25%] min-w-[25%]';
-  let imageStyle = 'w-auto max-h-[450px]';
-  if (images.length === 2) {
-    imageStyle = 'w-auto max-h-[300px] px-3 py-2';
-  } else if (images.length === 4) {
-    imageStyle = 'h-auto max-w-[200px] sm:max-w-[530px]';
+  const imageWidth: any = width <= 550 ? 'w-[50%]' : 'w-[25%] min-w-[25%]';
+  let imageStyle: string = 'w-auto max-h-[450px]';
+  switch (images.length) {
+    case 2:
+      imageStyle = 'w-auto max-h-[300px] px-3 py-2';
+      break;
+    case 3:
+      imageStyle = 'px-1 py-1';
+      break;
+    case 4:
+      imageStyle = 'h-auto max-w-[200px] sm:max-w-[530px]';
+      break;
   }
 
+  // HANDLER FUNCTIONS
   const handleScrollForward = async (): Promise<void> => {
     setIsScrollingBackward(false);
     await controls.start({
@@ -76,16 +84,17 @@ export default function ScrollingCarousel({ lightImages, darkImages }: Scrolling
     setDarkMode(!darkMode);
   };
 
+  // RENDER COMPONENT
   return (
     // MAIN COMPONENT CONTAINER
-    <div className="mx-auto relative flex flex-col items-center">
+    <div className="mx-auto relative flex flex-col items-center min-h-[450px]">
 
       {/* SUBTITLE TEXT */ }
       <div className="text-center text-md text-3xl pt-3 pb-5">In-App Screenshots</div>
 
       {/* IMAGE CONTAINER */ }
       <div
-        className="h-auto relative flex justify-items-center w-full overflow-hidden max-w-[95vw] sm:min-w-[675px] md:min-w-[800px] lg:min-w-[950px] md:max-w-[65vw] mx-auto px-3 sm:px-12">
+        className="h-auto flex w-full overflow-hidden justify-center px-12 sm:px-12 min-h-[450px]">
         <AnimatePresence>
 
           {/* IMAGES */ }
