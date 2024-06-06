@@ -66,7 +66,7 @@ export default function NavDropdown(): ReactElement {
           }
         } }
         style={ { pointerEvents: isOpen ? "auto" : "none" } }
-        className='bg-blue-100 flex flex-col mt-6 -ml-14 gap-5 list-none p-3.5 w-screen rounded-bl-xl rounded-br-xl z-30 font-bold'
+        className='bg-blue-100 flex flex-col mt-6 -ml-14 gap-5 list-none p-3.5 w-screen rounded-bl-xl rounded-br-xl z-30'
       >
         <motion.li className="text-xl block cursor-pointer text-sky-950" variants={ itemVariants }>
           <Link href={ '/about' } onClick={ handleClose }>about</Link>

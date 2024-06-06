@@ -17,7 +17,7 @@
       "subtitle": "How It Works",
       "paragraphs": [
         "The Client Application is a React/Next.js app hosted on Vercel. The deployment is embedded within the Monday platform, along with interactive boards that display the order/product information dynamically populated by the API.",
-        "When the user initiates an order using the Client; changes the status of an order; or adds/edits/deletes a product offering, webhooks within Monday are triggered, sending the data to the API (hosted on Heroku). The API then leverages the ORM to perform CRUD via T-SQL Stored Procedures executed within the SQL Server database. The data displayed on the Monday boards is also mutated, ensuring consistency."
+        "When the user: 1) initiates an order using the Client; 2) changes the status of an order; or 3) adds/edits/deletes a product offering, webhooks within Monday are triggered, sending the data to the API (hosted on Heroku). The API then leverages the ORM to perform CRUD via T-SQL Stored Procedures executed within the SQL Server database. The data displayed on the Monday boards is also mutated, ensuring consistency."
       ],
       "background": "graph-paper-bg",
       "textColor": "black",

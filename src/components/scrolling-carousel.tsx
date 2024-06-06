@@ -4,7 +4,7 @@ import ThemeToggle from "@/components/theme-toggle";
 import { ScrollingCarouselProps } from "@/interfaces/ScrollingCarouselProps.interface";
 
 function useWindowSize() {
-  const [ windowSize, setWindowSize ] = useState({
+  const [windowSize, setWindowSize] = useState({
     width: 0,
     height: 0,
   });
@@ -34,22 +34,17 @@ export default function ScrollingCarousel({ lightImages, darkImages }: Scrolling
   const [ isScrollingBackward, setIsScrollingBackward ] = useState(false);
   const [ darkMode, setDarkMode ] = useState(true);
 
-  // COMPONENT CONSTANTS
+  // COMPONENT VARIABLES
   const images: string[] = darkMode && darkImages ? darkImages : lightImages;
-  const visibleCount: number = width <= 550 ? 2 : 4;
-  const imageWidth: any = width <= 550 ? 'w-[50%]' : 'w-[25%] min-w-[25%]';
-  let imageStyle: string = 'w-auto max-h-[450px]';
-  switch (images.length) {
-    case 2:
-      imageStyle = 'w-auto max-h-[300px] px-3 py-2';
-      break;
-    case 3:
-      imageStyle = 'px-1 py-1';
-      break;
-    case 4:
-      imageStyle = 'h-auto max-w-[200px] sm:max-w-[530px]';
-      break;
-  }
+  const visibleCount: number = width <= 550
+    ? (images.length >= 4 ? 2 : 1)
+    : (images.length >= 4 ? 4 : 1);
+
+  const imageStyle = (width <= 550)
+    // MOBILE VIEWPORTS
+    ? (images.length >= 4 ? 'w-[42vw] max-w-[42vw] min-w-[42vw]' : 'w-[90vw] max-w-[90vw] min-w-[90vw]')
+    // DESKTOP VIEWPORTS
+    : (images.length === 3 ? 'w-[60vw] min-w-[550px] max-w-[800px] flex-shrink-0' : (images.length === 2 ? 'w-[50%] max-w-[50%] min-w-[50%] flex-shrink-0' : 'w-[22%] max-w-[22%] min-w-[22%] '));
 
   // HANDLER FUNCTIONS
   const handleScrollForward = async (): Promise<void> => {
@@ -87,18 +82,17 @@ export default function ScrollingCarousel({ lightImages, darkImages }: Scrolling
   // RENDER COMPONENT
   return (
     // MAIN COMPONENT CONTAINER
-    <div className="mx-auto relative flex flex-col items-center min-h-[450px]">
+    <div className="mx-auto relative flex flex-col items-center">
 
       {/* SUBTITLE TEXT */ }
       <div className="text-center text-md text-3xl pt-3 pb-5">In-App Screenshots</div>
 
       {/* IMAGE CONTAINER */ }
-      <div
-        className="h-auto flex w-full overflow-hidden justify-center px-12 sm:px-12 min-h-[450px]">
+      <div className="h-auto flex w-full overflow-hidden justify-center px-1 mx-auto">
         <AnimatePresence>
 
           {/* IMAGES */ }
-          <motion.div className="flex" initial={ { x: '0%' } } animate={ controls }>
+          <motion.div className="flex justify-center w-[45vw] sm:w-[75vw]" initial={ { x: '0%' } } animate={ controls }>
             { getVisibleImages().map((index: number, i: number) => (
               <motion.img
                 key={ index }
@@ -107,10 +101,11 @@ export default function ScrollingCarousel({ lightImages, darkImages }: Scrolling
                 animate={ { opacity: 1 } }
                 exit={ { opacity: 0 } }
                 transition={ { duration: 0.4 } }
-                className={ `${ imageWidth } ${ imageStyle } px-1 h-auto` }
+                className={ `px-1 !h-auto ${ imageStyle }` }
               />
             )) }
           </motion.div>
+
         </AnimatePresence>
       </div>
       {/* END IMAGE CONTAINER */ }
@@ -118,13 +113,13 @@ export default function ScrollingCarousel({ lightImages, darkImages }: Scrolling
       {/* SCROLL BUTTONS CONTAINER */ }
       <div className="flex my-4 justify-arund items-center mx-auto max-w-[95vw] px-3 sm:px-12">
 
-        {/* SCROLL BACKWARD BUTTON */}
+        {/* SCROLL BACKWARD BUTTON */ }
         <motion.button
-          onClick={handleScrollBackward}
+          onClick={ handleScrollBackward }
           className="px-5 bg-sky-200 p-1 border-black border-2 z-20 bg-gradient-to-b dark:from-slate-100 dark:to-slate-500 shadow-xl rounded-xl text-black"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ duration: 0.1 }}
+          whileHover={ { scale: 1.05 } }
+          whileTap={ { scale: 0.95 } }
+          transition={ { duration: 0.1 } }
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path fill="currentColor" d="M10 7l-5 5 5 5V7zm9 5H10v2h9v-2z"/>
@@ -132,15 +127,15 @@ export default function ScrollingCarousel({ lightImages, darkImages }: Scrolling
         </motion.button>
 
         {/* SCREENSHOT THEME TOGGLE SWITCH */ }
-        { darkImages && <ThemeToggle toggleTheme={ toggleTheme } darkMode={ darkMode } /> }
+        { darkImages && <ThemeToggle toggleTheme={ toggleTheme } darkMode={ darkMode }/> }
 
-        {/* SCROLL FORWARD BUTTON */}
+        {/* SCROLL FORWARD BUTTON */ }
         <motion.button
-          onClick={handleScrollForward}
+          onClick={ handleScrollForward }
           className="px-5 bg-sky-200 p-1 border-black border-2 z-20 bg-gradient-to-b dark:from-slate-100 dark:to-slate-500 shadow-xl rounded-xl text-black"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ duration: 0.1 }}
+          whileHover={ { scale: 1.05 } }
+          whileTap={ { scale: 0.95 } }
+          transition={ { duration: 0.1 } }
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path fill="currentColor" d="M14 7l5 5-5 5V7zm-9 5h9v2H5v-2z"/>

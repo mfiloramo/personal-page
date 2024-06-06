@@ -73,7 +73,7 @@ export default function MondayApp(): ReactElement {
               } }
             >
               <Image
-                className='w-[75vw] min-w-[400px] sm:w-[55vw] sm:min-w-[600px] max-w-[700px] px-4'
+                className='w-[75vw] min-w-[400px] sm:w-[55vw] sm:min-w-[600px] max-w-[750px] px-4'
                 src='/images/portfolio-pages/monday-app/monday-banner-text.png'
                 alt='Monday.com Logo Text'
                 width={ 891 }
@@ -88,7 +88,7 @@ export default function MondayApp(): ReactElement {
 
       {/* INTRODUCTION HEADLINE */ }
       <IntroHeadline
-        text={ 'I designed and implemented a custom sales solution specifically integrated with the Monday.com platform. It allows users to dynamically initiate orders, manage their statuses, and fully manage product offerings -- all from within the Monday.com platform.' } />
+        text={ 'I designed and implemented an open-source, custom sales solution specifically integrated with the Monday.com platform. It allows users to dynamically initiate online orders, manage their statuses, and fully manage product offerings -- all from within the Monday.com platform.' } />
 
       {/* BUTTON CONTAINER */ }
       <div className={ '-mt-4 -mb-14' }>
