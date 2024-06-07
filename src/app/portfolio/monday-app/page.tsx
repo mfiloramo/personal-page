@@ -5,7 +5,6 @@ import Image from "next/image";
 import IntroHeadline from "@/components/intro-headline";
 import ButtonContainer from "@/components/button-container";
 import SectionDivider from "@/components/section-divider";
-import AppScreenshotsSection from "@/components/app-screenshots-section";
 import pageContent from "@/data/portfolio/pages/monday-app/monday-app.json";
 import { SectionComponentProps } from "@/interfaces/SectionComponentProps.interface";
 import SectionComponent from "@/components/section";
@@ -95,7 +94,7 @@ export default function MondayApp(): ReactElement {
         <ButtonContainer
           buttonOneText={ 'Client Code' }
           buttonOneLink={ 'https://github.com/mfiloramo/mondayProject' }
-          buttonTwoText={ 'Server Code' }
+          buttonTwoText={ 'API Code' }
           buttonTwoLink={ 'https://github.com/mfiloramo/mondayProjectAPI' }
           buttonThreeText={ 'Database Code'}
           buttonThreeLink={ 'https://github.com/mfiloramo/mondayProjectSQL' }
