@@ -28,7 +28,8 @@
       "id": "technology_stack",
       "subtitle": "Technology Stack",
       "paragraphs": [
-        "The client app is built on React and Next.js, with Monday's Vibe Design library for custom components and Tailwind CSS for layout. The server is built using Node/Express, and leverages various tools to perform robust database CRUD while ensuring efficiency and security."
+        "The client app is built on React and Next.js, with Monday's Vibe Design library for custom components and Tailwind CSS for layout. The server is built using Node/Express, and leverages various tools to perform robust database CRUD while ensuring efficiency and security.",
+        "The Client Application is hosted on Vercel, the API on Heroku and  SQL Server database on Microsoft Azure. This deployment stack was chosen for its speed, security, reliability and ease of use."
       ],
       "technologyStack": [
         {
