@@ -21,22 +21,28 @@
       "subtitle": "Frontend Developer Tool"
     },
     {
-      "urlPath": "/portfolio/sinclair-ua",
-      "image": "images/profile-cards/profile-card-ua.png",
-      "title": "User Admin",
-      "subtitle": "Building Sinclair's User Management Platform"
-    },
-    {
       "urlPath": "/portfolio/sinclair-logging",
       "image": "images/profile-cards/profile-card-logging.png",
       "title": "Logging System",
       "subtitle": "Building Sinclair's Logging Infrastructure"
     },
     {
+      "urlPath": "/portfolio/sinclair-ua",
+      "image": "images/profile-cards/profile-card-ua.png",
+      "title": "User Admin",
+      "subtitle": "Building Sinclair's User Management Platform"
+    },
+    {
       "urlPath": "/portfolio/personal-website",
       "image": "images/profile-cards/profile-card-personal-website.png",
       "title": "Personal Site",
       "subtitle": "Web Development Portfolio"
+    },
+    {
+      "urlPath": "/portfolio/monday-app",
+      "image": "images/profile-cards/profile-card-monday-app.png",
+      "title": "Sales Software",
+      "subtitle": "Order Management Solution Platform Integration"
     },
     {
       "urlPath": "/portfolio/tech-talk",
