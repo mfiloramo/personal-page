@@ -57,17 +57,17 @@ export default function About(): ReactElement {
       </div>
 
       {/* WHAT I DO SECTION (DISABLED UNTIL PROD-READY) */ }
-      { sections.map((section: SectionComponentProps, index: number) => {
-        return (
-          <SectionComponent
-            key={ index }
-            subtitle={ section.subtitle }
-            paragraphs={ section.paragraphs }
-            photo={ section.photo }
-            isEven={ index % 2 === 0 }
-          />
-        )
-      }) }
+      {/*{ sections.map((section: SectionComponentProps, index: number) => {*/}
+      {/*  return (*/}
+      {/*    <SectionComponent*/}
+      {/*      key={ index }*/}
+      {/*      subtitle={ section.subtitle }*/}
+      {/*      paragraphs={ section.paragraphs }*/}
+      {/*      photo={ section.photo }*/}
+      {/*      isEven={ index % 2 === 0 }*/}
+      {/*    />*/}
+      {/*  )*/}
+      {/*}) }*/}
 
     </div>
   );
