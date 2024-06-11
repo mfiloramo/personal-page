@@ -36,7 +36,7 @@ export default function About(): ReactElement {
           <FancyDivider />
 
           { /* BUTTON CONTAINER */ }
-          <div className='grid grid-cols-2 sm:grid-cols-4 gap-0 justify-items-center mb-0 sm:mb-4 items-center'>
+          <div className='grid grid-cols-2 sm:grid-cols-4 gap-0 justify-items-center mb-0 sm:mb-4 items-center px-6 sm:px-0'>
             { workExperienceCards.map((button: any, index: number): ReactElement => {
               return (
                 <AboutPageButton
@@ -57,17 +57,17 @@ export default function About(): ReactElement {
       </div>
 
       {/* WHAT I DO SECTION (DISABLED UNTIL PROD-READY) */ }
-      {/*{ sections.map((section: SectionComponentProps, index: number) => {*/}
-      {/*  return (*/}
-      {/*    <SectionComponent*/}
-      {/*      key={ index }*/}
-      {/*      subtitle={ section.subtitle }*/}
-      {/*      paragraphs={ section.paragraphs }*/}
-      {/*      photo={ section.photo }*/}
-      {/*      isEven={ index % 2 === 0 }*/}
-      {/*    />*/}
-      {/*  )*/}
-      {/*}) }*/}
+      { sections.map((section: SectionComponentProps, index: number) => {
+        return (
+          <SectionComponent
+            key={ index }
+            subtitle={ section.subtitle }
+            paragraphs={ section.paragraphs }
+            photo={ section.photo }
+            isEven={ index % 2 === 0 }
+          />
+        )
+      }) }
 
     </div>
   );

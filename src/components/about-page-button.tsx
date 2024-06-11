@@ -17,8 +17,8 @@ export default function AboutPageButton({ imgSrc, urlPath, altText, index }: Abo
         <Image
           src={ imgSrc }
           alt={ altText }
-          height={ 120 }
-          width={ 120 }
+          height={ 130 }
+          width={ 130 }
         />
       </MotionSlider>
     </motion.a>
