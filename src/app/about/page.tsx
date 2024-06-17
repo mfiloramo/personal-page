@@ -1,7 +1,6 @@
 'use client';
 import { ReactElement } from 'react';
 import { cabinLight } from '@/utilities/fonts';
-import SectionComponent from "@/components/section";
 import AboutPageButton from '@/components/about-page-button';
 import FancyDivider from '@/components/fancy-divider';
 import BasePageText from '@/components/base-page-text';
