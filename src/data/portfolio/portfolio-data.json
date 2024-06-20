@@ -39,12 +39,6 @@
       "subtitle": "Web Development Portfolio"
     },
     {
-      "urlPath": "/portfolio/monday-app",
-      "image": "images/profile-cards/profile-card-monday-app.png",
-      "title": "Sales Software",
-      "subtitle": "Custom Order/Sales Management Integration"
-    },
-    {
       "urlPath": "/portfolio/tech-talk",
       "image": "images/profile-cards/profile-card-websockets.png",
       "title": "WebSockets",
