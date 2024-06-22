@@ -11,7 +11,7 @@ export default function ButtonContainer({ buttonOneText, buttonTwoText, buttonOn
   return (
     // BUTTON CONTAINER
     <div
-      className={ 'flex flex-col sm:flex-row justify-center px-8 sm:gap-10 mt-8 pb-20 mx-auto' }>
+      className={ 'flex flex-col sm:flex-row justify-center px-10 sm:gap-10 mt-8 pb-20 mx-auto' }>
 
       {/* BUTTON #1 */}
       <MotionSlider className={ '' } delay={ 1.2 }>
