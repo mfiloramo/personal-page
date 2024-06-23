@@ -41,7 +41,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-
+.graph-paper-bg {
+  @apply bg-graph-paper-background;
+}
 
 .custom-glow-blue {
   background: conic-gradient(at center, #904be5, #6c6cff, #0080ff, #546eff);
