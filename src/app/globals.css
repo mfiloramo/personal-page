@@ -52,7 +52,12 @@ body {
   overflow: hidden;
 }
 
-
+.custom-glow-purple {
+  background: conic-gradient(at center, #904be5, #6c6cff, purple, #ff92f0);
+  filter: blur(24px);
+  border-radius: 40%;
+  overflow: hidden;
+}
 
 .section-shadow {
   @apply shadow-[inset_0_6px_20px_rgba(0,0,0,0.6)];
