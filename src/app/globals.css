@@ -41,10 +41,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.gradient-paper-bg {
-  @apply bg-gradient-to-b from-slate-200 to-slate-400;
-}
-
 .graph-paper-bg {
   @apply bg-graph-paper-background;
 }
