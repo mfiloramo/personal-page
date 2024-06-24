@@ -31,7 +31,7 @@ export default function Home(): ReactElement {
 
           {/* TITLE TEXT */ }
           <MotionSlider className={ '' } delay={ 0.2 }>
-            <div className={ 'text-[2.5rem] sm:text-6xl' }>
+            <div className={ 'text-[2.8rem] sm:text-6xl' }>
               Michael Filoramo
             </div>
           </MotionSlider>
