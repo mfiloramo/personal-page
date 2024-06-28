@@ -13,6 +13,7 @@ export default function ButtonContainer({ buttonOneText, buttonTwoText, buttonOn
     <div
       className={ 'flex flex-col sm:flex-row justify-center px-6 sm:gap-10 mt-8 pb-20 mx-auto' }>
 
+      {/* TODO: ADD MAP FUNCTION TO BUTTONS */}
       {/* BUTTON #1 */}
       <MotionSlider className={ '' } delay={ 1.2 }>
         <Link

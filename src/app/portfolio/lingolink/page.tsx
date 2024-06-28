@@ -27,7 +27,7 @@ export default function LingoLinkPage(): ReactElement {
   return (
     <div>
       {/* TODO: MODULARIZE HERO BANNER */ }
-      {/* TODO: INCREASE HERO BANNER MIN-H (SMALLER DESKTOP VIEWPORTS) */ }
+      {/* TODO: DECREASE HERO BANNER MIN-H (SMALLER DESKTOP VIEWPORTS) */ }
       {/* HERO BANNER CONTAINER */ }
       <div
         className='relative h-[30vh] sm:min-h-[380px] min-h-[325px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
