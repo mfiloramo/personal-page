@@ -18,7 +18,7 @@ export default function LingoLinkPage(): ReactElement {
 
   // CONVERSATION IMAGE CYCLING
   useEffect(() => {
-    const interval = setInterval((): void => {
+    const interval: NodeJS.Timeout = setInterval((): void => {
       setConvoImageIndex((currentIndex: number) => (currentIndex + 1) % rightConvoImages.length);
     }, 3000);
     return () => clearInterval(interval);
