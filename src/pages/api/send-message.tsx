@@ -8,6 +8,7 @@ export default async function SendMessage(req: NextApiRequest, res: NextApiRespo
     try {
       const { name, email, subject, message } = req.body;
 
+      // SEND MESSAGE VIA COURIER API
       await courier.send({
         message: {
           to: { email: process.env.ADMIN_EMAIL },
