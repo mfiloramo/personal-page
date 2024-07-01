@@ -170,6 +170,7 @@ export default function LingoLinkPage(): ReactElement {
       <IntroHeadline
         text={ 'I architected, developed and launched LingoLink, a dynamic multilingual messaging platform that allows users to communicate with others regardless of the language they speak.' }/>
 
+      {/* TODO: ADD BUTTONS FOR ALL 3 REPOS */}
       {/* BUTTON CONTAINER */ }
       <div className={ '-mt-4 -mb-14' }>
         <ButtonContainer
