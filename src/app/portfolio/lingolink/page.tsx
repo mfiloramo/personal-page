@@ -16,7 +16,13 @@ export default function LingoLinkPage(): ReactElement {
   const rightConvoImages: string[] = pageContent['in-app-screenshots-right'];
   const flagImages: string[] = pageContent['google-translate-diagrams'];
 
-
+  // CONVERSATION IMAGE CYCLING
+  useEffect(() => {
+    const interval: NodeJS.Timeout = setInterval((): void => {
+      setConvoImageIndex((currentIndex: number) => (currentIndex + 1) % rightConvoImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [ leftConvoImages.length, rightConvoImages.length ]);
 
   return (
     <div>
