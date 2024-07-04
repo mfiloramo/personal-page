@@ -10,7 +10,14 @@ export default function Home(): ReactElement {
   // STATE HOOKS
   const [ currentQuote, setCurrentQuote ] = useState(0);
 
+  // EFFECT HOOKS
+  useEffect(() => {
+    const intervalId: NodeJS.Timeout = setInterval((): void => {
+      setCurrentQuote((prevPhrase) => (prevPhrase + 1) % pageContent.length);
+    }, 5000);
 
+    return () => clearInterval(intervalId);
+  });
 
   // RENDER COMPONENT
   return (
