@@ -29,7 +29,7 @@ export default function Navbar(): ReactElement {
         <Link className={ 'sm:flex cursor-pointer z-20 -mr-16 sm:-mr-6 -mt-1' } href={ '/' }>
           <Image
             className='mt-2'
-            src='/images/general-logos-color/app-logo-pride-color.png'
+            src='/images/general-logos-color/app-logo-color.png'
             alt='logo'
             height={ 64 }
             width={ 64 }
