@@ -30,7 +30,7 @@ export default function LingoLinkPage(): ReactElement {
       {/* TODO: DECREASE HERO BANNER MIN-H (SMALLER DESKTOP VIEWPORTS) */ }
       {/* HERO BANNER CONTAINER */ }
       <div
-        className='relative h-[30vh] sm:min-h-[380px] min-h-[325px] sm:h-[50vh] flex justify-center items-center overflow-hidden'>
+        className='relative h-[25vh] sm:min-h-[325px] min-h-[325px] sm:h-[45vh] flex justify-center items-center overflow-hidden'>
 
         {/* HERO BANNER IMAGE */ }
         <motion.div
@@ -67,7 +67,7 @@ export default function LingoLinkPage(): ReactElement {
               } }
             >
               <Image
-                className='w-[35vw] max-w-[250px] min-w-[180px]'
+                className='w-[35vw] max-w-[255px] min-w-[180px] sm:-mt-3 md:-mt-8 xl:-mt-14 mt-0'
                 src='/images/portfolio-pages/lingolink/lingolink-logo.png'
                 alt='LingoLink Logo'
                 width={ 833 }
