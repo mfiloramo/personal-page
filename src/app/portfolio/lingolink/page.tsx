@@ -51,7 +51,7 @@ export default function LingoLinkPage(): ReactElement {
         </motion.div>
 
         {/* ANIMATED LOGO/TEXT CONTAINER */ }
-        <div className='absolute mt-[4vh] inset-0 flex justify-center items-start'>
+        <div className='absolute mt-[5vw] inset-0 flex justify-center items-start'>
 
           <div className='flex flex-col items-center'>
             {/* ANIMATED LOGO GRAPHIC */ }
