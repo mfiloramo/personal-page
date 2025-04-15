@@ -22,7 +22,7 @@ export default function ButtonContainer({ buttonOneText, buttonTwoText, buttonOn
           target={ buttonOneText === 'Portfolio' ? '' : '_blank' }
         >
           <motion.div
-            className={ `bg-slate-200 rounded-lg text-slate-950 py-3 px-7 min-w-[230px] text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 text-center ${ inter_tightHeavy.className }` }
+            className={ `bg-slate-200 rounded-lg text-slate-950 py-3 px-7 min-w-[230px] text-3xl cursor-pointer shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 text-center ${ inter_tightHeavy.className }` }
             whileHover={ { scale: 1.05 } }
             whileTap={ { scale: 0.95 } }
             transition={ { duration: 0.1 } }
@@ -36,7 +36,7 @@ export default function ButtonContainer({ buttonOneText, buttonTwoText, buttonOn
       <MotionSlider className={ '' } delay={ 1.4 }>
         <Link href={ buttonTwoLink! ? buttonTwoLink!.toLowerCase() : buttonTwoText!.toLowerCase() } rel={ buttonTwoText === 'Services' ? '' : 'noopener noreferrer' } target={ buttonTwoText === 'Services' ? '' : '_blank' }>
           <motion.div
-            className={ `bg-slate-200 rounded-lg text-slate-950 py-3 px-7 min-w-[230px] text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 text-center ${ inter_tightHeavy.className }` }
+            className={ `bg-slate-200 rounded-lg text-slate-950 py-3 px-7 min-w-[230px] text-3xl cursor-pointer shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 text-center ${ inter_tightHeavy.className }` }
             whileHover={ { scale: 1.05 } }
             whileTap={ { scale: 0.95 } }
             transition={ { duration: 0.1 } }
@@ -51,7 +51,7 @@ export default function ButtonContainer({ buttonOneText, buttonTwoText, buttonOn
         <MotionSlider className={ '' } delay={ 1.4 }>
           <Link href={ buttonThreeLink ? buttonThreeLink.toLowerCase() : buttonThreeText.toLowerCase() } rel={ buttonThreeText === 'Services' ? '' : 'noopener noreferrer' } target={ buttonThreeText === 'Services' ? '' : '_blank' }>
             <motion.div
-              className={ `bg-slate-200 rounded-lg text-slate-950 py-3 px-7 min-w-[230px] text-3xl cursor-pointer border-2 border-black shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 text-center ${ inter_tightHeavy.className }` }
+              className={ `bg-slate-200 rounded-lg text-slate-950 py-3 px-7 min-w-[230px] text-3xl cursor-pointer shadow-xl hover:shadow-2xl w-full sm:w-auto my-2 text-center ${ inter_tightHeavy.className }` }
               whileHover={ { scale: 1.05 } }
               whileTap={ { scale: 0.95 } }
               transition={ { duration: 0.1 } }

@@ -20,7 +20,7 @@ export default function PortfolioCard({ image, title, subtitle, urlPath, indexFo
           <a href={ urlPath }>
             {/* CARD CONTAINER */ }
             <div
-              className={ 'text-black bg-gradient-to-b from-slate-100 to-slate-300 border-2 border-black bg-slate-300 flex flex-col max-h-[190px] sm:max-h-[203px] max-w-52 rounded-xl hover:outline-dashed hover:outline-black hover:outline-8 transition ease-in-out' }>
+              className={ 'text-black bg-gradient-to-b from-slate-100 to-slate-300 bg-slate-300 flex flex-col max-h-[190px] sm:max-h-[203px] max-w-52 rounded-xl hover:outline-dashed hover:outline-black hover:outline-8 transition ease-in-out' }>
 
               {/* CARD IMAGE */ }
               <Image
